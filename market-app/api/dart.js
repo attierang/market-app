@@ -1,9 +1,10 @@
-export const config = { runtime: 'nodejs' };
+export const config = { runtime: 'edge' };
 
 const NPS = '00359601';
+const KEY = '31960e50491fe94ee2d9a61eb3945ef083b51119';
 
-async function dart(ep, key) {
-  const url = 'https://opendart.fss.or.kr/api/' + ep + '?corp_code=' + NPS + '&crtfc_key=' + key;
+async function dart(ep) {
+  const url = 'https://opendart.fss.or.kr/api/' + ep + '?corp_code=' + NPS + '&crtfc_key=' + KEY;
   const r = await fetch(url, { headers: { 'Accept': 'application/json' } });
   if (!r.ok) throw new Error('HTTP ' + r.status);
   const d = await r.json();
@@ -23,24 +24,18 @@ function parse(list) {
       reportDate: i.rcept_dt || '',
       type: c >= 0 ? 'buy' : 'sell'
     };
-  }).sort(function(a, b) {
-    return b.reportDate.localeCompare(a.reportDate);
-  });
+  }).sort(function(a, b) { return b.reportDate.localeCompare(a.reportDate); });
 }
 
-export default async function handler(req, res) {
-  const u = new URL(req.url, 'http://x');
+export default async function handler(req) {
+  const u = new URL(req.url);
   const type = u.searchParams.get('type') || 'major';
-  const key = process.env.DART_API_KEY;
-
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Cache-Control', 's-maxage=3600');
-
-  if (!key) {
-    return res.status(500).json({ ok: false, error: 'DART_API_KEY 없음' });
-  }
-
+  const headers = { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Cache-Control': 's-maxage=3600' };
   try {
     const ep = type === 'ele' ? 'elestock.json' : 'majorstock.json';
-    const d = await dart(ep, key);
-    return res.status(200).json
+    const d = await dart(ep);
+    return new Response(JSON.stringify({ ok: true, type, data: parse(d.list) }), { headers });
+  } catch(err) {
+    return new Response(JSON.stringify({ ok: false, error: err.message }), { status: 500, headers });
+  }
+}
