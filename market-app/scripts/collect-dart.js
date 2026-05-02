@@ -1,18 +1,8 @@
-// DART 국민연금 공시 자동 수집 스크립트
-// GitHub Actions에서 매일 실행
-
 const fs = require('fs');
 const path = require('path');
-
 const KEY = process.env.DART_API_KEY;
-const OUTPUT_DIR = path.join(__dirname, '../data');
+if (!KEY) { console.error('DART_API_KEY 없음'); process.exit(1); }
 
-if (!KEY) {
-  console.error('DART_API_KEY 환경변수가 없습니다');
-  process.exit(1);
-}
-
-// 날짜 범위 계산
 function getDateRange(days) {
   const today = new Date();
   const end = today.toISOString().slice(0,10).replace(/-/g,'');
@@ -20,109 +10,97 @@ function getDateRange(days) {
   return { start, end };
 }
 
-// DART API 호출
-async function dartFetch(url) {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error('HTTP ' + res.status);
-  return res.json();
+async function fetchList(page, start, end) {
+  const url = 'https://opendart.fss.or.kr/api/list.json?bgn_de=' + start + '&end_de=' + end + '&pblntf_ty=D&page_no=' + page + '&page_count=100&crtfc_key=' + KEY;
+  const r = await fetch(url);
+  return r.json();
 }
 
-// 전체 공시 목록에서 국민연금 필터링
-async function collectMajorStock() {
-  const { start, end } = getDateRange(90);
-  const results = [];
-  let page = 1;
-  let totalPage = 1;
-
-  console.log('대량보유 공시 수집 시작...');
-
-  while (page <= totalPage && page <= 20) {
-    const url = `https://opendart.fss.or.kr/api/list.json?bgn_de=${start}&end_de=${end}&pblntf_ty=D&page_no=${page}&page_count=100&crtfc_key=${KEY}`;
-    const data = await dartFetch(url);
-
-    if (data.status !== '000') {
-      console.log('오류:', data.message);
-      break;
-    }
-
-    totalPage = data.total_page;
-    const list = data.list || [];
-
-    // 국민연금이 제출한 대량보유 공시 필터링
-    const npsItems = list.filter(item =>
-      item.flr_nm && item.flr_nm.includes('국민연금공단')
-    );
-
-    results.push(...npsItems);
-    console.log(`페이지 ${page}/${totalPage} 완료, 국민연금 공시 ${npsItems.length}건`);
-    page++;
-
-    // API 부하 방지
-    await new Promise(r => setTimeout(r, 300));
-  }
-
-  return results;
-}
-
-// 공시 상세 정보 수집
-async function getReportDetail(rcept_no) {
+async function fetchDetail(rcept_no, type) {
   try {
-    const url = `https://opendart.fss.or.kr/api/majorstock.json?rcept_no=${rcept_no}&crtfc_key=${KEY}`;
-    const data = await dartFetch(url);
-    if (data.status === '000' && data.list && data.list.length > 0) {
-      return data.list[0];
-    }
-  } catch(e) {
-    console.log('상세 조회 실패:', rcept_no);
-  }
+    const ep = type === 'ele' ? 'elestock' : 'majorstock';
+    const url = 'https://opendart.fss.or.kr/api/' + ep + '.json?rcept_no=' + rcept_no + '&crtfc_key=' + KEY;
+    const r = await fetch(url);
+    const d = await r.json();
+    if (d.status === '000' && d.list && d.list.length > 0) return d.list[0];
+  } catch(e) {}
   return null;
 }
 
 async function main() {
   try {
-    // 출력 디렉토리 생성
-    if (!fs.existsSync(OUTPUT_DIR)) {
-      fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+    const dataDir = path.join(__dirname, '../data');
+    if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
+
+    const { start, end } = getDateRange(85);
+    const majorList = [];
+    const eleList = [];
+    let page = 1;
+    let totalPage = 1;
+
+    console.log('수집 시작...');
+    while (page <= totalPage && page <= 20) {
+      const data = await fetchList(page, start, end);
+      if (data.status !== '000') { console.log('오류:', data.message); break; }
+      totalPage = data.total_page;
+      const nps = (data.list || []).filter(function(i) {
+        return i.flr_nm && i.flr_nm.includes('국민연금공단');
+      });
+      nps.forEach(function(item) {
+        if (item.report_nm.includes('대량보유')) {
+          majorList.push(item);
+        } else {
+          eleList.push(item);
+        }
+      });
+      console.log('페이지 ' + page + '/' + totalPage + ', 대량보유: ' + majorList.length + '건, 주요주주: ' + eleList.length + '건');
+      page++;
+      await new Promise(function(r) { setTimeout(r, 300); });
     }
 
-    // 공시 목록 수집
-    const majorList = await collectMajorStock();
-    console.log(`총 ${majorList.length}건의 국민연금 공시 발견`);
-
-    // 상세 정보 수집
-    const detailed = [];
-    for (const item of majorList.slice(0, 50)) { // 최대 50건
-      const detail = await getReportDetail(item.rcept_no);
-      detailed.push({
+    console.log('상세 데이터 수집 중...');
+    const majorDetailed = [];
+    for (let i = 0; i < Math.min(majorList.length, 50); i++) {
+      const item = majorList[i];
+      const d = await fetchDetail(item.rcept_no, 'major');
+      majorDetailed.push({
         corp_name: item.corp_name,
         stock_code: item.stock_code,
         report_nm: item.report_nm,
         rcept_dt: item.rcept_dt,
-        rcept_no: item.rcept_no,
         flr_nm: item.flr_nm,
-        detail: detail
+        ratio: d ? parseFloat(d.stkrt || '0') : 0,
+        change: d ? parseFloat(d.stkrt_irds || '0') : 0,
+        stock_count: d ? parseInt((d.stkqy_irds || '0').replace(/,/g,'')) : 0,
+        type: d && parseFloat(d.stkrt_irds || '0') >= 0 ? 'buy' : 'sell'
       });
-      await new Promise(r => setTimeout(r, 200));
+      await new Promise(function(r) { setTimeout(r, 200); });
     }
 
-    // 결과 저장
-    const output = {
-      updated_at: new Date().toISOString(),
-      count: detailed.length,
-      data: detailed
-    };
+    const eleDetailed = [];
+    for (let i = 0; i < Math.min(eleList.length, 50); i++) {
+      const item = eleList[i];
+      const d = await fetchDetail(item.rcept_no, 'ele');
+      eleDetailed.push({
+        corp_name: item.corp_name,
+        stock_code: item.stock_code,
+        report_nm: item.report_nm,
+        rcept_dt: item.rcept_dt,
+        flr_nm: item.flr_nm,
+        ratio: d ? parseFloat(d.sp_stock_lmp_rate || '0') : 0,
+        change: d ? parseFloat(d.sp_stock_lmp_irds_rate || '0') : 0,
+        stock_count: d ? parseInt((d.sp_stock_lmp_irds_cnt || '0').replace(/,/g,'')) : 0,
+        type: d && parseFloat(d.sp_stock_lmp_irds_rate || '0') >= 0 ? 'buy' : 'sell'
+      });
+      await new Promise(function(r) { setTimeout(r, 200); });
+    }
 
-    fs.writeFileSync(
-      path.join(OUTPUT_DIR, 'nps-major.json'),
-      JSON.stringify(output, null, 2),
-      'utf8'
-    );
+    fs.writeFileSync(path.join(dataDir, 'nps-major.json'), JSON.stringify({ updated_at: new Date().toISOString(), count: majorDetailed.length, data: majorDetailed }, null, 2), 'utf8');
+    fs.writeFileSync(path.join(dataDir, 'nps-ele.json'), JSON.stringify({ updated_at: new Date().toISOString(), count: eleDetailed.length, data: eleDetailed }, null, 2), 'utf8');
 
-    console.log(`✅ 완료! ${detailed.length}건 저장됨`);
-    console.log('저장 위치: market-app/data/nps-major.json');
-
+    console.log('완료! 대량보유 ' + majorDetailed.length + '건, 주요주주 ' + eleDetailed.length + '건');
   } catch(err) {
-    console.error('수집 실패:', err.message);
+    console.error('오류:', err.message);
     process.exit(1);
   }
 }
