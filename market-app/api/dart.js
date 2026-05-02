@@ -52,7 +52,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { start, end } = getDateRange(90);
+    const { start, end } = getDateRange(365);
     let data = [];
 
     if (type === 'major') {
