@@ -50,14 +50,7 @@ async function collectMajorStock() {
 
     // 국민연금이 제출한 대량보유 공시 필터링
     const npsItems = list.filter(item =>
-      item.flr_nm && (
-        item.flr_nm.includes('국민연금') ||
-        item.flr_nm.includes('NPS')
-      ) &&
-      item.report_nm && (
-        item.report_nm.includes('대량보유') ||
-        item.report_nm.includes('주요주주')
-      )
+      item.flr_nm && item.flr_nm.includes('국민연금공단')
     );
 
     results.push(...npsItems);
