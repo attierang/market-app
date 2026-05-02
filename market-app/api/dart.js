@@ -8,6 +8,7 @@ const CORS = {
 
 const GITHUB_RAW = 'https://raw.githubusercontent.com/attierang/market-app/main/market-app/market-app/data/';
 
+
 export default async function handler(req) {
   const u = new URL(req.url);
   const type = u.searchParams.get('type') || 'major';
