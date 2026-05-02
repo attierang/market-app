@@ -57,7 +57,7 @@ export default async function handler(req, res) {
 
     if (type === 'major') {
       const result = await dartFetch(
-        'majorstock.json?corp_code=' + NPS_CORP_CODE + '&bgn_de=' + start + '&end_de=' + end,
+        'majorstock.json?corp_code=' + NPS_CORP_CODE,
         key
       );
       data = parseList(result.list);
