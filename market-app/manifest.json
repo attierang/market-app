@@ -1,0 +1,27 @@
+{
+  "name": "마켓 대시보드",
+  "short_name": "마켓",
+  "description": "한국·글로벌 지수, 금리 리포트, 국민연금 포트폴리오, 관심종목",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "lang": "ko",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance"],
+  "screenshots": []
+}
