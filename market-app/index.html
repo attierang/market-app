@@ -436,25 +436,14 @@
 
   <!-- ── 관심종목 ── -->
   <div class="scroll-area" id="tab-watch" style="display:none;">
-    <div class="watch-list" id="watchlist">
-      <div class="watch-item">
-        <div class="watch-icon">삼전</div>
-        <div class="watch-info"><div class="watch-name">삼성전자</div><div class="watch-code">005930 · KRX</div></div>
-        <div class="watch-right"><div class="watch-price">61,300원</div><div class="watch-chg up">▲ 1.32%</div></div>
-      </div>
-      <div class="watch-item">
-        <div class="watch-icon">NVDA</div>
-        <div class="watch-info"><div class="watch-name">엔비디아</div><div class="watch-code">NVDA · NASDAQ</div></div>
-        <div class="watch-right"><div class="watch-price">$112.40</div><div class="watch-chg up">▲ 2.87%</div></div>
-      </div>
-      <div class="watch-item">
-        <div class="watch-icon">카카오</div>
-        <div class="watch-info"><div class="watch-name">카카오</div><div class="watch-code">035720 · KRX</div></div>
-        <div class="watch-right"><div class="watch-price">42,750원</div><div class="watch-chg down">▼ 0.58%</div></div>
-      </div>
+    <!-- 상단 상태바 -->
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+      <span id="watch-status" style="font-size:11px;color:var(--text-secondary);">불러오는 중...</span>
+      <button onclick="refreshAll()" style="font-size:12px;background:none;border:0.5px solid var(--border);border-radius:20px;padding:4px 10px;color:var(--text-secondary);cursor:pointer;">↻ 새로고침</button>
     </div>
+    <div class="watch-list" id="watchlist"></div>
     <button class="add-btn" onclick="openModal()">＋ 종목 추가</button>
-    <p class="watch-note">현재 예시 데이터입니다. 실시간 시세 연동은 Yahoo Finance API 프록시 또는 한국투자증권 Open API 연결 후 이용 가능합니다.</p>
+    <p class="watch-note" style="margin-top:10px;">코스피: 종목코드 6자리 입력 (예: 005930)<br>코스닥: 종목코드 6자리 입력 (예: 035720)<br>미국주식: 티커 입력 (예: AAPL, NVDA, TSLA)</p>
   </div>
 </div>
 
@@ -463,25 +452,39 @@
   <div class="modal">
     <div class="modal-handle"></div>
     <div class="modal-title">관심종목 추가</div>
-    <div class="suggest-item" onclick="addStock('SK하이닉스','000660','KRX','145,500원','▲ 3.21%','up')"><span>SK하이닉스</span><span class="suggest-code">000660</span></div>
-    <div class="suggest-item" onclick="addStock('TSMC','TSM','NYSE','$178.20','▲ 1.44%','up')"><span>TSMC</span><span class="suggest-code">TSM</span></div>
-    <div class="suggest-item" onclick="addStock('현대차','005380','KRX','215,000원','▼ 0.93%','down')"><span>현대차</span><span class="suggest-code">005380</span></div>
-    <div class="suggest-item" onclick="addStock('애플','AAPL','NASDAQ','$178.50','▲ 1.21%','up')"><span>애플</span><span class="suggest-code">AAPL</span></div>
-    <input class="modal-input" id="custom-input" placeholder="종목명 또는 코드 직접 입력..." />
+    <div style="font-size:11px;color:var(--text-secondary);margin-bottom:10px;">추천 종목을 탭하거나 직접 입력하세요</div>
+
+    <div style="font-size:11px;font-weight:600;color:var(--text-tertiary);margin-bottom:6px;">🇰🇷 한국주식</div>
+    <div class="suggest-item" onclick="addBySymbol('005930.KS','삼성전자','005930','KOSPI')">삼성전자 <span class="suggest-code">005930</span></div>
+    <div class="suggest-item" onclick="addBySymbol('000660.KS','SK하이닉스','000660','KOSPI')">SK하이닉스 <span class="suggest-code">000660</span></div>
+    <div class="suggest-item" onclick="addBySymbol('005380.KS','현대차','005380','KOSPI')">현대차 <span class="suggest-code">005380</span></div>
+    <div class="suggest-item" onclick="addBySymbol('035720.KQ','카카오','035720','KOSDAQ')">카카오 <span class="suggest-code">035720</span></div>
+    <div class="suggest-item" onclick="addBySymbol('247540.KQ','에코프로비엠','247540','KOSDAQ')">에코프로비엠 <span class="suggest-code">247540</span></div>
+
+    <div style="font-size:11px;font-weight:600;color:var(--text-tertiary);margin:12px 0 6px;">🇺🇸 미국주식</div>
+    <div class="suggest-item" onclick="addBySymbol('NVDA','엔비디아','NVDA','NASDAQ')">엔비디아 <span class="suggest-code">NVDA</span></div>
+    <div class="suggest-item" onclick="addBySymbol('AAPL','애플','AAPL','NASDAQ')">애플 <span class="suggest-code">AAPL</span></div>
+    <div class="suggest-item" onclick="addBySymbol('TSLA','테슬라','TSLA','NASDAQ')">테슬라 <span class="suggest-code">TSLA</span></div>
+    <div class="suggest-item" onclick="addBySymbol('MSFT','마이크로소프트','MSFT','NASDAQ')">마이크로소프트 <span class="suggest-code">MSFT</span></div>
+    <div class="suggest-item" onclick="addBySymbol('PLTR','팔란티어','PLTR','NASDAQ')">팔란티어 <span class="suggest-code">PLTR</span></div>
+
+    <div style="font-size:11px;color:var(--text-secondary);margin:14px 0 6px;">직접 입력 (코스피/코스닥: 6자리 숫자, 미국: 티커)</div>
+    <input class="modal-input" id="custom-symbol" placeholder="예: 035420 또는 GOOGL" />
+    <input class="modal-input" id="custom-name" placeholder="종목 이름 (선택)" style="margin-top:6px;" />
     <div class="modal-actions">
       <button class="btn-cancel" onclick="closeModal()">취소</button>
-      <button class="btn-add" onclick="addCustom()">추가</button>
+      <button class="btn-add" onclick="addCustom()">추가 →</button>
     </div>
   </div>
 </div>
 
 <script>
-  // 오늘 날짜
+  // ── 날짜 ──
   const d = new Date();
   document.getElementById('today-date').textContent =
     d.getFullYear() + '.' + String(d.getMonth()+1).padStart(2,'0') + '.' + String(d.getDate()).padStart(2,'0');
 
-  // 탭 전환
+  // ── 탭 전환 ──
   const tabs = ['kr','rates','nps','watch'];
   function switchTab(tab) {
     tabs.forEach(t => {
@@ -490,55 +493,179 @@
     document.querySelectorAll('.tab').forEach((el, i) => {
       el.classList.toggle('active', tabs[i] === tab);
     });
-    // scroll-area needs flex direction column
     const el = document.getElementById('tab-' + tab);
     if (el) el.style.flexDirection = 'column';
+    if (tab === 'watch') refreshAll();
   }
 
-  // 관심종목 로컬스토리지 저장
-  function saveWatchlist() {
-    const items = [];
-    document.querySelectorAll('#watchlist .watch-item').forEach(el => {
-      items.push(el.outerHTML);
-    });
-    localStorage.setItem('watchlist', JSON.stringify(items));
+  // ── 관심종목 데이터 (로컬스토리지) ──
+  // 형식: [{ symbol:'005930.KS', name:'삼성전자', displayCode:'005930', market:'KOSPI' }, ...]
+  const DEFAULT_WATCHLIST = [
+    { symbol:'005930.KS', name:'삼성전자',  displayCode:'005930', market:'KOSPI'  },
+    { symbol:'NVDA',      name:'엔비디아',  displayCode:'NVDA',   market:'NASDAQ' },
+    { symbol:'035720.KQ', name:'카카오',    displayCode:'035720', market:'KOSDAQ' },
+  ];
+
+  function loadStocks() {
+    try {
+      const s = localStorage.getItem('stocks_v2');
+      return s ? JSON.parse(s) : DEFAULT_WATCHLIST;
+    } catch { return DEFAULT_WATCHLIST; }
   }
-  function loadWatchlist() {
-    const saved = localStorage.getItem('watchlist');
-    if (saved) {
-      document.getElementById('watchlist').innerHTML = JSON.parse(saved).join('');
+  function saveStocks(list) {
+    localStorage.setItem('stocks_v2', JSON.stringify(list));
+  }
+
+  let stockList = loadStocks();
+
+  // ── 한국 종목코드 → Yahoo 심볼 변환 ──
+  function toYahooSymbol(input) {
+    const clean = input.trim().toUpperCase();
+    // 이미 .KS / .KQ 붙어있으면 그대로
+    if (clean.endsWith('.KS') || clean.endsWith('.KQ')) return clean;
+    // 6자리 숫자면 한국 주식
+    if (/^\d{6}$/.test(clean)) {
+      // 코스닥 주요 종목 판별 (간이)
+      const kosdaq = ['035720','035420','247540','196170','086520','373220','028300','263750','112040'];
+      return kosdaq.includes(clean) ? clean + '.KQ' : clean + '.KS';
     }
+    return clean; // 미국 티커
   }
-  loadWatchlist();
 
-  function addStock(name, code, exchange, price, chg, dir) {
-    const abbr = name.slice(0,2);
-    const item = document.createElement('div');
-    item.className = 'watch-item';
-    item.innerHTML = `<div class="watch-icon">${abbr}</div>
-      <div class="watch-info"><div class="watch-name">${name}</div><div class="watch-code">${code} · ${exchange}</div></div>
-      <div class="watch-right"><div class="watch-price">${price}</div><div class="watch-chg ${dir}">${chg}</div></div>`;
-    document.getElementById('watchlist').appendChild(item);
-    saveWatchlist();
+  // ── 가격 포맷 ──
+  function fmtPrice(price, currency) {
+    if (price == null) return '–';
+    if (currency === 'KRW') return price.toLocaleString('ko-KR') + '원';
+    return '$' + price.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+  function fmtPct(pct) {
+    if (pct == null) return '–';
+    const sign = pct >= 0 ? '▲ +' : '▼ ';
+    return sign + Math.abs(pct).toFixed(2) + '%';
+  }
+
+  // ── 시세 API 호출 ──
+  async function fetchQuotes(symbols) {
+    const res = await fetch('/api/quote?symbols=' + encodeURIComponent(symbols.join(',')));
+    if (!res.ok) throw new Error('API 오류');
+    const json = await res.json();
+    if (!json.ok) throw new Error(json.error);
+    return json.data; // [{symbol, name, price, changePct, currency, marketState}]
+  }
+
+  // ── 카드 렌더링 ──
+  function renderWatchlist(quoteMap) {
+    const container = document.getElementById('watchlist');
+    container.innerHTML = '';
+    stockList.forEach((stock, idx) => {
+      const q = quoteMap[stock.symbol];
+      const abbr = stock.name.slice(0, 2);
+      const isUp = q && q.changePct >= 0;
+      const isLoading = !q;
+      const isClosed = q && q.marketState === 'CLOSED';
+
+      const item = document.createElement('div');
+      item.className = 'watch-item';
+      item.style.position = 'relative';
+      item.innerHTML = `
+        <div class="watch-icon">${abbr}</div>
+        <div class="watch-info">
+          <div class="watch-name">${stock.name}</div>
+          <div class="watch-code">${stock.displayCode} · ${stock.market}${isClosed ? ' · 장마감' : ''}</div>
+        </div>
+        <div class="watch-right">
+          <div class="watch-price">${isLoading ? '···' : fmtPrice(q.price, q.currency)}</div>
+          <div class="watch-chg ${isLoading ? '' : isUp ? 'up' : 'down'}">
+            ${isLoading ? '불러오는 중' : fmtPct(q.changePct)}
+          </div>
+        </div>
+        <button onclick="removeStock(${idx})" style="position:absolute;top:8px;right:8px;background:none;border:none;font-size:16px;color:var(--text-tertiary);cursor:pointer;line-height:1;padding:2px 6px;">×</button>`;
+      container.appendChild(item);
+    });
+  }
+
+  // ── 전체 새로고침 ──
+  let refreshTimer = null;
+  async function refreshAll() {
+    if (stockList.length === 0) {
+      document.getElementById('watchlist').innerHTML = '<p style="text-align:center;color:var(--text-secondary);padding:30px 0;font-size:14px;">관심종목을 추가해보세요</p>';
+      document.getElementById('watch-status').textContent = '종목 없음';
+      return;
+    }
+    document.getElementById('watch-status').textContent = '업데이트 중...';
+    // 일단 로딩 상태로 렌더
+    renderWatchlist({});
+    try {
+      const symbols = stockList.map(s => s.symbol);
+      const quotes = await fetchQuotes(symbols);
+      const quoteMap = {};
+      quotes.forEach(q => { quoteMap[q.symbol] = q; });
+      renderWatchlist(quoteMap);
+      const now = new Date();
+      document.getElementById('watch-status').textContent =
+        `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')} 업데이트`;
+    } catch (err) {
+      document.getElementById('watch-status').textContent = '오류: ' + err.message;
+    }
+    // 60초마다 자동 갱신
+    clearTimeout(refreshTimer);
+    refreshTimer = setTimeout(refreshAll, 60000);
+  }
+
+  // ── 종목 삭제 ──
+  function removeStock(idx) {
+    stockList.splice(idx, 1);
+    saveStocks(stockList);
+    refreshAll();
+  }
+
+  // ── 종목 추가 (추천 클릭) ──
+  function addBySymbol(symbol, name, displayCode, market) {
+    if (stockList.find(s => s.symbol === symbol)) {
+      alert('이미 추가된 종목이에요!'); return;
+    }
+    stockList.push({ symbol, name, displayCode, market });
+    saveStocks(stockList);
     closeModal();
-  }
-  function addCustom() {
-    const val = document.getElementById('custom-input').value.trim();
-    if (!val) return;
-    addStock(val, '–', '–', '–', '–', '');
+    refreshAll();
   }
 
-  // 모달
+  // ── 종목 추가 (직접 입력) ──
+  function addCustom() {
+    const raw = document.getElementById('custom-symbol').value.trim();
+    const name = document.getElementById('custom-name').value.trim();
+    if (!raw) { alert('종목코드를 입력해주세요'); return; }
+
+    const symbol = toYahooSymbol(raw);
+    const displayCode = raw.replace(/\.(KS|KQ)$/i, '');
+    const market = symbol.endsWith('.KQ') ? 'KOSDAQ' : symbol.endsWith('.KS') ? 'KOSPI' : 'NASDAQ';
+    const stockName = name || displayCode;
+
+    if (stockList.find(s => s.symbol === symbol)) {
+      alert('이미 추가된 종목이에요!'); return;
+    }
+    stockList.push({ symbol, name: stockName, displayCode, market });
+    saveStocks(stockList);
+    closeModal();
+    refreshAll();
+  }
+
+  // ── 모달 ──
   function openModal() { document.getElementById('modal').classList.add('open'); }
   function closeModal() {
     document.getElementById('modal').classList.remove('open');
-    document.getElementById('custom-input').value = '';
+    document.getElementById('custom-symbol').value = '';
+    document.getElementById('custom-name').value = '';
   }
   function handleOverlayClick(e) {
     if (e.target === document.getElementById('modal')) closeModal();
   }
 
-  // PWA 설치 안내 (iOS)
+  // ── 초기 로드 ──
+  // 관심종목 탭이 처음 활성화될 때 데이터 로드
+  refreshAll();
+
+  // ── PWA 설치 안내 (iOS) ──
   if (navigator.standalone === false && /iphone|ipad|ipod/i.test(navigator.userAgent)) {
     const banner = document.createElement('div');
     banner.style.cssText = 'position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#1c1c1e;color:#fff;padding:10px 16px;border-radius:12px;font-size:12px;z-index:300;text-align:center;max-width:280px;line-height:1.5;';
@@ -547,7 +674,7 @@
     setTimeout(() => banner.remove(), 5000);
   }
 
-  // Service Worker 등록
+  // ── Service Worker ──
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js');
   }
