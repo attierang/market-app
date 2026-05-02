@@ -6,7 +6,7 @@ const CORS = {
   'Cache-Control': 's-maxage=3600'
 };
 
-const GITHUB_RAW = 'https://raw.githubusercontent.com/attierang/market-app/main/market-app/market-app/data/';
+const GITHUB_RAW = 'https://raw.githubusercontent.com/attierang/market-app/refs/heads/main/market-app/data/';
 
 
 export default async function handler(req) {
