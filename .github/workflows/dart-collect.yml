@@ -1,0 +1,33 @@
+name: DART 국민연금 공시 수집
+
+on:
+  schedule:
+    - cron: '0 16 * * *'
+  workflow_dispatch:
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 레포 체크아웃
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: DART 공시 수집
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: node market-app/scripts/collect-dart.js
+
+      - name: 변경사항 커밋
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add market-app/data/
+          git diff --staged --quiet || git commit -m "DART 공시 자동 업데이트 $(date '+%Y-%m-%d')"
+          git push
