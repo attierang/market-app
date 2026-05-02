@@ -310,6 +310,21 @@
 
   <!-- ── 국민연금 ── -->
   <div class="scroll-area" id="tab-nps" style="display:none;">
+
+    <!-- 요약 KPI -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;">
+      <div class="card" style="margin-bottom:0;">
+        <div style="font-size:11px;color:var(--text-secondary);margin-bottom:4px;">미국주식 AUM</div>
+        <div style="font-size:20px;font-weight:700;letter-spacing:-0.5px;">$1,351억</div>
+        <div style="font-size:11px;color:var(--text-secondary);margin-top:3px;">≈ 196조원</div>
+      </div>
+      <div class="card" style="margin-bottom:0;">
+        <div style="font-size:11px;color:var(--text-secondary);margin-bottom:4px;">보유 종목 수</div>
+        <div style="font-size:20px;font-weight:700;letter-spacing:-0.5px;">561개</div>
+        <div style="font-size:11px;color:var(--text-secondary);margin-top:3px;">전분기 대비 +9개</div>
+      </div>
+    </div>
+
     <div class="card">
       <div class="card-title">자산 배분 현황 <span class="card-sub">2025년 9월 기준</span></div>
       <div class="pie-wrap">
@@ -329,19 +344,93 @@
         </div>
       </div>
     </div>
+
+    <!-- 미국주식 TOP 보유 - 2025 Q4 최신 -->
     <div class="card">
-      <div class="card-title">미국주식 TOP 보유 <span class="card-sub">SEC 공시 기준</span></div>
-      <div class="nps-row"><span class="nps-rank">1</span><div class="nps-bar-wrap"><div class="nps-name">엔비디아 (NVDA)</div><div class="nps-bar-bg"><div class="nps-bar" style="width:72%;background:#3B6D11;"></div></div></div><span class="nps-pct">7.2%</span></div>
-      <div class="nps-row"><span class="nps-rank">2</span><div class="nps-bar-wrap"><div class="nps-name">애플 (AAPL)</div><div class="nps-bar-bg"><div class="nps-bar" style="width:59%;background:#2563EB;"></div></div></div><span class="nps-pct">5.9%</span></div>
-      <div class="nps-row"><span class="nps-rank">3</span><div class="nps-bar-wrap"><div class="nps-name">마이크로소프트 (MSFT)</div><div class="nps-bar-bg"><div class="nps-bar" style="width:57%;background:#7F77DD;"></div></div></div><span class="nps-pct">5.7%</span></div>
-      <div class="nps-row"><span class="nps-rank">4</span><div class="nps-bar-wrap"><div class="nps-name">아마존 (AMZN)</div><div class="nps-bar-bg"><div class="nps-bar" style="width:32%;background:#E2A800;"></div></div></div><span class="nps-pct">3.2%</span></div>
-      <div class="nps-row"><span class="nps-rank">5</span><div class="nps-bar-wrap"><div class="nps-name">메타 (META)</div><div class="nps-bar-bg"><div class="nps-bar" style="width:25%;background:#D85A30;"></div></div></div><span class="nps-pct">2.5%</span></div>
+      <div class="card-title">미국주식 TOP 보유 <span class="card-sub">SEC 13F · 2025년 4분기</span></div>
+      <div class="nps-row">
+        <span class="nps-rank">1</span>
+        <div class="nps-bar-wrap">
+          <div class="nps-name">엔비디아 (NVDA) <span style="font-size:10px;color:var(--down);margin-left:4px;">▼ 매도 -119만주</span></div>
+          <div class="nps-bar-bg"><div class="nps-bar" style="width:100%;background:#3B6D11;"></div></div>
+        </div>
+        <span class="nps-pct">1위</span>
+      </div>
+      <div class="nps-row">
+        <span class="nps-rank">2</span>
+        <div class="nps-bar-wrap">
+          <div class="nps-name">애플 (AAPL) <span style="font-size:10px;color:var(--down);margin-left:4px;">▼ 매도 -79만주</span></div>
+          <div class="nps-bar-bg"><div class="nps-bar" style="width:86%;background:#2563EB;"></div></div>
+        </div>
+        <span class="nps-pct">2위</span>
+      </div>
+      <div class="nps-row">
+        <span class="nps-rank">3</span>
+        <div class="nps-bar-wrap">
+          <div class="nps-name">마이크로소프트 (MSFT) <span style="font-size:10px;color:var(--down);margin-left:4px;">▼ 매도 -11만주</span></div>
+          <div class="nps-bar-bg"><div class="nps-bar" style="width:80%;background:#7F77DD;"></div></div>
+        </div>
+        <span class="nps-pct">3위</span>
+      </div>
+      <div class="nps-row">
+        <span class="nps-rank">4</span>
+        <div class="nps-bar-wrap">
+          <div class="nps-name">아마존 (AMZN) <span style="font-size:10px;color:var(--up);margin-left:4px;">▲ 매수 +16만주</span></div>
+          <div class="nps-bar-bg"><div class="nps-bar" style="width:55%;background:#E2A800;"></div></div>
+        </div>
+        <span class="nps-pct">4위</span>
+      </div>
+      <div class="nps-row">
+        <span class="nps-rank">5</span>
+        <div class="nps-bar-wrap">
+          <div class="nps-name">알파벳 (GOOGL) <span style="font-size:10px;color:var(--up);margin-left:4px;">▲ 평가액 최대폭↑</span></div>
+          <div class="nps-bar-bg"><div class="nps-bar" style="width:45%;background:#D85A30;"></div></div>
+        </div>
+        <span class="nps-pct">5위</span>
+      </div>
     </div>
+
+    <!-- 4분기 주요 매매 동향 -->
     <div class="card">
-      <div class="card-title">방산주 비중 <span class="card-sub">비중 확대 추세</span></div>
-      <div class="row"><span class="row-name">록히드마틴 (LMT)</span><span class="row-val up">▲ 2.8%</span></div>
-      <div class="row"><span class="row-name">RTX</span><span class="row-val up">▲ 2.8%</span></div>
-      <div class="row"><span class="row-name">L3해리스 (LHX)</span><span class="row-val up">▲ 4.1%</span></div>
+      <div class="card-title">2025 Q4 주요 매매 <span class="card-sub">2026.02.10 SEC 제출</span></div>
+      <div style="font-size:11px;font-weight:600;color:var(--up);margin-bottom:6px;">▲ 신규·확대 매수</div>
+      <div class="row">
+        <div><div class="row-name">팔란티어 (PLTR)</div><div class="row-sub">+194만주 · AI 소프트웨어</div></div>
+        <span class="row-val up">+64.8%</span>
+      </div>
+      <div class="row">
+        <div><div class="row-name">브로드컴 (AVGO)</div><div class="row-sub">+32만주 · AI 반도체 대안</div></div>
+        <span class="row-val up">신규 10위</span>
+      </div>
+      <div class="row">
+        <div><div class="row-name">원오케이 (OKE)</div><div class="row-sub">+49만주 · 천연가스 미드스트림</div></div>
+        <span class="row-val up">신규</span>
+      </div>
+      <div class="row">
+        <div><div class="row-name">킨더모건 (KMI)</div><div class="row-sub">+163만주 · 천연가스 인프라</div></div>
+        <span class="row-val up">신규</span>
+      </div>
+      <div style="font-size:11px;font-weight:600;color:var(--down);margin:10px 0 6px;">▼ 차익실현 매도</div>
+      <div class="row">
+        <div><div class="row-name">엔비디아 (NVDA)</div><div class="row-sub">차익 약 $1.6억</div></div>
+        <span class="row-val down">-119만주</span>
+      </div>
+      <div class="row">
+        <div><div class="row-name">애플 (AAPL)</div><div class="row-sub">차익 약 $2억</div></div>
+        <span class="row-val down">-79만주</span>
+      </div>
+      <div class="row" style="border-bottom:none;">
+        <div><div class="row-name">마이크로소프트 (MSFT)</div><div class="row-sub">차익 약 $0.46억</div></div>
+        <span class="row-val down">-11만주</span>
+      </div>
+    </div>
+
+    <div class="context-box">
+      <strong>4분기 전략 요약</strong>: AI 하드웨어(엔비디아)→ AI 소프트웨어(팔란티어·브로드컴)로 비중 이동. 트럼프 수혜 천연가스 미드스트림 신규 편입. 해외주식 수익률 29.72% (국내주식 -4.94% 대비 압도적).
+    </div>
+
+    <div style="font-size:11px;color:var(--text-tertiary);text-align:center;padding-bottom:16px;">
+      출처: SEC 13F 공시 (2026.02.10 제출) · 분기별 45일 후 공개
     </div>
   </div>
 
