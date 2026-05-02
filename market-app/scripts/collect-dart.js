@@ -29,7 +29,7 @@ async function dartFetch(url) {
 
 // 전체 공시 목록에서 국민연금 필터링
 async function collectMajorStock() {
-  const { start, end } = getDateRange(90);
+  const { start, end } = getDateRange(85);
   const results = [];
   let page = 1;
   let totalPage = 1;
