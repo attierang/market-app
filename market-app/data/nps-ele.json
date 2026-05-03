@@ -1,5 +1,182 @@
 {
-  "updated_at": "2026-05-03T03:31:26.268Z",
-  "count": 0,
-  "data": []
+  "updated_at": "2026-05-03T03:52:34.382Z",
+  "count": 16,
+  "data": [
+    {
+      "corp_name": "대주전자재료",
+      "stock_code": "078600",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260430",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "SBS",
+      "stock_code": "034120",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260430",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "케이씨씨",
+      "stock_code": "002380",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260430",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "한화엔진",
+      "stock_code": "082740",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260430",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "대주전자재료",
+      "stock_code": "078600",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260430",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "현대건설",
+      "stock_code": "000720",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260428",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "두산",
+      "stock_code": "000150",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260428",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "케이씨씨",
+      "stock_code": "002380",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260428",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "코오롱인더",
+      "stock_code": "120110",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260427",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "비에이치",
+      "stock_code": "090460",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260427",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "LG이노텍",
+      "stock_code": "011070",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260427",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "HL만도",
+      "stock_code": "204320",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260420",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "DL이앤씨",
+      "stock_code": "375500",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260420",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "대주전자재료",
+      "stock_code": "078600",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260415",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "롯데관광개발",
+      "stock_code": "032350",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260415",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    },
+    {
+      "corp_name": "롯데관광개발",
+      "stock_code": "032350",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260415",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 0,
+      "type": "sell"
+    }
+  ]
 }
