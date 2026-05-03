@@ -1,17 +1,67 @@
 {
-  "updated_at": "2026-03-31T00:00:00.000Z",
-  "quarter": "2025년 4분기",
-  "count": 10,
+  "quarter": "2024년 말 기준",
+  "updated_at": "2026-05-03T17:06:03.529Z",
+  "source": "fund.nps.or.kr",
   "data": [
-    { "corp_name": "삼성생명", "stock_code": "032830", "ratio": 12.45, "value_kr": 8200 },
-    { "corp_name": "NAVER", "stock_code": "035420", "ratio": 10.88, "value_kr": 7100 },
-    { "corp_name": "SK하이닉스", "stock_code": "000660", "ratio": 9.14, "value_kr": 18400 },
-    { "corp_name": "KB금융", "stock_code": "105560", "ratio": 8.03, "value_kr": 6300 },
-    { "corp_name": "삼성전자", "stock_code": "005930", "ratio": 8.72, "value_kr": 26300 },
-    { "corp_name": "현대차", "stock_code": "005380", "ratio": 7.55, "value_kr": 9100 },
-    { "corp_name": "삼성바이오로직스", "stock_code": "207940", "ratio": 7.10, "value_kr": 5800 },
-    { "corp_name": "기아", "stock_code": "000270", "ratio": 7.21, "value_kr": 7200 },
-    { "corp_name": "셀트리온", "stock_code": "068270", "ratio": 6.21, "value_kr": 4900 },
-    { "corp_name": "LG에너지솔루션", "stock_code": "373220", "ratio": 6.88, "value_kr": 8600 }
+    {
+      "rank": 1,
+      "corp_name": "삼성전자",
+      "value_kr": 230421,
+      "ratio": 7.26
+    },
+    {
+      "rank": 2,
+      "corp_name": "SK하이닉스",
+      "value_kr": 95627,
+      "ratio": 7.55
+    },
+    {
+      "rank": 3,
+      "corp_name": "LG에너지솔루션",
+      "value_kr": 51706,
+      "ratio": 6.35
+    },
+    {
+      "rank": 4,
+      "corp_name": "삼성바이오로직스",
+      "value_kr": 46721,
+      "ratio": 6.92
+    },
+    {
+      "rank": 5,
+      "corp_name": "현대차",
+      "value_kr": 33529,
+      "ratio": 7.55
+    },
+    {
+      "rank": 6,
+      "corp_name": "기아",
+      "value_kr": 28589,
+      "ratio": 7.14
+    },
+    {
+      "rank": 7,
+      "corp_name": "NAVER",
+      "value_kr": 28134,
+      "ratio": 8.94
+    },
+    {
+      "rank": 8,
+      "corp_name": "셀트리온",
+      "value_kr": 27624,
+      "ratio": 6.79
+    },
+    {
+      "rank": 9,
+      "corp_name": "KB금융",
+      "value_kr": 27405,
+      "ratio": 8.4
+    },
+    {
+      "rank": 10,
+      "corp_name": "신한지주",
+      "value_kr": 20547,
+      "ratio": 8.56
+    }
   ]
 }
