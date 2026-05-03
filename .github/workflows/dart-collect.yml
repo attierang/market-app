@@ -24,8 +24,11 @@ jobs:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: node market-app/scripts/collect-dart.js
 
-      - name: SEC 13F 수집
+      - name: SEC 13F 수집 (미국주식)
         run: node market-app/scripts/collect-sec.js
+
+      - name: NPS 국내주식 전체 보유 수집
+        run: node market-app/scripts/collect-nps-domestic.js
 
       - name: 변경사항 커밋
         run: |
