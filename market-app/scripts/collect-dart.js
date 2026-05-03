@@ -92,9 +92,9 @@ async function main() {
       const item = majorList[i];
       const d = await fetchDetail(item.corp_code, item.rcept_no, 'major');
       const curRatio  = d ? parseFloat(d.trmnd_posestn_stock_qota_rt || d.stkrt || '0') : 0;
-      const prevRatio = d ? parseFloat(d.bsis_posestn_stock_qota_rt  || '0') : 0;
+      const prevRatio = d ? parseFloat(d.bsis_posestn_stock_qota_rt || '0') : 0;
       const curCnt    = d ? parseInt((d.trmnd_posestn_stock_co || '0').toString().replace(/,/g, '')) : 0;
-      const prevCnt   = d ? parseInt((d.bsis_posestn_stock_co  || '0').toString().replace(/,/g, '')) : 0;
+      const prevCnt   = d ? parseInt((d.bsis_posestn_stock_co || '0').toString().replace(/,/g, '')) : 0;
       const change    = parseFloat((curRatio - prevRatio).toFixed(4));
       majorDetailed.push({
         corp_name:   item.corp_name,
@@ -114,9 +114,9 @@ async function main() {
     for (let i = 0; i < Math.min(eleList.length, 50); i++) {
       const item = eleList[i];
       const d = await fetchDetail(item.corp_code, item.rcept_no, 'ele');
-      const ratio  = d ? parseFloat(d.sp_stock_lmp_rate      || '0') : 0;
-      const change = d ? parseFloat(d.sp_stock_lmp_irds_rate  || '0') : 0;
-      const cnt    = d ? parseInt((d.sp_stock_lmp_irds_cnt    || '0').toString().replace(/,/g, '')) : 0;
+      const ratio  = d ? parseFloat(d.sp_stock_lmp_rate || '0') : 0;
+      const change = d ? parseFloat(d.sp_stock_lmp_irds_rate || '0') : 0;
+      const cnt    = d ? parseInt((d.sp_stock_lmp_irds_cnt || '0').toString().replace(/,/g, '')) : 0;
       eleDetailed.push({
         corp_name:   item.corp_name,
         stock_code:  item.stock_code,
