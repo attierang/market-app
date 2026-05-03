@@ -341,11 +341,6 @@
       <div style="font-size:11px;color:var(--text-secondary);margin-bottom:10px;line-height:1.6;">
         5% 이상 지분 변동 공시 · DART 실시간 자동 업데이트
       </div>
-      <div style="display:flex;gap:6px;margin-bottom:10px;">
-        <button class="nps-filter active" onclick="filterNps('major','all')" id="mf-all">전체</button>
-        <button class="nps-filter" onclick="filterNps('major','buy')" id="mf-buy">매수</button>
-        <button class="nps-filter" onclick="filterNps('major','sell')" id="mf-sell">매도</button>
-      </div>
       <div id="major-list"><div class="nps-loading">불러오는 중...</div></div>
     </div>
 
@@ -353,11 +348,6 @@
     <div id="nps-ele" style="display:none;">
       <div style="font-size:11px;color:var(--text-secondary);margin-bottom:10px;line-height:1.6;">
         10% 이상 주요주주 변동 공시 · DART 실시간 자동 업데이트
-      </div>
-      <div style="display:flex;gap:6px;margin-bottom:10px;">
-        <button class="nps-filter active" onclick="filterNps('ele','all')" id="ef-all">전체</button>
-        <button class="nps-filter" onclick="filterNps('ele','buy')" id="ef-buy">매수</button>
-        <button class="nps-filter" onclick="filterNps('ele','sell')" id="ef-sell">매도</button>
       </div>
       <div id="ele-list"><div class="nps-loading">불러오는 중...</div></div>
     </div>
@@ -818,42 +808,40 @@
       };
     });
     npsData[type] = data;
-    renderDartList(type, data, 'all');
+    renderDartList(type, data);
   } catch (err) {
     if (listEl) listEl.innerHTML = '<div class="nps-loading" style="color:var(--up);">오류: ' + err.message + '</div>';
   }
 }
 
-  function renderDartList(type, data, filter) {
+  function renderDartList(type, data) {
     const listEl = document.getElementById(type + '-list');
     if (!listEl) return;
 
-    const filtered = filter === 'all' ? data : data.filter(function(d) { return d.type === filter; });
-
-    if (filtered.length === 0) {
+    if (!data || data.length === 0) {
       listEl.innerHTML = '<div class="nps-loading">최근 90일 공시 내역이 없어요</div>';
       return;
     }
 
     listEl.innerHTML = '';
-    filtered.forEach(function(item) {
-      const isBuy = item.type === 'buy';
-      const changeSign = isBuy ? '+' : '';
+    data.forEach(function(item) {
+      const ratio      = isNaN(parseFloat(item.ratio))       ? 0 : parseFloat(item.ratio);
+      const change     = isNaN(parseFloat(item.changeRatio)) ? 0 : parseFloat(item.changeRatio);
+      const cnt        = isNaN(parseInt(item.stockCount))    ? 0 : Math.abs(parseInt(item.stockCount));
+      const changeSign = change >= 0 ? '+' : '';
+      const changeClass = change >= 0 ? 'up' : 'down';
       const date = item.reportDate ? item.reportDate.slice(0,4) + '.' + item.reportDate.slice(4,6) + '.' + item.reportDate.slice(6,8) : '';
       const div = document.createElement('div');
       div.className = 'dart-item';
       div.innerHTML =
         '<div class="dart-header">' +
-          '<div>' +
-            '<div class="dart-name">' + item.name + '</div>' +
-            '<div class="dart-date">' + date + '</div>' +
-          '</div>' +
-          '<span class="dart-badge ' + item.type + '">' + (isBuy ? '▲ 매수' : '▼ 매도') + '</span>' +
+          '<div class="dart-name">' + item.name + '</div>' +
+          '<div class="dart-date">' + date + '</div>' +
         '</div>' +
         '<div class="dart-detail">' +
-          '<div class="dart-stat"><div class="dart-stat-label">보유 지분율</div><div class="dart-stat-val">' + item.ratio.toFixed(2) + '%</div></div>' +
-          '<div class="dart-stat"><div class="dart-stat-label">지분 변동</div><div class="dart-stat-val ' + (isBuy ? 'up' : 'down') + '">' + changeSign + item.changeRatio.toFixed(2) + '%</div></div>' +
-          '<div class="dart-stat"><div class="dart-stat-label">변동 주식수</div><div class="dart-stat-val">' + Math.abs(item.change).toLocaleString() + '주</div></div>' +
+          '<div class="dart-stat"><div class="dart-stat-label">보유 지분율</div><div class="dart-stat-val">' + ratio.toFixed(2) + '%</div></div>' +
+          '<div class="dart-stat"><div class="dart-stat-label">지분 변동</div><div class="dart-stat-val ' + changeClass + '">' + changeSign + change.toFixed(2) + '%</div></div>' +
+          '<div class="dart-stat"><div class="dart-stat-label">변동 주식수</div><div class="dart-stat-val">' + cnt.toLocaleString() + '주</div></div>' +
         '</div>';
       listEl.appendChild(div);
     });
