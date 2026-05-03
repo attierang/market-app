@@ -1,7 +1,129 @@
 {
-  "quarter": "",
-  "filed_at": "",
-  "updated_at": "",
-  "buys": [],
-  "sells": []
+  "updated_at": "2026-05-03T17:33:40.098Z",
+  "quarter": "2025 Q4",
+  "filed_at": "2026-02-10",
+  "buys": [
+    {
+      "name_en": "INVESCO EXCH TRADED FD TR II PURBTA MSCI US",
+      "name_ko": "INVESCO EXCH TRADED FD TR II PURBTA MSCI US",
+      "sector": "기타",
+      "current_shares": 47382366,
+      "prev_shares": 0,
+      "change_shares": 47382366,
+      "change_pct": 100,
+      "is_new": true,
+      "is_closed": false,
+      "value_usd": 3243322953000
+    },
+    {
+      "name_en": "NETFLIX INC",
+      "name_ko": "넷플릭스",
+      "sector": "미디어",
+      "current_shares": 9372071,
+      "prev_shares": 927368,
+      "change_shares": 8444703,
+      "change_pct": 910.6,
+      "is_new": false,
+      "is_closed": false,
+      "value_usd": 878725377000
+    },
+    {
+      "name_en": "HEWLETT PACKARD ENTERPRISE C COM",
+      "name_ko": "HEWLETT PACKARD ENTERPRISE C COM",
+      "sector": "기타",
+      "current_shares": 3861635,
+      "prev_shares": 0,
+      "change_shares": 3861635,
+      "change_pct": 100,
+      "is_new": true,
+      "is_closed": false,
+      "value_usd": 92756473000
+    },
+    {
+      "name_en": "TEVA PHARMACEUTICAL INDS LTD SPONSORED ADS",
+      "name_ko": "TEVA PHARMACEUTICAL INDS LTD SPONSORED ADS",
+      "sector": "기타",
+      "current_shares": 3500558,
+      "prev_shares": 0,
+      "change_shares": 3500558,
+      "change_pct": 100,
+      "is_new": true,
+      "is_closed": false,
+      "value_usd": 109252415000
+    },
+    {
+      "name_en": "INTERNATIONAL BUSINESS MACHS COM",
+      "name_ko": "INTERNATIONAL BUSINESS MACHS COM",
+      "sector": "기타",
+      "current_shares": 2267663,
+      "prev_shares": 0,
+      "change_shares": 2267663,
+      "change_pct": 100,
+      "is_new": true,
+      "is_closed": false,
+      "value_usd": 671704457000
+    }
+  ],
+  "sells": [
+    {
+      "name_en": "INVESCO EXCH TRADED FD TR II",
+      "name_ko": "INVESCO EXCH TRADED FD TR II",
+      "sector": "기타",
+      "current_shares": 0,
+      "prev_shares": 47382366,
+      "change_shares": -47382366,
+      "change_pct": -100,
+      "is_new": false,
+      "is_closed": true,
+      "value_usd": 0
+    },
+    {
+      "name_en": "HEWLETT PACKARD ENTERPRISE C",
+      "name_ko": "HEWLETT PACKARD ENTERPRISE C",
+      "sector": "기타",
+      "current_shares": 0,
+      "prev_shares": 3787479,
+      "change_shares": -3787479,
+      "change_pct": -100,
+      "is_new": false,
+      "is_closed": true,
+      "value_usd": 0
+    },
+    {
+      "name_en": "INTERNATIONAL BUSINESS MACHS",
+      "name_ko": "INTERNATIONAL BUSINESS MACHS",
+      "sector": "기타",
+      "current_shares": 0,
+      "prev_shares": 2241113,
+      "change_shares": -2241113,
+      "change_pct": -100,
+      "is_new": false,
+      "is_closed": true,
+      "value_usd": 0
+    },
+    {
+      "name_en": "TEVA PHARMACEUTICAL INDS LTD",
+      "name_ko": "TEVA PHARMACEUTICAL INDS LTD",
+      "sector": "기타",
+      "current_shares": 0,
+      "prev_shares": 2073293,
+      "change_shares": -2073293,
+      "change_pct": -100,
+      "is_new": false,
+      "is_closed": true,
+      "value_usd": 0
+    },
+    {
+      "name_en": "SCHLUMBERGER LTD",
+      "name_ko": "SCHLUMBERGER LTD",
+      "sector": "기타",
+      "current_shares": 0,
+      "prev_shares": 1973518,
+      "change_shares": -1973518,
+      "change_pct": -100,
+      "is_new": false,
+      "is_closed": true,
+      "value_usd": 0
+    }
+  ]
 }
