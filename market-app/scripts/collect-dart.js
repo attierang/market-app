@@ -39,12 +39,12 @@ async function main() {
     let totalPage = 1;
 
     console.log('수집 시작...');
-    while (page <= totalPage && page <= 20) {
+    while (page <= totalPage && page <= 200) {
       const data = await fetchList(page, start, end);
       if (data.status !== '000') { console.log('오류:', data.message); break; }
       totalPage = data.total_page;
       const nps = (data.list || []).filter(function(i) {
-        return i.flr_nm && i.flr_nm.includes('국민연금공단');
+        return i.flr_nm && i.flr_nm.includes('국민연금');
       });
       nps.forEach(function(item) {
         if (item.report_nm.includes('대량보유')) {
