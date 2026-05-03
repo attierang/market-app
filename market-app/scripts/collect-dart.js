@@ -43,6 +43,11 @@ async function main() {
       const data = await fetchList(page, start, end);
       if (data.status !== '000') { console.log('오류:', data.message); break; }
       totalPage = data.total_page;
+          if (page === 1 && data.list && data.list.length > 0) {
+      console.log('🔍 첫 레코드 전체:', JSON.stringify(data.list[0]));
+      const flrNmValues = [...new Set((data.list || []).map(i => i.flr_nm).filter(Boolean))].slice(0, 10);
+      console.log('🔍 flr_nm 샘플값:', JSON.stringify(flrNmValues));
+    }
       const nps = (data.list || []).filter(function(i) {
         return i.flr_nm && i.flr_nm.includes('국민연금');
       });
