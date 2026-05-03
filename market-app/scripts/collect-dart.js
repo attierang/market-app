@@ -87,24 +87,22 @@ async function main() {
 
     console.log('상세 데이터 수집 중...');
 
-    const majorDetailed = [];
+       const majorDetailed = [];
     for (let i = 0; i < Math.min(majorList.length, 50); i++) {
       const item = majorList[i];
       const d = await fetchDetail(item.corp_code, item.rcept_no, 'major');
-      const curRatio  = d ? parseFloat(d.trmnd_posestn_stock_qota_rt || d.stkrt || '0') : 0;
-      const prevRatio = d ? parseFloat(d.bsis_posestn_stock_qota_rt || '0') : 0;
-      const curCnt    = d ? parseInt((d.trmnd_posestn_stock_co || '0').toString().replace(/,/g, '')) : 0;
-      const prevCnt   = d ? parseInt((d.bsis_posestn_stock_co || '0').toString().replace(/,/g, '')) : 0;
-      const change    = parseFloat((curRatio - prevRatio).toFixed(4));
+      const ratio  = d ? parseFloat(d.stkrt || '0') : 0;
+      const change = d ? parseFloat(d.stkrt_irds || '0') : 0;
+      const cnt    = d ? parseInt((d.stkqy_irds || '0').toString().replace(/,/g, '')) : 0;
       majorDetailed.push({
         corp_name:   item.corp_name,
         stock_code:  item.stock_code,
         report_nm:   item.report_nm,
         rcept_dt:    item.rcept_dt,
         flr_nm:      item.flr_nm,
-        ratio:       curRatio,
+        ratio:       ratio,
         change:      change,
-        stock_count: Math.abs(curCnt - prevCnt),
+        stock_count: Math.abs(cnt),
         type:        change >= 0 ? 'buy' : 'sell'
       });
       await new Promise(function(r) { setTimeout(r, 200); });
