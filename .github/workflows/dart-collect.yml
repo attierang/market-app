@@ -33,4 +33,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add market-app/data/
           git diff --staged --quiet || git commit -m "DART 공시 자동 업데이트 $(date '+%Y-%m-%d')"
+          git pull --rebase origin main
           git push
