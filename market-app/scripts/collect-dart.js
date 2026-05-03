@@ -61,7 +61,6 @@ async function main() {
       await new Promise(r => setTimeout(r, 300));
     }
 
-    // 대량보유 상세
     console.log('대량보유 상세 데이터 수집 중...');
     const majorDetailed = [];
     for (const item of majorList.slice(0, 50)) {
@@ -78,7 +77,6 @@ async function main() {
       await new Promise(r => setTimeout(r, 200));
     }
 
-    // 주요주주 상세
     console.log('주요주주 상세 데이터 수집 중...');
     const eleDetailed = [];
     for (const item of eleList.slice(0, 50)) {
