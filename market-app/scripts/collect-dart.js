@@ -22,8 +22,12 @@ async function fetchDetail(rcept_no, type) {
     const url = 'https://opendart.fss.or.kr/api/' + ep + '.json?rcept_no=' + rcept_no + '&crtfc_key=' + KEY;
     const r = await fetch(url);
     const d = await r.json();
-    if (d.status === '000' && d.list && d.list.length > 0) return d.list[0];
-  } catch(e) {}
+    if (d.status === '000' && d.list && d.list.length > 0) {
+      if (rcept_no === rcept_no) console.log('📋 ' + ep + ' 응답샘플:', JSON.stringify(d.list[0]));
+      return d.list[0];
+    }
+    console.log('⚠️ ' + ep + ' 상태:', d.status, d.message);
+  } catch(e) { console.log('❌ fetchDetail 오류:', e.message); }
   return null;
 }
 
