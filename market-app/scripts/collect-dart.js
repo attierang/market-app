@@ -11,7 +11,7 @@ function getDateRange(days) {
 }
 
 async function fetchList(page, start, end) {
-  const url = 'https://opendart.fss.or.kr/api/list.json?bgn_de=' + start + '&end_de=' + end + '&pblntf_ty=C&page_no=' + page + '&page_count=100&crtfc_key=' + KEY;
+  const url = 'https://opendart.fss.or.kr/api/list.json?bgn_de=' + start + '&end_de=' + end + '&page_no=' + page + '&page_count=100&crtfc_key=' + KEY;
   const r = await fetch(url);
   return r.json();
 }
@@ -49,8 +49,9 @@ async function main() {
       console.log('🔍 flr_nm 샘플값:', JSON.stringify(flrNmValues));
     }
       const nps = (data.list || []).filter(function(i) {
-        return i.flr_nm && i.flr_nm.includes('국민연금');
-      });
+  return i.flr_nm && i.flr_nm.includes('국민연금') &&
+    i.report_nm && (i.report_nm.includes('대량보유') || i.report_nm.includes('주요주주') || i.report_nm.includes('임원'));
+});
       nps.forEach(function(item) {
         if (item.report_nm.includes('대량보유')) {
           majorList.push(item);
