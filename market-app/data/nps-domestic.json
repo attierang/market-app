@@ -1,0 +1,17 @@
+{
+  "updated_at": "2026-03-31T00:00:00.000Z",
+  "quarter": "2025년 4분기",
+  "count": 10,
+  "data": [
+    { "corp_name": "삼성생명", "stock_code": "032830", "ratio": 12.45, "value_kr": 8200 },
+    { "corp_name": "NAVER", "stock_code": "035420", "ratio": 10.88, "value_kr": 7100 },
+    { "corp_name": "SK하이닉스", "stock_code": "000660", "ratio": 9.14, "value_kr": 18400 },
+    { "corp_name": "KB금융", "stock_code": "105560", "ratio": 8.03, "value_kr": 6300 },
+    { "corp_name": "삼성전자", "stock_code": "005930", "ratio": 8.72, "value_kr": 26300 },
+    { "corp_name": "현대차", "stock_code": "005380", "ratio": 7.55, "value_kr": 9100 },
+    { "corp_name": "삼성바이오로직스", "stock_code": "207940", "ratio": 7.10, "value_kr": 5800 },
+    { "corp_name": "기아", "stock_code": "000270", "ratio": 7.21, "value_kr": 7200 },
+    { "corp_name": "셀트리온", "stock_code": "068270", "ratio": 6.21, "value_kr": 4900 },
+    { "corp_name": "LG에너지솔루션", "stock_code": "373220", "ratio": 6.88, "value_kr": 8600 }
+  ]
+}
