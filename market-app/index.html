@@ -1177,9 +1177,13 @@
           <div class="card-title">미국주식 TOP 10 보유 <span class="card-sub">SEC 13F · 자동업데이트</span></div>
           <div id="port-us-list"><div class="nps-loading">불러오는 중...</div></div>
         </div>
-        <div class="card" id="port-domestic-card">
-          <div class="card-title">국내주식 TOP 10 보유 <span class="card-sub">DART 공시 기준 · 자동업데이트</span></div>
+                <div class="card" id="port-domestic-card">
+          <div class="card-title">국내주식 TOP 10 보유(이번달) <span class="card-sub">DART 변동공시 기준 · 자동업데이트</span></div>
           <div id="port-domestic-list"><div class="nps-loading">불러오는 중...</div></div>
+        </div>
+        <div class="card" id="port-domestic-all-card">
+          <div class="card-title">국내주식 TOP 10 보유(전체) <span class="card-sub">NPS 공식 보유현황 · 분기업데이트</span></div>
+          <div id="port-domestic-all-list"><div class="nps-loading">불러오는 중...</div></div>
         </div>
         <div class="context-box">
           <strong>4분기 전략 요약</strong>: AI 하드웨어→소프트웨어 비중 이동. 팔란티어·브로드컴 신규 편입. 해외주식 수익률 29.72%.
@@ -1565,28 +1569,20 @@
       }
       if (tab === 'port') {
         loadPortDomestic();
+        loadPortDomesticAll();
         loadPortUS();
       }
     }
 
-    async function loadPortDomestic() {
-      const listEl = document.getElementById('port-domestic-list');
+    async function loadPortDomesticAll() {
+      const listEl = document.getElementById('port-domestic-all-list');
       if (!listEl || listEl.dataset.loaded) return;
       try {
-        const res = await fetch('/data/nps-major.json');
-        if (!res.ok) throw new Error('파일 로드 실패');
+        const res = await fetch('/data/nps-domestic.json');
+        if (!res.ok) throw new Error('파일 로드 실패: ' + res.status);
         const json = await res.json();
 
-        const seen = {};
-        const unique = [];
-        (json.data || []).forEach(function(item) {
-          if (!seen[item.corp_name] && item.ratio > 0) {
-            seen[item.corp_name] = true;
-            unique.push(item);
-          }
-        });
-
-        const top10 = unique.sort(function(a, b) { return b.ratio - a.ratio; }).slice(0, 10);
+        const top10 = (json.data || []).sort(function(a, b) { return b.ratio - a.ratio; }).slice(0, 10);
         const maxRatio = top10.length > 0 ? top10[0].ratio : 1;
         const colors = ['#1428A0','#EA0029','#A50034','#0067AC','#002C5F','#6B6B6B','#00A0E3','#FFAC00','#005BAC','#03C75A'];
 
@@ -1598,9 +1594,7 @@
         listEl.innerHTML = '';
         top10.forEach(function(item, idx) {
           const ratio = parseFloat(item.ratio) || 0;
-          const change = parseFloat(item.change) || 0;
-          const changeSign = change >= 0 ? '+' : '';
-          const changeColor = change >= 0 ? 'var(--up)' : 'var(--down)';
+          const value = item.value_kr ? (item.value_kr / 10000).toFixed(1) + '조' : '';
           const barWidth = Math.round((ratio / maxRatio) * 100);
           const row = document.createElement('div');
           row.className = 'nps-row';
@@ -1608,9 +1602,7 @@
             '<span class="nps-rank">' + (idx + 1) + '</span>' +
             '<div class="nps-bar-wrap">' +
               '<div class="nps-name">' + item.corp_name +
-                '<span style="font-size:10px;color:' + changeColor + ';margin-left:4px;">' +
-                  changeSign + change.toFixed(2) + '%' +
-                '</span>' +
+                (value ? '<span style="font-size:10px;color:var(--text-secondary);margin-left:4px;">' + value + '</span>' : '') +
               '</div>' +
               '<div class="nps-bar-bg"><div class="nps-bar" style="width:' + barWidth + '%;background:' + colors[idx] + ';"></div></div>' +
             '</div>' +
@@ -1618,6 +1610,8 @@
           listEl.appendChild(row);
         });
 
+        const subtitle = document.querySelector('#port-domestic-all-card .card-sub');
+        if (subtitle && json.quarter) subtitle.textContent = json.quarter + ' 기준 · NPS 공식 보유현황';
         listEl.dataset.loaded = '1';
       } catch (e) {
         if (listEl) listEl.innerHTML = '<div class="nps-loading" style="color:var(--up);">오류: ' + e.message + '</div>';
