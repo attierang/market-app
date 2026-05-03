@@ -24,6 +24,9 @@ jobs:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: node market-app/scripts/collect-dart.js
 
+      - name: SEC 13F 수집
+        run: node market-app/scripts/collect-sec.js
+
       - name: 변경사항 커밋
         run: |
           git config --local user.email "action@github.com"
