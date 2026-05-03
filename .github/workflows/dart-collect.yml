@@ -2,7 +2,7 @@ name: DART 국민연금 공시 수집
 
 on:
   schedule:
-    - cron: '0 16 * * *'
+    - cron: '*/30 * * * *'  # 30분마다 실행
   workflow_dispatch:
 
 jobs:
