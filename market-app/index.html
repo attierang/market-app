@@ -799,18 +799,30 @@
   }
 
   async function loadDartData(type) {
-    const listEl = document.getElementById(type + '-list');
-    if (listEl) listEl.innerHTML = '<div class="nps-loading">DART 공시 불러오는 중...</div>';
-    try {
-      const res = await fetch('/api/dart?type=' + type);
-      const json = await res.json();
-      if (!json.ok) throw new Error(json.error);
-      npsData[type] = json.data;
-      renderDartList(type, json.data, 'all');
-    } catch(err) {
-      if (listEl) listEl.innerHTML = '<div class="nps-loading" style="color:var(--up);">오류: ' + err.message + '</div>';
-    }
+  const listEl = document.getElementById(type + '-list');
+  if (listEl) listEl.innerHTML = '<div class="nps-loading">DART 공시 불러오는 중...</div>';
+  try {
+    const res = await fetch('/data/nps-' + type + '.json');
+    if (!res.ok) throw new Error('파일 로드 실패: ' + res.status);
+    const json = await res.json();
+    const data = (json.data || []).map(function(item) {
+      return {
+        name:        item.corp_name   || '',
+        stockCode:   item.stock_code  || '',
+        reportName:  item.report_nm   || '',
+        reportDate:  item.rcept_dt    || '',
+        ratio:       item.ratio       || 0,
+        changeRatio: item.change      || 0,
+        stockCount:  item.stock_count || 0,
+        type:        item.type        || 'buy'
+      };
+    });
+    npsData[type] = data;
+    renderDartList(type, data, 'all');
+  } catch (err) {
+    if (listEl) listEl.innerHTML = '<div class="nps-loading" style="color:var(--up);">오류: ' + err.message + '</div>';
   }
+}
 
   function renderDartList(type, data, filter) {
     const listEl = document.getElementById(type + '-list');
