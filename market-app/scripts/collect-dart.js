@@ -20,10 +20,10 @@ async function fetchList(page, start, end) {
 let majorLogDone = false;
 let eleLogDone = false;
 
-async function fetchDetail(rcept_no, type) {
+async function fetchDetail(corp_code, rcept_no, type) {
   try {
     const ep = type === 'ele' ? 'elestock' : 'majorstock';
-    const url = 'https://opendart.fss.or.kr/api/' + ep + '.json?rcept_no=' + rcept_no + '&crtfc_key=' + KEY;
+    const url = 'https://opendart.fss.or.kr/api/' + ep + '.json?corp_code=' + corp_code + '&rcept_no=' + rcept_no + '&crtfc_key=' + KEY;
     const r = await fetch(url);
     const d = await r.json();
     if (d.status === '000' && d.list && d.list.length > 0) {
@@ -90,7 +90,7 @@ async function main() {
     const majorDetailed = [];
     for (let i = 0; i < Math.min(majorList.length, 50); i++) {
       const item = majorList[i];
-      const d = await fetchDetail(item.rcept_no, 'major');
+      const d = await fetchDetail(item.corp_code, item.rcept_no, 'major');
       const curRatio  = d ? parseFloat(d.trmnd_posestn_stock_qota_rt || d.stkrt || '0') : 0;
       const prevRatio = d ? parseFloat(d.bsis_posestn_stock_qota_rt  || '0') : 0;
       const curCnt    = d ? parseInt((d.trmnd_posestn_stock_co || '0').toString().replace(/,/g, '')) : 0;
@@ -113,7 +113,7 @@ async function main() {
     const eleDetailed = [];
     for (let i = 0; i < Math.min(eleList.length, 50); i++) {
       const item = eleList[i];
-      const d = await fetchDetail(item.rcept_no, 'ele');
+      const d = await fetchDetail(item.corp_code, item.rcept_no, 'ele');
       const ratio  = d ? parseFloat(d.sp_stock_lmp_rate      || '0') : 0;
       const change = d ? parseFloat(d.sp_stock_lmp_irds_rate  || '0') : 0;
       const cnt    = d ? parseInt((d.sp_stock_lmp_irds_cnt    || '0').toString().replace(/,/g, '')) : 0;
