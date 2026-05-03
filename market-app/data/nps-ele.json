@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-03T05:15:48.452Z",
+  "updated_at": "2026-05-03T11:01:21.995Z",
   "count": 50,
   "data": [
     {
@@ -11,7 +11,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "SBS",
@@ -22,7 +22,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "케이씨씨",
@@ -33,7 +33,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "한화엔진",
@@ -44,7 +44,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "대주전자재료",
@@ -55,7 +55,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "현대건설",
@@ -66,7 +66,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "두산",
@@ -77,7 +77,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "케이씨씨",
@@ -88,7 +88,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "코오롱인더",
@@ -99,7 +99,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "비에이치",
@@ -110,7 +110,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "LG이노텍",
@@ -121,7 +121,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "HL만도",
@@ -132,7 +132,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "DL이앤씨",
@@ -143,7 +143,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "대주전자재료",
@@ -154,7 +154,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "롯데관광개발",
@@ -165,7 +165,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "롯데관광개발",
@@ -176,7 +176,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "대주전자재료",
@@ -187,7 +187,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "금호석유화학",
@@ -198,7 +198,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "효성티앤씨",
@@ -209,7 +209,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "씨에스윈드",
@@ -220,7 +220,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "대주전자재료",
@@ -231,7 +231,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "한올바이오파마",
@@ -242,7 +242,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "효성티앤씨",
@@ -253,7 +253,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "코오롱인더",
@@ -264,7 +264,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "대주전자재료",
@@ -275,7 +275,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "효성티앤씨",
@@ -286,7 +286,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "한국콜마",
@@ -297,7 +297,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "LX인터내셔널",
@@ -308,7 +308,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "대덕전자",
@@ -319,7 +319,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "효성중공업",
@@ -330,7 +330,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "HD건설기계",
@@ -341,7 +341,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "코스메카코리아",
@@ -352,7 +352,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "HL만도",
@@ -363,7 +363,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "코스맥스",
@@ -374,7 +374,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "한미약품",
@@ -385,7 +385,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "코오롱인더",
@@ -396,7 +396,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "영원무역",
@@ -407,7 +407,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "한국금융지주",
@@ -418,7 +418,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "현대백화점",
@@ -429,7 +429,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "한전기술",
@@ -440,7 +440,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "키움증권",
@@ -451,7 +451,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "파라다이스",
@@ -462,7 +462,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "SBS",
@@ -473,7 +473,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "롯데관광개발",
@@ -484,7 +484,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "롯데쇼핑",
@@ -495,7 +495,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "한국카본",
@@ -506,7 +506,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "삼성증권",
@@ -517,7 +517,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "한솔케미칼",
@@ -528,7 +528,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "금호석유화학",
@@ -539,7 +539,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "OCI홀딩스",
@@ -550,7 +550,7 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 0,
-      "type": "sell"
+      "type": "buy"
     }
   ]
 }
