@@ -30,6 +30,11 @@ jobs:
       - name: NPS 국내주식 전체 보유 수집
         run: node market-app/scripts/collect-nps-domestic.js
 
+      - name: FRED 금리 데이터 수집
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: node market-app/scripts/collect-rates.js
+        
       - name: 변경사항 커밋
         run: |
           git config --local user.email "action@github.com"
