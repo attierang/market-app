@@ -1,0 +1,23 @@
+{
+  "updated_at": "",
+  "date": "2026-05-01",
+  "us2y": 3.76,
+  "us3y": 4.06,
+  "us5y": 4.22,
+  "us10y": 4.39,
+  "us30y": 4.97,
+  "jp10y": 2.50,
+  "jp10y_date": "",
+  "fed_rate": 3.625,
+  "fed_range": "3.50~3.75%",
+  "iorb": 3.65,
+  "onrrp_rate": 3.50,
+  "onrrp_balance": 80,
+  "rpontsyd": 0,
+  "reserves": 2900,
+  "walcl": 7000000,
+  "wtregen": 981929,
+  "m2": 21500,
+  "spread_us_jp": 1.89,
+  "spread_2y10y": 0.63
+}
