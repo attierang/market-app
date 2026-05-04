@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-04T13:44:25.767Z",
+  "updated_at": "2026-05-04T14:26:13.746Z",
   "date": "2026-04-30",
   "us2y": 3.88,
   "us3y": 3.91,
@@ -21,11 +21,17 @@
   "iorb": 3.65,
   "onrrp_rate": 3.39,
   "onrrp_balance": 0.607,
+  "onrrp_prev": 0.082,
   "rpontsyd": 0.001,
+  "rpontsyd_prev": 0,
   "reserves": 2918.599,
+  "reserves_prev": 2901.825,
   "walcl": 6699950,
+  "walcl_prev": 6707419,
   "wtregen": 981929,
+  "wtregen_prev": 1005968,
   "m2": 22686,
+  "m2_prev": 22627.3,
   "spread_us_jp": 2.06,
   "spread_2y10y": 0.52
 }
