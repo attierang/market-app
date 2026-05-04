@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "app.vercel.market_app_pearl_three.twa",
+    "sha256_cert_fingerprints": [
+      "FF:ED:52:CF:D3:3C:FF:AE:AA:BB:C4:4D:0F:43:35:ED:56:AE:E9:97:F9:9C:0C:93:9A:CE:B7:30:A6:EF:93:79"
+    ]
+  }
+}]
