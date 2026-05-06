@@ -1,7 +1,40 @@
 {
-  "updated_at": "2026-05-05T23:45:22.680Z",
+  "updated_at": "2026-05-06T05:49:15.533Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "하나머티리얼즈",
+      "stock_code": "166090",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260506",
+      "flr_nm": "국민연금공단",
+      "ratio": 46.17,
+      "change": 0,
+      "stock_count": 0,
+      "type": "buy"
+    },
+    {
+      "corp_name": "현대글로비스",
+      "stock_code": "086280",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260506",
+      "flr_nm": "국민연금공단",
+      "ratio": 50.35,
+      "change": 0,
+      "stock_count": 18881748,
+      "type": "buy"
+    },
+    {
+      "corp_name": "CJ대한통운",
+      "stock_code": "000120",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260506",
+      "flr_nm": "국민연금공단",
+      "ratio": 9.33,
+      "change": -1.02,
+      "stock_count": 231442,
+      "type": "sell"
+    },
     {
       "corp_name": "에이치디현대인프라코어",
       "stock_code": "042670",
@@ -517,39 +550,6 @@
       "ratio": 20.73,
       "change": 0,
       "stock_count": 0,
-      "type": "buy"
-    },
-    {
-      "corp_name": "S-Oil",
-      "stock_code": "010950",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260401",
-      "flr_nm": "국민연금공단",
-      "ratio": 8.31,
-      "change": 1.01,
-      "stock_count": 1138560,
-      "type": "buy"
-    },
-    {
-      "corp_name": "이마트",
-      "stock_code": "139480",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260401",
-      "flr_nm": "국민연금공단",
-      "ratio": 5.89,
-      "change": -2.07,
-      "stock_count": 577568,
-      "type": "sell"
-    },
-    {
-      "corp_name": "포스코인터내셔널",
-      "stock_code": "047050",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260401",
-      "flr_nm": "국민연금공단",
-      "ratio": 6.03,
-      "change": 1,
-      "stock_count": 1763568,
       "type": "buy"
     }
   ]
