@@ -1603,40 +1603,50 @@
       return '$' + mc.toLocaleString();
     }
 
-    // ── 시세 API 호출 (한국주식→KIS, 미국주식→Yahoo) ──
+    // ── 시세 API 호출 (한국주식→KIS+Yahoo 병렬, 미국주식→Yahoo) ──
     async function fetchQuotes(symbols) {
       const krSymbols = symbols.filter(s => /\.(KS|KQ)$/i.test(s));
       const usSymbols = symbols.filter(s => !/\.(KS|KQ)$/i.test(s));
       const result = [];
 
-      // 한국 주식: KIS 모의투자 API
+      // 한국 주식: KIS(시세+PER+PBR) + Yahoo(YF PER) 병렬 호출
       if (krSymbols.length > 0) {
         const codes = krSymbols.map(s => s.replace(/\.(KS|KQ)$/i, ''));
-        try {
-          const res = await fetch('/api/kis-quote?symbols=' + encodeURIComponent(codes.join(',')));
-          if (res.ok) {
-            const json = await res.json();
-            if (json.ok) {
-              // KIS 결과를 Yahoo 형식으로 맞춤
-              (json.data || []).forEach(function(q) {
-                // 원래 .KS/.KQ 심볼 찾기
-                const origSymbol = krSymbols.find(s => s.replace(/\.(KS|KQ)$/i,'') === q.symbol) || q.symbol + '.KS';
-                result.push({
-                  symbol:    origSymbol,
-                  name:      q.symbol,
-                  price:     q.price,
-                  change:    q.change,
-                  changePct: q.changePct,
-                  currency:  'KRW',
-                  per:       q.per,
-                  pbr:       q.pbr,
-                  marketCap: q.marketCap,
-                  marketState: null
-                });
-              });
-            }
-          }
-        } catch(e) { console.warn('KIS 오류:', e.message); }
+        const [kisResp, yahooResp] = await Promise.allSettled([
+          fetch('/api/kis-quote?symbols=' + encodeURIComponent(codes.join(','))),
+          fetch('/api/quote?symbols=' + encodeURIComponent(krSymbols.join(',')))
+        ]);
+
+        const kisMap = {};
+        if (kisResp.status === 'fulfilled' && kisResp.value.ok) {
+          const json = await kisResp.value.json();
+          if (json.ok) (json.data || []).forEach(q => { kisMap[q.symbol] = q; });
+        }
+        const yahooMap = {};
+        if (yahooResp.status === 'fulfilled' && yahooResp.value.ok) {
+          const json = await yahooResp.value.json();
+          if (json.ok) (json.data || []).forEach(q => { yahooMap[q.symbol] = q; });
+        }
+
+        krSymbols.forEach(function(origSymbol) {
+          const code = origSymbol.replace(/\.(KS|KQ)$/i, '');
+          const kis = kisMap[code];
+          const yahoo = yahooMap[origSymbol];
+          if (!kis && !yahoo) return;
+          result.push({
+            symbol:    origSymbol,
+            name:      (yahoo && yahoo.name) || code,
+            price:     (kis && kis.price) || (yahoo && yahoo.price) || 0,
+            change:    (kis && kis.change) || (yahoo && yahoo.change) || 0,
+            changePct: (kis && kis.changePct) || (yahoo && yahoo.changePct) || 0,
+            currency:  'KRW',
+            kisPer:    kis ? kis.per : null,
+            per:       yahoo ? yahoo.per : null,   // Yahoo PER
+            pbr:       kis ? kis.pbr : null,
+            marketCap: (kis && kis.marketCap) || (yahoo && yahoo.marketCap) || null,
+            marketState: yahoo ? yahoo.marketState : null
+          });
+        });
       }
 
       // 미국 주식: Yahoo Finance API
@@ -1665,14 +1675,26 @@
         const item = document.createElement('div');
         item.className = 'watch-item';
         item.style.position = 'relative';
-        const perTxt = (!isLoading && q.per != null) ? q.per.toFixed(1) + 'x' : '-';
-        const capTxt = (!isLoading && q.marketCap != null) ? fmtCap(q.marketCap, q.currency) : '-';
+        const isKr = /\.(KS|KQ)$/i.test(stock.symbol);
+        const capTxt = (!isLoading && q && q.marketCap != null) ? fmtCap(q.marketCap, q.currency) : '-';
+        const pbrTxt = (!isLoading && q && q.pbr != null) ? q.pbr.toFixed(1) : '-';
+        let mktInfoTxt;
+        if (isLoading) {
+          mktInfoTxt = 'PER · PBR · 시총 로딩중';
+        } else if (isKr) {
+          const kisPerTxt = (q && q.kisPer != null) ? q.kisPer.toFixed(1) + 'x' : '-';
+          const yfPerTxt  = (q && q.per   != null) ? q.per.toFixed(1)   + 'x' : '-';
+          mktInfoTxt = `PER KIS ${kisPerTxt} / YF ${yfPerTxt}  ·  PBR ${pbrTxt}  ·  시총 ${capTxt}`;
+        } else {
+          const perTxt = (q && q.per != null) ? q.per.toFixed(1) + 'x' : '-';
+          mktInfoTxt = `PER ${perTxt}  ·  PBR ${pbrTxt}  ·  시총 ${capTxt}`;
+        }
         item.innerHTML = `
         <div class="watch-icon">${abbr}</div>
         <div class="watch-info">
           <div class="watch-name">${stock.name}</div>
           <div class="watch-code">${stock.displayCode} · ${stock.market}${isClosed ? ' · 장마감' : ''}</div>
-          <div style="font-size:10px;color:var(--text-tertiary);margin-top:3px;">PER ${perTxt} · 시총 ${capTxt}</div>
+          <div style="font-size:10px;color:var(--text-tertiary);margin-top:3px;">${mktInfoTxt}</div>
         </div>
         <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;">
           <button onclick="removeStock(${idx})" style="background:var(--bg-secondary);border:none;font-size:12px;color:var(--text-tertiary);cursor:pointer;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;">×</button>
@@ -2598,26 +2620,52 @@
 
         if (codes.length === 0) return;
 
-        // KIS 모의투자 API로 한국 주식 조회 (6자리 코드 직접 사용)
-        const res = await fetch('/api/kis-quote?symbols=' + encodeURIComponent(codes.join(',')));
-        if (!res.ok) return;
-        const json = await res.json();
-        if (!json.ok) return;
+        // KIS + Yahoo 병렬 호출
+        const ksSymbols = codes.map(function(c) { return c + '.KS'; });
+        const kqSymbols = codes.map(function(c) { return c + '.KQ'; });
+        const [kisResp, yahooResp] = await Promise.allSettled([
+          fetch('/api/kis-quote?symbols=' + encodeURIComponent(codes.join(','))),
+          fetch('/api/quote?symbols=' + encodeURIComponent(ksSymbols.concat(kqSymbols).join(',')))
+        ]);
 
-        const qmap = {};
-        (json.data || []).forEach(function(q) {
-          if (!q.price) return;
-          qmap[q.symbol] = q; // symbol은 6자리 코드
-        });
+        const qmap = {}; // { code: { kisPer, yfPer, pbr, marketCap } }
+
+        if (kisResp.status === 'fulfilled' && kisResp.value.ok) {
+          const json = await kisResp.value.json();
+          if (json.ok) {
+            (json.data || []).forEach(function(q) {
+              if (!q.price) return;
+              if (!qmap[q.symbol]) qmap[q.symbol] = {};
+              qmap[q.symbol].kisPer = q.per;
+              qmap[q.symbol].pbr = q.pbr;
+              qmap[q.symbol].marketCap = q.marketCap;
+            });
+          }
+        }
+        if (yahooResp.status === 'fulfilled' && yahooResp.value.ok) {
+          const json = await yahooResp.value.json();
+          if (json.ok) {
+            (json.data || []).forEach(function(q) {
+              if (!q.price) return;
+              const code = q.symbol.replace(/\.(KS|KQ)$/, '');
+              if (!qmap[code]) qmap[code] = {};
+              if (qmap[code].yfPer == null) qmap[code].yfPer = q.per; // KS 우선
+            });
+          }
+        }
 
         document.querySelectorAll('.dart-mktinfo').forEach(function(el) {
           const code = (el.getAttribute('data-code') || '').replace(/\D/g,'');
-          if (!code || code.length !== 6) return; // 이미 처리됨
+          if (!code || code.length !== 6) return;
           const q = qmap[code];
-          if (!q) { el.textContent = 'PER -  ·  시총 -'; return; }
-          const perTxt = (q.per != null) ? 'PER ' + q.per.toFixed(1) + 'x' : 'PER -';
-          const capTxt = (q.marketCap != null) ? '시총 ' + fmtCap(q.marketCap, 'KRW') : '시총 -';
-          el.textContent = perTxt + '  ·  ' + capTxt;
+          if (!q) { el.textContent = 'PER -  ·  PBR -  ·  시총 -'; return; }
+          const kisPerTxt = (q.kisPer != null) ? 'KIS ' + q.kisPer.toFixed(1) + 'x' : null;
+          const yfPerTxt  = (q.yfPer  != null) ? 'YF '  + q.yfPer.toFixed(1)  + 'x' : null;
+          const perParts  = [kisPerTxt, yfPerTxt].filter(Boolean);
+          const perStr    = perParts.length ? 'PER ' + perParts.join(' / ') : 'PER -';
+          const pbrStr    = (q.pbr != null) ? 'PBR ' + q.pbr.toFixed(1) : 'PBR -';
+          const capStr    = (q.marketCap != null) ? '시총 ' + fmtCap(q.marketCap, 'KRW') : '시총 -';
+          el.textContent  = perStr + '  ·  ' + pbrStr + '  ·  ' + capStr;
         });
       } catch(e) {
         // 실패 시 모두 "-" 표기

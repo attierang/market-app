@@ -26,7 +26,7 @@ async function getCrumb() {
 }
 
 // quoteSummary로 PER 단건 조회
-async function fetchPE(symbol, cookie, crumb) {
+async function fetchKeyStats(symbol, cookie, crumb) {
   try {
     const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${encodeURIComponent(symbol)}?modules=defaultKeyStatistics&crumb=${encodeURIComponent(crumb)}`;
     const res = await fetch(url, {
@@ -35,7 +35,10 @@ async function fetchPE(symbol, cookie, crumb) {
     if (!res.ok) return null;
     const data = await res.json();
     const stats = data?.quoteSummary?.result?.[0]?.defaultKeyStatistics;
-    return stats?.trailingPE?.raw ?? stats?.forwardPE?.raw ?? null;
+    return {
+      per: stats?.trailingPE?.raw ?? stats?.forwardPE?.raw ?? null,
+      pbr: stats?.priceToBook?.raw ?? null
+    };
   } catch { return null; }
 }
 
@@ -65,15 +68,15 @@ export default async function handler(req) {
     const data = await quoteRes.json();
     const quotes = data?.quoteResponse?.result ?? [];
 
-    // PE 조회: 5개씩 나눠서 rate limit 방지
-    const peMap = {};
+    // PER+PBR 조회: 5개씩 나눠서 rate limit 방지
+    const statsMap = {};
     const CHUNK = 5;
     for (let i = 0; i < symbolList.length; i += CHUNK) {
       const chunk = symbolList.slice(i, i + CHUNK);
-      const peChunk = await Promise.all(chunk.map(s => fetchPE(s, cookie, crumb)));
-      chunk.forEach((s, j) => { peMap[s] = peChunk[j]; });
+      const statsChunk = await Promise.all(chunk.map(s => fetchKeyStats(s, cookie, crumb)));
+      chunk.forEach((s, j) => { statsMap[s] = statsChunk[j]; });
       if (i + CHUNK < symbolList.length) {
-        await new Promise(r => setTimeout(r, 300)); // 청크 간 0.3초 대기
+        await new Promise(r => setTimeout(r, 300));
       }
     }
 
@@ -86,7 +89,8 @@ export default async function handler(req) {
       currency:  q.currency,
       marketState: q.marketState,
       updatedAt: q.regularMarketTime,
-      per:       peMap[q.symbol] ?? null,
+      per:       statsMap[q.symbol]?.per ?? null,
+      pbr:       statsMap[q.symbol]?.pbr ?? null,
       marketCap: q.marketCap ?? null
     }));
 
