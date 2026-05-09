@@ -22,7 +22,8 @@ async function getToken() {
       appsecret: process.env.KIS_MOCK_APP_SECRET
     })
   });
-  if (!res.ok) throw new Error('KIS 토큰 발급 실패: ' + res.status);
+  const body = await res.text();
+  if (!res.ok) throw new Error('KIS 토큰 발급 실패: ' + res.status + ' / ' + body.slice(0, 300));
   const data = await res.json();
   return data.access_token;
 }
