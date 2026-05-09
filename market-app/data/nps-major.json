@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-08T23:56:50.874Z",
+  "updated_at": "2026-05-09T02:15:38.286Z",
   "count": 50,
   "data": [
     {
@@ -481,10 +481,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260401",
       "flr_nm": "국민연금공단",
-      "ratio": 8.77,
-      "change": -0.5,
-      "stock_count": 220569,
-      "type": "sell"
+      "ratio": 11.12,
+      "change": 0.24,
+      "stock_count": 65439,
+      "type": "buy"
     },
     {
       "corp_name": "한올바이오파마",
