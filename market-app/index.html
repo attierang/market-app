@@ -1684,7 +1684,7 @@
         } else if (isKr) {
           const kisPerTxt = (q && q.kisPer != null) ? q.kisPer.toFixed(1) + 'x' : '-';
           const yfPerTxt  = (q && q.per   != null) ? q.per.toFixed(1)   + 'x' : '-';
-          mktInfoTxt = `PER KIS ${kisPerTxt} / Yahoo ${yfPerTxt}  ·  PBR ${pbrTxt}  ·  시총 ${capTxt}`;
+          mktInfoTxt = `PER KIS ${kisPerTxt} / 야후 ${yfPerTxt}  ·  PBR ${pbrTxt}  ·  시총 ${capTxt}`;
         } else {
           const perTxt = (q && q.per != null) ? q.per.toFixed(1) + 'x' : '-';
           mktInfoTxt = `PER ${perTxt}  ·  PBR ${pbrTxt}  ·  시총 ${capTxt}`;
@@ -2660,7 +2660,7 @@
           const q = qmap[code];
           if (!q) { el.textContent = 'PER -  ·  PBR -  ·  시총 -'; return; }
           const kisPerTxt = (q.kisPer != null) ? 'KIS ' + q.kisPer.toFixed(1) + 'x' : null;
-          const yfPerTxt  = (q.yfPer  != null) ? 'Yahoo ' + q.yfPer.toFixed(1) + 'x' : null;
+          const yfPerTxt  = (q.yfPer  != null) ? '야후 ' + q.yfPer.toFixed(1) + 'x' : null;
           const perParts  = [kisPerTxt, yfPerTxt].filter(Boolean);
           const perStr    = perParts.length ? 'PER ' + perParts.join(' / ') : 'PER -';
           const pbrStr    = (q.pbr != null) ? 'PBR ' + q.pbr.toFixed(1) : 'PBR -';
