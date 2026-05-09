@@ -1,4 +1,4 @@
-// KIS (한국투자증권) Open API - 국내 주식 시세 + 재무 조회
+// KIS (한국투자증권) Open API - 국내 주식 시세 + 재무 조회 (모의투자)
 // 경로: /api/kis-quote?symbols=005930,000660
 
 export const config = { runtime: 'edge' };
@@ -9,7 +9,7 @@ const CORS = {
   'Cache-Control': 's-maxage=60, stale-while-revalidate=30'
 };
 
-const KIS_BASE = 'https://openapi.koreainvestment.com:9443';
+const KIS_BASE = 'https://openapivts.koreainvestment.com:29443'; // 모의투자
 
 // 접근토큰 발급
 async function getToken() {
@@ -18,8 +18,8 @@ async function getToken() {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       grant_type: 'client_credentials',
-      appkey:    process.env.KIS_APP_KEY,
-      appsecret: process.env.KIS_APP_SECRET
+      appkey:    process.env.KIS_MOCK_APP_KEY,
+      appsecret: process.env.KIS_MOCK_APP_SECRET
     })
   });
   if (!res.ok) throw new Error('KIS 토큰 발급 실패: ' + res.status);
@@ -36,8 +36,8 @@ async function fetchKisStock(symbol, token) {
         headers: {
           'content-type': 'application/json',
           'authorization': 'Bearer ' + token,
-          'appkey':    process.env.KIS_APP_KEY,
-          'appsecret': process.env.KIS_APP_SECRET,
+          'appkey':    process.env.KIS_MOCK_APP_KEY,
+          'appsecret': process.env.KIS_MOCK_APP_SECRET,
           'tr_id':     'FHKST01010100'
         }
       }
