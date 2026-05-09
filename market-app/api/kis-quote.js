@@ -24,7 +24,7 @@ async function getToken() {
   });
   const body = await res.text();
   if (!res.ok) throw new Error('KIS 토큰 발급 실패: ' + res.status + ' / ' + body.slice(0, 300));
-  const data = await res.json();
+  const data = JSON.parse(body);
   return data.access_token;
 }
 
