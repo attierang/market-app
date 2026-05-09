@@ -1603,13 +1603,52 @@
       return '$' + mc.toLocaleString();
     }
 
-    // ── 시세 API 호출 ──
+    // ── 시세 API 호출 (한국주식→KIS, 미국주식→Yahoo) ──
     async function fetchQuotes(symbols) {
-      const res = await fetch('/api/quote?symbols=' + encodeURIComponent(symbols.join(',')));
-      if (!res.ok) throw new Error('API 오류');
-      const json = await res.json();
-      if (!json.ok) throw new Error(json.error);
-      return json.data; // [{symbol, name, price, changePct, currency, marketState}]
+      const krSymbols = symbols.filter(s => /\.(KS|KQ)$/i.test(s));
+      const usSymbols = symbols.filter(s => !/\.(KS|KQ)$/i.test(s));
+      const result = [];
+
+      // 한국 주식: KIS 모의투자 API
+      if (krSymbols.length > 0) {
+        const codes = krSymbols.map(s => s.replace(/\.(KS|KQ)$/i, ''));
+        try {
+          const res = await fetch('/api/kis-quote?symbols=' + encodeURIComponent(codes.join(',')));
+          if (res.ok) {
+            const json = await res.json();
+            if (json.ok) {
+              // KIS 결과를 Yahoo 형식으로 맞춤
+              (json.data || []).forEach(function(q) {
+                // 원래 .KS/.KQ 심볼 찾기
+                const origSymbol = krSymbols.find(s => s.replace(/\.(KS|KQ)$/i,'') === q.symbol) || q.symbol + '.KS';
+                result.push({
+                  symbol:    origSymbol,
+                  name:      q.symbol,
+                  price:     q.price,
+                  change:    q.change,
+                  changePct: q.changePct,
+                  currency:  'KRW',
+                  per:       q.per,
+                  pbr:       q.pbr,
+                  marketCap: q.marketCap,
+                  marketState: null
+                });
+              });
+            }
+          }
+        } catch(e) { console.warn('KIS 오류:', e.message); }
+      }
+
+      // 미국 주식: Yahoo Finance API
+      if (usSymbols.length > 0) {
+        const res = await fetch('/api/quote?symbols=' + encodeURIComponent(usSymbols.join(',')));
+        if (!res.ok) throw new Error('API 오류');
+        const json = await res.json();
+        if (!json.ok) throw new Error(json.error);
+        result.push(...json.data);
+      }
+
+      return result;
     }
 
     // ── 카드 렌더링 ──
@@ -2559,21 +2598,16 @@
 
         if (codes.length === 0) return;
 
-        // KS + KQ 동시 조회
-        const ksSymbols = codes.map(function(c) { return c + '.KS'; });
-        const kqSymbols = codes.map(function(c) { return c + '.KQ'; });
-        const allSymbols = ksSymbols.concat(kqSymbols);
-
-        const res = await fetch('/api/quote?symbols=' + encodeURIComponent(allSymbols.join(',')));
+        // KIS 모의투자 API로 한국 주식 조회 (6자리 코드 직접 사용)
+        const res = await fetch('/api/kis-quote?symbols=' + encodeURIComponent(codes.join(',')));
         if (!res.ok) return;
         const json = await res.json();
         if (!json.ok) return;
 
         const qmap = {};
         (json.data || []).forEach(function(q) {
-          if (!q.price) return; // 유효하지 않은 심볼 제외
-          const code = q.symbol.replace(/\.(KS|KQ)$/, '');
-          if (!qmap[code]) qmap[code] = q; // KS 우선
+          if (!q.price) return;
+          qmap[q.symbol] = q; // symbol은 6자리 코드
         });
 
         document.querySelectorAll('.dart-mktinfo').forEach(function(el) {
