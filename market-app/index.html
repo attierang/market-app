@@ -1641,8 +1641,8 @@
             changePct: (kis && kis.changePct) || (yahoo && yahoo.changePct) || 0,
             currency:  'KRW',
             kisPer:    kis ? kis.per : null,
-            per:       yahoo ? yahoo.per : null,   // Yahoo PER
-            pbr:       kis ? kis.pbr : null,
+            per:       yahoo ? yahoo.per : null,         // Yahoo PER
+            pbr:       (kis && kis.pbr) || (yahoo && yahoo.pbr) || null,  // KIS 우선, Yahoo 대체
             marketCap: (kis && kis.marketCap) || (yahoo && yahoo.marketCap) || null,
             marketState: yahoo ? yahoo.marketState : null
           });
@@ -2649,7 +2649,9 @@
               if (!q.price) return;
               const code = q.symbol.replace(/\.(KS|KQ)$/, '');
               if (!qmap[code]) qmap[code] = {};
-              if (qmap[code].yfPer == null) qmap[code].yfPer = q.per; // KS 우선
+              if (qmap[code].yfPer == null)    qmap[code].yfPer    = q.per;       // KS 우선
+              if (qmap[code].pbr == null)       qmap[code].pbr      = q.pbr;      // Yahoo PBR 대체
+              if (qmap[code].marketCap == null) qmap[code].marketCap = q.marketCap; // Yahoo 시총 대체
             });
           }
         }

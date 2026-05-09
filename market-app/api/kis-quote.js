@@ -11,8 +11,15 @@ const CORS = {
 
 const KIS_BASE = 'https://openapivts.koreainvestment.com:29443'; // 모의투자
 
-// 접근토큰 발급
+// 토큰 인메모리 캐시 (warm instance 내 재사용)
+let _cachedToken = null;
+let _tokenExpiry = 0;
+
+// 접근토큰 발급 (캐시 적용)
 async function getToken() {
+  const now = Date.now();
+  if (_cachedToken && now < _tokenExpiry) return _cachedToken;
+
   const res = await fetch(KIS_BASE + '/oauth2/tokenP', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -23,9 +30,11 @@ async function getToken() {
     })
   });
   const body = await res.text();
-  if (!res.ok) throw new Error('KIS 토큰 발급 실패: ' + res.status + ' / ' + body.slice(0, 300));
+  if (!res.ok) throw new Error('KIS 토큰 발급 실패: ' + res.status + ' / ' + body.slice(0, 200));
   const data = JSON.parse(body);
-  return data.access_token;
+  _cachedToken = data.access_token;
+  _tokenExpiry = now + ((data.expires_in || 86400) * 1000) - 60000; // 1분 여유
+  return _cachedToken;
 }
 
 // 주식 현재가 + 재무 조회 (KOSPI → KOSDAQ 순 시도)
