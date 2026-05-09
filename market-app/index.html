@@ -1010,9 +1010,28 @@
       <!-- 달러원 캔들차트 -->
       <div class="card" style="padding:12px 12px 8px;">
         <div class="card-title" style="margin-bottom:8px;">💱 달러원 캔들차트 <span class="card-sub">TradingView · USD/KRW</span></div>
-        <div id="tv-usdkrw-container" style="border-radius:8px;overflow:hidden;">
-          <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
+        <div style="border-radius:8px;overflow:hidden;height:320px;">
+          <div class="tradingview-widget-container" style="height:100%;width:100%">
+            <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+            {
+              "autosize": true,
+              "symbol": "FX_IDC:USDKRW",
+              "interval": "D",
+              "timezone": "Asia/Seoul",
+              "theme": "light",
+              "style": "1",
+              "locale": "ko",
+              "hide_top_toolbar": false,
+              "hide_side_toolbar": true,
+              "hide_legend": true,
+              "hide_volume": true,
+              "allow_symbol_change": false,
+              "save_image": false,
+              "calendar": false,
+              "support_host": "https://www.tradingview.com"
+            }
+            </script>
           </div>
         </div>
         <div style="font-size:10px;color:var(--text-tertiary);margin-top:4px;text-align:right;">TradingView 제공</div>
@@ -1484,56 +1503,11 @@
     document.getElementById('today-date').textContent =
       d.getFullYear() + '.' + String(d.getMonth() + 1).padStart(2, '0') + '.' + String(d.getDate()).padStart(2, '0');
 
-    // ── TradingView 달러원 차트 공통 초기화 ──
+    // ── TradingView 달러원 라인차트 초기화 ──
     (function() {
       var isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-      function initTvWidget(containerId, style) {
-        var w = new TradingView.widget({
-          container_id:        containerId,
-          width:               '100%',
-          height:              320,
-          symbol:              'FX_IDC:USDKRW',
-          interval:            'D',
-          timezone:            'Asia/Seoul',
-          theme:               isDark ? 'dark' : 'light',
-          style:               style,
-          locale:              'kr',
-          hide_top_toolbar:    false,
-          hide_legend:         true,
-          hide_side_toolbar:   true,
-          allow_symbol_change: false,
-          save_image:          false,
-          enable_publishing:   false
-        });
-        // 차트 로드 후 거래량 지표 제거
-        w.onChartReady(function() {
-          var chart = w.chart();
-          chart.getAllStudies().forEach(function(s) {
-            if (s.name.toLowerCase().indexOf('volume') !== -1) {
-              chart.removeEntity(s.id);
-            }
-          });
-        });
-      }
-
-      // 캔들차트
-      var candleContainer = document.querySelector('#tv-usdkrw-container .tradingview-widget-container__widget');
-      if (candleContainer) {
-        var candleId = 'tv_candle_' + Date.now();
-        candleContainer.id = candleId;
-      }
-
-      // tv.js 로드 후 캔들차트만 초기화
-      var tvScript = document.createElement('script');
-      tvScript.src = 'https://s3.tradingview.com/tv.js';
-      tvScript.async = true;
-      tvScript.onload = function() {
-        if (candleId) initTvWidget(candleId, '1'); // 1 = 캔들
-      };
-      document.head.appendChild(tvScript);
-
-      // 라인차트 - 미니 위젯 (처음 방식)
+      // 라인차트 - 미니 위젯
       var lineContainer = document.querySelector('#tv-usdkrw-line-container .tradingview-widget-container__widget');
       if (lineContainer) {
         var lineScript = document.createElement('script');
