@@ -49,7 +49,8 @@ async function fetchKisStock(symbol, token) {
             'authorization': 'Bearer ' + token,
             'appkey':    process.env.KIS_MOCK_APP_KEY,
             'appsecret': process.env.KIS_MOCK_APP_SECRET,
-            'tr_id':     'FHKST01010100'
+            'tr_id':     'FHKST01010100',
+            'custtype':  'P'
           }
         }
       );
@@ -94,17 +95,20 @@ export default async function handler(req) {
 
   try {
     const token = await getToken();
-    const symbolList = symbols.split(',').map(s => s.trim().replace(/\.(KS|KQ)$/i, '')).filter(Boolean);
+    // 중복 제거 후 처리
+    const symbolList = [...new Set(
+      symbols.split(',').map(s => s.trim().replace(/\.(KS|KQ)$/i, '')).filter(Boolean)
+    )];
 
-    // 5개씩 나눠서 처리
+    // 10개씩 나눠서 처리 (딜레이 100ms)
     const result = [];
-    const CHUNK = 5;
+    const CHUNK = 10;
     for (let i = 0; i < symbolList.length; i += CHUNK) {
       const chunk = symbolList.slice(i, i + CHUNK);
       const rows = await Promise.all(chunk.map(s => fetchKisStock(s, token)));
       rows.forEach(r => { if (r) result.push(r); });
       if (i + CHUNK < symbolList.length) {
-        await new Promise(r => setTimeout(r, 200));
+        await new Promise(r => setTimeout(r, 100));
       }
     }
 

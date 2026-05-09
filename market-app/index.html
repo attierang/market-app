@@ -2608,9 +2608,11 @@
 
     async function loadNpsQuotes(data) {
       try {
-        const codes = (data || []).map(function(item) {
-          return (item.stockCode || '').replace(/\D/g, '');
-        }).filter(function(c) { return c.length === 6; });
+        const codes = Array.from(new Set(
+          (data || []).map(function(item) {
+            return (item.stockCode || '').replace(/\D/g, '');
+          }).filter(function(c) { return c.length === 6; })
+        ));
 
         // stockCode 없는 항목은 바로 "PER - · 시총 -" 표기
         document.querySelectorAll('.dart-mktinfo').forEach(function(el) {
