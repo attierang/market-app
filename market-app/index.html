@@ -964,6 +964,16 @@
         <div class="row"><span class="row-name">외국인순매수</span><span class="row-val down">▼ 37.46%</span></div>
         <div class="row"><span class="row-name">PER</span><span class="row-val up">▲ 0.66%</span></div>
         <div class="row"><span class="row-name">PBR</span><span class="row-val up">▲ 0.78%</span></div>
+        <div class="row"><span class="row-name">비차익매수</span><span class="row-val" id="kospi-nonarb-buy">-</span></div>
+        <div class="row"><span class="row-name">비차익매도</span><span class="row-val" id="kospi-nonarb-sell">-</span></div>
+        <div class="row"><span class="row-name">비차익순매수</span><span class="row-val" id="kospi-nonarb-net">-</span></div>
+      </div>
+      <div class="card">
+        <div class="card-title">KOSDAQ <span class="card-sub">KRX · KOFIA</span></div>
+        <div class="row"><span class="row-name">지수</span><span class="row-val up">▲ 1.52%</span></div>
+        <div class="row"><span class="row-name">비차익매수</span><span class="row-val" id="kosdaq-nonarb-buy">-</span></div>
+        <div class="row"><span class="row-name">비차익매도</span><span class="row-val" id="kosdaq-nonarb-sell">-</span></div>
+        <div class="row"><span class="row-name">비차익순매수</span><span class="row-val" id="kosdaq-nonarb-net">-</span></div>
       </div>
       <div class="card">
         <div class="card-title">글로벌 지수</div>
@@ -1541,9 +1551,11 @@
       });
       const el = document.getElementById('tab-' + tab);
       if (el) el.style.flexDirection = 'column';
+      localStorage.setItem('activeTab', tab);
       if (tab === 'watch') refreshAll();
       if (tab === 'nps' && !npsData.major) loadDartData('major');
       if (tab === 'rates') loadRates();
+      if (tab === 'kr') loadProgramTrading();
     }
 
     // ── 관심종목 데이터 (로컬스토리지) ──
@@ -2679,10 +2691,59 @@
       }
     }
 
+    // ── 비차익 프로그램 매매 로드 ──
+    async function loadProgramTrading() {
+      try {
+        var res = await fetch('/api/program-trading');
+        if (!res.ok) return;
+        var json = await res.json();
+        if (!json.ok || !json.data) return;
+
+        function fmtAmt(amt) {
+          // 단위: 백만원 → 억원 또는 조원으로 변환
+          if (!amt && amt !== 0) return '-';
+          var abs = Math.abs(amt);
+          var sign = amt >= 0 ? '+' : '-';
+          if (abs >= 10000) {
+            return sign + (abs / 10000).toFixed(1) + '조';
+          } else if (abs >= 1) {
+            return sign + Math.round(abs).toLocaleString() + '억';
+          }
+          return sign + Math.round(abs * 100).toLocaleString() + '백만';
+        }
+
+        function applyMarket(prefix, d) {
+          if (!d) return;
+          var buyEl  = document.getElementById(prefix + '-nonarb-buy');
+          var sellEl = document.getElementById(prefix + '-nonarb-sell');
+          var netEl  = document.getElementById(prefix + '-nonarb-net');
+          // KIS는 백만원 단위로 반환, 억원으로 표시
+          var buyAmt  = d.buyAmt  || 0;
+          var sellAmt = d.sellAmt || 0;
+          var netAmt  = d.netAmt  || 0;
+          if (buyEl)  { buyEl.textContent  = buyAmt  ? Math.round(buyAmt  / 100).toLocaleString()  + '억' : '-'; buyEl.className  = 'row-val'; }
+          if (sellEl) { sellEl.textContent = sellAmt ? Math.round(sellAmt / 100).toLocaleString() + '억' : '-'; sellEl.className = 'row-val'; }
+          if (netEl)  {
+            var netFormatted = netAmt ? (netAmt > 0 ? '+' : '') + Math.round(netAmt / 100).toLocaleString() + '억' : '-';
+            netEl.textContent = netFormatted;
+            netEl.className   = 'row-val ' + (netAmt > 0 ? 'up' : netAmt < 0 ? 'down' : '');
+          }
+        }
+
+        applyMarket('kospi',  json.data.kospi);
+        applyMarket('kosdaq', json.data.kosdaq);
+      } catch(e) {
+        // 실패 시 조용히 처리 (정적 "-" 유지)
+      }
+    }
+
     // ── 초기 로드 ──
+    const _savedTab = localStorage.getItem('activeTab');
+    if (_savedTab && tabs.includes(_savedTab)) switchTab(_savedTab);
     refreshAll();
     loadCommodities();
     loadRates();
+    loadProgramTrading();
 
     // ── PWA 설치 안내 (iOS) ──
     if (navigator.standalone === false && /iphone|ipad|ipod/i.test(navigator.userAgent)) {
