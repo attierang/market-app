@@ -2694,13 +2694,17 @@
     // ── 비차익 프로그램 매매 로드 ──
     var _programTradingLoaded = false;
     async function loadProgramTrading() {
-      if (_programTradingLoaded) return; // 세션 내 1회만 호출
+      if (_programTradingLoaded) return;
       try {
-        var res = await fetch('/api/kis-quote?mode=program');
+        var res = await fetch('/data/program-trading.json');
         if (!res.ok) return;
         var json = await res.json();
+        // 정적 JSON 구조: { kospi: {...}, kosdaq: {...} }
+        if (!json.kospi && !json.kosdaq) return;
+        // API 응답 구조로 변환
+        json = { ok: true, data: { kospi: json.kospi, kosdaq: json.kosdaq } };
         if (!json.ok || !json.data) return;
-        _programTradingLoaded = true; // 성공 시 플래그 설정
+        _programTradingLoaded = true;
 
         function fmtAmt(amt) {
           // 단위: 백만원 → 억원 또는 조원으로 변환
@@ -2727,7 +2731,7 @@
         }
 
         function applyMarket(prefix, d) {
-          if (!d || !d.supported) return;
+          if (!d) return;
           var buyEl  = document.getElementById(prefix + '-nonarb-buy');
           var sellEl = document.getElementById(prefix + '-nonarb-sell');
           var netEl  = document.getElementById(prefix + '-nonarb-net');
