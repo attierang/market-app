@@ -112,43 +112,44 @@ async function fetchKisStock(symbol, token) {
 }
 
 // 비차익 프로그램 매매 현황 조회 (실투자 서버 사용)
-// trId: FHPTJ04040000 (KOSPI), FHPTJ04050000 (KOSDAQ)
+// 프로그램매매 종합현황(시간): FHPPG04600101
+// endpoint: /uapi/domestic-stock/v1/quotations/comp-program-trade-today
 async function fetchProgramTrading(market, token) {
-  const trId   = market === 'KOSPI' ? 'FHPTJ04040000' : 'FHPTJ04050000';
-  const mktDiv = market === 'KOSPI' ? '0' : '1';
+  const trId    = 'FHPPG04600101';
+  const clsCode = market === 'KOSPI' ? 'K' : 'Q'; // K=코스피, Q=코스닥
 
   try {
-    const res = await fetch(
-      KIS_REAL_BASE + '/uapi/domestic-stock/v1/quotations/program-trade-by-group?fid_cond_mrkt_div_code=' + mktDiv,
-      {
-        headers: {
-          'content-type': 'application/json',
-          'authorization': 'Bearer ' + token,
-          'appkey':    process.env.KIS_REAL_APP_KEY,
-          'appsecret': process.env.KIS_REAL_APP_SECRET,
-          'tr_id':     trId,
-          'custtype':  'P'
-        }
+    const url = KIS_REAL_BASE + '/uapi/domestic-stock/v1/quotations/comp-program-trade-today'
+      + '?FID_COND_MRKT_DIV_CODE=J&FID_MRKT_CLS_CODE=' + clsCode
+      + '&FID_SCTN_CLS_CODE=&FID_INPUT_ISCD=&FID_COND_MRKT_DIV_CODE1=&FID_INPUT_HOUR_1=';
+
+    const res = await fetch(url, {
+      headers: {
+        'content-type': 'application/json',
+        'authorization': 'Bearer ' + token,
+        'appkey':    process.env.KIS_REAL_APP_KEY,
+        'appsecret': process.env.KIS_REAL_APP_SECRET,
+        'tr_id':     trId,
+        'custtype':  'P'
       }
-    );
+    });
     if (!res.ok) return { market, supported: false, status: res.status };
     const data = await res.json();
 
-    // output 배열에서 비차익 항목 탐색
-    const output = data?.output || data?.output1 || [];
-    const list = Array.isArray(output) ? output : [];
+    // 최신 데이터(첫 번째 행) 사용
+    const output = data?.output || [];
+    const list   = Array.isArray(output) ? output : [];
+    const latest = list[0]; // 가장 최근 시간대
 
-    // 비차익 행 찾기
-    const nonArb = list.find(r =>
-      (r.ptgn_stk_prdt_clsf_name || r.prdt_clsf_name || '').includes('비차익')
-    ) || (list.length > 0 ? list[0] : null);
+    if (!latest) return { market, supported: true, buyAmt: 0, sellAmt: 0, netAmt: 0, raw: data };
 
-    if (!nonArb) return { market, supported: true, buyAmt: 0, sellAmt: 0, netAmt: 0, raw: data };
+    // 비차익 필드: ntas_shnu_tr_pbmn(비차익매수), ntas_seln_tr_pbmn(비차익매도)
+    // 차익 필드: arbt_shnu_tr_pbmn, arbt_seln_tr_pbmn
+    // 전체 필드명은 raw로 확인
+    const buyAmt  = parseInt(latest.ntas_shnu_tr_pbmn || latest.bchm_shnu_tr_pbmn || '0', 10);
+    const sellAmt = parseInt(latest.ntas_seln_tr_pbmn || latest.bchm_seln_tr_pbmn || '0', 10);
 
-    const buyAmt  = parseInt(nonArb.ptgn_stk_shnu_tr_pbmn || nonArb.shnu_tr_pbmn  || '0', 10);
-    const sellAmt = parseInt(nonArb.ptgn_stk_seln_tr_pbmn || nonArb.seln_tr_pbmn  || '0', 10);
-
-    return { market, supported: true, buyAmt, sellAmt, netAmt: buyAmt - sellAmt };
+    return { market, supported: true, buyAmt, sellAmt, netAmt: buyAmt - sellAmt, raw: latest };
   } catch (e) {
     return { market, supported: false, error: e.message };
   }
