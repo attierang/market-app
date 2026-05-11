@@ -1,0 +1,36 @@
+name: 비차익 프로그램 매매 자동 수집
+
+on:
+  schedule:
+    # 장중 09:00~15:30 KST = UTC 00:00~06:30, 30분 간격 (평일만)
+    - cron: '0,30 0,1,2,3,4,5,6 * * 1-5'
+  workflow_dispatch:  # 수동 실행 가능
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 레포 체크아웃
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 비차익 프로그램 매매 수집
+        env:
+          KIS_REAL_APP_KEY:    ${{ secrets.KIS_REAL_APP_KEY }}
+          KIS_REAL_APP_SECRET: ${{ secrets.KIS_REAL_APP_SECRET }}
+        run: node market-app/scripts/collect-program-trading.js
+
+      - name: 변경사항 커밋
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add market-app/data/program-trading.json
+          git diff --staged --quiet || git commit -m "비차익 프로그램 매매 업데이트 $(date '+%Y-%m-%d %H:%M') KST"
+          git pull --rebase origin main
+          git push
