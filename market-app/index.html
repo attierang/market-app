@@ -2712,21 +2712,32 @@
           return sign + Math.round(abs * 100).toLocaleString() + '백만';
         }
 
+        // 백만원 → 조/억 단위 변환
+        function fmtMillion(val) {
+          if (!val && val !== 0) return '-';
+          var abs  = Math.abs(val);
+          var sign = val >= 0 ? '' : '-';
+          var eok  = abs / 100; // 억원
+          if (eok >= 10000) return sign + (eok / 10000).toFixed(1) + '조';
+          if (eok >= 1)     return sign + Math.round(eok).toLocaleString() + '억';
+          return sign + Math.round(abs).toLocaleString() + '백만';
+        }
+
         function applyMarket(prefix, d) {
-          if (!d) return;
+          if (!d || !d.supported) return;
           var buyEl  = document.getElementById(prefix + '-nonarb-buy');
           var sellEl = document.getElementById(prefix + '-nonarb-sell');
           var netEl  = document.getElementById(prefix + '-nonarb-net');
-          // KIS는 백만원 단위로 반환, 억원으로 표시
-          var buyAmt  = d.buyAmt  || 0;
+          var buyAmt = d.buyAmt || 0;
           var sellAmt = d.sellAmt || 0;
           var netAmt  = d.netAmt  || 0;
-          if (buyEl)  { buyEl.textContent  = buyAmt  ? Math.round(buyAmt  / 100).toLocaleString()  + '억' : '-'; buyEl.className  = 'row-val'; }
-          if (sellEl) { sellEl.textContent = sellAmt ? Math.round(sellAmt / 100).toLocaleString() + '억' : '-'; sellEl.className = 'row-val'; }
+          if (buyEl)  { buyEl.textContent  = buyAmt  ? fmtMillion(buyAmt)  : '-'; buyEl.className  = 'row-val'; }
+          if (sellEl) { sellEl.textContent = sellAmt ? fmtMillion(sellAmt) : '-'; sellEl.className = 'row-val'; }
           if (netEl)  {
-            var netFormatted = netAmt ? (netAmt > 0 ? '+' : '') + Math.round(netAmt / 100).toLocaleString() + '억' : '-';
-            netEl.textContent = netFormatted;
-            netEl.className   = 'row-val ' + (netAmt > 0 ? 'up' : netAmt < 0 ? 'down' : '');
+            netEl.textContent = netAmt ? (netAmt > 0 ? '+' : '') + fmtMillion(Math.abs(netAmt)).replace('-','') + (netAmt < 0 ? '' : '') : '-';
+            if (netAmt > 0) netEl.textContent = '+' + fmtMillion(netAmt);
+            else if (netAmt < 0) netEl.textContent = '-' + fmtMillion(Math.abs(netAmt));
+            netEl.className = 'row-val ' + (netAmt > 0 ? 'up' : netAmt < 0 ? 'down' : '');
           }
         }
 

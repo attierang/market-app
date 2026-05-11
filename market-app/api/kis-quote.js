@@ -143,13 +143,12 @@ async function fetchProgramTrading(market, token) {
 
     if (!latest) return { market, supported: true, buyAmt: 0, sellAmt: 0, netAmt: 0, raw: data };
 
-    // 비차익 필드: ntas_shnu_tr_pbmn(비차익매수), ntas_seln_tr_pbmn(비차익매도)
-    // 차익 필드: arbt_shnu_tr_pbmn, arbt_seln_tr_pbmn
-    // 전체 필드명은 raw로 확인
-    const buyAmt  = parseInt(latest.ntas_shnu_tr_pbmn || latest.bchm_shnu_tr_pbmn || '0', 10);
-    const sellAmt = parseInt(latest.ntas_seln_tr_pbmn || latest.bchm_seln_tr_pbmn || '0', 10);
+    // nabt = 비차익(non-arbitrage), arbt = 차익(arbitrage), 단위: 백만원
+    const buyAmt  = parseInt(latest.nabt_smtn_shnu_tr_pbmn || '0', 10); // 비차익 매수
+    const sellAmt = parseInt(latest.nabt_smtn_seln_tr_pbmn || '0', 10); // 비차익 매도
+    const netAmt  = parseInt(latest.nabt_smtn_ntby_tr_pbmn || '0', 10); // 비차익 순매수
 
-    return { market, supported: true, buyAmt, sellAmt, netAmt: buyAmt - sellAmt, raw: latest };
+    return { market, supported: true, buyAmt, sellAmt, netAmt };
   } catch (e) {
     return { market, supported: false, error: e.message };
   }
