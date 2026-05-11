@@ -15,22 +15,22 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Node.js 설정
-        uses: actions/setup-node@v4
+      - name: Python 설정
+        uses: actions/setup-python@v5
         with:
-          node-version: '20'
+          python-version: '3.11'
 
-      - name: 비차익 프로그램 매매 수집
-        env:
-          KIS_REAL_APP_KEY:    ${{ secrets.KIS_REAL_APP_KEY }}
-          KIS_REAL_APP_SECRET: ${{ secrets.KIS_REAL_APP_SECRET }}
-        run: node market-app/scripts/collect-program-trading.js
+      - name: 의존성 설치
+        run: pip install requests
+
+      - name: 비차익 프로그램 매매 수집 (KRX 직접 조회 - 토큰 발급 없음)
+        run: python market-app/scripts/collect-program-trading.py
 
       - name: 변경사항 커밋
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add market-app/data/program-trading.json market-app/data/kis-real-token.json
+          git add market-app/data/program-trading.json
           git diff --staged --quiet || git commit -m "비차익 프로그램 매매 업데이트 $(date '+%Y-%m-%d %H:%M') KST"
           git pull --rebase origin main
           git push
