@@ -10,18 +10,23 @@ const CORS = {
   'Cache-Control': 's-maxage=60, stale-while-revalidate=30'
 };
 
-const KIS_BASE = 'https://openapivts.koreainvestment.com:29443'; // 모의투자
+const KIS_MOCK_BASE = 'https://openapivts.koreainvestment.com:29443'; // 모의투자
+const KIS_REAL_BASE = 'https://openapi.koreainvestment.com:9443';     // 실투자
 
-// 토큰 인메모리 캐시 (warm instance 내 재사용)
+// 모의투자 토큰 캐시
 let _cachedToken = null;
 let _tokenExpiry = 0;
 
-// 접근토큰 발급 (캐시 적용)
+// 실투자 토큰 캐시 (프로그램 매매용)
+let _cachedRealToken = null;
+let _realTokenExpiry = 0;
+
+// 모의투자 접근토큰 발급
 async function getToken() {
   const now = Date.now();
   if (_cachedToken && now < _tokenExpiry) return _cachedToken;
 
-  const res = await fetch(KIS_BASE + '/oauth2/tokenP', {
+  const res = await fetch(KIS_MOCK_BASE + '/oauth2/tokenP', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -31,11 +36,33 @@ async function getToken() {
     })
   });
   const body = await res.text();
-  if (!res.ok) throw new Error('KIS 토큰 발급 실패: ' + res.status + ' / ' + body.slice(0, 200));
+  if (!res.ok) throw new Error('KIS 모의 토큰 발급 실패: ' + res.status + ' / ' + body.slice(0, 200));
   const data = JSON.parse(body);
   _cachedToken = data.access_token;
-  _tokenExpiry = now + ((data.expires_in || 86400) * 1000) - 60000; // 1분 여유
+  _tokenExpiry = now + ((data.expires_in || 86400) * 1000) - 60000;
   return _cachedToken;
+}
+
+// 실투자 접근토큰 발급 (프로그램 매매용)
+async function getRealToken() {
+  const now = Date.now();
+  if (_cachedRealToken && now < _realTokenExpiry) return _cachedRealToken;
+
+  const res = await fetch(KIS_REAL_BASE + '/oauth2/tokenP', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      grant_type: 'client_credentials',
+      appkey:    process.env.KIS_REAL_APP_KEY,
+      appsecret: process.env.KIS_REAL_APP_SECRET
+    })
+  });
+  const body = await res.text();
+  if (!res.ok) throw new Error('KIS 실투자 토큰 발급 실패: ' + res.status + ' / ' + body.slice(0, 200));
+  const data = JSON.parse(body);
+  _cachedRealToken = data.access_token;
+  _realTokenExpiry = now + ((data.expires_in || 86400) * 1000) - 60000;
+  return _cachedRealToken;
 }
 
 // 주식 현재가 + 재무 조회 (KOSPI → KOSDAQ 순 시도)
@@ -43,7 +70,7 @@ async function fetchKisStock(symbol, token) {
   for (const mktDiv of ['J', 'Q']) { // J=KOSPI, Q=KOSDAQ
     try {
       const res = await fetch(
-        KIS_BASE + '/uapi/domestic-stock/v1/quotations/inquire-price?fid_cond_mrkt_div_code=' + mktDiv + '&fid_input_iscd=' + symbol,
+        KIS_MOCK_BASE + '/uapi/domestic-stock/v1/quotations/inquire-price?fid_cond_mrkt_div_code=' + mktDiv + '&fid_input_iscd=' + symbol,
         {
           headers: {
             'content-type': 'application/json',
@@ -84,21 +111,21 @@ async function fetchKisStock(symbol, token) {
   return null; // KOSPI/KOSDAQ 모두 실패
 }
 
-// 비차익 프로그램 매매 현황 조회
+// 비차익 프로그램 매매 현황 조회 (실투자 서버 사용)
 // trId: FHPTJ04040000 (KOSPI), FHPTJ04050000 (KOSDAQ)
 async function fetchProgramTrading(market, token) {
-  const trId  = market === 'KOSPI' ? 'FHPTJ04040000' : 'FHPTJ04050000';
+  const trId   = market === 'KOSPI' ? 'FHPTJ04040000' : 'FHPTJ04050000';
   const mktDiv = market === 'KOSPI' ? '0' : '1';
 
   try {
     const res = await fetch(
-      KIS_BASE + '/uapi/domestic-stock/v1/quotations/program-trade-by-group?fid_cond_mrkt_div_code=' + mktDiv,
+      KIS_REAL_BASE + '/uapi/domestic-stock/v1/quotations/program-trade-by-group?fid_cond_mrkt_div_code=' + mktDiv,
       {
         headers: {
           'content-type': 'application/json',
           'authorization': 'Bearer ' + token,
-          'appkey':    process.env.KIS_MOCK_APP_KEY,
-          'appsecret': process.env.KIS_MOCK_APP_SECRET,
+          'appkey':    process.env.KIS_REAL_APP_KEY,
+          'appsecret': process.env.KIS_REAL_APP_SECRET,
           'tr_id':     trId,
           'custtype':  'P'
         }
@@ -132,10 +159,10 @@ export default async function handler(req) {
   const mode    = searchParams.get('mode');
   const symbols = searchParams.get('symbols');
 
-  // ── 모드: 프로그램 매매 ──
+  // ── 모드: 프로그램 매매 (실투자 서버) ──
   if (mode === 'program') {
     try {
-      const token = await getToken();
+      const token = await getRealToken();
       const [kospi, kosdaq] = await Promise.allSettled([
         fetchProgramTrading('KOSPI',  token),
         fetchProgramTrading('KOSDAQ', token)
