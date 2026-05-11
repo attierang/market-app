@@ -1,5 +1,6 @@
-// KIS (한국투자증권) Open API - 국내 주식 시세 + 재무 조회 (모의투자)
+// KIS (한국투자증권) Open API - 국내 주식 시세 + 재무 + 프로그램매매 조회 (모의투자)
 // 경로: /api/kis-quote?symbols=005930,000660
+//       /api/kis-quote?mode=program  (비차익 프로그램 매매)
 
 export const config = { runtime: 'edge' };
 
@@ -83,10 +84,77 @@ async function fetchKisStock(symbol, token) {
   return null; // KOSPI/KOSDAQ 모두 실패
 }
 
+// 비차익 프로그램 매매 현황 조회
+// trId: FHPTJ04040000 (KOSPI), FHPTJ04050000 (KOSDAQ)
+async function fetchProgramTrading(market, token) {
+  const trId  = market === 'KOSPI' ? 'FHPTJ04040000' : 'FHPTJ04050000';
+  const mktDiv = market === 'KOSPI' ? '0' : '1';
+
+  try {
+    const res = await fetch(
+      KIS_BASE + '/uapi/domestic-stock/v1/quotations/program-trade-by-group?fid_cond_mrkt_div_code=' + mktDiv,
+      {
+        headers: {
+          'content-type': 'application/json',
+          'authorization': 'Bearer ' + token,
+          'appkey':    process.env.KIS_MOCK_APP_KEY,
+          'appsecret': process.env.KIS_MOCK_APP_SECRET,
+          'tr_id':     trId,
+          'custtype':  'P'
+        }
+      }
+    );
+    if (!res.ok) return { market, supported: false, status: res.status };
+    const data = await res.json();
+
+    // output 배열에서 비차익 항목 탐색
+    const output = data?.output || data?.output1 || [];
+    const list = Array.isArray(output) ? output : [];
+
+    // 비차익 행 찾기
+    const nonArb = list.find(r =>
+      (r.ptgn_stk_prdt_clsf_name || r.prdt_clsf_name || '').includes('비차익')
+    ) || (list.length > 0 ? list[0] : null);
+
+    if (!nonArb) return { market, supported: true, buyAmt: 0, sellAmt: 0, netAmt: 0, raw: data };
+
+    const buyAmt  = parseInt(nonArb.ptgn_stk_shnu_tr_pbmn || nonArb.shnu_tr_pbmn  || '0', 10);
+    const sellAmt = parseInt(nonArb.ptgn_stk_seln_tr_pbmn || nonArb.seln_tr_pbmn  || '0', 10);
+
+    return { market, supported: true, buyAmt, sellAmt, netAmt: buyAmt - sellAmt };
+  } catch (e) {
+    return { market, supported: false, error: e.message };
+  }
+}
+
 export default async function handler(req) {
   const { searchParams } = new URL(req.url);
+  const mode    = searchParams.get('mode');
   const symbols = searchParams.get('symbols');
 
+  // ── 모드: 프로그램 매매 ──
+  if (mode === 'program') {
+    try {
+      const token = await getToken();
+      const [kospi, kosdaq] = await Promise.allSettled([
+        fetchProgramTrading('KOSPI',  token),
+        fetchProgramTrading('KOSDAQ', token)
+      ]);
+      return new Response(JSON.stringify({
+        ok: true,
+        data: {
+          kospi:  kospi.status  === 'fulfilled' ? kospi.value  : null,
+          kosdaq: kosdaq.status === 'fulfilled' ? kosdaq.value : null
+        }
+      }), { headers: CORS });
+    } catch (err) {
+      return new Response(JSON.stringify({ ok: false, error: err.message }), {
+        status: 500, headers: CORS
+      });
+    }
+  }
+
+  // ── 모드: 주식 시세 (기본) ──
   if (!symbols) {
     return new Response(JSON.stringify({ error: 'symbols 파라미터 필요 (예: 005930,000660)' }), {
       status: 400, headers: CORS

@@ -2694,7 +2694,7 @@
     // ── 비차익 프로그램 매매 로드 ──
     async function loadProgramTrading() {
       try {
-        var res = await fetch('/api/program-trading');
+        var res = await fetch('/api/kis-quote?mode=program');
         if (!res.ok) return;
         var json = await res.json();
         if (!json.ok || !json.data) return;
