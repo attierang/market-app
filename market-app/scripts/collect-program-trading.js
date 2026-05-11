@@ -1,5 +1,5 @@
 // KIS 실투자 API - 비차익 프로그램 매매 현황 수집
-// 장중(09:00~15:30 KST) GitHub Actions에서 주기적으로 실행
+// 토큰을 파일에 캐시 → 만료 시에만 재발급 (하루 1회 알람)
 
 const fs   = require('fs');
 const path = require('path');
@@ -7,13 +7,32 @@ const path = require('path');
 const APP_KEY    = process.env.KIS_REAL_APP_KEY;
 const APP_SECRET = process.env.KIS_REAL_APP_SECRET;
 const KIS_BASE   = 'https://openapi.koreainvestment.com:9443';
+const dataDir    = path.join(__dirname, '../data');
+const TOKEN_FILE = path.join(dataDir, 'kis-real-token.json');
 
 if (!APP_KEY || !APP_SECRET) {
   console.error('KIS_REAL_APP_KEY / KIS_REAL_APP_SECRET 없음');
   process.exit(1);
 }
 
-async function getToken() {
+// 토큰 파일 캐시 읽기 (만료 10분 전까지 재사용)
+function loadCachedToken() {
+  try {
+    if (!fs.existsSync(TOKEN_FILE)) return null;
+    const cached = JSON.parse(fs.readFileSync(TOKEN_FILE, 'utf8'));
+    if (!cached.access_token || !cached.expires_at) return null;
+    if (Date.now() < cached.expires_at - 10 * 60 * 1000) {
+      console.log('캐시된 토큰 재사용 (만료까지 ' +
+        Math.round((cached.expires_at - Date.now()) / 60000) + '분 남음)');
+      return cached.access_token;
+    }
+    return null; // 만료됨
+  } catch { return null; }
+}
+
+// 신규 토큰 발급 + 파일 저장
+async function issueToken() {
+  console.log('새 KIS 토큰 발급 중...');
   const res = await fetch(KIS_BASE + '/oauth2/tokenP', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -28,7 +47,20 @@ async function getToken() {
     throw new Error('토큰 발급 실패: ' + res.status + ' / ' + txt.slice(0, 200));
   }
   const data = await res.json();
+  const expiresIn = data.expires_in || 86400; // 초 단위
+
+  if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
+  fs.writeFileSync(TOKEN_FILE, JSON.stringify({
+    access_token: data.access_token,
+    expires_at:   Date.now() + expiresIn * 1000
+  }), 'utf8');
+
+  console.log('✅ 토큰 발급 완료 (유효: ' + Math.round(expiresIn / 3600) + '시간)');
   return data.access_token;
+}
+
+async function getToken() {
+  return loadCachedToken() || await issueToken();
 }
 
 async function fetchProgramTrading(market, token) {
@@ -79,17 +111,15 @@ async function main() {
       kosdaq
     };
 
-    const dataDir = path.join(__dirname, '../data');
     if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
-
     fs.writeFileSync(
       path.join(dataDir, 'program-trading.json'),
       JSON.stringify(output, null, 2),
       'utf8'
     );
 
-    console.log('KOSPI 비차익 순매수: ' + (kospi.netAmt / 100).toFixed(0) + '억원');
-    console.log('KOSDAQ 비차익 순매수: ' + (kosdaq.netAmt / 100).toFixed(0) + '억원');
+    console.log('KOSPI 비차익 순매수: ' + Math.round(kospi.netAmt / 100).toLocaleString() + '억원');
+    console.log('KOSDAQ 비차익 순매수: ' + Math.round(kosdaq.netAmt / 100).toLocaleString() + '억원');
     console.log('✅ program-trading.json 저장 완료');
   } catch (err) {
     console.error('오류:', err.message);

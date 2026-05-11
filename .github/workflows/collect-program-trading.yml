@@ -30,7 +30,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add market-app/data/program-trading.json
+          git add market-app/data/program-trading.json market-app/data/kis-real-token.json
           git diff --staged --quiet || git commit -m "비차익 프로그램 매매 업데이트 $(date '+%Y-%m-%d %H:%M') KST"
           git pull --rebase origin main
           git push
