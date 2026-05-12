@@ -3162,64 +3162,75 @@
   function renderTradeChart(idx, container) {
     var trade = tradeList[idx];
     if (!trade) return;
-    container.innerHTML = '<div class="trade-chart-wrap" id="lwc-' + idx + '"><div style="display:flex;align-items:center;justify-content:center;height:100%;color:#888;font-size:13px;">차트 로딩중...</div></div>';
+    // 로딩 placeholder
+    var wrapId = 'lwc-' + idx;
+    container.innerHTML =
+      '<div id="' + wrapId + '" style="width:100%;height:260px;margin:8px 0 4px;border-radius:8px;overflow:hidden;background:var(--bg-secondary);display:flex;align-items:center;justify-content:center;">' +
+        '<span style="font-size:13px;color:var(--text-tertiary);">차트 로딩중...</span>' +
+      '</div>';
+
     loadLWC(function() {
       fetch('/api/chart?symbol=' + encodeURIComponent(trade.symbol) + '&range=6mo')
         .then(function(r) { return r.json(); })
         .then(function(json) {
-          if (!json.ok || !json.candles.length) throw new Error('데이터 없음');
-          var wrap = document.getElementById('lwc-' + idx);
-          if (!wrap) return;
-          wrap.innerHTML = '';
+          if (!json.ok || !json.candles || !json.candles.length) throw new Error('데이터 없음');
+          // DOM 레이아웃 확정 후 렌더
+          requestAnimationFrame(function() {
+            setTimeout(function() {
+              var wrap = document.getElementById(wrapId);
+              if (!wrap) return;
+              wrap.innerHTML = '';
+              wrap.style.display = 'block'; // flex 해제
 
-          var isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          var chart = LightweightCharts.createChart(wrap, {
-            width: wrap.clientWidth || 340,
-            height: 260,
-            layout: {
-              background: { color: isDark ? '#1c1c1e' : '#ffffff' },
-              textColor: isDark ? '#a0a0a0' : '#666666',
-            },
-            grid: {
-              vertLines: { color: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' },
-              horzLines: { color: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' },
-            },
-            rightPriceScale: { borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)' },
-            timeScale: { borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)', timeVisible: false },
-            crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
-            handleScroll: true,
-            handleScale: true,
+              var isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+              var w = wrap.offsetWidth || 320;
+
+              var chart = LightweightCharts.createChart(wrap, {
+                width: w,
+                height: 260,
+                layout: {
+                  background: { color: isDark ? '#1c1c1e' : '#ffffff' },
+                  textColor: isDark ? '#a0a0a0' : '#555555',
+                },
+                grid: {
+                  vertLines: { color: isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.04)' },
+                  horzLines: { color: isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.04)' },
+                },
+                rightPriceScale: { borderColor: isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)' },
+                timeScale: { borderColor: isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)', timeVisible: false },
+                crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
+              });
+
+              var series = chart.addCandlestickSeries({
+                upColor: '#D04040', downColor: '#2563EB',
+                borderUpColor: '#D04040', borderDownColor: '#2563EB',
+                wickUpColor: '#D04040', wickDownColor: '#2563EB',
+              });
+              series.setData(json.candles);
+
+              var peak     = trade.peakPrice || trade.buyPrice || json.maxHigh;
+              var shoulder = peak * 0.9;
+              var stopLoss = (trade.buyPrice || 0) * 0.9;
+              var cur      = json.latestClose;
+
+              series.createPriceLine({ price: peak,     color: '#378ADD', lineWidth: 1.5, lineStyle: LightweightCharts.LineStyle.Solid,  title: '확정고점' });
+              series.createPriceLine({ price: shoulder, color: '#E2A800', lineWidth: 1.5, lineStyle: LightweightCharts.LineStyle.Dashed, title: '어깨선' });
+              series.createPriceLine({ price: stopLoss, color: '#D04040', lineWidth: 1.5, lineStyle: LightweightCharts.LineStyle.Solid,  title: '손절선' });
+              series.createPriceLine({ price: cur,      color: '#22C55E', lineWidth: 1,   lineStyle: LightweightCharts.LineStyle.Dashed, title: '현재가' });
+
+              chart.timeScale().fitContent();
+
+              // 반응형 리사이즈
+              new ResizeObserver(function() {
+                var nw = wrap.offsetWidth;
+                if (nw > 0) chart.resize(nw, 260);
+              }).observe(wrap);
+            }, 50);
           });
-
-          var series = chart.addCandlestickSeries({
-            upColor: '#D04040', downColor: '#2563EB',
-            borderUpColor: '#D04040', borderDownColor: '#2563EB',
-            wickUpColor: '#D04040', wickDownColor: '#2563EB',
-          });
-          series.setData(json.candles);
-
-          var peak = trade.peakPrice || trade.buyPrice || json.maxHigh;
-          var shoulder = peak * 0.9;
-          var stopLoss = (trade.buyPrice || 0) * 0.9;
-          var cur = json.latestClose;
-
-          // 가격선 4개
-          series.createPriceLine({ price: peak,     color: '#378ADD', lineWidth: 1.5, lineStyle: LightweightCharts.LineStyle.Solid,  title: '확정고점' });
-          series.createPriceLine({ price: shoulder, color: '#E2A800', lineWidth: 1.5, lineStyle: LightweightCharts.LineStyle.Dashed, title: '어깨선' });
-          series.createPriceLine({ price: stopLoss, color: '#D04040', lineWidth: 1.5, lineStyle: LightweightCharts.LineStyle.Solid,  title: '손절선' });
-          series.createPriceLine({ price: cur,      color: '#22C55E', lineWidth: 1,   lineStyle: LightweightCharts.LineStyle.Dashed, title: '현재가' });
-
-          chart.timeScale().fitContent();
-
-          // 반응형
-          var ro = new ResizeObserver(function() {
-            if (wrap.clientWidth) chart.resize(wrap.clientWidth, 260);
-          });
-          ro.observe(wrap);
         })
         .catch(function(e) {
-          var wrap = document.getElementById('lwc-' + idx);
-          if (wrap) wrap.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#888;font-size:12px;padding:20px;">차트 데이터를 불러오지 못했어요</div>';
+          var wrap = document.getElementById(wrapId);
+          if (wrap) wrap.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:12px;color:var(--text-tertiary);padding:20px;">차트 데이터를 불러오지 못했어요</div>';
         });
     });
   }
@@ -3300,7 +3311,7 @@
     if (e.target === document.getElementById('trade-modal')) closeTradeModal();
   }
 
-  // ── 종목 검색 (관심종목 탭의 searchStock 재활용) ──
+  // ── 종목 검색 (/api/search 활용, 기존 포맷과 동일) ──
   function onTradeSearchInput(val) {
     clearTimeout(_tradeSearchTimer);
     var resultsEl = document.getElementById('trade-search-results');
@@ -3312,21 +3323,19 @@
       try {
         var res = await fetch('/api/search?q=' + encodeURIComponent(val.trim()));
         var json = await res.json();
-        var items = (json.quotes || json.data || []).slice(0, 8);
-        if (!items.length) { resultsEl.innerHTML = '<div style="padding:10px;font-size:13px;color:var(--text-secondary);">검색 결과 없음</div>'; resultsEl.style.display = 'block'; return; }
+        var items = (json.data || []).slice(0, 8);
+        if (!items.length) {
+          resultsEl.innerHTML = '<div style="padding:10px;font-size:13px;color:var(--text-secondary);">검색 결과 없음</div>';
+          resultsEl.style.display = 'block'; return;
+        }
         resultsEl.innerHTML = '';
         items.forEach(function(item) {
           var div = document.createElement('div');
-          div.style.cssText = 'padding:9px 12px;border-radius:var(--radius-md);background:var(--bg-secondary);cursor:pointer;font-size:13px;margin-bottom:4px;';
-          div.innerHTML = '<b>' + (item.shortname || item.longname || item.symbol) + '</b> <span style="color:var(--text-secondary);font-size:11px;">' + item.symbol + ' · ' + (item.exchDisp || item.exchange || '') + '</span>';
+          div.className = 'suggest-item';
+          div.innerHTML = '<span>' + item.name + '</span><span class="suggest-code">' + item.displayCode + ' · ' + item.market + '</span>';
           div.onclick = function() {
-            _tradeSearchSelected = {
-              symbol: item.symbol,
-              name: item.shortname || item.longname || item.symbol,
-              displayCode: item.symbol.replace(/\.(KS|KQ)$/i, ''),
-              market: item.exchDisp || item.exchange || 'NASDAQ'
-            };
-            selectedEl.innerHTML = '✅ <b>' + _tradeSearchSelected.name + '</b> <span style="color:var(--text-secondary);">' + _tradeSearchSelected.symbol + '</span>';
+            _tradeSearchSelected = item;
+            selectedEl.innerHTML = '✅ <b>' + item.name + '</b> <span style="color:var(--text-secondary);">' + item.displayCode + ' · ' + item.market + '</span>';
             selectedEl.style.display = 'block';
             resultsEl.style.display = 'none';
           };
