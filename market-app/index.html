@@ -1372,9 +1372,14 @@
       <!-- 상단 상태바 -->
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
         <span id="watch-status" style="font-size:11px;color:var(--text-secondary);">불러오는 중...</span>
-        <button onclick="refreshAll()"
-          style="font-size:12px;background:none;border:0.5px solid var(--border);border-radius:20px;padding:4px 10px;color:var(--text-secondary);cursor:pointer;">↻
-          새로고침</button>
+        <div style="display:flex;gap:6px;">
+          <button onclick="openSyncModal()"
+            style="font-size:12px;background:none;border:0.5px solid var(--border);border-radius:20px;padding:4px 10px;color:var(--text-secondary);cursor:pointer;">☁️
+            동기화</button>
+          <button onclick="refreshAll()"
+            style="font-size:12px;background:none;border:0.5px solid var(--border);border-radius:20px;padding:4px 10px;color:var(--text-secondary);cursor:pointer;">↻
+            새로고침</button>
+        </div>
       </div>
       <div class="watch-list" id="watchlist"></div>
       <button class="add-btn" onclick="openModal()">＋ 종목 추가</button>
@@ -1436,6 +1441,48 @@
       <div class="context-box">
         <strong>데이터 출처</strong>: FRED (St. Louis Fed). 원유·천연가스 2년, 구리·니켈 5년 기준. 차트 탭 시 FRED 원본에서 기간 조정 가능.
       </div>
+    </div>
+  </div>
+
+  <!-- 동기화 모달 -->
+  <div class="modal-overlay" id="sync-modal" onclick="handleSyncOverlayClick(event)">
+    <div class="modal">
+      <div class="modal-handle"></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
+        <div class="modal-title" style="margin-bottom:0;">☁️ 관심종목 동기화</div>
+        <button onclick="closeSyncModal()" style="background:none;border:none;font-size:22px;cursor:pointer;color:var(--text-secondary);padding:4px 8px;">×</button>
+      </div>
+
+      <div style="font-size:12px;color:var(--text-secondary);margin-bottom:6px;">내 동기화 코드 (영문+숫자 4~12자)</div>
+      <div style="display:flex;gap:8px;margin-bottom:10px;">
+        <input id="sync-code-input" class="modal-input"
+          style="margin:0;flex:1;text-transform:uppercase;letter-spacing:2px;font-size:16px;font-weight:600;"
+          placeholder="예: MYCODE01"
+          maxlength="12"
+          oninput="this.value=this.value.toUpperCase().replace(/[^A-Z0-9]/g,'')" />
+        <button onclick="generateSyncCode()"
+          style="white-space:nowrap;padding:0 14px;border:0.5px solid var(--border);border-radius:var(--radius-md);background:var(--bg-secondary);color:var(--text-secondary);font-size:12px;cursor:pointer;font-family:inherit;">
+          코드 생성
+        </button>
+      </div>
+
+      <div id="sync-status" style="min-height:20px;font-size:12px;color:var(--text-secondary);margin-bottom:12px;text-align:center;"></div>
+
+      <div class="modal-actions">
+        <button onclick="syncUpload()"
+          style="flex:1;padding:13px;border-radius:var(--radius-md);border:none;background:var(--accent-blue);color:#fff;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;">
+          ↑ 이 기기에서 저장
+        </button>
+        <button onclick="syncDownload()"
+          style="flex:1;padding:13px;border-radius:var(--radius-md);border:0.5px solid var(--border);background:var(--bg-secondary);color:var(--text-primary);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;">
+          ↓ 다른 기기에서 불러오기
+        </button>
+      </div>
+
+      <p style="font-size:11px;color:var(--text-tertiary);text-align:center;margin-top:14px;line-height:1.7;">
+        코드를 다른 기기에서 입력 후 "불러오기"를 누르면<br>관심종목이 그대로 동기화돼요.<br>
+        코드는 180일간 보관됩니다.
+      </p>
     </div>
   </div>
 
@@ -1800,7 +1847,82 @@
       refreshAll();
     }
 
-    // ── 모달 ──
+    // ── 동기화 모달 ──
+    function openSyncModal() {
+      var modal = document.getElementById('sync-modal');
+      var input = document.getElementById('sync-code-input');
+      var saved = localStorage.getItem('sync_code') || '';
+      input.value = saved;
+      setSyncStatus('');
+      modal.classList.add('open');
+    }
+    function closeSyncModal() {
+      document.getElementById('sync-modal').classList.remove('open');
+    }
+    function handleSyncOverlayClick(e) {
+      if (e.target === document.getElementById('sync-modal')) closeSyncModal();
+    }
+    function setSyncStatus(msg, isErr) {
+      var el = document.getElementById('sync-status');
+      el.textContent = msg;
+      el.style.color = isErr ? 'var(--up)' : 'var(--text-secondary)';
+    }
+    function generateSyncCode() {
+      var chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+      var code = '';
+      for (var i = 0; i < 8; i++) code += chars[Math.floor(Math.random() * chars.length)];
+      document.getElementById('sync-code-input').value = code;
+      setSyncStatus('코드가 생성됐어요. "저장하기"를 눌러 등록해주세요.');
+    }
+    async function syncUpload() {
+      var code = document.getElementById('sync-code-input').value.trim().toUpperCase();
+      if (!code || !/^[A-Z0-9]{4,12}$/.test(code)) {
+        setSyncStatus('코드를 영문+숫자 4~12자로 입력해주세요.', true); return;
+      }
+      if (stockList.length === 0) {
+        setSyncStatus('관심종목이 없어요. 먼저 종목을 추가해주세요.', true); return;
+      }
+      setSyncStatus('저장 중...');
+      try {
+        var res = await fetch('/api/sync', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ code: code, stocks: stockList })
+        });
+        var json = await res.json();
+        if (!json.ok) throw new Error(json.error || '저장 실패');
+        localStorage.setItem('sync_code', code);
+        var now = new Date();
+        setSyncStatus('✅ 저장 완료! (' + now.getHours() + ':' + String(now.getMinutes()).padStart(2,'0') + ') 코드: ' + code);
+      } catch(e) {
+        setSyncStatus('오류: ' + e.message, true);
+      }
+    }
+    async function syncDownload() {
+      var code = document.getElementById('sync-code-input').value.trim().toUpperCase();
+      if (!code || !/^[A-Z0-9]{4,12}$/.test(code)) {
+        setSyncStatus('코드를 영문+숫자 4~12자로 입력해주세요.', true); return;
+      }
+      setSyncStatus('불러오는 중...');
+      try {
+        var res = await fetch('/api/sync?code=' + encodeURIComponent(code));
+        var json = await res.json();
+        if (!json.ok) throw new Error(json.error || '불러오기 실패');
+        if (!Array.isArray(json.stocks) || json.stocks.length === 0) {
+          setSyncStatus('저장된 종목이 없어요.', true); return;
+        }
+        stockList = json.stocks;
+        saveStocks(stockList);
+        localStorage.setItem('sync_code', code);
+        setSyncStatus('✅ ' + json.stocks.length + '개 종목을 불러왔어요!');
+        refreshAll();
+        setTimeout(closeSyncModal, 1200);
+      } catch(e) {
+        setSyncStatus('오류: ' + e.message, true);
+      }
+    }
+
+    // ── 종목 추가 모달 ──
     function openModal() {
       document.getElementById('modal').classList.add('open');
       document.getElementById('search-input').value = '';
