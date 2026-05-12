@@ -1730,7 +1730,7 @@
       if (tab === 'nps' && !npsData.major) loadDartData('major');
       if (tab === 'rates') loadRates();
       if (tab === 'kr') loadProgramTrading();
-      if (tab === 'trade') refreshTrades();
+      if (tab === 'trade' && typeof refreshTrades === 'function') refreshTrades();
     }
 
     // ── 관심종목 데이터 (로컬스토리지) ──
@@ -3414,6 +3414,13 @@
     closeTradeModal();
     refreshTrades();
   }
+
+  // ── 초기화: 첫 script 블록의 switchTab 복원 시점에 refreshTrades가 미정의였으면 여기서 재실행 ──
+  (function() {
+    if (localStorage.getItem('activeTab') === 'trade') {
+      refreshTrades();
+    }
+  })();
   </script>
 </body>
 
