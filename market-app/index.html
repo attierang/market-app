@@ -790,6 +790,89 @@
       line-height: 1.6;
     }
 
+    /* ── 매매관리 탭 ── */
+    .trade-card {
+      background: var(--bg-primary);
+      border-radius: var(--radius-lg);
+      border: 0.5px solid var(--border);
+      margin-bottom: 8px;
+      overflow: hidden;
+    }
+    .trade-card-header {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 13px 14px 10px;
+      cursor: pointer;
+    }
+    .trade-card-body {
+      padding: 0 14px 12px;
+    }
+    .trade-level-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 0;
+      border-top: 0.5px solid var(--border);
+      font-size: 13px;
+    }
+    .trade-level-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      font-size: 12px;
+    }
+    .trade-level-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .trade-level-val {
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .trade-level-dist {
+      font-size: 11px;
+      color: var(--text-tertiary);
+      margin-top: 1px;
+      text-align: right;
+    }
+    .trade-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 20px;
+      margin-left: auto;
+    }
+    .trade-badge.hold   { background: rgba(34,197,94,0.15); color: #22C55E; }
+    .trade-badge.sell   { background: rgba(226,168,0,0.15);  color: #E2A800; }
+    .trade-badge.stop   { background: rgba(208,64,64,0.15);  color: var(--up); }
+    .trade-chart-wrap {
+      width: 100%; height: 260px;
+      margin: 8px 0 4px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: #131722;
+    }
+    .trade-actions {
+      display: flex;
+      gap: 6px;
+      padding: 8px 14px 12px;
+      border-top: 0.5px solid var(--border);
+    }
+    .trade-action-btn {
+      flex: 1;
+      padding: 7px;
+      border-radius: var(--radius-md);
+      border: 0.5px solid var(--border);
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      font-size: 12px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
     /* ── 모달 ── */
     .modal-overlay {
       display: none;
@@ -922,6 +1005,7 @@
         <div class="tab" onclick="switchTab('commodity')">원자재</div>
         <div class="tab" onclick="switchTab('nps')">국민연금</div>
         <div class="tab" onclick="switchTab('watch')">관심종목</div>
+        <div class="tab" onclick="switchTab('trade')">매매관리</div>
       </div>
     </div>
 
@@ -1387,6 +1471,18 @@
         035720)<br>미국주식: 티커 입력 (예: AAPL, NVDA, TSLA)</p>
     </div>
 
+    <!-- ── 매매관리 ── -->
+    <div class="scroll-area" id="tab-trade" style="display:none;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+        <span id="trade-status" style="font-size:11px;color:var(--text-secondary);">매매 중인 종목</span>
+        <button onclick="refreshTrades()"
+          style="font-size:12px;background:none;border:0.5px solid var(--border);border-radius:20px;padding:4px 10px;color:var(--text-secondary);cursor:pointer;">↻ 새로고침</button>
+      </div>
+      <div id="trade-list"></div>
+      <button class="add-btn" onclick="openTradeModal()">＋ 종목 추가</button>
+      <p class="watch-note" style="margin-top:10px;">매매가 -10% → 손절 검토 · 확정고점 -10% → 매도 검토</p>
+    </div>
+
     <!-- ── 원자재 ── -->
     <div class="scroll-area" id="tab-commodity" style="display:none;">
 
@@ -1483,6 +1579,36 @@
         코드를 다른 기기에서 입력 후 "불러오기"를 누르면<br>관심종목이 그대로 동기화돼요.<br>
         코드는 180일간 보관됩니다.
       </p>
+    </div>
+  </div>
+
+  <!-- 매매관리 추가/편집 모달 -->
+  <div class="modal-overlay" id="trade-modal" onclick="handleTradeOverlayClick(event)">
+    <div class="modal">
+      <div class="modal-handle"></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
+        <div class="modal-title" style="margin-bottom:0;" id="trade-modal-title">매매 종목 추가</div>
+        <button onclick="closeTradeModal()" style="background:none;border:none;font-size:22px;cursor:pointer;color:var(--text-secondary);padding:4px 8px;">×</button>
+      </div>
+
+      <!-- 종목 검색 (추가 시만 표시) -->
+      <div id="trade-modal-search-wrap">
+        <input class="modal-input" id="trade-search-input" placeholder="종목명 또는 코드 검색"
+          oninput="onTradeSearchInput(this.value)" style="margin:0 0 8px;" />
+        <div id="trade-search-results" style="display:none;max-height:200px;overflow-y:auto;margin-bottom:8px;"></div>
+        <div id="trade-selected-stock" style="display:none;padding:10px 12px;background:var(--bg-secondary);border-radius:var(--radius-md);margin-bottom:12px;font-size:13px;"></div>
+      </div>
+
+      <div style="font-size:12px;color:var(--text-secondary);margin-bottom:4px;">매매가 (매수한 가격)</div>
+      <input class="modal-input" id="trade-buy-price" type="number" placeholder="예: 75000" style="margin:0 0 10px;" />
+
+      <div style="font-size:12px;color:var(--text-secondary);margin-bottom:4px;">확정 고점 <span style="color:var(--text-tertiary);">(비워두면 매매가로 시작, 자동 추적)</span></div>
+      <input class="modal-input" id="trade-peak-price" type="number" placeholder="비워두면 매매가로 설정" style="margin:0 0 14px;" />
+
+      <button onclick="saveTrade()"
+        style="width:100%;padding:13px;border-radius:var(--radius-md);border:none;background:var(--accent-blue);color:#fff;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;">
+        저장
+      </button>
     </div>
   </div>
 
@@ -1589,7 +1715,7 @@
     })();
 
     // ── 탭 전환 ──
-    const tabs = ['rates', 'kr', 'commodity', 'nps', 'watch'];
+    const tabs = ['rates', 'kr', 'commodity', 'nps', 'watch', 'trade'];
     function switchTab(tab) {
       tabs.forEach(t => {
         document.getElementById('tab-' + t).style.display = t === tab ? 'flex' : 'none';
@@ -1604,6 +1730,7 @@
       if (tab === 'nps' && !npsData.major) loadDartData('major');
       if (tab === 'rates') loadRates();
       if (tab === 'kr') loadProgramTrading();
+      if (tab === 'trade') refreshTrades();
     }
 
     // ── 관심종목 데이터 (로컬스토리지) ──
@@ -2899,6 +3026,346 @@
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js');
     }
+  </script>
+
+  <!-- Lightweight Charts (매매관리 차트용, 지연 로드) -->
+  <script>
+  // ══════════════════════════════════════════════════
+  //  매매관리 탭
+  // ══════════════════════════════════════════════════
+
+  // ── 데이터 ──
+  function loadTradeList() {
+    try { var s = localStorage.getItem('trades_v1'); return s ? JSON.parse(s) : []; } catch { return []; }
+  }
+  function saveTradeList(list) { localStorage.setItem('trades_v1', JSON.stringify(list)); }
+  var tradeList = loadTradeList();
+  var _tradeQuoteMap = {};
+  var _lwcLoaded = false;
+  var _editTradeIdx = -1;  // -1 = 추가모드
+  var _tradeSearchSelected = null;
+  var _tradeSearchTimer = null;
+
+  // ── 가격 포맷 ──
+  function fmtTradePrice(p, currency) {
+    if (!p) return '-';
+    if (currency === 'KRW') return p.toLocaleString('ko-KR') + '원';
+    return '$' + p.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+  function fmtTradeDist(cur, target) {
+    if (!cur || !target) return '';
+    var pct = ((cur - target) / target * 100);
+    var sign = pct >= 0 ? '▲ +' : '▼ ';
+    return sign + Math.abs(pct).toFixed(1) + '%';
+  }
+
+  // ── 리스트 렌더링 ──
+  function renderTradeList() {
+    var container = document.getElementById('trade-list');
+    if (!container) return;
+    if (tradeList.length === 0) {
+      container.innerHTML = '<p style="text-align:center;color:var(--text-secondary);padding:30px 0;font-size:14px;">매매 중인 종목을 추가해보세요</p>';
+      document.getElementById('trade-status').textContent = '종목 없음';
+      return;
+    }
+    container.innerHTML = '';
+    tradeList.forEach(function(trade, idx) {
+      var q = _tradeQuoteMap[trade.symbol];
+      var cur = q ? q.price : null;
+      var currency = (trade.market === 'KOSPI' || trade.market === 'KOSDAQ') ? 'KRW' : 'USD';
+      var peak = trade.peakPrice || trade.buyPrice || 0;
+      var shoulder = peak * 0.9;
+      var stopLoss = (trade.buyPrice || 0) * 0.9;
+
+      // 자동 고점 갱신
+      if (cur && cur > peak) {
+        tradeList[idx].peakPrice = cur;
+        peak = cur;
+        shoulder = peak * 0.9;
+        saveTradeList(tradeList);
+      }
+
+      var status, badgeClass;
+      if (!cur) { status = '로딩중'; badgeClass = ''; }
+      else if (cur <= stopLoss) { status = '🚨 손절 검토'; badgeClass = 'stop'; }
+      else if (cur <= shoulder) { status = '⚠️ 매도 검토'; badgeClass = 'sell'; }
+      else { status = '✅ 보유 중'; badgeClass = 'hold'; }
+
+      var card = document.createElement('div');
+      card.className = 'trade-card';
+      card.innerHTML =
+        '<div class="trade-card-header" onclick="toggleTradeChart(' + idx + ')">' +
+          '<div style="width:36px;height:36px;border-radius:50%;background:var(--bg-secondary);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:var(--text-secondary);flex-shrink:0;">' + trade.name.slice(0,2) + '</div>' +
+          '<div style="flex:1;min-width:0;">' +
+            '<div style="font-size:14px;font-weight:600;">' + trade.name + '</div>' +
+            '<div style="font-size:11px;color:var(--text-secondary);">' + (trade.displayCode || trade.symbol) + ' · ' + trade.market + '</div>' +
+          '</div>' +
+          (badgeClass ? '<span class="trade-badge ' + badgeClass + '">' + status + '</span>' : '') +
+          '<div style="text-align:right;margin-left:8px;">' +
+            '<div style="font-size:14px;font-weight:600;">' + (cur ? fmtTradePrice(cur, currency) : '···') + '</div>' +
+            '<div style="font-size:11px;color:var(--text-secondary);">' + (q ? (q.changePct >= 0 ? '▲ +' : '▼ ') + Math.abs(q.changePct).toFixed(2) + '%' : '') + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="trade-card-body">' +
+          _tradeLevelRow('확정 고점', '#378ADD', peak, cur, currency) +
+          _tradeLevelRow('어깨선 −10%', '#E2A800', shoulder, cur, currency) +
+          _tradeLevelRow('매매가', '#888888', trade.buyPrice, cur, currency) +
+          _tradeLevelRow('손절선 −10%', '#D04040', stopLoss, cur, currency) +
+          '<div id="trade-chart-' + idx + '" style="display:none;"></div>' +
+        '</div>' +
+        '<div class="trade-actions">' +
+          '<button class="trade-action-btn" onclick="openTradeModal(' + idx + ')">✏️ 편집</button>' +
+          '<button class="trade-action-btn" onclick="deleteTrade(' + idx + ')" style="color:var(--up);">🗑 삭제</button>' +
+        '</div>';
+      container.appendChild(card);
+    });
+  }
+
+  function _tradeLevelRow(label, color, price, cur, currency) {
+    var dist = (cur && price) ? fmtTradeDist(cur, price) : '';
+    var distColor = dist.startsWith('▲') ? '#22C55E' : '#D04040';
+    return '<div class="trade-level-row">' +
+      '<div class="trade-level-label"><span class="trade-level-dot" style="background:' + color + ';"></span>' + label + '</div>' +
+      '<div style="text-align:right;">' +
+        '<div class="trade-level-val">' + (price ? fmtTradePrice(price, currency) : '-') + '</div>' +
+        (dist ? '<div class="trade-level-dist" style="color:' + distColor + ';">' + dist + '</div>' : '') +
+      '</div>' +
+    '</div>';
+  }
+
+  // ── 차트 토글 ──
+  var _chartRendered = {};
+  function toggleTradeChart(idx) {
+    var wrap = document.getElementById('trade-chart-' + idx);
+    if (!wrap) return;
+    if (wrap.style.display === 'none') {
+      wrap.style.display = 'block';
+      if (!_chartRendered[idx]) {
+        _chartRendered[idx] = true;
+        renderTradeChart(idx, wrap);
+      }
+    } else {
+      wrap.style.display = 'none';
+    }
+  }
+
+  // ── Lightweight Charts 지연 로드 ──
+  function loadLWC(cb) {
+    if (window.LightweightCharts) { cb(); return; }
+    var s = document.createElement('script');
+    s.src = 'https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js';
+    s.onload = cb;
+    document.head.appendChild(s);
+  }
+
+  // ── 차트 그리기 ──
+  function renderTradeChart(idx, container) {
+    var trade = tradeList[idx];
+    if (!trade) return;
+    container.innerHTML = '<div class="trade-chart-wrap" id="lwc-' + idx + '"><div style="display:flex;align-items:center;justify-content:center;height:100%;color:#888;font-size:13px;">차트 로딩중...</div></div>';
+    loadLWC(function() {
+      fetch('/api/chart?symbol=' + encodeURIComponent(trade.symbol) + '&range=6mo')
+        .then(function(r) { return r.json(); })
+        .then(function(json) {
+          if (!json.ok || !json.candles.length) throw new Error('데이터 없음');
+          var wrap = document.getElementById('lwc-' + idx);
+          if (!wrap) return;
+          wrap.innerHTML = '';
+
+          var isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var chart = LightweightCharts.createChart(wrap, {
+            width: wrap.clientWidth || 340,
+            height: 260,
+            layout: {
+              background: { color: isDark ? '#1c1c1e' : '#ffffff' },
+              textColor: isDark ? '#a0a0a0' : '#666666',
+            },
+            grid: {
+              vertLines: { color: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' },
+              horzLines: { color: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' },
+            },
+            rightPriceScale: { borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)' },
+            timeScale: { borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)', timeVisible: false },
+            crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
+            handleScroll: true,
+            handleScale: true,
+          });
+
+          var series = chart.addCandlestickSeries({
+            upColor: '#D04040', downColor: '#2563EB',
+            borderUpColor: '#D04040', borderDownColor: '#2563EB',
+            wickUpColor: '#D04040', wickDownColor: '#2563EB',
+          });
+          series.setData(json.candles);
+
+          var peak = trade.peakPrice || trade.buyPrice || json.maxHigh;
+          var shoulder = peak * 0.9;
+          var stopLoss = (trade.buyPrice || 0) * 0.9;
+          var cur = json.latestClose;
+
+          // 가격선 4개
+          series.createPriceLine({ price: peak,     color: '#378ADD', lineWidth: 1.5, lineStyle: LightweightCharts.LineStyle.Solid,  title: '확정고점' });
+          series.createPriceLine({ price: shoulder, color: '#E2A800', lineWidth: 1.5, lineStyle: LightweightCharts.LineStyle.Dashed, title: '어깨선' });
+          series.createPriceLine({ price: stopLoss, color: '#D04040', lineWidth: 1.5, lineStyle: LightweightCharts.LineStyle.Solid,  title: '손절선' });
+          series.createPriceLine({ price: cur,      color: '#22C55E', lineWidth: 1,   lineStyle: LightweightCharts.LineStyle.Dashed, title: '현재가' });
+
+          chart.timeScale().fitContent();
+
+          // 반응형
+          var ro = new ResizeObserver(function() {
+            if (wrap.clientWidth) chart.resize(wrap.clientWidth, 260);
+          });
+          ro.observe(wrap);
+        })
+        .catch(function(e) {
+          var wrap = document.getElementById('lwc-' + idx);
+          if (wrap) wrap.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#888;font-size:12px;padding:20px;">차트 데이터를 불러오지 못했어요</div>';
+        });
+    });
+  }
+
+  // ── 시세 새로고침 ──
+  async function refreshTrades() {
+    renderTradeList();
+    if (tradeList.length === 0) return;
+    document.getElementById('trade-status').textContent = '업데이트 중...';
+    try {
+      var symbols = tradeList.map(function(t) { return t.symbol; });
+      var krSyms = symbols.filter(function(s) { return /\.(KS|KQ)$/i.test(s); });
+      var usSyms = symbols.filter(function(s) { return !/\.(KS|KQ)$/i.test(s); });
+      var promises = [];
+      if (krSyms.length) {
+        var codes = krSyms.map(function(s) { return s.replace(/\.(KS|KQ)$/i, ''); });
+        promises.push(
+          fetch('/api/kis-quote?symbols=' + encodeURIComponent(codes.join(','))).then(function(r) { return r.json(); }).catch(function() { return { ok: false }; }),
+          fetch('/api/quote?symbols=' + encodeURIComponent(krSyms.join(','))).then(function(r) { return r.json(); }).catch(function() { return { ok: false }; })
+        );
+      }
+      if (usSyms.length) {
+        promises.push(
+          fetch('/api/quote?symbols=' + encodeURIComponent(usSyms.join(','))).then(function(r) { return r.json(); }).catch(function() { return { ok: false }; })
+        );
+      }
+      var results = await Promise.all(promises);
+      _tradeQuoteMap = {};
+      results.forEach(function(json) {
+        if (!json.ok) return;
+        (json.data || []).forEach(function(q) { _tradeQuoteMap[q.symbol] = q; });
+      });
+      renderTradeList();
+      _chartRendered = {};
+      var now = new Date();
+      document.getElementById('trade-status').textContent =
+        String(now.getHours()).padStart(2,'0') + ':' + String(now.getMinutes()).padStart(2,'0') + ' 업데이트';
+    } catch(e) {
+      document.getElementById('trade-status').textContent = '오류: ' + e.message;
+    }
+  }
+
+  // ── 종목 삭제 ──
+  function deleteTrade(idx) {
+    if (!confirm(tradeList[idx].name + ' 삭제할까요?')) return;
+    tradeList.splice(idx, 1);
+    saveTradeList(tradeList);
+    _chartRendered = {};
+    refreshTrades();
+  }
+
+  // ── 추가/편집 모달 ──
+  function openTradeModal(idx) {
+    _editTradeIdx = (idx === undefined) ? -1 : idx;
+    var isEdit = _editTradeIdx >= 0;
+    document.getElementById('trade-modal-title').textContent = isEdit ? '매매 종목 편집' : '매매 종목 추가';
+    document.getElementById('trade-modal-search-wrap').style.display = isEdit ? 'none' : 'block';
+    document.getElementById('trade-search-input').value = '';
+    document.getElementById('trade-search-results').style.display = 'none';
+    document.getElementById('trade-search-results').innerHTML = '';
+    document.getElementById('trade-selected-stock').style.display = 'none';
+    _tradeSearchSelected = null;
+    if (isEdit) {
+      var t = tradeList[_editTradeIdx];
+      document.getElementById('trade-buy-price').value = t.buyPrice || '';
+      document.getElementById('trade-peak-price').value = t.peakPrice || '';
+    } else {
+      document.getElementById('trade-buy-price').value = '';
+      document.getElementById('trade-peak-price').value = '';
+    }
+    document.getElementById('trade-modal').classList.add('open');
+  }
+  function closeTradeModal() {
+    document.getElementById('trade-modal').classList.remove('open');
+    clearTimeout(_tradeSearchTimer);
+  }
+  function handleTradeOverlayClick(e) {
+    if (e.target === document.getElementById('trade-modal')) closeTradeModal();
+  }
+
+  // ── 종목 검색 (관심종목 탭의 searchStock 재활용) ──
+  function onTradeSearchInput(val) {
+    clearTimeout(_tradeSearchTimer);
+    var resultsEl = document.getElementById('trade-search-results');
+    var selectedEl = document.getElementById('trade-selected-stock');
+    _tradeSearchSelected = null;
+    selectedEl.style.display = 'none';
+    if (!val.trim()) { resultsEl.style.display = 'none'; return; }
+    _tradeSearchTimer = setTimeout(async function() {
+      try {
+        var res = await fetch('/api/search?q=' + encodeURIComponent(val.trim()));
+        var json = await res.json();
+        var items = (json.quotes || json.data || []).slice(0, 8);
+        if (!items.length) { resultsEl.innerHTML = '<div style="padding:10px;font-size:13px;color:var(--text-secondary);">검색 결과 없음</div>'; resultsEl.style.display = 'block'; return; }
+        resultsEl.innerHTML = '';
+        items.forEach(function(item) {
+          var div = document.createElement('div');
+          div.style.cssText = 'padding:9px 12px;border-radius:var(--radius-md);background:var(--bg-secondary);cursor:pointer;font-size:13px;margin-bottom:4px;';
+          div.innerHTML = '<b>' + (item.shortname || item.longname || item.symbol) + '</b> <span style="color:var(--text-secondary);font-size:11px;">' + item.symbol + ' · ' + (item.exchDisp || item.exchange || '') + '</span>';
+          div.onclick = function() {
+            _tradeSearchSelected = {
+              symbol: item.symbol,
+              name: item.shortname || item.longname || item.symbol,
+              displayCode: item.symbol.replace(/\.(KS|KQ)$/i, ''),
+              market: item.exchDisp || item.exchange || 'NASDAQ'
+            };
+            selectedEl.innerHTML = '✅ <b>' + _tradeSearchSelected.name + '</b> <span style="color:var(--text-secondary);">' + _tradeSearchSelected.symbol + '</span>';
+            selectedEl.style.display = 'block';
+            resultsEl.style.display = 'none';
+          };
+          resultsEl.appendChild(div);
+        });
+        resultsEl.style.display = 'block';
+      } catch(e) { resultsEl.style.display = 'none'; }
+    }, 400);
+  }
+
+  // ── 저장 ──
+  function saveTrade() {
+    var buyPrice = parseFloat(document.getElementById('trade-buy-price').value);
+    var peakPrice = parseFloat(document.getElementById('trade-peak-price').value) || buyPrice;
+    if (!buyPrice || buyPrice <= 0) { alert('매매가를 입력해주세요.'); return; }
+
+    if (_editTradeIdx >= 0) {
+      tradeList[_editTradeIdx].buyPrice = buyPrice;
+      tradeList[_editTradeIdx].peakPrice = peakPrice;
+    } else {
+      if (!_tradeSearchSelected) { alert('종목을 검색해서 선택해주세요.'); return; }
+      if (tradeList.find(function(t) { return t.symbol === _tradeSearchSelected.symbol; })) {
+        alert('이미 추가된 종목이에요!'); return;
+      }
+      tradeList.push({
+        symbol: _tradeSearchSelected.symbol,
+        name: _tradeSearchSelected.name,
+        displayCode: _tradeSearchSelected.displayCode,
+        market: _tradeSearchSelected.market,
+        buyPrice: buyPrice,
+        peakPrice: peakPrice,
+        addedAt: new Date().toISOString()
+      });
+    }
+    saveTradeList(tradeList);
+    _chartRendered = {};
+    closeTradeModal();
+    refreshTrades();
+  }
   </script>
 </body>
 
