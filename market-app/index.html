@@ -3440,7 +3440,7 @@
     var btn = document.getElementById('trade-alert-btn');
     if (!btn) return;
     var on = localStorage.getItem('trade_alert') === '1' && Notification.permission === 'granted';
-    btn.textContent = on ? '🔔 알림 ON' : '🔔 알림';
+    btn.textContent = on ? '알림 ON' : '🔔 알림';
     btn.style.background = on ? 'var(--accent-blue)' : 'none';
     btn.style.color      = on ? '#fff' : 'var(--text-secondary)';
     btn.style.border     = on ? 'none' : '0.5px solid var(--border)';
