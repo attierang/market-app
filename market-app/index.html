@@ -3045,7 +3045,11 @@
     try { var s = localStorage.getItem('trades_v1'); return s ? JSON.parse(s) : []; } catch { return []; }
   }
   function saveTradeList(list) { localStorage.setItem('trades_v1', JSON.stringify(list)); }
-  var tradeList = loadTradeList();
+  var tradeList = loadTradeList().map(function(t) {
+    // name 없으면 displayCode 또는 symbol로 보정
+    if (!t.name) t.name = t.displayCode || t.symbol || '';
+    return t;
+  });
   var _tradeQuoteMap = {};
   var _lwcLoaded = false;
   var _editTradeIdx = -1;  // -1 = 추가모드
@@ -3098,14 +3102,15 @@
       else if (cur <= shoulder) { status = '⚠️ 매도 검토'; badgeClass = 'sell'; }
       else { status = '✅ 보유 중'; badgeClass = 'hold'; }
 
+      var tradeName = trade.name || trade.displayCode || trade.symbol || '??';
       var card = document.createElement('div');
       card.className = 'trade-card';
       card.innerHTML =
         '<div class="trade-card-header" onclick="toggleTradeChart(' + idx + ')">' +
-          '<div style="width:36px;height:36px;border-radius:50%;background:var(--bg-secondary);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:var(--text-secondary);flex-shrink:0;">' + trade.name.slice(0,2) + '</div>' +
+          '<div style="width:36px;height:36px;border-radius:50%;background:var(--bg-secondary);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:var(--text-secondary);flex-shrink:0;">' + tradeName.slice(0,2) + '</div>' +
           '<div style="flex:1;min-width:0;">' +
             '<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">' +
-              '<span style="font-size:14px;font-weight:600;">' + (trade.name || trade.displayCode || trade.symbol) + '</span>' +
+              '<span style="font-size:14px;font-weight:600;">' + tradeName + '</span>' +
               (badgeClass ? '<span class="trade-badge ' + badgeClass + '" style="margin-left:0;">' + status + '</span>' : '') +
             '</div>' +
             '<div style="display:flex;justify-content:space-between;align-items:center;margin-top:2px;">' +
