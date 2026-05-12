@@ -3111,7 +3111,7 @@
           _tradeLevelRow('어깨선 −10%', '#E2A800', shoulder, cur, currency) +
           _tradeLevelRow('매매가', '#888888', trade.buyPrice, cur, currency) +
           _tradeLevelRow('손절선 −10%', '#D04040', stopLoss, cur, currency) +
-          '<div id="trade-chart-' + idx + '" style="display:none;"></div>' +
+          '<div id="trade-chart-' + idx + '"></div>' +
         '</div>' +
         '<div class="trade-actions">' +
           '<button class="trade-action-btn" onclick="openTradeModal(' + idx + ')">✏️ 편집</button>' +
@@ -3119,6 +3119,8 @@
         '</div>';
       container.appendChild(card);
     });
+    // 카드 렌더 직후 차트 자동 그리기
+    setTimeout(autoRenderCharts, 0);
   }
 
   function _tradeLevelRow(label, color, price, cur, currency) {
@@ -3133,20 +3135,26 @@
     '</div>';
   }
 
-  // ── 차트 토글 ──
+  // ── 차트 토글 (기본 펼침, 탭하면 접힘) ──
   var _chartRendered = {};
   function toggleTradeChart(idx) {
     var wrap = document.getElementById('trade-chart-' + idx);
     if (!wrap) return;
     if (wrap.style.display === 'none') {
       wrap.style.display = 'block';
-      if (!_chartRendered[idx]) {
-        _chartRendered[idx] = true;
-        renderTradeChart(idx, wrap);
-      }
     } else {
       wrap.style.display = 'none';
     }
+  }
+  // 카드 렌더 후 차트 자동 그리기
+  function autoRenderCharts() {
+    tradeList.forEach(function(_, idx) {
+      var wrap = document.getElementById('trade-chart-' + idx);
+      if (wrap && !_chartRendered[idx]) {
+        _chartRendered[idx] = true;
+        renderTradeChart(idx, wrap);
+      }
+    });
   }
 
   // ── Lightweight Charts 지연 로드 ──
