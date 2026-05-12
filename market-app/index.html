@@ -1475,8 +1475,12 @@
     <div class="scroll-area" id="tab-trade" style="display:none;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
         <span id="trade-status" style="font-size:11px;color:var(--text-secondary);">매매 중인 종목</span>
-        <button onclick="refreshTrades()"
-          style="font-size:12px;background:none;border:0.5px solid var(--border);border-radius:20px;padding:4px 10px;color:var(--text-secondary);cursor:pointer;">↻ 새로고침</button>
+        <div style="display:flex;gap:6px;">
+          <button id="trade-alert-btn" onclick="toggleTradeAlert()"
+            style="font-size:12px;background:none;border:0.5px solid var(--border);border-radius:20px;padding:4px 10px;color:var(--text-secondary);cursor:pointer;">🔔 알림</button>
+          <button onclick="refreshTrades()"
+            style="font-size:12px;background:none;border:0.5px solid var(--border);border-radius:20px;padding:4px 10px;color:var(--text-secondary);cursor:pointer;">↻ 새로고침</button>
+        </div>
       </div>
       <div id="trade-list"></div>
       <button class="add-btn" onclick="openTradeModal()">＋ 종목 추가</button>
@@ -3418,11 +3422,130 @@
     refreshTrades();
   }
 
+  // ══════════════════════════════════════════════════
+  //  가격 알림 (브라우저 Notification API)
+  // ══════════════════════════════════════════════════
+  var _alertInterval = null;
+
+  function loadAlertCooldown() {
+    try { return JSON.parse(localStorage.getItem('alert_cd') || '{}'); } catch { return {}; }
+  }
+  function saveAlertCooldown(obj) {
+    localStorage.setItem('alert_cd', JSON.stringify(obj));
+  }
+
+  function updateAlertBtn() {
+    var btn = document.getElementById('trade-alert-btn');
+    if (!btn) return;
+    var on = localStorage.getItem('trade_alert') === '1' && Notification.permission === 'granted';
+    btn.textContent = on ? '🔔 알림 ON' : '🔔 알림';
+    btn.style.background = on ? 'var(--accent-blue)' : 'none';
+    btn.style.color      = on ? '#fff' : 'var(--text-secondary)';
+    btn.style.border     = on ? 'none' : '0.5px solid var(--border)';
+  }
+
+  async function toggleTradeAlert() {
+    if (!('Notification' in window)) {
+      alert('이 브라우저는 알림을 지원하지 않아요.'); return;
+    }
+    var on = localStorage.getItem('trade_alert') === '1';
+    if (on) {
+      // 알림 끄기
+      localStorage.setItem('trade_alert', '0');
+      if (_alertInterval) { clearInterval(_alertInterval); _alertInterval = null; }
+      updateAlertBtn();
+      return;
+    }
+    // 알림 켜기 — 권한 요청
+    var perm = await Notification.requestPermission();
+    if (perm !== 'granted') {
+      alert('알림 권한이 거부됐어요.\n브라우저 설정에서 이 사이트의 알림을 허용해주세요.'); return;
+    }
+    localStorage.setItem('trade_alert', '1');
+    startAlertMonitor();
+    updateAlertBtn();
+    new Notification('📊 매매관리 알림 ON', {
+      body: '어깨선·손절선 도달 시 알려드릴게요.',
+      icon: '/icons/icon-192.png'
+    });
+  }
+
+  function startAlertMonitor() {
+    if (_alertInterval) clearInterval(_alertInterval);
+    _alertInterval = setInterval(checkPriceAlerts, 60 * 1000);
+  }
+
+  async function checkPriceAlerts() {
+    if (!tradeList.length) return;
+    if (Notification.permission !== 'granted') return;
+    if (localStorage.getItem('trade_alert') !== '1') return;
+
+    try {
+      var symbols = tradeList.map(function(t) { return t.symbol; });
+      var krSyms  = symbols.filter(function(s) { return /\.(KS|KQ)$/i.test(s); });
+      var usSyms  = symbols.filter(function(s) { return !/\.(KS|KQ)$/i.test(s); });
+      var fetches = [];
+      if (krSyms.length) {
+        var codes = krSyms.map(function(s) { return s.replace(/\.(KS|KQ)$/i,''); });
+        fetches.push(fetch('/api/kis-quote?symbols=' + encodeURIComponent(codes.join(','))).then(function(r){return r.json();}).catch(function(){return{ok:false};}));
+      }
+      if (usSyms.length) {
+        fetches.push(fetch('/api/quote?symbols=' + encodeURIComponent(usSyms.join(','))).then(function(r){return r.json();}).catch(function(){return{ok:false};}));
+      }
+      var results = await Promise.all(fetches);
+      var priceMap = {};
+      results.forEach(function(json) {
+        if (!json.ok) return;
+        (json.data || []).forEach(function(q) { priceMap[q.symbol] = q.price; });
+      });
+
+      var cd = loadAlertCooldown();
+      var now = Date.now();
+      var COOLDOWN = 4 * 60 * 60 * 1000; // 4시간
+
+      tradeList.forEach(function(trade) {
+        var cur = priceMap[trade.symbol];
+        if (!cur) return;
+        var isKr     = /\.(KS|KQ)$/i.test(trade.symbol);
+        var currency = isKr ? 'KRW' : 'USD';
+        var peak     = trade.peakPrice || trade.buyPrice;
+        var shoulder = peak * 0.9;
+        var stopLoss = trade.buyPrice * 0.9;
+
+        // 어깨선 알림
+        var skKey = trade.symbol + '_shoulder';
+        if (cur <= shoulder && !(cd[skKey] && now - cd[skKey] < COOLDOWN)) {
+          new Notification('⚠️ 어깨선 도달 — ' + trade.name, {
+            body: '현재가 ' + fmtTradePrice(cur, currency) + ' ≤ 어깨선 ' + fmtTradePrice(shoulder, currency) + '\n매도를 검토해보세요.',
+            icon: '/icons/icon-192.png'
+          });
+          cd[skKey] = now;
+        }
+
+        // 손절선 알림
+        var stKey = trade.symbol + '_stop';
+        if (cur <= stopLoss && !(cd[stKey] && now - cd[stKey] < COOLDOWN)) {
+          new Notification('🚨 손절선 도달 — ' + trade.name, {
+            body: '현재가 ' + fmtTradePrice(cur, currency) + ' ≤ 손절선 ' + fmtTradePrice(stopLoss, currency) + '\n손절을 검토하세요!',
+            icon: '/icons/icon-192.png'
+          });
+          cd[stKey] = now;
+        }
+      });
+      saveAlertCooldown(cd);
+    } catch(e) {}
+  }
+
   // ── 초기화: 첫 script 블록의 switchTab 복원 시점에 refreshTrades가 미정의였으면 여기서 재실행 ──
   (function() {
     if (localStorage.getItem('activeTab') === 'trade') {
       refreshTrades();
     }
+    // 알림이 켜져있었으면 모니터 재시작
+    if (localStorage.getItem('trade_alert') === '1' && Notification.permission === 'granted') {
+      startAlertMonitor();
+    }
+    updateAlertBtn();
   })();
   </script>
 </body>
