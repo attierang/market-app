@@ -3098,13 +3098,16 @@
         '<div class="trade-card-header" onclick="toggleTradeChart(' + idx + ')">' +
           '<div style="width:36px;height:36px;border-radius:50%;background:var(--bg-secondary);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:var(--text-secondary);flex-shrink:0;">' + trade.name.slice(0,2) + '</div>' +
           '<div style="flex:1;min-width:0;">' +
-            '<div style="font-size:14px;font-weight:600;">' + trade.name + '</div>' +
-            '<div style="font-size:11px;color:var(--text-secondary);">' + (trade.displayCode || trade.symbol) + ' · ' + trade.market + '</div>' +
-          '</div>' +
-          (badgeClass ? '<span class="trade-badge ' + badgeClass + '">' + status + '</span>' : '') +
-          '<div style="text-align:right;margin-left:8px;">' +
-            '<div style="font-size:14px;font-weight:600;">' + (cur ? fmtTradePrice(cur, currency) : '···') + '</div>' +
-            '<div style="font-size:11px;color:var(--text-secondary);">' + (q ? (q.changePct >= 0 ? '▲ +' : '▼ ') + Math.abs(q.changePct).toFixed(2) + '%' : '') + '</div>' +
+            '<div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">' +
+              '<span style="font-size:14px;font-weight:600;">' + (trade.name || trade.displayCode || trade.symbol) + '</span>' +
+              (badgeClass ? '<span class="trade-badge ' + badgeClass + '" style="margin-left:0;">' + status + '</span>' : '') +
+            '</div>' +
+            '<div style="display:flex;justify-content:space-between;align-items:center;margin-top:2px;">' +
+              '<span style="font-size:11px;color:var(--text-secondary);">' + (trade.displayCode || trade.symbol) + ' · ' + trade.market + '</span>' +
+              '<span style="font-size:13px;font-weight:600;">' + (cur ? fmtTradePrice(cur, currency) : '···') +
+                (q ? '<span style="font-size:11px;font-weight:400;color:var(--text-secondary);margin-left:4px;">' + (q.changePct >= 0 ? '▲ +' : '▼ ') + Math.abs(q.changePct).toFixed(2) + '%</span>' : '') +
+              '</span>' +
+            '</div>' +
           '</div>' +
         '</div>' +
         '<div class="trade-card-body">' +
