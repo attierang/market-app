@@ -3138,14 +3138,26 @@
 
   // ── 차트 토글 (기본 펼침, 탭하면 접힘) ──
   var _chartRendered = {};
+  var _chartTf = {};   // 각 카드의 현재 timeframe
   function toggleTradeChart(idx) {
     var wrap = document.getElementById('trade-chart-' + idx);
     if (!wrap) return;
-    if (wrap.style.display === 'none') {
-      wrap.style.display = 'block';
-    } else {
-      wrap.style.display = 'none';
-    }
+    wrap.style.display = wrap.style.display === 'none' ? 'block' : 'none';
+  }
+  // timeframe 변경
+  function changeChartTf(idx, tf) {
+    _chartTf[idx] = tf;
+    // 버튼 active 갱신
+    ['1d','4h','1h'].forEach(function(t) {
+      var btn = document.getElementById('tf-' + idx + '-' + t);
+      if (btn) {
+        btn.style.background = (t === tf) ? 'var(--accent-blue)' : 'var(--bg-tertiary)';
+        btn.style.color      = (t === tf) ? '#fff'               : 'var(--text-secondary)';
+      }
+    });
+    // 차트 다시 그리기
+    var chartArea = document.getElementById('lwc-area-' + idx);
+    if (chartArea) renderTradeChart(idx, chartArea, tf);
   }
   // 카드 렌더 후 차트 자동 그리기
   function autoRenderCharts() {
@@ -3153,9 +3165,25 @@
       var wrap = document.getElementById('trade-chart-' + idx);
       if (wrap && !_chartRendered[idx]) {
         _chartRendered[idx] = true;
-        renderTradeChart(idx, wrap);
+        // timeframe 버튼 + 차트 영역 주입
+        var tf = _chartTf[idx] || '1d';
+        wrap.innerHTML =
+          '<div style="display:flex;gap:6px;padding:6px 0 4px;">' +
+            _tfBtn(idx, '1d', tf) + _tfBtn(idx, '4h', tf) + _tfBtn(idx, '1h', tf) +
+          '</div>' +
+          '<div id="lwc-area-' + idx + '"></div>';
+        renderTradeChart(idx, document.getElementById('lwc-area-' + idx), tf);
       }
     });
+  }
+  function _tfBtn(idx, tf, active) {
+    var isActive = tf === active;
+    return '<button id="tf-' + idx + '-' + tf + '" onclick="changeChartTf(' + idx + ',\'' + tf + '\')" ' +
+      'style="padding:3px 10px;border-radius:12px;border:0.5px solid var(--border);font-size:11px;cursor:pointer;font-family:inherit;' +
+      'background:' + (isActive ? 'var(--accent-blue)' : 'var(--bg-tertiary)') + ';' +
+      'color:' + (isActive ? '#fff' : 'var(--text-secondary)') + ';">' +
+      (tf === '1d' ? '일봉' : tf === '4h' ? '4시간' : '1시간') +
+      '</button>';
   }
 
   // ── Lightweight Charts 지연 로드 ──
@@ -3168,7 +3196,8 @@
   }
 
   // ── 차트 그리기 ──
-  function renderTradeChart(idx, container) {
+  function renderTradeChart(idx, container, tf) {
+    tf = tf || _chartTf[idx] || '1d';
     var trade = tradeList[idx];
     if (!trade) return;
     // 로딩 placeholder
@@ -3179,7 +3208,7 @@
       '</div>';
 
     loadLWC(function() {
-      fetch('/api/chart?symbol=' + encodeURIComponent(trade.symbol) + '&range=6mo')
+      fetch('/api/chart?symbol=' + encodeURIComponent(trade.symbol) + '&tf=' + tf)
         .then(function(r) { return r.json(); })
         .then(function(json) {
           if (!json.ok || !json.candles || !json.candles.length) throw new Error('데이터 없음');
@@ -3274,6 +3303,7 @@
       });
       renderTradeList();
       _chartRendered = {};
+      _chartTf = {};
       var now = new Date();
       document.getElementById('trade-status').textContent =
         String(now.getHours()).padStart(2,'0') + ':' + String(now.getMinutes()).padStart(2,'0') + ' 업데이트';
