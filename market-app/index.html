@@ -3072,7 +3072,8 @@
     tradeList.forEach(function(trade, idx) {
       var q = _tradeQuoteMap[trade.symbol];
       var cur = q ? q.price : null;
-      var currency = (trade.market === 'KOSPI' || trade.market === 'KOSDAQ') ? 'KRW' : 'USD';
+      var isKr = /\.(KS|KQ)$/i.test(trade.symbol);
+      var currency = isKr ? 'KRW' : 'USD';
       var peak = trade.peakPrice || trade.buyPrice || 0;
       var shoulder = peak * 0.9;
       var stopLoss = (trade.buyPrice || 0) * 0.9;
