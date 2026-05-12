@@ -1,4 +1,4 @@
-const CACHE = 'market-v9.3';
+const CACHE = 'market-v9.4';
 const ASSETS = ['/', '/index.html', '/manifest.json'];
 
 self.addEventListener('install', e => {
