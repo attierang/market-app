@@ -1,4 +1,4 @@
-// 관심종목 동기화 API (Vercel KV)
+// 관심종목 동기화 API (Upstash Redis REST)
 // GET  /api/sync?code=ABC123      → 코드로 저장된 관심종목 조회
 // POST /api/sync {code, stocks}   → 현재 관심종목을 코드에 저장
 
@@ -18,6 +18,7 @@ function validateCode(code) {
   return typeof code === 'string' && /^[A-Z0-9]{4,12}$/.test(code.toUpperCase());
 }
 
+// Upstash REST API: GET /get/<key>
 async function kvGet(key) {
   const res = await fetch(`${KV_URL}/get/${encodeURIComponent(key)}`, {
     headers: { Authorization: `Bearer ${KV_TOKEN}` }
@@ -27,12 +28,16 @@ async function kvGet(key) {
   return data.result ?? null;
 }
 
+// Upstash REST API: POST /set/<key>/<value>/ex/<seconds>
 async function kvSet(key, value) {
-  const res = await fetch(`${KV_URL}/setex/${encodeURIComponent(key)}/${TTL}`, {
-    method: 'POST',
-    headers: { Authorization: `Bearer ${KV_TOKEN}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify(value)
-  });
+  const valueStr = typeof value === 'string' ? value : JSON.stringify(value);
+  const res = await fetch(
+    `${KV_URL}/set/${encodeURIComponent(key)}/${encodeURIComponent(valueStr)}/ex/${TTL}`,
+    {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${KV_TOKEN}` }
+    }
+  );
   return res.ok;
 }
 
@@ -92,7 +97,7 @@ export default async function handler(req) {
       });
     }
 
-    const payload = JSON.stringify({ stocks, updatedAt: new Date().toISOString() });
+    const payload = { stocks, updatedAt: new Date().toISOString() };
     const ok = await kvSet(`wl:${code.toUpperCase()}`, payload);
 
     return new Response(JSON.stringify({ ok, updatedAt: new Date().toISOString() }), {
