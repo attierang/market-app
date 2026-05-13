@@ -2537,6 +2537,45 @@
     var ratesLoaded = false;
     async function loadRates() {
       if (ratesLoaded) return;
+
+      function fmtChgPct(pct) {
+        var sign = pct >= 0 ? '+' : '';
+        var cls = pct >= 0 ? 'var(--up)' : 'var(--down)';
+        return '<span style="color:' + cls + ';">' + sign + pct.toFixed(2) + '%</span>';
+      }
+
+      // ── 환율: Yahoo Finance 실시간 ──
+      try {
+        var fxRes = await fetch('/api/quote?symbols=' + encodeURIComponent('USDKRW=X,USDJPY=X'));
+        if (fxRes.ok) {
+          var fxJson = await fxRes.json();
+          var fxMap = {};
+          (fxJson.data || []).forEach(function(q) { fxMap[q.symbol] = q; });
+
+          var krw = fxMap['USDKRW=X'];
+          if (krw && krw.price > 0) {
+            var krwEl = document.getElementById('r-krw-val');
+            if (krwEl) krwEl.textContent = krw.price.toLocaleString('ko-KR', {minimumFractionDigits:2, maximumFractionDigits:2}) + '원';
+            var krwChgEl = document.getElementById('r-krw-chg');
+            if (krwChgEl && krw.changePct != null) krwChgEl.innerHTML = fmtChgPct(krw.changePct);
+          }
+
+          var jpy = fxMap['USDJPY=X'];
+          if (jpy && jpy.price > 0) {
+            var jpyEl = document.getElementById('r-jpy-val');
+            if (jpyEl) jpyEl.textContent = jpy.price.toFixed(2);
+            var jpyChgPctEl = document.getElementById('r-jpy-chg-pct');
+            if (jpyChgPctEl && jpy.changePct != null) jpyChgPctEl.innerHTML = fmtChgPct(jpy.changePct);
+            // JPY/KRW 크로스
+            var jpyChgEl = document.getElementById('r-jpy-chg');
+            if (jpyChgEl && krw && krw.price > 0) {
+              var jpyKrw = krw.price / jpy.price;
+              jpyChgEl.textContent = '(' + jpyKrw.toFixed(2) + '원)';
+            }
+          }
+        }
+      } catch(e) {}
+
       try {
         var res = await fetch('/data/rates.json');
         if (!res.ok) throw new Error('rates.json 로드 실패');
@@ -2544,23 +2583,6 @@
 
         // 날짜 포맷
         var dateStr = r.date ? r.date.replace(/-/g, '.') : '';
-
-        // 환율
-        function fmtChgPct(pct) {
-          var sign = pct >= 0 ? '+' : '';
-          var cls = pct >= 0 ? 'var(--up)' : 'var(--down)';
-          return '<span style="color:' + cls + ';">' + sign + pct.toFixed(2) + '%</span>';
-        }
-        var krwEl = document.getElementById('r-krw-val');
-        if (krwEl) krwEl.textContent = (r.usdkrw > 0) ? r.usdkrw.toLocaleString('ko-KR', {minimumFractionDigits:2, maximumFractionDigits:2}) + '원' : '수집 전';
-        var krwChgEl = document.getElementById('r-krw-chg');
-        if (krwChgEl) krwChgEl.innerHTML = (r.usdkrw > 0 && r.usdkrw_chg_pct !== undefined) ? fmtChgPct(r.usdkrw_chg_pct) : '';
-        var jpyEl = document.getElementById('r-jpy-val');
-        if (jpyEl) jpyEl.textContent = (r.usdjpy > 0) ? r.usdjpy.toFixed(2) : '수집 전';
-        var jpyChgEl = document.getElementById('r-jpy-chg');
-        if (jpyChgEl) jpyChgEl.textContent = (r.jpykrw > 0) ? '(' + r.jpykrw.toFixed(2) + '원)' : '';
-        var jpyChgPctEl = document.getElementById('r-jpy-chg-pct');
-        if (jpyChgPctEl) jpyChgPctEl.innerHTML = (r.usdjpy > 0 && r.usdjpy_chg_pct !== undefined) ? fmtChgPct(r.usdjpy_chg_pct) : '';
 
         // 미국 10년물 + 전일/전월 변화
         var us10yEl = document.getElementById('r-us10y');
