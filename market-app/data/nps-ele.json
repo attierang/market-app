@@ -1,7 +1,62 @@
 {
-  "updated_at": "2026-05-14T04:34:53.712Z",
+  "updated_at": "2026-05-14T07:33:22.613Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "엘앤에프",
+      "stock_code": "066970",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260514",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.01,
+      "change": 0,
+      "stock_count": 60,
+      "type": "buy"
+    },
+    {
+      "corp_name": "롯데관광개발",
+      "stock_code": "032350",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260514",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.25,
+      "change": -0.06,
+      "stock_count": 5471,
+      "type": "sell"
+    },
+    {
+      "corp_name": "두산",
+      "stock_code": "000150",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260514",
+      "flr_nm": "국민연금공단",
+      "ratio": 7.77,
+      "change": 7.77,
+      "stock_count": 1664152,
+      "type": "buy"
+    },
+    {
+      "corp_name": "CJ대한통운",
+      "stock_code": "000120",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260514",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.02,
+      "change": 0.01,
+      "stock_count": 1000,
+      "type": "buy"
+    },
+    {
+      "corp_name": "NC",
+      "stock_code": "036570",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260514",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.006,
+      "change": 0.003,
+      "stock_count": 624,
+      "type": "buy"
+    },
     {
       "corp_name": "엘앤에프",
       "stock_code": "066970",
@@ -495,61 +550,6 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 3361,
-      "type": "buy"
-    },
-    {
-      "corp_name": "키움증권",
-      "stock_code": "039490",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 11.35,
-      "change": 0.08,
-      "stock_count": 21674,
-      "type": "buy"
-    },
-    {
-      "corp_name": "파라다이스",
-      "stock_code": "034230",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 2000,
-      "type": "buy"
-    },
-    {
-      "corp_name": "SBS",
-      "stock_code": "034120",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.27,
-      "change": -3.03,
-      "stock_count": 561409,
-      "type": "sell"
-    },
-    {
-      "corp_name": "롯데관광개발",
-      "stock_code": "032350",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.25,
-      "change": -0.06,
-      "stock_count": 5471,
-      "type": "sell"
-    },
-    {
-      "corp_name": "롯데쇼핑",
-      "stock_code": "023530",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 176,
       "type": "buy"
     }
   ]
