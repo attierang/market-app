@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-14T07:33:22.613Z",
+  "updated_at": "2026-05-14T10:04:24.960Z",
   "count": 50,
   "data": [
     {
@@ -196,17 +196,6 @@
       "rcept_dt": "20260401",
       "flr_nm": "국민연금공단",
       "ratio": 36.31,
-      "change": 0,
-      "stock_count": 0,
-      "type": "buy"
-    },
-    {
-      "corp_name": "두산테스나",
-      "stock_code": "131970",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260401",
-      "flr_nm": "국민연금공단",
-      "ratio": 38.69,
       "change": 0,
       "stock_count": 0,
       "type": "buy"
@@ -551,6 +540,17 @@
       "change": -0.01,
       "stock_count": 0,
       "type": "sell"
+    },
+    {
+      "corp_name": "SK오션플랜트",
+      "stock_code": "100090",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260401",
+      "flr_nm": "국민연금공단",
+      "ratio": 20.73,
+      "change": 0,
+      "stock_count": 0,
+      "type": "buy"
     }
   ]
 }
