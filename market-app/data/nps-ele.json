@@ -1,7 +1,51 @@
 {
-  "updated_at": "2026-05-19T03:43:36.792Z",
+  "updated_at": "2026-05-19T07:46:47.945Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "IPARK현대산업개발",
+      "stock_code": "294870",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260519",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.01,
+      "change": 10.01,
+      "stock_count": 6596152,
+      "type": "buy"
+    },
+    {
+      "corp_name": "한화엔진",
+      "stock_code": "082740",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260519",
+      "flr_nm": "국민연금공단",
+      "ratio": 12.92,
+      "change": 2.81,
+      "stock_count": 2346209,
+      "type": "buy"
+    },
+    {
+      "corp_name": "한국카본",
+      "stock_code": "017960",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260519",
+      "flr_nm": "국민연금공단",
+      "ratio": 12.19,
+      "change": -7.05,
+      "stock_count": 1557253,
+      "type": "sell"
+    },
+    {
+      "corp_name": "달바글로벌",
+      "stock_code": "483650",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260519",
+      "flr_nm": "국민연금공단",
+      "ratio": 16.11,
+      "change": 16.11,
+      "stock_count": 1944780,
+      "type": "buy"
+    },
     {
       "corp_name": "엘앤에프",
       "stock_code": "066970",
@@ -506,50 +550,6 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 500,
-      "type": "buy"
-    },
-    {
-      "corp_name": "영원무역",
-      "stock_code": "111770",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.01,
-      "change": 10.01,
-      "stock_count": 4434400,
-      "type": "buy"
-    },
-    {
-      "corp_name": "한국금융지주",
-      "stock_code": "071050",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 9.13,
-      "change": 9.13,
-      "stock_count": 5619634,
-      "type": "buy"
-    },
-    {
-      "corp_name": "현대백화점",
-      "stock_code": "069960",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 31.03,
-      "change": 1.03,
-      "stock_count": 0,
-      "type": "buy"
-    },
-    {
-      "corp_name": "한전기술",
-      "stock_code": "052690",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 3361,
       "type": "buy"
     }
   ]
