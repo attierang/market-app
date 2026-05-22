@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-21T23:41:16.547Z",
+  "updated_at": "2026-05-22T02:45:20.565Z",
   "count": 50,
   "data": [
     {
@@ -74,9 +74,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260514",
       "flr_nm": "국민연금공단",
-      "ratio": 7.8,
-      "change": 0.03,
-      "stock_count": 5551,
+      "ratio": 7.82,
+      "change": 7.82,
+      "stock_count": 1675163,
       "type": "buy"
     },
     {
@@ -118,10 +118,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260506",
       "flr_nm": "국민연금공단",
-      "ratio": 10.13,
-      "change": 10.13,
-      "stock_count": 438408,
-      "type": "buy"
+      "ratio": 3.37,
+      "change": -5.72,
+      "stock_count": 247672,
+      "type": "sell"
     },
     {
       "corp_name": "한화엔진",
@@ -228,9 +228,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260428",
       "flr_nm": "국민연금공단",
-      "ratio": 7.8,
-      "change": 0.03,
-      "stock_count": 5551,
+      "ratio": 7.82,
+      "change": 7.82,
+      "stock_count": 1675163,
       "type": "buy"
     },
     {
@@ -360,10 +360,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260410",
       "flr_nm": "국민연금공단",
-      "ratio": 10.13,
-      "change": 10.13,
-      "stock_count": 438408,
-      "type": "buy"
+      "ratio": 3.37,
+      "change": -5.72,
+      "stock_count": 247672,
+      "type": "sell"
     },
     {
       "corp_name": "씨에스윈드",
@@ -404,10 +404,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260402",
       "flr_nm": "국민연금공단",
-      "ratio": 10.13,
-      "change": 10.13,
-      "stock_count": 438408,
-      "type": "buy"
+      "ratio": 3.37,
+      "change": -5.72,
+      "stock_count": 247672,
+      "type": "sell"
     },
     {
       "corp_name": "코오롱인더",
@@ -437,10 +437,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260402",
       "flr_nm": "국민연금공단",
-      "ratio": 10.13,
-      "change": 10.13,
-      "stock_count": 438408,
-      "type": "buy"
+      "ratio": 3.37,
+      "change": -5.72,
+      "stock_count": 247672,
+      "type": "sell"
     },
     {
       "corp_name": "한국콜마",
