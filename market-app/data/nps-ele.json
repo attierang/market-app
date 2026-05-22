@@ -1,7 +1,73 @@
 {
-  "updated_at": "2026-05-22T02:45:20.565Z",
+  "updated_at": "2026-05-22T06:51:21.489Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "한미약품",
+      "stock_code": "128940",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260522",
+      "flr_nm": "국민연금공단",
+      "ratio": 9.95,
+      "change": -0.54,
+      "stock_count": 68676,
+      "type": "sell"
+    },
+    {
+      "corp_name": "금호석유화학",
+      "stock_code": "011780",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260522",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.99,
+      "change": 0.1,
+      "stock_count": 3650,
+      "type": "buy"
+    },
+    {
+      "corp_name": "케이씨씨",
+      "stock_code": "002380",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260522",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.01,
+      "change": 0,
+      "stock_count": 580,
+      "type": "buy"
+    },
+    {
+      "corp_name": "이수페타시스",
+      "stock_code": "007660",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260522",
+      "flr_nm": "국민연금공단",
+      "ratio": 12.38,
+      "change": -0.2,
+      "stock_count": 124024,
+      "type": "sell"
+    },
+    {
+      "corp_name": "롯데관광개발",
+      "stock_code": "032350",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260522",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.25,
+      "change": -0.06,
+      "stock_count": 5471,
+      "type": "sell"
+    },
+    {
+      "corp_name": "금호석유화학",
+      "stock_code": "011780",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260522",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.99,
+      "change": 0.1,
+      "stock_count": 3650,
+      "type": "buy"
+    },
     {
       "corp_name": "IPARK현대산업개발",
       "stock_code": "294870",
@@ -485,72 +551,6 @@
       "change": -9.05,
       "stock_count": 843862,
       "type": "sell"
-    },
-    {
-      "corp_name": "HD건설기계",
-      "stock_code": "267270",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.01,
-      "change": 10.01,
-      "stock_count": 1831990,
-      "type": "buy"
-    },
-    {
-      "corp_name": "코스메카코리아",
-      "stock_code": "241710",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 9.69,
-      "change": -1.8,
-      "stock_count": 191686,
-      "type": "sell"
-    },
-    {
-      "corp_name": "HL만도",
-      "stock_code": "204320",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.03,
-      "change": 10.03,
-      "stock_count": 4710707,
-      "type": "buy"
-    },
-    {
-      "corp_name": "코스맥스",
-      "stock_code": "192820",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 341,
-      "type": "buy"
-    },
-    {
-      "corp_name": "한미약품",
-      "stock_code": "128940",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 9.95,
-      "change": -0.54,
-      "stock_count": 68676,
-      "type": "sell"
-    },
-    {
-      "corp_name": "코오롱인더",
-      "stock_code": "120110",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 500,
-      "type": "buy"
     }
   ]
 }
