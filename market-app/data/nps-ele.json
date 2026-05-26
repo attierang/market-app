@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26T03:49:26.194Z",
+  "updated_at": "2026-05-26T07:46:25.464Z",
   "count": 50,
   "data": [
     {
@@ -12,6 +12,17 @@
       "change": -0.54,
       "stock_count": 68676,
       "type": "sell"
+    },
+    {
+      "corp_name": "금호석유화학",
+      "stock_code": "011780",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260522",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.99,
+      "change": 0.1,
+      "stock_count": 3650,
+      "type": "buy"
     },
     {
       "corp_name": "금호석유화학",
@@ -540,17 +551,6 @@
       "change": 0,
       "stock_count": 678,
       "type": "buy"
-    },
-    {
-      "corp_name": "효성중공업",
-      "stock_code": "298040",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260402",
-      "flr_nm": "국민연금공단",
-      "ratio": 1.5,
-      "change": -9.05,
-      "stock_count": 843862,
-      "type": "sell"
     }
   ]
 }
