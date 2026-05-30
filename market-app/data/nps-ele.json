@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-30T08:08:26.865Z",
+  "updated_at": "2026-05-30T10:28:32.432Z",
   "count": 50,
   "data": [
     {
@@ -30,10 +30,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260522",
       "flr_nm": "국민연금공단",
-      "ratio": 0.01,
-      "change": 0,
-      "stock_count": 580,
-      "type": "buy"
+      "ratio": 0,
+      "change": -0.01,
+      "stock_count": 657,
+      "type": "sell"
     },
     {
       "corp_name": "이수페타시스",
@@ -184,10 +184,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260506",
       "flr_nm": "국민연금공단",
-      "ratio": 3.37,
-      "change": -5.72,
+      "ratio": 20.32,
+      "change": 5.73,
       "stock_count": 247672,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "한화엔진",
@@ -250,10 +250,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260430",
       "flr_nm": "국민연금공단",
-      "ratio": 0.01,
-      "change": 0,
-      "stock_count": 580,
-      "type": "buy"
+      "ratio": 0,
+      "change": -0.01,
+      "stock_count": 657,
+      "type": "sell"
     },
     {
       "corp_name": "한화엔진",
@@ -305,10 +305,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260428",
       "flr_nm": "국민연금공단",
-      "ratio": 0.01,
-      "change": 0,
-      "stock_count": 580,
-      "type": "buy"
+      "ratio": 0,
+      "change": -0.01,
+      "stock_count": 657,
+      "type": "sell"
     },
     {
       "corp_name": "코오롱인더",
@@ -426,10 +426,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260410",
       "flr_nm": "국민연금공단",
-      "ratio": 3.37,
-      "change": -5.72,
+      "ratio": 20.32,
+      "change": 5.73,
       "stock_count": 247672,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "씨에스윈드",
@@ -470,10 +470,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260402",
       "flr_nm": "국민연금공단",
-      "ratio": 3.37,
-      "change": -5.72,
+      "ratio": 20.32,
+      "change": 5.73,
       "stock_count": 247672,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "코오롱인더",
@@ -503,10 +503,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260402",
       "flr_nm": "국민연금공단",
-      "ratio": 3.37,
-      "change": -5.72,
+      "ratio": 20.32,
+      "change": 5.73,
       "stock_count": 247672,
-      "type": "sell"
+      "type": "buy"
     },
     {
       "corp_name": "한국콜마",
@@ -547,10 +547,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260402",
       "flr_nm": "국민연금공단",
-      "ratio": 1.5,
-      "change": -9.05,
-      "stock_count": 843862,
-      "type": "sell"
+      "ratio": 13.15,
+      "change": 2.17,
+      "stock_count": 202115,
+      "type": "buy"
     }
   ]
 }
