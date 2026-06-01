@@ -1,7 +1,62 @@
 {
-  "updated_at": "2026-06-01T04:59:58.691Z",
+  "updated_at": "2026-06-01T10:18:01.630Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "효성티앤씨",
+      "stock_code": "298020",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260601",
+      "flr_nm": "국민연금공단",
+      "ratio": 41.5,
+      "change": -3.36,
+      "stock_count": 145719,
+      "type": "sell"
+    },
+    {
+      "corp_name": "하나머티리얼즈",
+      "stock_code": "166090",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260601",
+      "flr_nm": "국민연금공단",
+      "ratio": 46.17,
+      "change": 0,
+      "stock_count": 0,
+      "type": "buy"
+    },
+    {
+      "corp_name": "한국전력공사",
+      "stock_code": "015760",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260601",
+      "flr_nm": "국민연금공단",
+      "ratio": 6.88,
+      "change": 0.29,
+      "stock_count": 1858816,
+      "type": "buy"
+    },
+    {
+      "corp_name": "삼양식품",
+      "stock_code": "003230",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260601",
+      "flr_nm": "국민연금공단",
+      "ratio": 44.98,
+      "change": -0.2,
+      "stock_count": 14500,
+      "type": "sell"
+    },
+    {
+      "corp_name": "CJ대한통운",
+      "stock_code": "000120",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260601",
+      "flr_nm": "국민연금공단",
+      "ratio": 9.33,
+      "change": -1.02,
+      "stock_count": 231442,
+      "type": "sell"
+    },
     {
       "corp_name": "하나머티리얼즈",
       "stock_code": "166090",
@@ -496,61 +551,6 @@
       "change": -1.04,
       "stock_count": 541204,
       "type": "sell"
-    },
-    {
-      "corp_name": "팬오션",
-      "stock_code": "028670",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260401",
-      "flr_nm": "국민연금공단",
-      "ratio": 54.92,
-      "change": 0,
-      "stock_count": 0,
-      "type": "buy"
-    },
-    {
-      "corp_name": "파라다이스",
-      "stock_code": "034230",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260401",
-      "flr_nm": "국민연금공단",
-      "ratio": 45.57,
-      "change": -0.29,
-      "stock_count": 262290,
-      "type": "sell"
-    },
-    {
-      "corp_name": "BGF리테일",
-      "stock_code": "282330",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260401",
-      "flr_nm": "국민연금공단",
-      "ratio": 53.41,
-      "change": 0,
-      "stock_count": 0,
-      "type": "buy"
-    },
-    {
-      "corp_name": "롯데관광개발",
-      "stock_code": "032350",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260401",
-      "flr_nm": "국민연금공단",
-      "ratio": 5.01,
-      "change": 0.01,
-      "stock_count": 13401,
-      "type": "buy"
-    },
-    {
-      "corp_name": "SK오션플랜트",
-      "stock_code": "100090",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260401",
-      "flr_nm": "국민연금공단",
-      "ratio": 20.73,
-      "change": 0,
-      "stock_count": 0,
-      "type": "buy"
     }
   ]
 }
