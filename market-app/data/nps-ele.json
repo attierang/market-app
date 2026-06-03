@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-03T02:09:06.439Z",
+  "updated_at": "2026-06-03T07:26:52.525Z",
   "count": 50,
   "data": [
     {
@@ -85,10 +85,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260601",
       "flr_nm": "국민연금공단",
-      "ratio": 10.67,
-      "change": 0.54,
-      "stock_count": 23268,
-      "type": "buy"
+      "ratio": 9.91,
+      "change": -0.76,
+      "stock_count": 32698,
+      "type": "sell"
     },
     {
       "corp_name": "삼양식품",
@@ -283,10 +283,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260506",
       "flr_nm": "국민연금공단",
-      "ratio": 10.67,
-      "change": 0.54,
-      "stock_count": 23268,
-      "type": "buy"
+      "ratio": 9.91,
+      "change": -0.76,
+      "stock_count": 32698,
+      "type": "sell"
     },
     {
       "corp_name": "한화엔진",
@@ -437,9 +437,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260427",
       "flr_nm": "국민연금공단",
-      "ratio": 10.02,
-      "change": 10.02,
-      "stock_count": 2372437,
+      "ratio": 10.88,
+      "change": 0.86,
+      "stock_count": 201400,
       "type": "buy"
     },
     {
@@ -525,10 +525,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260410",
       "flr_nm": "국민연금공단",
-      "ratio": 10.67,
-      "change": 0.54,
-      "stock_count": 23268,
-      "type": "buy"
+      "ratio": 9.91,
+      "change": -0.76,
+      "stock_count": 32698,
+      "type": "sell"
     },
     {
       "corp_name": "씨에스윈드",
