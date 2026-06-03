@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02T23:23:34.378Z",
+  "updated_at": "2026-06-03T02:09:06.439Z",
   "count": 50,
   "data": [
     {
@@ -327,10 +327,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260430",
       "flr_nm": "국민연금공단",
-      "ratio": 7.26,
-      "change": -0.04,
-      "stock_count": 5000,
-      "type": "sell"
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 123,
+      "type": "buy"
     },
     {
       "corp_name": "SBS",
@@ -371,10 +371,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260430",
       "flr_nm": "국민연금공단",
-      "ratio": 7.26,
-      "change": -0.04,
-      "stock_count": 5000,
-      "type": "sell"
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 123,
+      "type": "buy"
     },
     {
       "corp_name": "현대건설",
@@ -470,10 +470,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260415",
       "flr_nm": "국민연금공단",
-      "ratio": 7.26,
-      "change": -0.04,
-      "stock_count": 5000,
-      "type": "sell"
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 123,
+      "type": "buy"
     },
     {
       "corp_name": "롯데관광개발",
@@ -503,10 +503,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260410",
       "flr_nm": "국민연금공단",
-      "ratio": 7.26,
-      "change": -0.04,
-      "stock_count": 5000,
-      "type": "sell"
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 123,
+      "type": "buy"
     },
     {
       "corp_name": "금호석유화학",
@@ -547,10 +547,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260407",
       "flr_nm": "국민연금공단",
-      "ratio": 7.26,
-      "change": -0.04,
-      "stock_count": 5000,
-      "type": "sell"
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 123,
+      "type": "buy"
     }
   ]
 }
