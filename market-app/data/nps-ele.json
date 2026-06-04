@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-04T01:51:42.850Z",
+  "updated_at": "2026-06-04T06:34:08.205Z",
   "count": 50,
   "data": [
     {
@@ -41,10 +41,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260601",
       "flr_nm": "국민연금공단",
-      "ratio": 9.95,
-      "change": -0.54,
-      "stock_count": 68676,
-      "type": "sell"
+      "ratio": 7.72,
+      "change": 7.72,
+      "stock_count": 988597,
+      "type": "buy"
     },
     {
       "corp_name": "LIG디펜스앤에어로스페이스",
@@ -107,10 +107,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260522",
       "flr_nm": "국민연금공단",
-      "ratio": 9.95,
-      "change": -0.54,
-      "stock_count": 68676,
-      "type": "sell"
+      "ratio": 7.72,
+      "change": 7.72,
+      "stock_count": 988597,
+      "type": "buy"
     },
     {
       "corp_name": "금호석유화학",
