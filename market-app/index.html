@@ -283,6 +283,54 @@
       font-weight: 600;
     }
 
+    /* ── 순매수 상위 테이블 ── */
+    .netbuy-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .netbuy-table th {
+      color: var(--text-secondary);
+      font-weight: 500;
+      font-size: 11px;
+      padding: 0 4px 8px;
+      text-align: left;
+      border-bottom: 0.5px solid var(--border);
+    }
+    .netbuy-table th:last-child,
+    .netbuy-table td:last-child {
+      text-align: right;
+    }
+    .netbuy-table td {
+      padding: 7px 4px;
+      border-bottom: 0.5px solid var(--border);
+      vertical-align: middle;
+    }
+    .netbuy-table tr:last-child td {
+      border-bottom: none;
+    }
+    .netbuy-rank {
+      color: var(--text-secondary);
+      font-size: 11px;
+      min-width: 18px;
+      text-align: center;
+    }
+    .netbuy-name {
+      font-weight: 500;
+      padding-left: 6px;
+    }
+    .netbuy-code {
+      font-size: 11px;
+      color: var(--text-secondary);
+      padding-left: 4px;
+    }
+    .netbuy-amt {
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .netbuy-amt.up   { color: var(--up-color, #ef5350); }
+    .netbuy-amt.down { color: var(--dn-color, #2196F3); }
+
     /* ── 금리 탭 ── */
     .rate-hero {
       display: grid;
@@ -1062,6 +1110,21 @@
         <div class="row"><span class="row-name">비차익매도</span><span class="row-val" id="kosdaq-nonarb-sell">-</span></div>
         <div class="row"><span class="row-name">비차익순매수</span><span class="row-val" id="kosdaq-nonarb-net">-</span></div>
       </div>
+
+      <!-- ── 순매수 상위 20 ── -->
+      <div class="card">
+        <div class="card-title">KOSPI 순매수 상위 20 <span class="card-sub" id="kospi-netbuy-date">KRX · 로딩중</span></div>
+        <div id="kospi-netbuy-list">
+          <div style="color:var(--text-secondary);font-size:13px;padding:12px 0;text-align:center;">데이터 로딩 중...</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">KOSDAQ 순매수 상위 20 <span class="card-sub" id="kosdaq-netbuy-date">KRX · 로딩중</span></div>
+        <div id="kosdaq-netbuy-list">
+          <div style="color:var(--text-secondary);font-size:13px;padding:12px 0;text-align:center;">데이터 로딩 중...</div>
+        </div>
+      </div>
+
       <div class="card">
         <div class="card-title">글로벌 지수</div>
         <div class="global-grid">
@@ -1735,7 +1798,7 @@
       if (tab === 'watch') refreshAll();
       if (tab === 'nps' && !npsData.major) loadDartData('major');
       if (tab === 'rates') loadRates();
-      if (tab === 'kr') loadProgramTrading();
+      if (tab === 'kr') { loadProgramTrading(); loadKrxNetbuy(); }
       if (tab === 'trade' && typeof refreshTrades === 'function') refreshTrades();
     }
 
@@ -3030,6 +3093,73 @@
         applyMarket('kosdaq', json.data.kosdaq);
       } catch(e) {
         // 실패 시 조용히 처리 (정적 "-" 유지)
+      }
+    }
+
+    // ── KRX 종목별 순매수 상위 20 로드 ──
+    var _netbuyLoaded = false;
+    async function loadKrxNetbuy() {
+      if (_netbuyLoaded) return;
+      try {
+        var res = await fetch('/data/krx-netbuy.json');
+        if (!res.ok) return;
+        var json = await res.json();
+        if (!json.date) return;   // 초기 빈 파일
+        _netbuyLoaded = true;
+
+        // 날짜 표시 (YYYYMMDD → MM/DD)
+        var dd = String(json.date || '');
+        var dateLabel = dd.length === 8
+          ? dd.slice(4,6) + '/' + dd.slice(6,8) + ' 기준'
+          : 'KRX';
+
+        function fmtEok(eok) {
+          if (eok == null) return '-';
+          var abs  = Math.abs(eok);
+          var sign = eok >= 0 ? '+' : '-';
+          if (abs >= 10000) return sign + (abs / 10000).toFixed(1) + '조';
+          if (abs >= 1)     return sign + Math.round(abs).toLocaleString() + '억';
+          return sign + (abs * 10).toFixed(0) + '천만';
+        }
+
+        function renderList(containerId, dateId, stocks) {
+          var dateEl = document.getElementById(dateId);
+          if (dateEl) dateEl.textContent = 'KRX · ' + dateLabel;
+
+          var el = document.getElementById(containerId);
+          if (!el) return;
+          if (!stocks || stocks.length === 0) {
+            el.innerHTML = '<div style="color:var(--text-secondary);font-size:13px;padding:12px 0;text-align:center;">데이터 없음</div>';
+            return;
+          }
+
+          var rows = stocks.map(function(s) {
+            var eok     = s.netBuyEok != null ? s.netBuyEok : (s.netBuy / 100);
+            var amtTxt  = fmtEok(eok);
+            var cls     = eok > 0 ? 'up' : eok < 0 ? 'down' : '';
+            return '<tr>'
+              + '<td><span class="netbuy-rank">' + s.rank + '</span></td>'
+              + '<td><span class="netbuy-name">' + (s.name || s.code) + '</span>'
+              + '  <span class="netbuy-code">' + (s.code || '') + '</span></td>'
+              + '<td><span class="netbuy-amt ' + cls + '">' + amtTxt + '</span></td>'
+              + '</tr>';
+          }).join('');
+
+          el.innerHTML = '<table class="netbuy-table">'
+            + '<thead><tr>'
+            + '<th style="min-width:22px;">#</th>'
+            + '<th>종목</th>'
+            + '<th>순매수(외국인+기관)</th>'
+            + '</tr></thead>'
+            + '<tbody>' + rows + '</tbody>'
+            + '</table>';
+        }
+
+        renderList('kospi-netbuy-list',  'kospi-netbuy-date',  json.kospi);
+        renderList('kosdaq-netbuy-list', 'kosdaq-netbuy-date', json.kosdaq);
+
+      } catch(e) {
+        // 조용히 실패
       }
     }
 
