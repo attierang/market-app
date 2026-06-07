@@ -127,9 +127,8 @@ async function fetchNaverSidebar(investorGubun) {
       res.on('data', c => { body = Buffer.concat([body, c]); });
       res.on('end', () => {
         try {
-          const html = body.toString('binary').replace(/[\x80-\xff]/g, c => String.fromCharCode(c.charCodeAt(0)));
-          // Try EUC-KR decode via iconv replacement
-          const text = body.toString('latin1');
+          // EUC-KR → UTF-8 (Node.js TextDecoder 내장 지원)
+          const text = new TextDecoder('euc-kr').decode(body);
           // Find stocks in the sidebar (class="company" links with number column)
           const pattern = /code=(\d{6})[^>]*>([^<]+)<\/a>.*?class=["']number["']>([^<]+)<\/td>.*?alt="(up|down)"/gs;
           const results = [];
