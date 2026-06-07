@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-07T15:02:23.276Z",
+  "updated_at": "2026-06-07T15:06:40.869Z",
   "date": "20260605",
   "source": "네이버금융",
-  "note": "외국인/기관 순매수·순매도 상위20 (KOSPI)",
+  "note": "외국인/기관 순매수 상위 (KOSPI, 사이드바 기준)",
   "kospi_foreigner_buy": [
     {
       "rank": 1,
