@@ -1,4 +1,4 @@
-name: KRX 종목별 순매수 상위 20 수집
+name: 외국인/기관 순매수·순매도 상위 수집
 
 on:
   schedule:
@@ -17,22 +17,22 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Python 설정
-        uses: actions/setup-python@v5
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.11'
+          node-version: '20'
 
-      - name: requests 설치
-        run: pip install requests
-
-      - name: KRX 종목별 순매수 수집
-        run: python market-app/scripts/collect-krx-netbuy.py
+      - name: 외국인/기관 순매수·순매도 수집 (KIS API)
+        env:
+          KIS_REAL_APP_KEY: ${{ secrets.KIS_REAL_APP_KEY }}
+          KIS_REAL_APP_SECRET: ${{ secrets.KIS_REAL_APP_SECRET }}
+        run: node market-app/scripts/collect-investor-rank.js
 
       - name: 변경사항 커밋
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add market-app/data/krx-netbuy.json
-          git diff --staged --quiet || git commit -m "KRX 순매수 상위20 업데이트 $(date '+%Y-%m-%d %H:%M') KST"
+          git diff --staged --quiet || git commit -m "외국인/기관 순매수·순매도 업데이트 $(date '+%Y-%m-%d %H:%M') KST"
           git pull --rebase origin main
           git push

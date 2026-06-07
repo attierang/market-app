@@ -1,8 +1,12 @@
 {
   "updated_at": "2026-06-07T09:14:33.328191Z",
   "date": "20260605",
-  "source": "네이버금융",
-  "note": "외국인/기관 순매수 순위 (현재가 표시, KOSPI만)",
+  "source": "KIS API",
+  "note": "외국인/기관 순매수·순매도 상위20 (KOSPI)",
+  "kospi_foreigner_buy": [],
+  "kospi_foreigner_sell": [],
+  "kospi_institute_buy": [],
+  "kospi_institute_sell": [],
   "kospi_foreigner": [
     {
       "rank": 1,

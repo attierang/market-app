@@ -1111,16 +1111,28 @@
         <div class="row"><span class="row-name">비차익순매수</span><span class="row-val" id="kosdaq-nonarb-net">-</span></div>
       </div>
 
-      <!-- ── 순매수 상위 ── -->
+      <!-- ── 순매수/순매도 상위 ── -->
       <div class="card">
-        <div class="card-title">외국인 순매수 상위 <span class="card-sub" id="kospi-forn-date">네이버금융 · 로딩중</span></div>
-        <div id="kospi-forn-list">
+        <div class="card-title">외국인 순매수 상위 <span class="card-sub" id="kospi-forn-buy-date">로딩중</span></div>
+        <div id="kospi-forn-buy-list">
           <div style="color:var(--text-secondary);font-size:13px;padding:12px 0;text-align:center;">데이터 로딩 중...</div>
         </div>
       </div>
       <div class="card">
-        <div class="card-title">기관 순매수 상위 <span class="card-sub" id="kospi-inst-date">네이버금융 · 로딩중</span></div>
-        <div id="kospi-inst-list">
+        <div class="card-title">외국인 순매도 상위 <span class="card-sub" id="kospi-forn-sell-date">로딩중</span></div>
+        <div id="kospi-forn-sell-list">
+          <div style="color:var(--text-secondary);font-size:13px;padding:12px 0;text-align:center;">데이터 로딩 중...</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">기관 순매수 상위 <span class="card-sub" id="kospi-inst-buy-date">로딩중</span></div>
+        <div id="kospi-inst-buy-list">
+          <div style="color:var(--text-secondary);font-size:13px;padding:12px 0;text-align:center;">데이터 로딩 중...</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">기관 순매도 상위 <span class="card-sub" id="kospi-inst-sell-date">로딩중</span></div>
+        <div id="kospi-inst-sell-list">
           <div style="color:var(--text-secondary);font-size:13px;padding:12px 0;text-align:center;">데이터 로딩 중...</div>
         </div>
       </div>
@@ -3096,7 +3108,7 @@
       }
     }
 
-    // ── 외국인/기관 순매수 상위 로드 (네이버금융) ──
+    // ── 외국인/기관 순매수·순매도 상위 로드 ──
     var _netbuyLoaded = false;
     async function loadKrxNetbuy() {
       if (_netbuyLoaded) return;
@@ -3108,13 +3120,14 @@
         _netbuyLoaded = true;
 
         var dd = String(json.date || '');
-        var dateLabel = dd.length === 8
+        var src = json.source || 'KIS API';
+        var dateLabel = (dd.length === 8
           ? dd.slice(4,6) + '/' + dd.slice(6,8) + ' 기준'
-          : '네이버금융';
+          : '기준') + ' · ' + src;
 
         function renderList(containerId, dateId, stocks) {
           var dateEl = document.getElementById(dateId);
-          if (dateEl) dateEl.textContent = '네이버금융 · ' + dateLabel;
+          if (dateEl) dateEl.textContent = dateLabel;
 
           var el = document.getElementById(containerId);
           if (!el) return;
@@ -3143,8 +3156,16 @@
             + '</table>';
         }
 
-        renderList('kospi-forn-list', 'kospi-forn-date', json.kospi_foreigner || json.kospi);
-        renderList('kospi-inst-list', 'kospi-inst-date', json.kospi_institute);
+        // 새 필드 (KIS API): kospi_foreigner_buy/sell, kospi_institute_buy/sell
+        // 구 필드 (Naver) 하위 호환: kospi_foreigner, kospi_institute
+        renderList('kospi-forn-buy-list',  'kospi-forn-buy-date',
+          json.kospi_foreigner_buy  || json.kospi_foreigner || json.kospi || []);
+        renderList('kospi-forn-sell-list', 'kospi-forn-sell-date',
+          json.kospi_foreigner_sell || []);
+        renderList('kospi-inst-buy-list',  'kospi-inst-buy-date',
+          json.kospi_institute_buy  || json.kospi_institute || []);
+        renderList('kospi-inst-sell-list', 'kospi-inst-sell-date',
+          json.kospi_institute_sell || []);
 
       } catch(e) {
         // 조용히 실패
