@@ -20,7 +20,7 @@ jobs:
       - name: Node.js 설정
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: KIS 토큰 캐시 복원 (하루 1회만 발급)
         uses: actions/cache@v4
