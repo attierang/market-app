@@ -1111,16 +1111,16 @@
         <div class="row"><span class="row-name">비차익순매수</span><span class="row-val" id="kosdaq-nonarb-net">-</span></div>
       </div>
 
-      <!-- ── 순매수 상위 20 ── -->
+      <!-- ── 순매수 상위 ── -->
       <div class="card">
-        <div class="card-title">KOSPI 순매수 상위 20 <span class="card-sub" id="kospi-netbuy-date">KRX · 로딩중</span></div>
-        <div id="kospi-netbuy-list">
+        <div class="card-title">외국인 순매수 상위 <span class="card-sub" id="kospi-forn-date">네이버금융 · 로딩중</span></div>
+        <div id="kospi-forn-list">
           <div style="color:var(--text-secondary);font-size:13px;padding:12px 0;text-align:center;">데이터 로딩 중...</div>
         </div>
       </div>
       <div class="card">
-        <div class="card-title">KOSDAQ 순매수 상위 20 <span class="card-sub" id="kosdaq-netbuy-date">KRX · 로딩중</span></div>
-        <div id="kosdaq-netbuy-list">
+        <div class="card-title">기관 순매수 상위 <span class="card-sub" id="kospi-inst-date">네이버금융 · 로딩중</span></div>
+        <div id="kospi-inst-list">
           <div style="color:var(--text-secondary);font-size:13px;padding:12px 0;text-align:center;">데이터 로딩 중...</div>
         </div>
       </div>
@@ -3096,7 +3096,7 @@
       }
     }
 
-    // ── KRX 종목별 순매수 상위 20 로드 ──
+    // ── 외국인/기관 순매수 상위 로드 (네이버금융) ──
     var _netbuyLoaded = false;
     async function loadKrxNetbuy() {
       if (_netbuyLoaded) return;
@@ -3104,27 +3104,17 @@
         var res = await fetch('/data/krx-netbuy.json');
         if (!res.ok) return;
         var json = await res.json();
-        if (!json.date) return;   // 초기 빈 파일
+        if (!json.date) return;
         _netbuyLoaded = true;
 
-        // 날짜 표시 (YYYYMMDD → MM/DD)
         var dd = String(json.date || '');
         var dateLabel = dd.length === 8
           ? dd.slice(4,6) + '/' + dd.slice(6,8) + ' 기준'
-          : 'KRX';
-
-        function fmtEok(eok) {
-          if (eok == null) return '-';
-          var abs  = Math.abs(eok);
-          var sign = eok >= 0 ? '+' : '-';
-          if (abs >= 10000) return sign + (abs / 10000).toFixed(1) + '조';
-          if (abs >= 1)     return sign + Math.round(abs).toLocaleString() + '억';
-          return sign + (abs * 10).toFixed(0) + '천만';
-        }
+          : '네이버금융';
 
         function renderList(containerId, dateId, stocks) {
           var dateEl = document.getElementById(dateId);
-          if (dateEl) dateEl.textContent = 'KRX · ' + dateLabel;
+          if (dateEl) dateEl.textContent = '네이버금융 · ' + dateLabel;
 
           var el = document.getElementById(containerId);
           if (!el) return;
@@ -3134,29 +3124,27 @@
           }
 
           var rows = stocks.map(function(s) {
-            var eok     = s.netBuyEok != null ? s.netBuyEok : (s.netBuy / 100);
-            var amtTxt  = fmtEok(eok);
-            var cls     = eok > 0 ? 'up' : eok < 0 ? 'down' : '';
+            var arrow = s.direction === 'up' ? '<span style="color:#ef5350">▲</span>' : '<span style="color:#2196F3">▼</span>';
             return '<tr>'
               + '<td><span class="netbuy-rank">' + s.rank + '</span></td>'
               + '<td><span class="netbuy-name">' + (s.name || s.code) + '</span>'
-              + '  <span class="netbuy-code">' + (s.code || '') + '</span></td>'
-              + '<td><span class="netbuy-amt ' + cls + '">' + amtTxt + '</span></td>'
+              + ' <span class="netbuy-code">' + (s.code || '') + '</span></td>'
+              + '<td style="text-align:right;">' + arrow + ' <span style="font-size:12px;">' + (s.price || '-') + '</span></td>'
               + '</tr>';
           }).join('');
 
           el.innerHTML = '<table class="netbuy-table">'
             + '<thead><tr>'
             + '<th style="min-width:22px;">#</th>'
-            + '<th>종목</th>'
-            + '<th>순매수(외국인+기관)</th>'
+            + '<th>종목 (KOSPI)</th>'
+            + '<th style="text-align:right;">현재가</th>'
             + '</tr></thead>'
             + '<tbody>' + rows + '</tbody>'
             + '</table>';
         }
 
-        renderList('kospi-netbuy-list',  'kospi-netbuy-date',  json.kospi);
-        renderList('kosdaq-netbuy-list', 'kosdaq-netbuy-date', json.kosdaq);
+        renderList('kospi-forn-list', 'kospi-forn-date', json.kospi_foreigner || json.kospi);
+        renderList('kospi-inst-list', 'kospi-inst-date', json.kospi_institute);
 
       } catch(e) {
         // 조용히 실패

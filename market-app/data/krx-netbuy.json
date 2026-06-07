@@ -1,6 +1,230 @@
 {
-  "updated_at": null,
-  "date": null,
-  "kospi": [],
+  "updated_at": "2026-06-07T08:49:30.077203Z",
+  "date": "20260605",
+  "source": "네이버금융",
+  "note": "외국인/기관 순매수 순위 (현재가 표시, KOSPI만)",
+  "kospi_foreigner": [
+    {
+      "rank": 1,
+      "code": "009150",
+      "name": "삼성전기",
+      "price": "1,757,000",
+      "direction": "up"
+    },
+    {
+      "rank": 2,
+      "code": "252670",
+      "name": "KODEX 200선물인버스2X",
+      "price": "88",
+      "direction": "up"
+    },
+    {
+      "rank": 3,
+      "code": "240810",
+      "name": "원익IPS",
+      "price": "132,700",
+      "direction": "up"
+    },
+    {
+      "rank": 4,
+      "code": "114800",
+      "name": "KODEX 인버스",
+      "price": "996",
+      "direction": "up"
+    },
+    {
+      "rank": 5,
+      "code": "042700",
+      "name": "한미반도체",
+      "price": "283,000",
+      "direction": "down"
+    },
+    {
+      "rank": 6,
+      "code": "011070",
+      "name": "LG이노텍",
+      "price": "1,160,000",
+      "direction": "down"
+    },
+    {
+      "rank": 7,
+      "code": "035420",
+      "name": "NAVER",
+      "price": "255,500",
+      "direction": "down"
+    },
+    {
+      "rank": 8,
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "329,000",
+      "direction": "down"
+    },
+    {
+      "rank": 9,
+      "code": "000660",
+      "name": "SK하이닉스",
+      "price": "2,070,000",
+      "direction": "down"
+    },
+    {
+      "rank": 10,
+      "code": "066570",
+      "name": "LG전자",
+      "price": "303,000",
+      "direction": "down"
+    }
+  ],
+  "kospi_institute": [
+    {
+      "rank": 1,
+      "code": "001440",
+      "name": "대한전선",
+      "price": "39,950",
+      "direction": "down"
+    },
+    {
+      "rank": 2,
+      "code": "454910",
+      "name": "두산로보틱스",
+      "price": "140,300",
+      "direction": "down"
+    },
+    {
+      "rank": 3,
+      "code": "005935",
+      "name": "삼성전자우",
+      "price": "211,000",
+      "direction": "down"
+    },
+    {
+      "rank": 4,
+      "code": "402340",
+      "name": "SK스퀘어",
+      "price": "1,258,000",
+      "direction": "down"
+    },
+    {
+      "rank": 5,
+      "code": "006400",
+      "name": "삼성SDI",
+      "price": "568,000",
+      "direction": "down"
+    },
+    {
+      "rank": 6,
+      "code": "055550",
+      "name": "신한지주",
+      "price": "107,500",
+      "direction": "up"
+    },
+    {
+      "rank": 7,
+      "code": "403870",
+      "name": "HPSP",
+      "price": "50,300",
+      "direction": "up"
+    },
+    {
+      "rank": 8,
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "329,000",
+      "direction": "down"
+    },
+    {
+      "rank": 9,
+      "code": "000660",
+      "name": "SK하이닉스",
+      "price": "2,070,000",
+      "direction": "down"
+    },
+    {
+      "rank": 10,
+      "code": "035420",
+      "name": "NAVER",
+      "price": "255,500",
+      "direction": "down"
+    },
+    {
+      "rank": 11,
+      "code": "066570",
+      "name": "LG전자",
+      "price": "303,000",
+      "direction": "down"
+    }
+  ],
+  "kospi": [
+    {
+      "rank": 1,
+      "code": "009150",
+      "name": "삼성전기",
+      "price": "1,757,000",
+      "direction": "up"
+    },
+    {
+      "rank": 2,
+      "code": "252670",
+      "name": "KODEX 200선물인버스2X",
+      "price": "88",
+      "direction": "up"
+    },
+    {
+      "rank": 3,
+      "code": "240810",
+      "name": "원익IPS",
+      "price": "132,700",
+      "direction": "up"
+    },
+    {
+      "rank": 4,
+      "code": "114800",
+      "name": "KODEX 인버스",
+      "price": "996",
+      "direction": "up"
+    },
+    {
+      "rank": 5,
+      "code": "042700",
+      "name": "한미반도체",
+      "price": "283,000",
+      "direction": "down"
+    },
+    {
+      "rank": 6,
+      "code": "011070",
+      "name": "LG이노텍",
+      "price": "1,160,000",
+      "direction": "down"
+    },
+    {
+      "rank": 7,
+      "code": "035420",
+      "name": "NAVER",
+      "price": "255,500",
+      "direction": "down"
+    },
+    {
+      "rank": 8,
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "329,000",
+      "direction": "down"
+    },
+    {
+      "rank": 9,
+      "code": "000660",
+      "name": "SK하이닉스",
+      "price": "2,070,000",
+      "direction": "down"
+    },
+    {
+      "rank": 10,
+      "code": "066570",
+      "name": "LG전자",
+      "price": "303,000",
+      "direction": "down"
+    }
+  ],
   "kosdaq": []
 }

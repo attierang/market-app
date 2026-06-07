@@ -15,16 +15,16 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Python 설정
-        uses: actions/setup-python@v5
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.11'
+          node-version: '20'
 
-      - name: 의존성 설치
-        run: pip install requests
-
-      - name: 비차익 프로그램 매매 수집 (KRX 직접 조회 - 토큰 발급 없음)
-        run: python market-app/scripts/collect-program-trading.py
+      - name: 비차익 프로그램 매매 수집 (KIS API)
+        env:
+          KIS_REAL_APP_KEY:    ${{ secrets.KIS_REAL_APP_KEY }}
+          KIS_REAL_APP_SECRET: ${{ secrets.KIS_REAL_APP_SECRET }}
+        run: node market-app/scripts/collect-program-trading.js
 
       - name: 변경사항 커밋
         run: |
