@@ -20,7 +20,17 @@ jobs:
         with:
           node-version: '24'
 
-      - name: 외국인/기관 순매수 수집 (네이버금융, KIS 미사용)
+      - name: KIS 토큰 캐시 복원 (새 발급 없이 재사용만)
+        uses: actions/cache@v4
+        with:
+          path: market-app/data/kis-real-token.json
+          key: kis-token-${{ github.run_id }}
+          restore-keys: kis-token-
+
+      - name: 외국인/기관 순매수·순매도 수집 (캐시토큰 재사용, 없으면 네이버)
+        env:
+          KIS_REAL_APP_KEY:    ${{ secrets.KIS_REAL_APP_KEY }}
+          KIS_REAL_APP_SECRET: ${{ secrets.KIS_REAL_APP_SECRET }}
         run: node market-app/scripts/collect-investor-rank.js
 
       - name: 변경사항 커밋
