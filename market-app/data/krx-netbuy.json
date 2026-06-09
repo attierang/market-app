@@ -1,84 +1,84 @@
 {
-  "updated_at": "2026-06-08T11:52:12.654Z",
-  "date": "20260608",
+  "updated_at": "2026-06-09T06:54:44.623Z",
+  "date": "20260609",
   "source": "네이버금융",
-  "note": "외국인/기관 순매수 상위 (KOSPI, 사이드바 기준)",
+  "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
   "kospi_foreigner_buy": [
     {
       "rank": 1,
       "code": "035420",
       "name": "NAVER",
-      "price": "279,000",
-      "direction": "up"
+      "price": "257,000",
+      "direction": "down"
     },
     {
       "rank": 2,
       "code": "006400",
       "name": "삼성SDI",
-      "price": "503,000",
-      "direction": "down"
+      "price": "515,000",
+      "direction": "up"
     },
     {
       "rank": 3,
       "code": "381180",
       "name": "TIGER 미국필라델피아반도체나스닥",
-      "price": "49,530",
-      "direction": "down"
+      "price": "52,070",
+      "direction": "up"
     },
     {
       "rank": 4,
       "code": "011070",
       "name": "LG이노텍",
-      "price": "1,095,000",
-      "direction": "down"
+      "price": "1,137,000",
+      "direction": "up"
     },
     {
       "rank": 5,
       "code": "064400",
       "name": "LG씨엔에스",
-      "price": "106,500",
+      "price": "99,000",
       "direction": "down"
     },
     {
       "rank": 6,
       "code": "006800",
       "name": "미래에셋증권",
-      "price": "49,750",
-      "direction": "down"
+      "price": "51,500",
+      "direction": "up"
     },
     {
       "rank": 7,
       "code": "079550",
       "name": "LIG디펜스앤에어로스페이스",
-      "price": "696,000",
-      "direction": "down"
+      "price": "725,000",
+      "direction": "up"
     },
     {
       "rank": 8,
       "code": "005930",
       "name": "삼성전자",
-      "price": "295,500",
-      "direction": "down"
+      "price": "322,000",
+      "direction": "up"
     },
     {
       "rank": 9,
       "code": "000660",
       "name": "SK하이닉스",
-      "price": "1,911,000",
-      "direction": "down"
+      "price": "2,215,000",
+      "direction": "up"
     },
     {
       "rank": 10,
-      "code": "066570",
-      "name": "LG전자",
-      "price": "268,000",
-      "direction": "down"
+      "code": "009150",
+      "name": "삼성전기",
+      "price": "1,970,000",
+      "direction": "up"
     },
     {
       "rank": 11,
-      "code": "005380",
-      "name": "현대차",
-      "price": "639,000",
+      "code": "066570",
+      "name": "LG전자",
+      "price": "248,000",
       "direction": "down"
     }
   ],
@@ -88,77 +88,70 @@
       "rank": 1,
       "code": "035420",
       "name": "NAVER",
-      "price": "279,000",
-      "direction": "up"
+      "price": "257,000",
+      "direction": "down"
     },
     {
       "rank": 2,
       "code": "395270",
       "name": "HANARO Fn K-반도체",
-      "price": "63,645",
-      "direction": "down"
+      "price": "72,390",
+      "direction": "up"
     },
     {
       "rank": 3,
       "code": "009150",
       "name": "삼성전기",
-      "price": "1,664,000",
-      "direction": "down"
+      "price": "1,970,000",
+      "direction": "up"
     },
     {
       "rank": 4,
       "code": "459580",
       "name": "KODEX CD금리액티브(합성)",
-      "price": "1,074,240",
+      "price": "1,074,325",
       "direction": "up"
     },
     {
       "rank": 5,
       "code": "488770",
       "name": "KODEX 머니마켓액티브",
-      "price": "104,565",
+      "price": "104,575",
       "direction": "up"
     },
     {
       "rank": 6,
       "code": "252670",
       "name": "KODEX 200선물인버스2X",
-      "price": "103",
-      "direction": "up"
+      "price": "85",
+      "direction": "down"
     },
     {
       "rank": 7,
       "code": "011070",
       "name": "LG이노텍",
-      "price": "1,095,000",
-      "direction": "down"
+      "price": "1,137,000",
+      "direction": "up"
     },
     {
       "rank": 8,
       "code": "005930",
       "name": "삼성전자",
-      "price": "295,500",
-      "direction": "down"
+      "price": "322,000",
+      "direction": "up"
     },
     {
       "rank": 9,
       "code": "000660",
       "name": "SK하이닉스",
-      "price": "1,911,000",
-      "direction": "down"
+      "price": "2,215,000",
+      "direction": "up"
     },
     {
       "rank": 10,
       "code": "066570",
       "name": "LG전자",
-      "price": "268,000",
-      "direction": "down"
-    },
-    {
-      "rank": 11,
-      "code": "005380",
-      "name": "현대차",
-      "price": "639,000",
+      "price": "248,000",
       "direction": "down"
     }
   ],
@@ -168,77 +161,77 @@
       "rank": 1,
       "code": "035420",
       "name": "NAVER",
-      "price": "279,000",
-      "direction": "up"
+      "price": "257,000",
+      "direction": "down"
     },
     {
       "rank": 2,
       "code": "006400",
       "name": "삼성SDI",
-      "price": "503,000",
-      "direction": "down"
+      "price": "515,000",
+      "direction": "up"
     },
     {
       "rank": 3,
       "code": "381180",
       "name": "TIGER 미국필라델피아반도체나스닥",
-      "price": "49,530",
-      "direction": "down"
+      "price": "52,070",
+      "direction": "up"
     },
     {
       "rank": 4,
       "code": "011070",
       "name": "LG이노텍",
-      "price": "1,095,000",
-      "direction": "down"
+      "price": "1,137,000",
+      "direction": "up"
     },
     {
       "rank": 5,
       "code": "064400",
       "name": "LG씨엔에스",
-      "price": "106,500",
+      "price": "99,000",
       "direction": "down"
     },
     {
       "rank": 6,
       "code": "006800",
       "name": "미래에셋증권",
-      "price": "49,750",
-      "direction": "down"
+      "price": "51,500",
+      "direction": "up"
     },
     {
       "rank": 7,
       "code": "079550",
       "name": "LIG디펜스앤에어로스페이스",
-      "price": "696,000",
-      "direction": "down"
+      "price": "725,000",
+      "direction": "up"
     },
     {
       "rank": 8,
       "code": "005930",
       "name": "삼성전자",
-      "price": "295,500",
-      "direction": "down"
+      "price": "322,000",
+      "direction": "up"
     },
     {
       "rank": 9,
       "code": "000660",
       "name": "SK하이닉스",
-      "price": "1,911,000",
-      "direction": "down"
+      "price": "2,215,000",
+      "direction": "up"
     },
     {
       "rank": 10,
-      "code": "066570",
-      "name": "LG전자",
-      "price": "268,000",
-      "direction": "down"
+      "code": "009150",
+      "name": "삼성전기",
+      "price": "1,970,000",
+      "direction": "up"
     },
     {
       "rank": 11,
-      "code": "005380",
-      "name": "현대차",
-      "price": "639,000",
+      "code": "066570",
+      "name": "LG전자",
+      "price": "248,000",
       "direction": "down"
     }
   ],
@@ -247,77 +240,70 @@
       "rank": 1,
       "code": "035420",
       "name": "NAVER",
-      "price": "279,000",
-      "direction": "up"
+      "price": "257,000",
+      "direction": "down"
     },
     {
       "rank": 2,
       "code": "395270",
       "name": "HANARO Fn K-반도체",
-      "price": "63,645",
-      "direction": "down"
+      "price": "72,390",
+      "direction": "up"
     },
     {
       "rank": 3,
       "code": "009150",
       "name": "삼성전기",
-      "price": "1,664,000",
-      "direction": "down"
+      "price": "1,970,000",
+      "direction": "up"
     },
     {
       "rank": 4,
       "code": "459580",
       "name": "KODEX CD금리액티브(합성)",
-      "price": "1,074,240",
+      "price": "1,074,325",
       "direction": "up"
     },
     {
       "rank": 5,
       "code": "488770",
       "name": "KODEX 머니마켓액티브",
-      "price": "104,565",
+      "price": "104,575",
       "direction": "up"
     },
     {
       "rank": 6,
       "code": "252670",
       "name": "KODEX 200선물인버스2X",
-      "price": "103",
-      "direction": "up"
+      "price": "85",
+      "direction": "down"
     },
     {
       "rank": 7,
       "code": "011070",
       "name": "LG이노텍",
-      "price": "1,095,000",
-      "direction": "down"
+      "price": "1,137,000",
+      "direction": "up"
     },
     {
       "rank": 8,
       "code": "005930",
       "name": "삼성전자",
-      "price": "295,500",
-      "direction": "down"
+      "price": "322,000",
+      "direction": "up"
     },
     {
       "rank": 9,
       "code": "000660",
       "name": "SK하이닉스",
-      "price": "1,911,000",
-      "direction": "down"
+      "price": "2,215,000",
+      "direction": "up"
     },
     {
       "rank": 10,
       "code": "066570",
       "name": "LG전자",
-      "price": "268,000",
-      "direction": "down"
-    },
-    {
-      "rank": 11,
-      "code": "005380",
-      "name": "현대차",
-      "price": "639,000",
+      "price": "248,000",
       "direction": "down"
     }
   ],
@@ -326,77 +312,77 @@
       "rank": 1,
       "code": "035420",
       "name": "NAVER",
-      "price": "279,000",
-      "direction": "up"
+      "price": "257,000",
+      "direction": "down"
     },
     {
       "rank": 2,
       "code": "006400",
       "name": "삼성SDI",
-      "price": "503,000",
-      "direction": "down"
+      "price": "515,000",
+      "direction": "up"
     },
     {
       "rank": 3,
       "code": "381180",
       "name": "TIGER 미국필라델피아반도체나스닥",
-      "price": "49,530",
-      "direction": "down"
+      "price": "52,070",
+      "direction": "up"
     },
     {
       "rank": 4,
       "code": "011070",
       "name": "LG이노텍",
-      "price": "1,095,000",
-      "direction": "down"
+      "price": "1,137,000",
+      "direction": "up"
     },
     {
       "rank": 5,
       "code": "064400",
       "name": "LG씨엔에스",
-      "price": "106,500",
+      "price": "99,000",
       "direction": "down"
     },
     {
       "rank": 6,
       "code": "006800",
       "name": "미래에셋증권",
-      "price": "49,750",
-      "direction": "down"
+      "price": "51,500",
+      "direction": "up"
     },
     {
       "rank": 7,
       "code": "079550",
       "name": "LIG디펜스앤에어로스페이스",
-      "price": "696,000",
-      "direction": "down"
+      "price": "725,000",
+      "direction": "up"
     },
     {
       "rank": 8,
       "code": "005930",
       "name": "삼성전자",
-      "price": "295,500",
-      "direction": "down"
+      "price": "322,000",
+      "direction": "up"
     },
     {
       "rank": 9,
       "code": "000660",
       "name": "SK하이닉스",
-      "price": "1,911,000",
-      "direction": "down"
+      "price": "2,215,000",
+      "direction": "up"
     },
     {
       "rank": 10,
-      "code": "066570",
-      "name": "LG전자",
-      "price": "268,000",
-      "direction": "down"
+      "code": "009150",
+      "name": "삼성전기",
+      "price": "1,970,000",
+      "direction": "up"
     },
     {
       "rank": 11,
-      "code": "005380",
-      "name": "현대차",
-      "price": "639,000",
+      "code": "066570",
+      "name": "LG전자",
+      "price": "248,000",
       "direction": "down"
     }
   ],
