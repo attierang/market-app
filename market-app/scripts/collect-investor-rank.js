@@ -41,55 +41,75 @@ function recentTradingDate() {
 // FID_COND_SCR_DIV_CODE: 20171=외국인, 20172=기관합계
 // FID_BLNG_CLS_CODE: 0=순매수, 1=순매도
 async function fetchRankKIS(token, scrCode, blngCode, label) {
-  const params = new URLSearchParams({
-    FID_COND_MRKT_DIV_CODE: 'J',
-    FID_COND_SCR_DIV_CODE:  scrCode,
-    FID_INPUT_ISCD:         '0000',
-    FID_DIV_CLS_CODE:       '0',
-    FID_BLNG_CLS_CODE:      blngCode,
-    FID_TRGT_CLS_CODE:      '0',
-    FID_TRGT_EXLS_CLS_CODE: '0',
-    FID_INPUT_PRICE_1:      '',
-    FID_INPUT_PRICE_2:      '',
-    FID_VOL_CNT:            '',
-    FID_INPUT_DATE_1:       '',
-  });
+  const today = recentTradingDate();
 
-  const res = await fetch(`${KIS_BASE}/uapi/domestic-stock/v1/ranking/quote-balance?${params}`, {
-    headers: {
-      'content-type': 'application/json',
-      'authorization': `Bearer ${token}`,
-      'appkey':    APP_KEY,
-      'appsecret': APP_SECRET,
-      'tr_id':     'FHPST01720000',
-      'custtype':  'P',
-    },
-  });
+  const attempts = [
+    // 날짜 포함, ISCD 빈값
+    { FID_COND_MRKT_DIV_CODE:'J', FID_COND_SCR_DIV_CODE:scrCode, FID_INPUT_ISCD:'',
+      FID_DIV_CLS_CODE:'0', FID_BLNG_CLS_CODE:blngCode, FID_TRGT_CLS_CODE:'0',
+      FID_TRGT_EXLS_CLS_CODE:'0', FID_INPUT_PRICE_1:'', FID_INPUT_PRICE_2:'',
+      FID_VOL_CNT:'', FID_INPUT_DATE_1:today },
+    // 날짜 포함, ISCD 0000
+    { FID_COND_MRKT_DIV_CODE:'J', FID_COND_SCR_DIV_CODE:scrCode, FID_INPUT_ISCD:'0000',
+      FID_DIV_CLS_CODE:'0', FID_BLNG_CLS_CODE:blngCode, FID_TRGT_CLS_CODE:'0',
+      FID_TRGT_EXLS_CLS_CODE:'0', FID_INPUT_PRICE_1:'', FID_INPUT_PRICE_2:'',
+      FID_VOL_CNT:'', FID_INPUT_DATE_1:today },
+    // 날짜 없음 (기존 방식)
+    { FID_COND_MRKT_DIV_CODE:'J', FID_COND_SCR_DIV_CODE:scrCode, FID_INPUT_ISCD:'0000',
+      FID_DIV_CLS_CODE:'0', FID_BLNG_CLS_CODE:blngCode, FID_TRGT_CLS_CODE:'0',
+      FID_TRGT_EXLS_CLS_CODE:'0', FID_INPUT_PRICE_1:'', FID_INPUT_PRICE_2:'',
+      FID_VOL_CNT:'', FID_INPUT_DATE_1:'' },
+  ];
 
-  const data = await res.json();
-  console.log(`[${label}] rt_cd=${data.rt_cd} msg=${(data.msg1 || '').slice(0, 60)}`);
+  for (let i = 0; i < attempts.length; i++) {
+    const params = new URLSearchParams(attempts[i]);
+    let res, data;
+    try {
+      res = await fetch(`${KIS_BASE}/uapi/domestic-stock/v1/ranking/quote-balance?${params}`, {
+        headers: {
+          'content-type': 'application/json',
+          'authorization': `Bearer ${token}`,
+          'appkey':    APP_KEY,
+          'appsecret': APP_SECRET,
+          'tr_id':     'FHPST01720000',
+          'custtype':  'P',
+        },
+      });
+      data = await res.json();
+    } catch (e) {
+      console.log(`[${label}] 시도${i+1} fetch 오류:`, e.message);
+      continue;
+    }
 
-  if (data.rt_cd !== '0') {
-    console.log(`[${label}] 응답:`, JSON.stringify(data).slice(0, 400));
-    return null;
+    console.log(`[${label}] 시도${i+1} rt_cd=${data.rt_cd} msg="${(data.msg1||'').slice(0,80)}"`);
+
+    if (data.rt_cd !== '0') {
+      console.log(`[${label}] 시도${i+1} 전체응답:`, JSON.stringify(data).slice(0, 600));
+      continue;
+    }
+
+    const rows = (data.output || []).slice(0, 20);
+    if (!rows.length) {
+      console.log(`[${label}] 시도${i+1} output 비어있음. 파라미터:`, JSON.stringify(attempts[i]));
+      console.log(`[${label}] 응답 전체:`, JSON.stringify(data).slice(0, 400));
+      continue;
+    }
+
+    console.log(`[${label}] 시도${i+1} 성공! ${rows.length}개`);
+    console.log(`[${label}] 1위:`, rows[0].hts_kor_isnm || rows[0].mksc_shrn_iscd || '?');
+    console.log(`[${label}] 첫행 키:`, Object.keys(rows[0]).join(', '));
+
+    return rows.map((r, idx) => ({
+      rank:      idx + 1,
+      code:      r.mksc_shrn_iscd || r.stck_shrn_iscd || '',
+      name:      r.hts_kor_isnm   || r.kor_isnm       || '',
+      price:     r.stck_prpr      || '0',
+      direction: parseInt(r.prdy_vrss || '0') >= 0 ? 'up' : 'down',
+    }));
   }
 
-  const rows = (data.output || []).slice(0, 20);
-  if (!rows.length) {
-    console.log(`[${label}] output 비어있음`);
-    return null;
-  }
-
-  console.log(`[${label}] ${rows.length}개. 첫 행 키:`, Object.keys(rows[0]).slice(0, 8).join(', '));
-  console.log(`[${label}] 1위:`, rows[0].hts_kor_isnm || rows[0].mksc_shrn_iscd || '?');
-
-  return rows.map((r, i) => ({
-    rank:      i + 1,
-    code:      r.mksc_shrn_iscd || r.stck_shrn_iscd || '',
-    name:      r.hts_kor_isnm   || r.kor_isnm       || '',
-    price:     r.stck_prpr      || '0',
-    direction: parseInt(r.prdy_vrss || '0') >= 0 ? 'up' : 'down',
-  }));
+  console.log(`[${label}] 모든 파라미터 조합 실패`);
+  return null;
 }
 
 // ── 네이버금융 fallback (순매수 상위7, EUC-KR) ────────────
