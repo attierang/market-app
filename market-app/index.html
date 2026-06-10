@@ -3125,7 +3125,7 @@
           ? dd.slice(4,6) + '/' + dd.slice(6,8) + ' 기준'
           : '기준') + ' · ' + src;
 
-        function renderList(containerId, dateId, stocks) {
+        function renderList(containerId, dateId, stocks, type) {
           var dateEl = document.getElementById(dateId);
           if (dateEl) dateEl.textContent = dateLabel;
 
@@ -3138,8 +3138,12 @@
 
           var rows = stocks.map(function(s) {
             var arrow = s.direction === 'up' ? '<span style="color:#ef5350">▲</span>' : '<span style="color:#2196F3">▼</span>';
-            return '<tr>'
-              + '<td><span class="netbuy-rank">' + s.rank + '</span></td>'
+            var top5 = s.rank <= 5;
+            var rankColor = top5 ? (type === 'sell' ? '#2196F3' : '#ef5350') : '';
+            var rowBg    = top5 ? (type === 'sell' ? 'background:rgba(33,150,243,0.07)' : 'background:rgba(239,83,80,0.07)') : '';
+            var rankStyle = rankColor ? 'style="color:' + rankColor + ';font-weight:700;"' : '';
+            return '<tr style="' + rowBg + '">'
+              + '<td><span class="netbuy-rank" ' + rankStyle + '>' + s.rank + '</span></td>'
               + '<td><span class="netbuy-name">' + (s.name || s.code) + '</span>'
               + ' <span class="netbuy-code">' + (s.code || '') + '</span></td>'
               + '<td style="text-align:right;">' + arrow + ' <span style="font-size:12px;">' + (s.price || '-') + '</span></td>'
@@ -3159,13 +3163,13 @@
         // 새 필드 (KIS API): kospi_foreigner_buy/sell, kospi_institute_buy/sell
         // 구 필드 (Naver) 하위 호환: kospi_foreigner, kospi_institute
         renderList('kospi-forn-buy-list',  'kospi-forn-buy-date',
-          json.kospi_foreigner_buy  || json.kospi_foreigner || json.kospi || []);
+          json.kospi_foreigner_buy  || json.kospi_foreigner || json.kospi || [], 'buy');
         renderList('kospi-forn-sell-list', 'kospi-forn-sell-date',
-          json.kospi_foreigner_sell || []);
+          json.kospi_foreigner_sell || [], 'sell');
         renderList('kospi-inst-buy-list',  'kospi-inst-buy-date',
-          json.kospi_institute_buy  || json.kospi_institute || []);
+          json.kospi_institute_buy  || json.kospi_institute || [], 'buy');
         renderList('kospi-inst-sell-list', 'kospi-inst-sell-date',
-          json.kospi_institute_sell || []);
+          json.kospi_institute_sell || [], 'sell');
 
       } catch(e) {
         // 조용히 실패
