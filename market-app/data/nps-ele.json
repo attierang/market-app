@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-06-10T07:06:36.150Z",
+  "updated_at": "2026-06-10T11:10:54.695Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "대한유화",
+      "stock_code": "006650",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260610",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.01,
+      "change": 10.01,
+      "stock_count": 650920,
+      "type": "buy"
+    },
+    {
+      "corp_name": "한미약품",
+      "stock_code": "128940",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260610",
+      "flr_nm": "국민연금공단",
+      "ratio": 7.72,
+      "change": 7.72,
+      "stock_count": 988597,
+      "type": "buy"
+    },
     {
       "corp_name": "삼성전기",
       "stock_code": "009150",
@@ -529,28 +551,6 @@
       "change": -0.06,
       "stock_count": 5471,
       "type": "sell"
-    },
-    {
-      "corp_name": "롯데관광개발",
-      "stock_code": "032350",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260415",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.25,
-      "change": -0.06,
-      "stock_count": 5471,
-      "type": "sell"
-    },
-    {
-      "corp_name": "대주전자재료",
-      "stock_code": "078600",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260410",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 123,
-      "type": "buy"
     }
   ]
 }
