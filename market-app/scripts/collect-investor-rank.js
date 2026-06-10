@@ -54,21 +54,16 @@ async function fetchRankKIS(token, scrCode, blngCode, label) {
   const today = recentTradingDate();
 
   const attempts = [
-    // 날짜 포함, ISCD 빈값
+    // FID_RANK_SORT_CLS_CODE 추가 (필수 파라미터), 날짜 포함
     { FID_COND_MRKT_DIV_CODE:'J', FID_COND_SCR_DIV_CODE:scrCode, FID_INPUT_ISCD:'',
-      FID_DIV_CLS_CODE:'0', FID_BLNG_CLS_CODE:blngCode, FID_TRGT_CLS_CODE:'0',
-      FID_TRGT_EXLS_CLS_CODE:'0', FID_INPUT_PRICE_1:'', FID_INPUT_PRICE_2:'',
-      FID_VOL_CNT:'', FID_INPUT_DATE_1:today },
-    // 날짜 포함, ISCD 0000
+      FID_DIV_CLS_CODE:'0', FID_BLNG_CLS_CODE:blngCode, FID_RANK_SORT_CLS_CODE:'0',
+      FID_TRGT_CLS_CODE:'0', FID_TRGT_EXLS_CLS_CODE:'0',
+      FID_INPUT_PRICE_1:'', FID_INPUT_PRICE_2:'', FID_VOL_CNT:'', FID_INPUT_DATE_1:today },
+    // ISCD 0000
     { FID_COND_MRKT_DIV_CODE:'J', FID_COND_SCR_DIV_CODE:scrCode, FID_INPUT_ISCD:'0000',
-      FID_DIV_CLS_CODE:'0', FID_BLNG_CLS_CODE:blngCode, FID_TRGT_CLS_CODE:'0',
-      FID_TRGT_EXLS_CLS_CODE:'0', FID_INPUT_PRICE_1:'', FID_INPUT_PRICE_2:'',
-      FID_VOL_CNT:'', FID_INPUT_DATE_1:today },
-    // 날짜 없음 (기존 방식)
-    { FID_COND_MRKT_DIV_CODE:'J', FID_COND_SCR_DIV_CODE:scrCode, FID_INPUT_ISCD:'0000',
-      FID_DIV_CLS_CODE:'0', FID_BLNG_CLS_CODE:blngCode, FID_TRGT_CLS_CODE:'0',
-      FID_TRGT_EXLS_CLS_CODE:'0', FID_INPUT_PRICE_1:'', FID_INPUT_PRICE_2:'',
-      FID_VOL_CNT:'', FID_INPUT_DATE_1:'' },
+      FID_DIV_CLS_CODE:'0', FID_BLNG_CLS_CODE:blngCode, FID_RANK_SORT_CLS_CODE:'0',
+      FID_TRGT_CLS_CODE:'0', FID_TRGT_EXLS_CLS_CODE:'0',
+      FID_INPUT_PRICE_1:'', FID_INPUT_PRICE_2:'', FID_VOL_CNT:'', FID_INPUT_DATE_1:today },
   ];
 
   for (let i = 0; i < attempts.length; i++) {
