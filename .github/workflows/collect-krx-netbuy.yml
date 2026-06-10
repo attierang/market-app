@@ -21,11 +21,27 @@ jobs:
           node-version: '24'
 
       - name: KIS 토큰 캐시 복원 (새 발급 없이 재사용만)
+        id: token-cache
         uses: actions/cache@v4
         with:
           path: market-app/data/kis-real-token.json
           key: kis-token-${{ github.run_id }}
           restore-keys: kis-token-
+
+      - name: 토큰 파일 진단
+        run: |
+          echo "캐시 히트: ${{ steps.token-cache.outputs.cache-hit }}"
+          if [ -f "market-app/data/kis-real-token.json" ]; then
+            echo "✅ 토큰 파일 존재"
+            node -e "
+              const d = JSON.parse(require('fs').readFileSync('market-app/data/kis-real-token.json'));
+              const rem = Math.round((d.expires_at - Date.now()) / 60000);
+              console.log('토큰 만료까지:', rem, '분');
+              console.log('토큰 앞 20자:', (d.access_token || '').slice(0, 20) + '...');
+            "
+          else
+            echo "❌ 토큰 파일 없음 → 네이버 fallback 사용"
+          fi
 
       - name: 외국인/기관 순매수·순매도 수집 (캐시토큰 재사용, 없으면 네이버)
         env:

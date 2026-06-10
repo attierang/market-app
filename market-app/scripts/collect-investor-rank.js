@@ -15,18 +15,28 @@ const outFile    = path.join(dataDir, 'krx-netbuy.json');
 
 // ── 캐시된 토큰만 읽기 (새 발급 절대 없음) ─────────────────
 function loadCachedTokenOnly() {
+  console.log('토큰 파일 경로:', TOKEN_FILE);
+  if (!fs.existsSync(TOKEN_FILE)) {
+    console.log('❌ 토큰 파일 없음 → 네이버 fallback 사용');
+    return null;
+  }
   try {
-    if (!fs.existsSync(TOKEN_FILE)) return null;
     const c = JSON.parse(fs.readFileSync(TOKEN_FILE, 'utf8'));
-    if (!c.access_token || !c.expires_at) return null;
+    if (!c.access_token || !c.expires_at) {
+      console.log('❌ 토큰 파일 형식 오류 (access_token 또는 expires_at 없음)');
+      return null;
+    }
+    const remaining = Math.round((c.expires_at - Date.now()) / 60000);
     if (Date.now() < c.expires_at - 10 * 60 * 1000) {
-      const remaining = Math.round((c.expires_at - Date.now()) / 60000);
-      console.log(`캐시 토큰 재사용 (유효: ${remaining}분 남음)`);
+      console.log(`✅ 캐시 토큰 재사용 (유효: ${remaining}분 남음)`);
       return c.access_token;
     }
-    console.log('캐시 토큰 만료됨 → KIS API 스킵, 네이버 fallback 사용');
+    console.log(`❌ 캐시 토큰 만료됨 (${Math.abs(remaining)}분 전 만료) → 네이버 fallback 사용`);
     return null;
-  } catch { return null; }
+  } catch (e) {
+    console.log('❌ 토큰 파일 파싱 오류:', e.message);
+    return null;
+  }
 }
 
 // ── 최근 영업일 ───────────────────────────────────────────
