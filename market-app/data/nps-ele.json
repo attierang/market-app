@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-11T02:57:17.850Z",
+  "updated_at": "2026-06-11T07:28:55.560Z",
   "count": 50,
   "data": [
     {
@@ -285,7 +285,7 @@
       "flr_nm": "국민연금공단",
       "ratio": 0.01,
       "change": 0,
-      "stock_count": 60,
+      "stock_count": 66,
       "type": "buy"
     },
     {
@@ -318,7 +318,7 @@
       "flr_nm": "국민연금공단",
       "ratio": 0,
       "change": 0,
-      "stock_count": 200,
+      "stock_count": 170,
       "type": "buy"
     },
     {
@@ -340,7 +340,7 @@
       "flr_nm": "국민연금공단",
       "ratio": 0.01,
       "change": 0,
-      "stock_count": 60,
+      "stock_count": 66,
       "type": "buy"
     },
     {
@@ -384,7 +384,7 @@
       "flr_nm": "국민연금공단",
       "ratio": 0,
       "change": 0,
-      "stock_count": 200,
+      "stock_count": 170,
       "type": "buy"
     },
     {
