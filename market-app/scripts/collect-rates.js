@@ -55,8 +55,8 @@ async function main() {
 
     // 미국 국채 수익률 (다중 관측값 - 전일/전월 비교)
     var us10yObs = await fetchFREDMulti('DGS10', 40);
+    var us3yObs  = await fetchFREDMulti('DGS3',  40);
     var us2y  = await fetchFRED('DGS2');
-    var us3y  = await fetchFRED('DGS3');
     var us5y  = await fetchFRED('DGS5');
     var us30y = await fetchFRED('DGS30');
 
@@ -86,6 +86,13 @@ async function main() {
     var us10yChg1d = parseFloat((us10yVal - us10yPrev1).toFixed(3));
     var us10yChg1m = parseFloat((us10yVal - us10yPrev1m).toFixed(3));
 
+    // 미국 3년물 현재/전일/전월
+    var us3yVal   = us3yObs.length > 0  ? parseFloat(us3yObs[0].value)  : 0;
+    var us3yPrev1 = us3yObs.length > 1  ? parseFloat(us3yObs[1].value)  : us3yVal;
+    var us3yPrev1m= us3yObs.length > 20 ? parseFloat(us3yObs[20].value) : us3yVal;
+    var us3yChg1d = parseFloat((us3yVal - us3yPrev1).toFixed(3));
+    var us3yChg1m = parseFloat((us3yVal - us3yPrev1m).toFixed(3));
+
     // 일본 10년물 현재/전월
     var jp10yVal   = jp10yObs.length > 0 ? parseFloat(jp10yObs[0].value) : 0;
     var jp10yPrev1m= jp10yObs.length > 1 ? parseFloat(jp10yObs[1].value) : jp10yVal;
@@ -103,7 +110,6 @@ async function main() {
     var jpyKrw     = jpyVal > 0 ? parseFloat((krwVal / jpyVal).toFixed(2)) : 0;
 
     var us2yVal   = parseFloat(us2y   ? us2y.value   : 0);
-    var us3yVal   = parseFloat(us3y   ? us3y.value   : 0);
     var us5yVal   = parseFloat(us5y   ? us5y.value   : 0);
     var us30yVal  = parseFloat(us30y  ? us30y.value  : 0);
     var fedVal    = parseFloat(fedRate ? fedRate.value : 0);
@@ -137,6 +143,8 @@ async function main() {
       date: date,
       us2y:  us2yVal,
       us3y:  us3yVal,
+      us3y_chg_1d: us3yChg1d,
+      us3y_chg_1m: us3yChg1m,
       us5y:  us5yVal,
       us10y: us10yVal,
       us30y: us30yVal,

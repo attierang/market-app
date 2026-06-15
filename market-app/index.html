@@ -1243,6 +1243,12 @@
       <div class="rate-hero">
         <div class="rate-box">
           <div class="rate-flag">🇺🇸</div>
+          <div class="rate-country">미국 3년물</div>
+          <div class="rate-yield" id="r-us3y">4.21<span>%</span></div>
+          <div class="rate-chg" id="r-us3y-sub" style="font-size:10px;color:var(--text-secondary);">FRED 자동업데이트</div>
+        </div>
+        <div class="rate-box">
+          <div class="rate-flag">🇺🇸</div>
           <div class="rate-country">미국 10년물</div>
           <div class="rate-yield" id="r-us10y">4.39<span>%</span></div>
           <div class="rate-chg" id="r-us10y-sub" style="font-size:10px;color:var(--text-secondary);">FRED 자동업데이트</div>
@@ -2658,6 +2664,20 @@
 
         // 날짜 포맷
         var dateStr = r.date ? r.date.replace(/-/g, '.') : '';
+
+        // 미국 3년물 + 전일/전월 변화
+        var us3yEl = document.getElementById('r-us3y');
+        if (us3yEl) us3yEl.innerHTML = r.us3y.toFixed(2) + '<span>%</span>';
+        var us3ySubEl = document.getElementById('r-us3y-sub');
+        if (us3ySubEl && r.us3y_chg_1d !== undefined) {
+          var d1 = r.us3y_chg_1d;
+          var m1 = r.us3y_chg_1m;
+          var d1Str = (d1 >= 0 ? '+' : '') + d1.toFixed(2) + '%p(전일)';
+          var m1Str = (m1 >= 0 ? '+' : '') + m1.toFixed(2) + '%p(전월)';
+          var d1Cls = d1 >= 0 ? 'var(--up)' : 'var(--down)';
+          var m1Cls = m1 >= 0 ? 'var(--up)' : 'var(--down)';
+          us3ySubEl.innerHTML = '<span style="color:' + d1Cls + ';">' + d1Str + '</span> / <span style="color:' + m1Cls + ';">' + m1Str + '</span>';
+        }
 
         // 미국 10년물 + 전일/전월 변화
         var us10yEl = document.getElementById('r-us10y');
