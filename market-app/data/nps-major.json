@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-06-17T05:29:49.107Z",
+  "updated_at": "2026-06-17T10:19:40.566Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "KB금융",
+      "stock_code": "105560",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260617",
+      "flr_nm": "국민연금공단",
+      "ratio": 5.05,
+      "change": 5.05,
+      "stock_count": 19865964,
+      "type": "buy"
+    },
+    {
+      "corp_name": "NH투자증권",
+      "stock_code": "005940",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260617",
+      "flr_nm": "국민연금공단",
+      "ratio": 7.29,
+      "change": 1.06,
+      "stock_count": 3210480,
+      "type": "buy"
+    },
     {
       "corp_name": "효성티앤씨",
       "stock_code": "298020",
@@ -528,28 +550,6 @@
       "ratio": 60.43,
       "change": -0.74,
       "stock_count": 210010,
-      "type": "sell"
-    },
-    {
-      "corp_name": "금호석유화학",
-      "stock_code": "011780",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260401",
-      "flr_nm": "국민연금공단",
-      "ratio": 11.12,
-      "change": 0.24,
-      "stock_count": 65439,
-      "type": "buy"
-    },
-    {
-      "corp_name": "한올바이오파마",
-      "stock_code": "009420",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260401",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.49,
-      "change": -1.04,
-      "stock_count": 541204,
       "type": "sell"
     }
   ]
