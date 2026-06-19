@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T08:36:42.934Z",
+  "updated_at": "2026-06-19T11:16:14.877Z",
   "date": "20260619",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -111,17 +111,17 @@
     },
     {
       "rank": 16,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2220",
-      "direction": "up"
-    },
-    {
-      "rank": 17,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "16965",
       "direction": "down"
+    },
+    {
+      "rank": 17,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2220",
+      "direction": "up"
     },
     {
       "rank": 18,
@@ -139,9 +139,9 @@
     },
     {
       "rank": 20,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "25820",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "146910",
       "direction": "down"
     }
   ],
@@ -253,17 +253,17 @@
     },
     {
       "rank": 16,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2220",
-      "direction": "up"
-    },
-    {
-      "rank": 17,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "16965",
       "direction": "down"
+    },
+    {
+      "rank": 17,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2220",
+      "direction": "up"
     },
     {
       "rank": 18,
@@ -281,9 +281,9 @@
     },
     {
       "rank": 20,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "25820",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "146910",
       "direction": "down"
     }
   ],
@@ -679,17 +679,17 @@
     },
     {
       "rank": 16,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2220",
-      "direction": "up"
-    },
-    {
-      "rank": 17,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "16965",
       "direction": "down"
+    },
+    {
+      "rank": 17,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2220",
+      "direction": "up"
     },
     {
       "rank": 18,
@@ -707,9 +707,9 @@
     },
     {
       "rank": 20,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "25820",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "146910",
       "direction": "down"
     }
   ],
@@ -963,17 +963,17 @@
     },
     {
       "rank": 16,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2220",
-      "direction": "up"
-    },
-    {
-      "rank": 17,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "16965",
       "direction": "down"
+    },
+    {
+      "rank": 17,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2220",
+      "direction": "up"
     },
     {
       "rank": 18,
@@ -991,9 +991,9 @@
     },
     {
       "rank": 20,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "25820",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "146910",
       "direction": "down"
     }
   ],
