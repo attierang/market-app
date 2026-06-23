@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-06-23T04:41:28.783Z",
+  "updated_at": "2026-06-23T08:31:48.821Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "코리아써키트",
+      "stock_code": "007810",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260623",
+      "flr_nm": "국민연금공단",
+      "ratio": 40.96,
+      "change": 3.87,
+      "stock_count": 1208198,
+      "type": "buy"
+    },
+    {
+      "corp_name": "진성티이씨",
+      "stock_code": "036890",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260623",
+      "flr_nm": "국민연금공단",
+      "ratio": 14.43,
+      "change": 0.2,
+      "stock_count": 44645,
+      "type": "buy"
+    },
     {
       "corp_name": "롯데관광개발",
       "stock_code": "032350",
@@ -528,28 +550,6 @@
       "ratio": 10.88,
       "change": 0.86,
       "stock_count": 201400,
-      "type": "buy"
-    },
-    {
-      "corp_name": "HL만도",
-      "stock_code": "204320",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260420",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.03,
-      "change": 10.03,
-      "stock_count": 4710707,
-      "type": "buy"
-    },
-    {
-      "corp_name": "DL이앤씨",
-      "stock_code": "375500",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260420",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 561,
       "type": "buy"
     }
   ]
