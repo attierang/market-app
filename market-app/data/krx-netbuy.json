@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T06:55:44.573Z",
+  "updated_at": "2026-06-23T10:33:43.747Z",
   "date": "20260623",
   "source": "네이버금융",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -20,30 +20,30 @@
     },
     {
       "rank": 3,
-      "code": "329180",
-      "name": "HD현대중공업",
-      "price": "588,000",
-      "direction": "down"
-    },
-    {
-      "rank": 4,
       "code": "006800",
       "name": "미래에셋증권",
       "price": "42,150",
       "direction": "down"
     },
     {
-      "rank": 5,
-      "code": "000150",
-      "name": "두산",
-      "price": "1,531,000",
+      "rank": 4,
+      "code": "009150",
+      "name": "삼성전기",
+      "price": "1,990,000",
       "direction": "down"
     },
     {
+      "rank": 5,
+      "code": "252670",
+      "name": "KODEX 200선물인버스2X",
+      "price": "76",
+      "direction": "up"
+    },
+    {
       "rank": 6,
-      "code": "440110",
-      "name": "파두",
-      "price": "89,800",
+      "code": "012330",
+      "name": "현대모비스",
+      "price": "510,000",
       "direction": "down"
     },
     {
@@ -76,9 +76,9 @@
     },
     {
       "rank": 11,
-      "code": "009150",
-      "name": "삼성전기",
-      "price": "1,990,000",
+      "code": "066570",
+      "name": "LG전자",
+      "price": "202,000",
       "direction": "down"
     }
   ],
@@ -227,65 +227,72 @@
   "kospi_institute_buy": [
     {
       "rank": 1,
+      "code": "252670",
+      "name": "KODEX 200선물인버스2X",
+      "price": "76",
+      "direction": "up"
+    },
+    {
+      "rank": 2,
+      "code": "114800",
+      "name": "KODEX 인버스",
+      "price": "944",
+      "direction": "up"
+    },
+    {
+      "rank": 3,
+      "code": "000990",
+      "name": "DB하이텍",
+      "price": "151,100",
+      "direction": "down"
+    },
+    {
+      "rank": 4,
+      "code": "459580",
+      "name": "KODEX CD금리액티브(합성)",
+      "price": "1,075,510",
+      "direction": "up"
+    },
+    {
+      "rank": 5,
+      "code": "003230",
+      "name": "삼양식품",
+      "price": "1,072,000",
+      "direction": "up"
+    },
+    {
+      "rank": 6,
       "code": "000660",
       "name": "SK하이닉스",
       "price": "2,555,000",
       "direction": "down"
     },
     {
-      "rank": 2,
-      "code": "122630",
-      "name": "KODEX 레버리지",
-      "price": "188,990",
-      "direction": "down"
-    },
-    {
-      "rank": 3,
-      "code": "009150",
-      "name": "삼성전기",
-      "price": "1,990,000",
-      "direction": "down"
-    },
-    {
-      "rank": 4,
-      "code": "402340",
-      "name": "SK스퀘어",
-      "price": "1,832,000",
-      "direction": "down"
-    },
-    {
-      "rank": 5,
-      "code": "488080",
-      "name": "TIGER 반도체TOP10레버리지",
-      "price": "77,935",
-      "direction": "down"
-    },
-    {
-      "rank": 6,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "132,820",
-      "direction": "down"
-    },
-    {
       "rank": 7,
-      "code": "396500",
-      "name": "TIGER 반도체TOP10",
-      "price": "49,260",
-      "direction": "down"
-    },
-    {
-      "rank": 8,
       "code": "005930",
       "name": "삼성전자",
       "price": "310,000",
       "direction": "down"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "code": "005380",
       "name": "현대차",
       "price": "511,000",
+      "direction": "down"
+    },
+    {
+      "rank": 9,
+      "code": "402340",
+      "name": "SK스퀘어",
+      "price": "1,832,000",
+      "direction": "down"
+    },
+    {
+      "rank": 10,
+      "code": "066570",
+      "name": "LG전자",
+      "price": "202,000",
       "direction": "down"
     }
   ],
@@ -448,30 +455,30 @@
     },
     {
       "rank": 3,
-      "code": "329180",
-      "name": "HD현대중공업",
-      "price": "588,000",
-      "direction": "down"
-    },
-    {
-      "rank": 4,
       "code": "006800",
       "name": "미래에셋증권",
       "price": "42,150",
       "direction": "down"
     },
     {
-      "rank": 5,
-      "code": "000150",
-      "name": "두산",
-      "price": "1,531,000",
+      "rank": 4,
+      "code": "009150",
+      "name": "삼성전기",
+      "price": "1,990,000",
       "direction": "down"
     },
     {
+      "rank": 5,
+      "code": "252670",
+      "name": "KODEX 200선물인버스2X",
+      "price": "76",
+      "direction": "up"
+    },
+    {
       "rank": 6,
-      "code": "440110",
-      "name": "파두",
-      "price": "89,800",
+      "code": "012330",
+      "name": "현대모비스",
+      "price": "510,000",
       "direction": "down"
     },
     {
@@ -504,74 +511,81 @@
     },
     {
       "rank": 11,
-      "code": "009150",
-      "name": "삼성전기",
-      "price": "1,990,000",
+      "code": "066570",
+      "name": "LG전자",
+      "price": "202,000",
       "direction": "down"
     }
   ],
   "kospi_institute": [
     {
       "rank": 1,
+      "code": "252670",
+      "name": "KODEX 200선물인버스2X",
+      "price": "76",
+      "direction": "up"
+    },
+    {
+      "rank": 2,
+      "code": "114800",
+      "name": "KODEX 인버스",
+      "price": "944",
+      "direction": "up"
+    },
+    {
+      "rank": 3,
+      "code": "000990",
+      "name": "DB하이텍",
+      "price": "151,100",
+      "direction": "down"
+    },
+    {
+      "rank": 4,
+      "code": "459580",
+      "name": "KODEX CD금리액티브(합성)",
+      "price": "1,075,510",
+      "direction": "up"
+    },
+    {
+      "rank": 5,
+      "code": "003230",
+      "name": "삼양식품",
+      "price": "1,072,000",
+      "direction": "up"
+    },
+    {
+      "rank": 6,
       "code": "000660",
       "name": "SK하이닉스",
       "price": "2,555,000",
       "direction": "down"
     },
     {
-      "rank": 2,
-      "code": "122630",
-      "name": "KODEX 레버리지",
-      "price": "188,990",
-      "direction": "down"
-    },
-    {
-      "rank": 3,
-      "code": "009150",
-      "name": "삼성전기",
-      "price": "1,990,000",
-      "direction": "down"
-    },
-    {
-      "rank": 4,
-      "code": "402340",
-      "name": "SK스퀘어",
-      "price": "1,832,000",
-      "direction": "down"
-    },
-    {
-      "rank": 5,
-      "code": "488080",
-      "name": "TIGER 반도체TOP10레버리지",
-      "price": "77,935",
-      "direction": "down"
-    },
-    {
-      "rank": 6,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "132,820",
-      "direction": "down"
-    },
-    {
       "rank": 7,
-      "code": "396500",
-      "name": "TIGER 반도체TOP10",
-      "price": "49,260",
-      "direction": "down"
-    },
-    {
-      "rank": 8,
       "code": "005930",
       "name": "삼성전자",
       "price": "310,000",
       "direction": "down"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "code": "005380",
       "name": "현대차",
       "price": "511,000",
+      "direction": "down"
+    },
+    {
+      "rank": 9,
+      "code": "402340",
+      "name": "SK스퀘어",
+      "price": "1,832,000",
+      "direction": "down"
+    },
+    {
+      "rank": 10,
+      "code": "066570",
+      "name": "LG전자",
+      "price": "202,000",
       "direction": "down"
     }
   ],
@@ -592,30 +606,30 @@
     },
     {
       "rank": 3,
-      "code": "329180",
-      "name": "HD현대중공업",
-      "price": "588,000",
-      "direction": "down"
-    },
-    {
-      "rank": 4,
       "code": "006800",
       "name": "미래에셋증권",
       "price": "42,150",
       "direction": "down"
     },
     {
-      "rank": 5,
-      "code": "000150",
-      "name": "두산",
-      "price": "1,531,000",
+      "rank": 4,
+      "code": "009150",
+      "name": "삼성전기",
+      "price": "1,990,000",
       "direction": "down"
     },
     {
+      "rank": 5,
+      "code": "252670",
+      "name": "KODEX 200선물인버스2X",
+      "price": "76",
+      "direction": "up"
+    },
+    {
       "rank": 6,
-      "code": "440110",
-      "name": "파두",
-      "price": "89,800",
+      "code": "012330",
+      "name": "현대모비스",
+      "price": "510,000",
       "direction": "down"
     },
     {
@@ -648,9 +662,9 @@
     },
     {
       "rank": 11,
-      "code": "009150",
-      "name": "삼성전기",
-      "price": "1,990,000",
+      "code": "066570",
+      "name": "LG전자",
+      "price": "202,000",
       "direction": "down"
     }
   ],
