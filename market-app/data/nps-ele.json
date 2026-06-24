@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T23:56:28.732Z",
+  "updated_at": "2026-06-24T02:40:00.444Z",
   "count": 50,
   "data": [
     {
@@ -362,7 +362,7 @@
       "flr_nm": "국민연금공단",
       "ratio": 0,
       "change": 0,
-      "stock_count": 200,
+      "stock_count": 100,
       "type": "buy"
     },
     {
@@ -428,7 +428,7 @@
       "flr_nm": "국민연금공단",
       "ratio": 0,
       "change": 0,
-      "stock_count": 200,
+      "stock_count": 100,
       "type": "buy"
     },
     {
