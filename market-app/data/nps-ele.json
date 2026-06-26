@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-06-26T02:43:39.678Z",
+  "updated_at": "2026-06-26T06:49:48.231Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "LX인터내셔널",
+      "stock_code": "001120",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260626",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.01,
+      "change": 10.01,
+      "stock_count": 3879416,
+      "type": "buy"
+    },
+    {
+      "corp_name": "현대엘리베이터",
+      "stock_code": "017800",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260626",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.34,
+      "change": -0.29,
+      "stock_count": 111978,
+      "type": "sell"
+    },
     {
       "corp_name": "코리아써키트",
       "stock_code": "007810",
@@ -528,28 +550,6 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 500,
-      "type": "buy"
-    },
-    {
-      "corp_name": "비에이치",
-      "stock_code": "090460",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260427",
-      "flr_nm": "국민연금공단",
-      "ratio": 21.03,
-      "change": -0.37,
-      "stock_count": 13743,
-      "type": "sell"
-    },
-    {
-      "corp_name": "LG이노텍",
-      "stock_code": "011070",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260427",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.88,
-      "change": 0.86,
-      "stock_count": 201400,
       "type": "buy"
     }
   ]
