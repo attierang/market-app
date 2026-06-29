@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-29T08:20:28.349Z",
+  "updated_at": "2026-06-29T11:54:23.919Z",
   "date": "20260629",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -90,24 +90,24 @@
     },
     {
       "rank": 13,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "16710",
+      "direction": "up"
+    },
+    {
+      "rank": 14,
       "code": "122350",
       "name": "삼기",
       "price": "1907",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "code": "005930",
       "name": "삼성전자",
       "price": "323000",
       "direction": "down"
-    },
-    {
-      "rank": 15,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "16710",
-      "direction": "up"
     },
     {
       "rank": 16,
@@ -125,16 +125,16 @@
     },
     {
       "rank": 18,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "28325",
+      "code": "153890",
+      "name": "져스텍",
+      "price": "17530",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "153890",
-      "name": "져스텍",
-      "price": "17530",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "28325",
       "direction": "up"
     },
     {
@@ -232,24 +232,24 @@
     },
     {
       "rank": 13,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "16710",
+      "direction": "up"
+    },
+    {
+      "rank": 14,
       "code": "122350",
       "name": "삼기",
       "price": "1907",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "code": "005930",
       "name": "삼성전자",
       "price": "323000",
       "direction": "down"
-    },
-    {
-      "rank": 15,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "16710",
-      "direction": "up"
     },
     {
       "rank": 16,
@@ -267,16 +267,16 @@
     },
     {
       "rank": 18,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "28325",
+      "code": "153890",
+      "name": "져스텍",
+      "price": "17530",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "153890",
-      "name": "져스텍",
-      "price": "17530",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "28325",
       "direction": "up"
     },
     {
@@ -658,24 +658,24 @@
     },
     {
       "rank": 13,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "16710",
+      "direction": "up"
+    },
+    {
+      "rank": 14,
       "code": "122350",
       "name": "삼기",
       "price": "1907",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "code": "005930",
       "name": "삼성전자",
       "price": "323000",
       "direction": "down"
-    },
-    {
-      "rank": 15,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "16710",
-      "direction": "up"
     },
     {
       "rank": 16,
@@ -693,16 +693,16 @@
     },
     {
       "rank": 18,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "28325",
+      "code": "153890",
+      "name": "져스텍",
+      "price": "17530",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "153890",
-      "name": "져스텍",
-      "price": "17530",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "28325",
       "direction": "up"
     },
     {
@@ -942,24 +942,24 @@
     },
     {
       "rank": 13,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "16710",
+      "direction": "up"
+    },
+    {
+      "rank": 14,
       "code": "122350",
       "name": "삼기",
       "price": "1907",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "code": "005930",
       "name": "삼성전자",
       "price": "323000",
       "direction": "down"
-    },
-    {
-      "rank": 15,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "16710",
-      "direction": "up"
     },
     {
       "rank": 16,
@@ -977,16 +977,16 @@
     },
     {
       "rank": 18,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "28325",
+      "code": "153890",
+      "name": "져스텍",
+      "price": "17530",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "153890",
-      "name": "져스텍",
-      "price": "17530",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "28325",
       "direction": "up"
     },
     {
