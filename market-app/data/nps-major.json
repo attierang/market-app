@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02T06:37:37.291Z",
+  "updated_at": "2026-07-02T09:59:37.615Z",
   "count": 50,
   "data": [
     {
@@ -19,9 +19,9 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 7.2,
-      "change": -2.14,
-      "stock_count": 1060303,
+      "ratio": 5.15,
+      "change": -2.05,
+      "stock_count": 1017915,
       "type": "sell"
     },
     {
@@ -85,10 +85,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 8.67,
-      "change": -3.42,
-      "stock_count": 365767,
-      "type": "sell"
+      "ratio": 5.24,
+      "change": 5.24,
+      "stock_count": 560027,
+      "type": "buy"
     },
     {
       "corp_name": "RFHIC",
@@ -129,9 +129,9 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 6.25,
-      "change": -1.03,
-      "stock_count": 292150,
+      "ratio": 4.98,
+      "change": -1.01,
+      "stock_count": 319805,
       "type": "sell"
     },
     {
@@ -151,10 +151,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 42.73,
-      "change": -0.07,
-      "stock_count": 6584,
-      "type": "sell"
+      "ratio": 41.21,
+      "change": 0.02,
+      "stock_count": 1627,
+      "type": "buy"
     },
     {
       "corp_name": "비나텍",
@@ -195,9 +195,9 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 11.08,
-      "change": 1,
-      "stock_count": 402701,
+      "ratio": 64.75,
+      "change": 0,
+      "stock_count": 0,
       "type": "buy"
     },
     {
@@ -228,9 +228,9 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 7.33,
-      "change": 1.15,
-      "stock_count": 395208,
+      "ratio": 21.17,
+      "change": 0.04,
+      "stock_count": 13743,
       "type": "buy"
     },
     {
