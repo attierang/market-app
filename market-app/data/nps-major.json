@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02T02:35:36.684Z",
+  "updated_at": "2026-07-02T06:37:37.291Z",
   "count": 50,
   "data": [
     {
@@ -63,10 +63,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 11.9,
-      "change": 11.9,
-      "stock_count": 1003272,
-      "type": "buy"
+      "ratio": 45.45,
+      "change": -6.52,
+      "stock_count": 552873,
+      "type": "sell"
     },
     {
       "corp_name": "피에스케이",
@@ -261,10 +261,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 9.49,
-      "change": 1.03,
-      "stock_count": 270491,
-      "type": "buy"
+      "ratio": 3.86,
+      "change": -1.16,
+      "stock_count": 305091,
+      "type": "sell"
     },
     {
       "corp_name": "HL홀딩스",
@@ -283,10 +283,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 7.17,
-      "change": 2.12,
-      "stock_count": 238039,
-      "type": "buy"
+      "ratio": 6.33,
+      "change": -0.84,
+      "stock_count": 53516,
+      "type": "sell"
     },
     {
       "corp_name": "한미글로벌",
@@ -305,10 +305,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 5.09,
-      "change": 0.17,
-      "stock_count": 26137,
-      "type": "buy"
+      "ratio": 3.54,
+      "change": -1.71,
+      "stock_count": 250000,
+      "type": "sell"
     },
     {
       "corp_name": "코나아이",
@@ -327,10 +327,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 6.09,
-      "change": 1.19,
-      "stock_count": 187713,
-      "type": "buy"
+      "ratio": 4.79,
+      "change": -1.77,
+      "stock_count": 280115,
+      "type": "sell"
     },
     {
       "corp_name": "진성티이씨",
@@ -349,9 +349,9 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 3.99,
-      "change": -1.05,
-      "stock_count": 277290,
+      "ratio": 3.73,
+      "change": -1.23,
+      "stock_count": 326025,
       "type": "sell"
     },
     {
@@ -371,9 +371,9 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 8.07,
-      "change": 2.17,
-      "stock_count": 146627,
+      "ratio": 45.59,
+      "change": 0,
+      "stock_count": 0,
       "type": "buy"
     },
     {
@@ -382,9 +382,9 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 9.5,
-      "change": 4.55,
-      "stock_count": 301255,
+      "ratio": 10.13,
+      "change": 0.63,
+      "stock_count": 41629,
       "type": "buy"
     },
     {
@@ -404,9 +404,9 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 9.34,
-      "change": -1.08,
-      "stock_count": 69890,
+      "ratio": 8.27,
+      "change": -1.07,
+      "stock_count": 69955,
       "type": "sell"
     },
     {
@@ -415,10 +415,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 6.21,
-      "change": 1.38,
-      "stock_count": 143252,
-      "type": "buy"
+      "ratio": 5.15,
+      "change": -1.06,
+      "stock_count": 109354,
+      "type": "sell"
     },
     {
       "corp_name": "세아제강지주",
