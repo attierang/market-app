@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T02:54:34.047Z",
+  "updated_at": "2026-07-03T06:26:09.402Z",
   "count": 50,
   "data": [
     {
@@ -74,10 +74,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 13.15,
-      "change": 2.17,
-      "stock_count": 202115,
-      "type": "buy"
+      "ratio": 0.61,
+      "change": -0.59,
+      "stock_count": 55705,
+      "type": "sell"
     },
     {
       "corp_name": "IPARK현대산업개발",
@@ -140,10 +140,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 11.31,
-      "change": 0.57,
-      "stock_count": 133327,
-      "type": "buy"
+      "ratio": 0.21,
+      "change": -0.27,
+      "stock_count": 59700,
+      "type": "sell"
     },
     {
       "corp_name": "한미약품",
@@ -327,10 +327,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 11.56,
-      "change": -0.15,
-      "stock_count": 78531,
-      "type": "sell"
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 1580,
+      "type": "buy"
     },
     {
       "corp_name": "코리아써키트",
@@ -492,10 +492,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260618",
       "flr_nm": "국민연금공단",
-      "ratio": 13.15,
-      "change": 2.17,
-      "stock_count": 202115,
-      "type": "buy"
+      "ratio": 0.61,
+      "change": -0.59,
+      "stock_count": 55705,
+      "type": "sell"
     },
     {
       "corp_name": "대한유화",
