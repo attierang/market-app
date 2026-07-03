@@ -1,7 +1,51 @@
 {
-  "updated_at": "2026-07-02T23:59:54.443Z",
+  "updated_at": "2026-07-03T02:54:34.047Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "현대엘리베이터",
+      "stock_code": "017800",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260703",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.34,
+      "change": -0.29,
+      "stock_count": 111978,
+      "type": "sell"
+    },
+    {
+      "corp_name": "금호석유화학",
+      "stock_code": "011780",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260703",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.99,
+      "change": 0.1,
+      "stock_count": 3650,
+      "type": "buy"
+    },
+    {
+      "corp_name": "LG이노텍",
+      "stock_code": "011070",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260703",
+      "flr_nm": "국민연금공단",
+      "ratio": 9.93,
+      "change": -0.95,
+      "stock_count": 223293,
+      "type": "sell"
+    },
+    {
+      "corp_name": "금호석유화학",
+      "stock_code": "011780",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260703",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.99,
+      "change": 0.1,
+      "stock_count": 3650,
+      "type": "buy"
+    },
     {
       "corp_name": "DL이앤씨",
       "stock_code": "375500",
@@ -85,9 +129,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 12.29,
-      "change": 0.66,
-      "stock_count": 75125,
+      "ratio": 26.39,
+      "change": 0.54,
+      "stock_count": 62207,
       "type": "buy"
     },
     {
@@ -261,10 +305,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 11.62,
-      "change": 0.7,
-      "stock_count": 79434,
-      "type": "buy"
+      "ratio": 10.09,
+      "change": -1.53,
+      "stock_count": 173479,
+      "type": "sell"
     },
     {
       "corp_name": "OCI홀딩스",
@@ -316,9 +360,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 12.58,
-      "change": -1.1,
-      "stock_count": 354912,
+      "ratio": 12.06,
+      "change": -0.52,
+      "stock_count": 168529,
       "type": "sell"
     },
     {
@@ -327,10 +371,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 10.55,
-      "change": 0.08,
-      "stock_count": 7325,
-      "type": "buy"
+      "ratio": 10.22,
+      "change": -0.33,
+      "stock_count": 31884,
+      "type": "sell"
     },
     {
       "corp_name": "대상",
@@ -338,10 +382,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 11.75,
-      "change": 1.7,
-      "stock_count": 612785,
-      "type": "buy"
+      "ratio": 11.71,
+      "change": -0.04,
+      "stock_count": 12058,
+      "type": "sell"
     },
     {
       "corp_name": "CJ",
@@ -349,10 +393,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 10.42,
-      "change": 0.03,
-      "stock_count": 9636,
-      "type": "buy"
+      "ratio": 10.24,
+      "change": -0.18,
+      "stock_count": 65455,
+      "type": "sell"
     },
     {
       "corp_name": "동아쏘시오홀딩스",
@@ -481,10 +525,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260605",
       "flr_nm": "국민연금공단",
-      "ratio": 9.99,
-      "change": -0.11,
-      "stock_count": 90809,
-      "type": "sell"
+      "ratio": 9.81,
+      "change": 9.81,
+      "stock_count": 7611479,
+      "type": "buy"
     },
     {
       "corp_name": "달바글로벌",
@@ -506,50 +550,6 @@
       "ratio": 10.06,
       "change": 10.06,
       "stock_count": 1288273,
-      "type": "buy"
-    },
-    {
-      "corp_name": "대한유화",
-      "stock_code": "006650",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260605",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.01,
-      "change": 10.01,
-      "stock_count": 650920,
-      "type": "buy"
-    },
-    {
-      "corp_name": "효성중공업",
-      "stock_code": "298040",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260601",
-      "flr_nm": "국민연금공단",
-      "ratio": 13.15,
-      "change": 2.17,
-      "stock_count": 202115,
-      "type": "buy"
-    },
-    {
-      "corp_name": "씨에스윈드",
-      "stock_code": "112610",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260601",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": -0.01,
-      "stock_count": 4000,
-      "type": "sell"
-    },
-    {
-      "corp_name": "금호석유화학",
-      "stock_code": "011780",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260601",
-      "flr_nm": "국민연금공단",
-      "ratio": 0.99,
-      "change": 0.1,
-      "stock_count": 3650,
       "type": "buy"
     }
   ]
