@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04T05:07:00.329Z",
+  "updated_at": "2026-07-04T08:13:02.862Z",
   "count": 50,
   "data": [
     {
@@ -140,10 +140,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 36.31,
-      "change": 0,
-      "stock_count": 0,
-      "type": "buy"
+      "ratio": 7.23,
+      "change": -2.1,
+      "stock_count": 357568,
+      "type": "sell"
     },
     {
       "corp_name": "동아에스티",
