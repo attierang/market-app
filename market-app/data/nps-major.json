@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-05T05:35:34.472Z",
+  "updated_at": "2026-07-05T08:47:23.500Z",
   "count": 50,
   "data": [
     {
@@ -85,10 +85,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 5.24,
-      "change": 5.24,
-      "stock_count": 560027,
-      "type": "buy"
+      "ratio": 5.88,
+      "change": -0.56,
+      "stock_count": 58857,
+      "type": "sell"
     },
     {
       "corp_name": "RFHIC",
