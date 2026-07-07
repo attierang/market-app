@@ -1,7 +1,51 @@
 {
-  "updated_at": "2026-07-07T04:32:37.731Z",
+  "updated_at": "2026-07-07T08:18:30.807Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "코리아써키트",
+      "stock_code": "007810",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260707",
+      "flr_nm": "국민연금공단",
+      "ratio": 40.96,
+      "change": 3.87,
+      "stock_count": 1208198,
+      "type": "buy"
+    },
+    {
+      "corp_name": "동아쏘시오홀딩스",
+      "stock_code": "000640",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260707",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.02,
+      "change": 0.02,
+      "stock_count": 1456,
+      "type": "buy"
+    },
+    {
+      "corp_name": "대웅제약",
+      "stock_code": "069620",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260707",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.03,
+      "change": 10.03,
+      "stock_count": 1162447,
+      "type": "buy"
+    },
+    {
+      "corp_name": "GS리테일",
+      "stock_code": "007070",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260707",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 724,
+      "type": "buy"
+    },
     {
       "corp_name": "현대엘리베이터",
       "stock_code": "017800",
@@ -506,50 +550,6 @@
       "ratio": 10.01,
       "change": 10.01,
       "stock_count": 650920,
-      "type": "buy"
-    },
-    {
-      "corp_name": "한미약품",
-      "stock_code": "128940",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260610",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.06,
-      "change": 10.06,
-      "stock_count": 1288273,
-      "type": "buy"
-    },
-    {
-      "corp_name": "삼성전기",
-      "stock_code": "009150",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260605",
-      "flr_nm": "국민연금공단",
-      "ratio": 9.81,
-      "change": 9.81,
-      "stock_count": 7611479,
-      "type": "buy"
-    },
-    {
-      "corp_name": "달바글로벌",
-      "stock_code": "483650",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260605",
-      "flr_nm": "국민연금공단",
-      "ratio": 16.11,
-      "change": 16.11,
-      "stock_count": 1944780,
-      "type": "buy"
-    },
-    {
-      "corp_name": "한미약품",
-      "stock_code": "128940",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260605",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.06,
-      "change": 10.06,
-      "stock_count": 1288273,
       "type": "buy"
     }
   ]
