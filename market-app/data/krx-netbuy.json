@@ -1,147 +1,84 @@
 {
-  "updated_at": "2026-07-07T06:51:44.632Z",
+  "updated_at": "2026-07-07T10:20:40.471Z",
   "date": "20260707",
-  "source": "KIS API",
+  "source": "네이버금융",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
   "kospi_foreigner_buy": [
     {
       "rank": 1,
-      "code": "252670",
-      "name": "KODEX 200선물인버스2X",
-      "price": "84",
-      "direction": "up"
+      "code": "009150",
+      "name": "삼성전기",
+      "price": "1,648,000",
+      "direction": "down"
     },
     {
       "rank": 2,
-      "code": "114800",
-      "name": "KODEX 인버스",
-      "price": "997",
-      "direction": "up"
+      "code": "011070",
+      "name": "LG이노텍",
+      "price": "814,000",
+      "direction": "down"
     },
     {
       "rank": 3,
-      "code": "0197X0",
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "9355",
-      "direction": "up"
+      "code": "353200",
+      "name": "대덕전자",
+      "price": "116,700",
+      "direction": "down"
     },
     {
       "rank": 4,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "22130",
+      "code": "402340",
+      "name": "SK스퀘어",
+      "price": "1,356,000",
       "direction": "down"
     },
     {
       "rank": 5,
-      "code": "252710",
-      "name": "TIGER 200선물인버스2X",
-      "price": "88",
+      "code": "035420",
+      "name": "NAVER",
+      "price": "197,200",
       "direction": "up"
     },
     {
       "rank": 6,
-      "code": "0195S0",
-      "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "18750",
+      "code": "095610",
+      "name": "테스",
+      "price": "145,000",
       "direction": "down"
     },
     {
       "rank": 7,
-      "code": "0193W0",
-      "name": "KODEX 삼성전자단일종목레버리지",
-      "price": "18310",
+      "code": "064350",
+      "name": "현대로템",
+      "price": "186,400",
       "direction": "down"
     },
     {
       "rank": 8,
-      "code": "233740",
-      "name": "KODEX 코스닥150레버리지",
-      "price": "8225",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "296,000",
       "direction": "down"
     },
     {
       "rank": 9,
-      "code": "462330",
-      "name": "KODEX 2차전지산업레버리지",
-      "price": "982",
+      "code": "000660",
+      "name": "SK하이닉스",
+      "price": "2,201,000",
       "direction": "down"
     },
     {
       "rank": 10,
-      "code": "001210",
-      "name": "금호전기",
-      "price": "1002",
-      "direction": "up"
+      "code": "042660",
+      "name": "한화오션",
+      "price": "89,800",
+      "direction": "down"
     },
     {
       "rank": 11,
-      "code": "0195R0",
-      "name": "TIGER 삼성전자단일종목레버리지",
-      "price": "16870",
-      "direction": "down"
-    },
-    {
-      "rank": 12,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2535",
-      "direction": "up"
-    },
-    {
-      "rank": 13,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "28525",
-      "direction": "down"
-    },
-    {
-      "rank": 14,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "26010",
-      "direction": "down"
-    },
-    {
-      "rank": 15,
-      "code": "0167A0",
-      "name": "SOL AI반도체TOP2플러스",
-      "price": "21470",
-      "direction": "down"
-    },
-    {
-      "rank": 16,
-      "code": "002990",
-      "name": "금호건설",
-      "price": "14000",
-      "direction": "up"
-    },
-    {
-      "rank": 17,
-      "code": "073240",
-      "name": "금호타이어",
-      "price": "6330",
-      "direction": "up"
-    },
-    {
-      "rank": 18,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "296000",
-      "direction": "down"
-    },
-    {
-      "rank": 19,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "14535",
-      "direction": "down"
-    },
-    {
-      "rank": 20,
-      "code": "0193L0",
-      "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "14085",
+      "code": "066570",
+      "name": "LG전자",
+      "price": "189,100",
       "direction": "up"
     }
   ],
@@ -290,142 +227,86 @@
   "kospi_institute_buy": [
     {
       "rank": 1,
+      "code": "352820",
+      "name": "하이브",
+      "price": "232,000",
+      "direction": "up"
+    },
+    {
+      "rank": 2,
+      "code": "010950",
+      "name": "S-Oil",
+      "price": "127,400",
+      "direction": "up"
+    },
+    {
+      "rank": 3,
+      "code": "105560",
+      "name": "KB금융",
+      "price": "173,200",
+      "direction": "up"
+    },
+    {
+      "rank": 4,
+      "code": "055550",
+      "name": "신한지주",
+      "price": "108,600",
+      "direction": "up"
+    },
+    {
+      "rank": 5,
+      "code": "278470",
+      "name": "에이피알",
+      "price": "410,000",
+      "direction": "up"
+    },
+    {
+      "rank": 6,
       "code": "252670",
       "name": "KODEX 200선물인버스2X",
       "price": "84",
       "direction": "up"
     },
     {
-      "rank": 2,
-      "code": "114800",
-      "name": "KODEX 인버스",
-      "price": "997",
-      "direction": "up"
-    },
-    {
-      "rank": 3,
-      "code": "036630",
-      "name": "세종텔레콤",
-      "price": "8200",
-      "direction": "up"
-    },
-    {
-      "rank": 4,
-      "code": "042040",
-      "name": "케이피엠테크",
-      "price": "6000",
-      "direction": "up"
-    },
-    {
-      "rank": 5,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "296000",
-      "direction": "down"
-    },
-    {
-      "rank": 6,
-      "code": "079650",
-      "name": "서산",
-      "price": "4775",
-      "direction": "up"
-    },
-    {
       "rank": 7,
-      "code": "Q530062",
-      "name": "삼성 인버스 2X 은 선물 ETN(H)",
-      "price": "50",
+      "code": "003230",
+      "name": "삼양식품",
+      "price": "1,222,000",
       "direction": "up"
     },
     {
       "rank": 8,
-      "code": "109610",
-      "name": "에스와이",
-      "price": "2560",
-      "direction": "up"
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "296,000",
+      "direction": "down"
     },
     {
       "rank": 9,
-      "code": "298000",
-      "name": "효성화학",
-      "price": "67000",
-      "direction": "up"
+      "code": "000660",
+      "name": "SK하이닉스",
+      "price": "2,201,000",
+      "direction": "down"
     },
     {
       "rank": 10,
-      "code": "0193W0",
-      "name": "KODEX 삼성전자단일종목레버리지",
-      "price": "18310",
+      "code": "042660",
+      "name": "한화오션",
+      "price": "89,800",
       "direction": "down"
     },
     {
       "rank": 11,
-      "code": "241390",
-      "name": "RISE V&S셀렉트밸류채권혼합",
-      "price": "16060",
+      "code": "009150",
+      "name": "삼성전기",
+      "price": "1,648,000",
       "direction": "down"
     },
     {
       "rank": 12,
-      "code": "462330",
-      "name": "KODEX 2차전지산업레버리지",
-      "price": "982",
-      "direction": "down"
-    },
-    {
-      "rank": 13,
-      "code": "Q500030",
-      "name": "신한 인버스 2X 은 선물 ETN(H)",
-      "price": "70",
-      "direction": "up"
-    },
-    {
-      "rank": 14,
-      "code": "203690",
-      "name": "아크솔루션스",
-      "price": "139",
-      "direction": "down"
-    },
-    {
-      "rank": 15,
-      "code": "121440",
-      "name": "골프존홀딩스",
-      "price": "6640",
-      "direction": "down"
-    },
-    {
-      "rank": 16,
-      "code": "0192L0",
-      "name": "RISE SK하이닉스단일종목레버리지",
-      "price": "18625",
-      "direction": "down"
-    },
-    {
-      "rank": 17,
-      "code": "Q530134",
-      "name": "삼성 블룸버그 인버스2X WTI원유선물 ETN B",
-      "price": "4815",
-      "direction": "down"
-    },
-    {
-      "rank": 18,
-      "code": "010140",
-      "name": "삼성중공업",
-      "price": "22450",
-      "direction": "down"
-    },
-    {
-      "rank": 19,
-      "code": "0167Z0",
-      "name": "KODEX 미국우주항공",
-      "price": "10575",
-      "direction": "down"
-    },
-    {
-      "rank": 20,
-      "code": "365660",
-      "name": "레몬헬스케어",
-      "price": "12220",
+      "code": "066570",
+      "name": "LG전자",
+      "price": "189,100",
       "direction": "up"
     }
   ],
@@ -574,426 +455,244 @@
   "kospi_foreigner": [
     {
       "rank": 1,
-      "code": "252670",
-      "name": "KODEX 200선물인버스2X",
-      "price": "84",
-      "direction": "up"
+      "code": "009150",
+      "name": "삼성전기",
+      "price": "1,648,000",
+      "direction": "down"
     },
     {
       "rank": 2,
-      "code": "114800",
-      "name": "KODEX 인버스",
-      "price": "997",
-      "direction": "up"
+      "code": "011070",
+      "name": "LG이노텍",
+      "price": "814,000",
+      "direction": "down"
     },
     {
       "rank": 3,
-      "code": "0197X0",
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "9355",
-      "direction": "up"
+      "code": "353200",
+      "name": "대덕전자",
+      "price": "116,700",
+      "direction": "down"
     },
     {
       "rank": 4,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "22130",
+      "code": "402340",
+      "name": "SK스퀘어",
+      "price": "1,356,000",
       "direction": "down"
     },
     {
       "rank": 5,
-      "code": "252710",
-      "name": "TIGER 200선물인버스2X",
-      "price": "88",
+      "code": "035420",
+      "name": "NAVER",
+      "price": "197,200",
       "direction": "up"
     },
     {
       "rank": 6,
-      "code": "0195S0",
-      "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "18750",
+      "code": "095610",
+      "name": "테스",
+      "price": "145,000",
       "direction": "down"
     },
     {
       "rank": 7,
-      "code": "0193W0",
-      "name": "KODEX 삼성전자단일종목레버리지",
-      "price": "18310",
+      "code": "064350",
+      "name": "현대로템",
+      "price": "186,400",
       "direction": "down"
     },
     {
       "rank": 8,
-      "code": "233740",
-      "name": "KODEX 코스닥150레버리지",
-      "price": "8225",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "296,000",
       "direction": "down"
     },
     {
       "rank": 9,
-      "code": "462330",
-      "name": "KODEX 2차전지산업레버리지",
-      "price": "982",
+      "code": "000660",
+      "name": "SK하이닉스",
+      "price": "2,201,000",
       "direction": "down"
     },
     {
       "rank": 10,
-      "code": "001210",
-      "name": "금호전기",
-      "price": "1002",
-      "direction": "up"
+      "code": "042660",
+      "name": "한화오션",
+      "price": "89,800",
+      "direction": "down"
     },
     {
       "rank": 11,
-      "code": "0195R0",
-      "name": "TIGER 삼성전자단일종목레버리지",
-      "price": "16870",
-      "direction": "down"
-    },
-    {
-      "rank": 12,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2535",
-      "direction": "up"
-    },
-    {
-      "rank": 13,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "28525",
-      "direction": "down"
-    },
-    {
-      "rank": 14,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "26010",
-      "direction": "down"
-    },
-    {
-      "rank": 15,
-      "code": "0167A0",
-      "name": "SOL AI반도체TOP2플러스",
-      "price": "21470",
-      "direction": "down"
-    },
-    {
-      "rank": 16,
-      "code": "002990",
-      "name": "금호건설",
-      "price": "14000",
-      "direction": "up"
-    },
-    {
-      "rank": 17,
-      "code": "073240",
-      "name": "금호타이어",
-      "price": "6330",
-      "direction": "up"
-    },
-    {
-      "rank": 18,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "296000",
-      "direction": "down"
-    },
-    {
-      "rank": 19,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "14535",
-      "direction": "down"
-    },
-    {
-      "rank": 20,
-      "code": "0193L0",
-      "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "14085",
+      "code": "066570",
+      "name": "LG전자",
+      "price": "189,100",
       "direction": "up"
     }
   ],
   "kospi_institute": [
     {
       "rank": 1,
+      "code": "352820",
+      "name": "하이브",
+      "price": "232,000",
+      "direction": "up"
+    },
+    {
+      "rank": 2,
+      "code": "010950",
+      "name": "S-Oil",
+      "price": "127,400",
+      "direction": "up"
+    },
+    {
+      "rank": 3,
+      "code": "105560",
+      "name": "KB금융",
+      "price": "173,200",
+      "direction": "up"
+    },
+    {
+      "rank": 4,
+      "code": "055550",
+      "name": "신한지주",
+      "price": "108,600",
+      "direction": "up"
+    },
+    {
+      "rank": 5,
+      "code": "278470",
+      "name": "에이피알",
+      "price": "410,000",
+      "direction": "up"
+    },
+    {
+      "rank": 6,
       "code": "252670",
       "name": "KODEX 200선물인버스2X",
       "price": "84",
       "direction": "up"
     },
     {
-      "rank": 2,
-      "code": "114800",
-      "name": "KODEX 인버스",
-      "price": "997",
-      "direction": "up"
-    },
-    {
-      "rank": 3,
-      "code": "036630",
-      "name": "세종텔레콤",
-      "price": "8200",
-      "direction": "up"
-    },
-    {
-      "rank": 4,
-      "code": "042040",
-      "name": "케이피엠테크",
-      "price": "6000",
-      "direction": "up"
-    },
-    {
-      "rank": 5,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "296000",
-      "direction": "down"
-    },
-    {
-      "rank": 6,
-      "code": "079650",
-      "name": "서산",
-      "price": "4775",
-      "direction": "up"
-    },
-    {
       "rank": 7,
-      "code": "Q530062",
-      "name": "삼성 인버스 2X 은 선물 ETN(H)",
-      "price": "50",
+      "code": "003230",
+      "name": "삼양식품",
+      "price": "1,222,000",
       "direction": "up"
     },
     {
       "rank": 8,
-      "code": "109610",
-      "name": "에스와이",
-      "price": "2560",
-      "direction": "up"
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "296,000",
+      "direction": "down"
     },
     {
       "rank": 9,
-      "code": "298000",
-      "name": "효성화학",
-      "price": "67000",
-      "direction": "up"
+      "code": "000660",
+      "name": "SK하이닉스",
+      "price": "2,201,000",
+      "direction": "down"
     },
     {
       "rank": 10,
-      "code": "0193W0",
-      "name": "KODEX 삼성전자단일종목레버리지",
-      "price": "18310",
+      "code": "042660",
+      "name": "한화오션",
+      "price": "89,800",
       "direction": "down"
     },
     {
       "rank": 11,
-      "code": "241390",
-      "name": "RISE V&S셀렉트밸류채권혼합",
-      "price": "16060",
+      "code": "009150",
+      "name": "삼성전기",
+      "price": "1,648,000",
       "direction": "down"
     },
     {
       "rank": 12,
-      "code": "462330",
-      "name": "KODEX 2차전지산업레버리지",
-      "price": "982",
-      "direction": "down"
-    },
-    {
-      "rank": 13,
-      "code": "Q500030",
-      "name": "신한 인버스 2X 은 선물 ETN(H)",
-      "price": "70",
-      "direction": "up"
-    },
-    {
-      "rank": 14,
-      "code": "203690",
-      "name": "아크솔루션스",
-      "price": "139",
-      "direction": "down"
-    },
-    {
-      "rank": 15,
-      "code": "121440",
-      "name": "골프존홀딩스",
-      "price": "6640",
-      "direction": "down"
-    },
-    {
-      "rank": 16,
-      "code": "0192L0",
-      "name": "RISE SK하이닉스단일종목레버리지",
-      "price": "18625",
-      "direction": "down"
-    },
-    {
-      "rank": 17,
-      "code": "Q530134",
-      "name": "삼성 블룸버그 인버스2X WTI원유선물 ETN B",
-      "price": "4815",
-      "direction": "down"
-    },
-    {
-      "rank": 18,
-      "code": "010140",
-      "name": "삼성중공업",
-      "price": "22450",
-      "direction": "down"
-    },
-    {
-      "rank": 19,
-      "code": "0167Z0",
-      "name": "KODEX 미국우주항공",
-      "price": "10575",
-      "direction": "down"
-    },
-    {
-      "rank": 20,
-      "code": "365660",
-      "name": "레몬헬스케어",
-      "price": "12220",
+      "code": "066570",
+      "name": "LG전자",
+      "price": "189,100",
       "direction": "up"
     }
   ],
   "kospi": [
     {
       "rank": 1,
-      "code": "252670",
-      "name": "KODEX 200선물인버스2X",
-      "price": "84",
-      "direction": "up"
+      "code": "009150",
+      "name": "삼성전기",
+      "price": "1,648,000",
+      "direction": "down"
     },
     {
       "rank": 2,
-      "code": "114800",
-      "name": "KODEX 인버스",
-      "price": "997",
-      "direction": "up"
+      "code": "011070",
+      "name": "LG이노텍",
+      "price": "814,000",
+      "direction": "down"
     },
     {
       "rank": 3,
-      "code": "0197X0",
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "9355",
-      "direction": "up"
+      "code": "353200",
+      "name": "대덕전자",
+      "price": "116,700",
+      "direction": "down"
     },
     {
       "rank": 4,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "22130",
+      "code": "402340",
+      "name": "SK스퀘어",
+      "price": "1,356,000",
       "direction": "down"
     },
     {
       "rank": 5,
-      "code": "252710",
-      "name": "TIGER 200선물인버스2X",
-      "price": "88",
+      "code": "035420",
+      "name": "NAVER",
+      "price": "197,200",
       "direction": "up"
     },
     {
       "rank": 6,
-      "code": "0195S0",
-      "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "18750",
+      "code": "095610",
+      "name": "테스",
+      "price": "145,000",
       "direction": "down"
     },
     {
       "rank": 7,
-      "code": "0193W0",
-      "name": "KODEX 삼성전자단일종목레버리지",
-      "price": "18310",
+      "code": "064350",
+      "name": "현대로템",
+      "price": "186,400",
       "direction": "down"
     },
     {
       "rank": 8,
-      "code": "233740",
-      "name": "KODEX 코스닥150레버리지",
-      "price": "8225",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "296,000",
       "direction": "down"
     },
     {
       "rank": 9,
-      "code": "462330",
-      "name": "KODEX 2차전지산업레버리지",
-      "price": "982",
+      "code": "000660",
+      "name": "SK하이닉스",
+      "price": "2,201,000",
       "direction": "down"
     },
     {
       "rank": 10,
-      "code": "001210",
-      "name": "금호전기",
-      "price": "1002",
-      "direction": "up"
+      "code": "042660",
+      "name": "한화오션",
+      "price": "89,800",
+      "direction": "down"
     },
     {
       "rank": 11,
-      "code": "0195R0",
-      "name": "TIGER 삼성전자단일종목레버리지",
-      "price": "16870",
-      "direction": "down"
-    },
-    {
-      "rank": 12,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2535",
-      "direction": "up"
-    },
-    {
-      "rank": 13,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "28525",
-      "direction": "down"
-    },
-    {
-      "rank": 14,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "26010",
-      "direction": "down"
-    },
-    {
-      "rank": 15,
-      "code": "0167A0",
-      "name": "SOL AI반도체TOP2플러스",
-      "price": "21470",
-      "direction": "down"
-    },
-    {
-      "rank": 16,
-      "code": "002990",
-      "name": "금호건설",
-      "price": "14000",
-      "direction": "up"
-    },
-    {
-      "rank": 17,
-      "code": "073240",
-      "name": "금호타이어",
-      "price": "6330",
-      "direction": "up"
-    },
-    {
-      "rank": 18,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "296000",
-      "direction": "down"
-    },
-    {
-      "rank": 19,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "14535",
-      "direction": "down"
-    },
-    {
-      "rank": 20,
-      "code": "0193L0",
-      "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "14085",
+      "code": "066570",
+      "name": "LG전자",
+      "price": "189,100",
       "direction": "up"
     }
   ],
