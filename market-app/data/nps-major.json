@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-08T05:18:58.314Z",
+  "updated_at": "2026-07-08T07:46:39.627Z",
   "count": 50,
   "data": [
     {
@@ -239,9 +239,9 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 11.2,
-      "change": -2.14,
-      "stock_count": 535185,
+      "ratio": 4.51,
+      "change": -0.51,
+      "stock_count": 10000,
       "type": "sell"
     },
     {
