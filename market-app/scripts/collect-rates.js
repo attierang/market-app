@@ -54,8 +54,9 @@ async function main() {
     console.log('FRED API 금리 데이터 수집 중...');
 
     // 미국 국채 수익률 (다중 관측값 - 전일/전월 비교)
-    var us10yObs = await fetchFREDMulti('DGS10', 40);
-    var us3yObs  = await fetchFREDMulti('DGS3',  40);
+    var us10yObs  = await fetchFREDMulti('DGS10',  40);
+    var us3yObs   = await fetchFREDMulti('DGS3',   40);
+    var usRealObs = await fetchFREDMulti('DFII10', 40);  // 10년 TIPS 실질금리
     var us2y  = await fetchFRED('DGS2');
     var us5y  = await fetchFRED('DGS5');
     var us30y = await fetchFRED('DGS30');
@@ -85,6 +86,13 @@ async function main() {
     var us10yPrev1m= us10yObs.length > 20 ? parseFloat(us10yObs[20].value) : us10yVal;
     var us10yChg1d = parseFloat((us10yVal - us10yPrev1).toFixed(3));
     var us10yChg1m = parseFloat((us10yVal - us10yPrev1m).toFixed(3));
+
+    // 미국 실질금리 (10년 TIPS)
+    var usRealVal   = usRealObs.length > 0  ? parseFloat(usRealObs[0].value)  : 0;
+    var usRealPrev1 = usRealObs.length > 1  ? parseFloat(usRealObs[1].value)  : usRealVal;
+    var usRealPrev1m= usRealObs.length > 20 ? parseFloat(usRealObs[20].value) : usRealVal;
+    var usRealChg1d = parseFloat((usRealVal - usRealPrev1).toFixed(3));
+    var usRealChg1m = parseFloat((usRealVal - usRealPrev1m).toFixed(3));
 
     // 미국 3년물 현재/전일/전월
     var us3yVal   = us3yObs.length > 0  ? parseFloat(us3yObs[0].value)  : 0;
@@ -145,6 +153,9 @@ async function main() {
       us3y:  us3yVal,
       us3y_chg_1d: us3yChg1d,
       us3y_chg_1m: us3yChg1m,
+      us_real: usRealVal,
+      us_real_chg_1d: usRealChg1d,
+      us_real_chg_1m: usRealChg1m,
       us5y:  us5yVal,
       us10y: us10yVal,
       us30y: us30yVal,

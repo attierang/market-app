@@ -334,7 +334,7 @@
     /* ── 금리 탭 ── */
     .rate-hero {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 10px;
       margin-bottom: 10px;
     }
@@ -1258,6 +1258,12 @@
           <div class="rate-country">일본 10년물</div>
           <div class="rate-yield" id="r-jp10y">2.50<span>%</span></div>
           <div class="rate-chg" id="r-jp10y-sub" style="font-size:10px;color:var(--text-secondary);">FRED 자동업데이트</div>
+        </div>
+        <div class="rate-box">
+          <div class="rate-flag">🇺🇸</div>
+          <div class="rate-country">실질금리 (10Y TIPS)</div>
+          <div class="rate-yield" id="r-usreal">2.10<span>%</span></div>
+          <div class="rate-chg" id="r-usreal-sub" style="font-size:10px;color:var(--text-secondary);">FRED 자동업데이트</div>
         </div>
       </div>
 
@@ -2703,6 +2709,20 @@
           var jm1Cls = jm1 >= 0 ? 'var(--up)' : 'var(--down)';
           var dateLabel = r.jp10y_date ? r.jp10y_date.slice(0,7) + ' · ' : '';
           jp10ySubEl.innerHTML = dateLabel + '<span style="color:' + jm1Cls + ';">' + jm1Str + '</span>';
+        }
+
+        // 미국 실질금리 (10Y TIPS)
+        var usRealEl = document.getElementById('r-usreal');
+        if (usRealEl && r.us_real !== undefined) usRealEl.innerHTML = r.us_real.toFixed(2) + '<span>%</span>';
+        var usRealSubEl = document.getElementById('r-usreal-sub');
+        if (usRealSubEl && r.us_real_chg_1d !== undefined) {
+          var rd1 = r.us_real_chg_1d;
+          var rm1 = r.us_real_chg_1m;
+          var rd1Str = (rd1 >= 0 ? '+' : '') + rd1.toFixed(2) + '%p(전일)';
+          var rm1Str = (rm1 >= 0 ? '+' : '') + rm1.toFixed(2) + '%p(전월)';
+          var rd1Cls = rd1 >= 0 ? 'var(--up)' : 'var(--down)';
+          var rm1Cls = rm1 >= 0 ? 'var(--up)' : 'var(--down)';
+          usRealSubEl.innerHTML = '<span style="color:' + rd1Cls + ';">' + rd1Str + '</span> / <span style="color:' + rm1Cls + ';">' + rm1Str + '</span>';
         }
 
         // 미·일 금리차
