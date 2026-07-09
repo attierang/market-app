@@ -334,7 +334,7 @@
     /* ── 금리 탭 ── */
     .rate-hero {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 10px;
       margin-bottom: 10px;
     }
@@ -1259,12 +1259,6 @@
           <div class="rate-yield" id="r-jp10y">2.50<span>%</span></div>
           <div class="rate-chg" id="r-jp10y-sub" style="font-size:10px;color:var(--text-secondary);">FRED 자동업데이트</div>
         </div>
-        <div class="rate-box">
-          <div class="rate-flag">🇺🇸</div>
-          <div class="rate-country">실질금리 (10Y TIPS)</div>
-          <div class="rate-yield" id="r-usreal">2.10<span>%</span></div>
-          <div class="rate-chg" id="r-usreal-sub" style="font-size:10px;color:var(--text-secondary);">FRED 자동업데이트</div>
-        </div>
       </div>
 
       <div class="card">
@@ -1427,6 +1421,12 @@
             <div class="row-name">BOJ 정책금리</div>
             <div class="row-sub">수동업데이트</div>
           </div><span class="row-val">0.75%</span>
+        </div>
+        <div class="row">
+          <div>
+            <div class="row-name">미국 실질금리 (10Y TIPS)</div>
+            <div class="row-sub" id="r-usreal-sub">FRED 자동업데이트</div>
+          </div><span class="row-val" id="r-usreal">2.10%</span>
         </div>
       </div>
     </div>
@@ -2713,7 +2713,7 @@
 
         // 미국 실질금리 (10Y TIPS)
         var usRealEl = document.getElementById('r-usreal');
-        if (usRealEl && r.us_real !== undefined) usRealEl.innerHTML = r.us_real.toFixed(2) + '<span>%</span>';
+        if (usRealEl && r.us_real !== undefined) usRealEl.textContent = r.us_real.toFixed(2) + '%';
         var usRealSubEl = document.getElementById('r-usreal-sub');
         if (usRealSubEl && r.us_real_chg_1d !== undefined) {
           var rd1 = r.us_real_chg_1d;
