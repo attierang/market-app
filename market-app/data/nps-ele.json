@@ -1,7 +1,40 @@
 {
-  "updated_at": "2026-07-13T04:34:19.992Z",
+  "updated_at": "2026-07-13T08:13:09.437Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "롯데관광개발",
+      "stock_code": "032350",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260713",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.25,
+      "change": -0.06,
+      "stock_count": 5471,
+      "type": "sell"
+    },
+    {
+      "corp_name": "현대해상",
+      "stock_code": "001450",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260713",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 1,
+      "type": "buy"
+    },
+    {
+      "corp_name": "한섬",
+      "stock_code": "020000",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260713",
+      "flr_nm": "국민연금공단",
+      "ratio": 37.29,
+      "change": 2.65,
+      "stock_count": 192377,
+      "type": "buy"
+    },
     {
       "corp_name": "코리아써키트",
       "stock_code": "007810",
@@ -517,39 +550,6 @@
       "ratio": 14.43,
       "change": 0.2,
       "stock_count": 44645,
-      "type": "buy"
-    },
-    {
-      "corp_name": "롯데관광개발",
-      "stock_code": "032350",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260618",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.25,
-      "change": -0.06,
-      "stock_count": 5471,
-      "type": "sell"
-    },
-    {
-      "corp_name": "효성중공업",
-      "stock_code": "298040",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260618",
-      "flr_nm": "국민연금공단",
-      "ratio": 0.61,
-      "change": -0.59,
-      "stock_count": 55705,
-      "type": "sell"
-    },
-    {
-      "corp_name": "대한유화",
-      "stock_code": "006650",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260610",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.01,
-      "change": 10.01,
-      "stock_count": 650920,
       "type": "buy"
     }
   ]
