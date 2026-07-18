@@ -1,0 +1,76 @@
+{
+  "updated_at": "2026-07-19T00:00:00Z",
+  "note": "FCF = 영업현금흐름 - 설비투자(CapEx). 출처: 각 사 공식 IR 실적발표 자료.",
+  "companies": [
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "flag": "🪟",
+      "ir_url": "https://www.microsoft.com/en-us/investor/earnings/",
+      "note": "FY ends June 30. 분기 표기는 Microsoft 회계연도 기준.",
+      "annual": [
+        { "period": "FY2025", "ocf": 109330, "capex": 55696, "fcf": 53634 }
+      ],
+      "quarterly": [
+        { "label": "Q3 FY2026\n(Jan–Mar 2026)", "period": "2026-03", "ocf": 46679, "capex": 30876, "fcf": 15803 },
+        { "label": "Q2 FY2026\n(Oct–Dec 2025)", "period": "2025-12", "ocf": 35758, "capex": 29876, "fcf": 5882 },
+        { "label": "Q1 FY2026\n(Jul–Sep 2025)", "period": "2025-09", "ocf": 45057, "capex": 19394, "fcf": 25663 },
+        { "label": "Q3 FY2025\n(Jan–Mar 2025)", "period": "2025-03", "ocf": 37044, "capex": 16745, "fcf": 20299 }
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "flag": "📦",
+      "ir_url": "https://ir.aboutamazon.com/quarterly-results/",
+      "note": "Amazon은 TTM(최근 12개월) 기준 FCF를 공식 지표로 사용. AI 데이터센터 투자 급증으로 2026년 FCF 감소.",
+      "ttm": [
+        { "label": "TTM Mar 2026", "period": "2026-03", "ocf": 148531, "capex": 151003, "fcf": 1232 },
+        { "label": "TTM Mar 2025", "period": "2025-03", "ocf": 113903, "capex": 93093, "fcf": 25925 }
+      ],
+      "quarterly": [
+        { "label": "Q1 2026\n(Jan–Mar 2026)", "period": "2026-03", "ocf": 26032, "capex": 44203, "fcf": -18171 },
+        { "label": "Q3 2025\n(Jul–Sep 2025)", "period": "2025-09", "ocf": null, "capex": null, "fcf": 17800 },
+        { "label": "Q2 2025\n(Apr–Jun 2025)", "period": "2025-06", "ocf": null, "capex": null, "fcf": -1600 },
+        { "label": "Q1 2025\n(Jan–Mar 2025)", "period": "2025-03", "ocf": null, "capex": null, "fcf": null }
+      ],
+      "annual": [
+        { "period": "FY2025", "ocf": null, "capex": null, "fcf": 11190 }
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet (Google)",
+      "flag": "🔍",
+      "ir_url": "https://abc.xyz/investor/",
+      "note": "AI 인프라 투자 확대로 FCF 마진 축소. 2026년 CapEx 가이던스 $180–190B.",
+      "annual": [
+        { "period": "FY2025", "ocf": 164713, "capex": 91447, "fcf": 73266 }
+      ],
+      "quarterly": [
+        { "label": "Q1 2026\n(Jan–Mar 2026)", "period": "2026-03", "ocf": 45800, "capex": 35674, "fcf": 10126 },
+        { "label": "Q4 2025\n(Oct–Dec 2025)", "period": "2025-12", "ocf": 52402, "capex": 27851, "fcf": 24551 },
+        { "label": "Q3 2025\n(Jul–Sep 2025)", "period": "2025-09", "ocf": 27747, "capex": 22446, "fcf": 5301 },
+        { "label": "Q2 2025\n(Apr–Jun 2025)", "period": "2025-06", "ocf": 36150, "capex": 17197, "fcf": 18953 },
+        { "label": "Q1 2025\n(Jan–Mar 2025)", "period": "2025-03", "ocf": 48414, "capex": 23953, "fcf": 24461 }
+      ]
+    },
+    {
+      "ticker": "META",
+      "name": "Meta",
+      "flag": "👾",
+      "ir_url": "https://investor.atmeta.com/",
+      "note": "FCF = OCF - CapEx(설비+금융리스). 2026년 CapEx 가이던스 $115–135B.",
+      "annual": [
+        { "period": "FY2025", "ocf": 115800, "capex": 72220, "fcf": 43580 }
+      ],
+      "quarterly": [
+        { "label": "Q1 2026\n(Jan–Mar 2026)", "period": "2026-03", "ocf": 32226, "capex": 18997, "fcf": 13229 },
+        { "label": "Q4 2025\n(Oct–Dec 2025)", "period": "2025-12", "ocf": 36214, "capex": 21383, "fcf": 14831 },
+        { "label": "Q3 2025\n(Jul–Sep 2025)", "period": "2025-09", "ocf": 29999, "capex": 18829, "fcf": 11170 },
+        { "label": "Q2 2025\n(Apr–Jun 2025)", "period": "2025-06", "ocf": 25561, "capex": 16538, "fcf": 9023 },
+        { "label": "Q1 2025\n(Jan–Mar 2025)", "period": "2025-03", "ocf": 24026, "capex": 12941, "fcf": 11085 }
+      ]
+    }
+  ]
+}

@@ -1051,6 +1051,7 @@
       </div>
       <div class="tabs">
         <div class="tab active" onclick="switchTab('rates')">금리 리포트</div>
+        <div class="tab" onclick="switchTab('fcf')">FCF</div>
         <div class="tab" onclick="switchTab('kr')">한국 지수</div>
         <div class="tab" onclick="switchTab('commodity')">원자재</div>
         <div class="tab" onclick="switchTab('nps')">국민연금</div>
@@ -1445,6 +1446,13 @@
       </div>
     </div>
 
+    <!-- ── FCF ── -->
+    <div class="scroll-area" id="tab-fcf" style="display:none;">
+      <div id="fcf-content">
+        <div class="nps-loading">불러오는 중...</div>
+      </div>
+    </div>
+
     <!-- ── 국민연금 ── -->
     <div class="scroll-area" id="tab-nps" style="display:none;">
 
@@ -1822,7 +1830,7 @@
     })();
 
     // ── 탭 전환 ──
-    const tabs = ['rates', 'kr', 'commodity', 'nps', 'watch', 'trade'];
+    const tabs = ['rates', 'fcf', 'kr', 'commodity', 'nps', 'watch', 'trade'];
     function switchTab(tab) {
       tabs.forEach(t => {
         document.getElementById('tab-' + t).style.display = t === tab ? 'flex' : 'none';
@@ -1838,6 +1846,7 @@
       if (tab === 'rates') loadRates();
       if (tab === 'kr') { loadProgramTrading(); loadKrxNetbuy(); }
       if (tab === 'trade' && typeof refreshTrades === 'function') refreshTrades();
+      if (tab === 'fcf') loadFcf();
     }
 
     // ── 관심종목 데이터 (로컬스토리지) ──
@@ -3228,6 +3237,107 @@
       } catch(e) {
         // 조용히 실패
       }
+    }
+
+    // ── FCF (Free Cash Flow) ──
+    var _fcfLoaded = false;
+    async function loadFcf() {
+      if (_fcfLoaded) return;
+      var el = document.getElementById('fcf-content');
+      if (!el) return;
+      try {
+        var res = await fetch('data/fcf.json?v=' + Date.now());
+        var d = await res.json();
+        _fcfLoaded = true;
+        renderFcf(d, el);
+      } catch(e) {
+        el.innerHTML = '<div style="color:var(--text-secondary);font-size:13px;padding:20px 0;">데이터 로드 실패: ' + e.message + '</div>';
+      }
+    }
+
+    function fcfBar(quarters, maxAbs) {
+      return quarters.map(function(q) {
+        var pct = maxAbs > 0 ? Math.min(100, Math.abs(q.fcf) / maxAbs * 100) : 0;
+        var isNeg = q.fcf < 0;
+        var color = isNeg ? 'var(--down)' : 'var(--up)';
+        var label = q.label.replace(/\n/g, '<br>');
+        var val = q.fcf == null ? '-' : (isNeg ? '-$' : '$') + Math.abs(q.fcf / 1000).toFixed(1) + 'B';
+        return '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">'
+          + '<div style="width:90px;font-size:10px;color:var(--text-secondary);line-height:1.3;flex-shrink:0;">' + label + '</div>'
+          + '<div style="flex:1;background:var(--bg-secondary);border-radius:4px;height:20px;overflow:hidden;">'
+          + (q.fcf != null
+              ? '<div style="height:100%;width:' + pct + '%;background:' + color + ';border-radius:4px;transition:width 0.4s;"></div>'
+              : '<div style="height:100%;width:0%;"></div>')
+          + '</div>'
+          + '<div style="width:60px;font-size:11px;font-weight:600;color:' + color + ';text-align:right;flex-shrink:0;">' + val + '</div>'
+          + '</div>';
+      }).join('');
+    }
+
+    function renderFcf(d, el) {
+      var updatedAt = d.updated_at ? d.updated_at.slice(0,10) : '';
+      var html = '<div style="font-size:11px;color:var(--text-secondary);margin-bottom:12px;">'
+        + 'FCF = 영업현금흐름 − 설비투자(CapEx) · 출처: 각 사 공식 IR · ' + updatedAt + ' 기준</div>';
+
+      // 요약 카드 4개 (최신 분기 FCF)
+      html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;">';
+      d.companies.forEach(function(c) {
+        var latest = c.quarterly[0];
+        var prev   = c.quarterly[1];
+        var fcfB   = latest && latest.fcf != null ? (latest.fcf / 1000).toFixed(1) : '-';
+        var isNeg  = latest && latest.fcf < 0;
+        var chg    = (latest && prev && latest.fcf != null && prev.fcf != null)
+          ? ((latest.fcf - prev.fcf) / Math.abs(prev.fcf) * 100).toFixed(0) : null;
+        var chgStr = chg != null
+          ? '<span style="font-size:10px;color:' + (parseFloat(chg) >= 0 ? 'var(--up)' : 'var(--down)') + ';">'
+            + (parseFloat(chg) >= 0 ? '▲' : '▼') + Math.abs(chg) + '% QoQ</span>'
+          : '';
+        html += '<div class="card" style="padding:12px;">'
+          + '<div style="font-size:11px;color:var(--text-secondary);margin-bottom:4px;">' + c.flag + ' ' + c.ticker + '</div>'
+          + '<div style="font-size:13px;font-weight:600;margin-bottom:2px;">' + c.name + '</div>'
+          + '<div style="font-size:22px;font-weight:700;color:' + (isNeg ? 'var(--down)' : 'var(--up)') + ';margin-bottom:2px;">'
+          + (isNeg ? '-$' : '$') + Math.abs(parseFloat(fcfB)).toFixed(1) + 'B</div>'
+          + '<div style="font-size:10px;color:var(--text-secondary);">' + (latest ? latest.label.replace(/\n/g,' ') : '') + '</div>'
+          + chgStr
+          + '</div>';
+      });
+      html += '</div>';
+
+      // 회사별 분기 트렌드
+      d.companies.forEach(function(c) {
+        var allFcf = c.quarterly.map(function(q){ return q.fcf || 0; });
+        if (c.ttm) c.ttm.forEach(function(t){ allFcf.push(t.fcf || 0); });
+        var maxAbs = Math.max.apply(null, allFcf.map(Math.abs));
+
+        html += '<div class="card">';
+        html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">'
+          + '<div><span style="font-size:14px;font-weight:700;">' + c.flag + ' ' + c.name + '</span>'
+          + ' <span style="font-size:11px;color:var(--text-secondary);">' + c.ticker + '</span></div>'
+          + '<a href="' + c.ir_url + '" target="_blank" rel="noopener" style="font-size:10px;color:var(--accent);text-decoration:none;">IR →</a>'
+          + '</div>';
+
+        // Amazon은 TTM 먼저 표시
+        if (c.ttm) {
+          html += '<div style="font-size:10px;color:var(--text-secondary);margin-bottom:6px;font-weight:600;">TTM (최근 12개월)</div>';
+          html += fcfBar(c.ttm, maxAbs);
+          html += '<div style="font-size:10px;color:var(--text-secondary);margin:10px 0 6px;font-weight:600;">분기별</div>';
+        }
+
+        html += fcfBar(c.quarterly.filter(function(q){ return q.fcf != null; }), maxAbs);
+
+        if (c.note) {
+          html += '<div style="font-size:10px;color:var(--text-secondary);margin-top:8px;line-height:1.5;padding-top:8px;border-top:0.5px solid var(--border);">'
+            + c.note + '</div>';
+        }
+        html += '</div>';
+      });
+
+      html += '<div style="font-size:10px;color:var(--text-tertiary);margin-top:4px;line-height:1.6;">'
+        + '* ' + d.note + '<br>'
+        + '* 실적 발표 후 수동 업데이트 필요 (분기별 IR 자료 참고)'
+        + '</div>';
+
+      el.innerHTML = html;
     }
 
     // ── 초기 로드 ──
