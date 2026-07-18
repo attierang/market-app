@@ -6,6 +6,7 @@
       "ticker": "MSFT",
       "name": "Microsoft",
       "flag": "🪟",
+      "unit": "M USD",
       "ir_url": "https://www.microsoft.com/en-us/investor/earnings/",
       "note": "FY ends June 30. 분기 표기는 Microsoft 회계연도 기준.",
       "annual": [
@@ -22,6 +23,7 @@
       "ticker": "AMZN",
       "name": "Amazon",
       "flag": "📦",
+      "unit": "M USD",
       "ir_url": "https://ir.aboutamazon.com/quarterly-results/",
       "note": "Amazon은 TTM(최근 12개월) 기준 FCF를 공식 지표로 사용. AI 데이터센터 투자 급증으로 2026년 FCF 감소.",
       "ttm": [
@@ -42,6 +44,7 @@
       "ticker": "GOOGL",
       "name": "Alphabet (Google)",
       "flag": "🔍",
+      "unit": "M USD",
       "ir_url": "https://abc.xyz/investor/",
       "note": "AI 인프라 투자 확대로 FCF 마진 축소. 2026년 CapEx 가이던스 $180–190B.",
       "annual": [
@@ -59,6 +62,7 @@
       "ticker": "META",
       "name": "Meta",
       "flag": "👾",
+      "unit": "M USD",
       "ir_url": "https://investor.atmeta.com/",
       "note": "FCF = OCF - CapEx(설비+금융리스). 2026년 CapEx 가이던스 $115–135B.",
       "annual": [
@@ -71,6 +75,37 @@
         { "label": "Q2 2025\n(Apr–Jun 2025)", "period": "2025-06", "ocf": 25561, "capex": 16538, "fcf": 9023 },
         { "label": "Q1 2025\n(Jan–Mar 2025)", "period": "2025-03", "ocf": 24026, "capex": 12941, "fcf": 11085 }
       ]
+    },
+    {
+      "ticker": "005930",
+      "name": "삼성전자",
+      "flag": "🇰🇷",
+      "unit": "조원",
+      "ir_url": "https://www.samsung.com/sec/ir/financial-information/earnings-release/",
+      "note": "FCF = OCF - 유형자산취득(CapEx). 출처: 삼성전자 경영설명회 별첨4 요약현금흐름. 2026년 HBM·파운드리 투자 확대로 FCF 개선 추세.",
+      "annual": [
+        { "period": "FY2025", "ocf": 85.32, "capex": 47.52, "fcf": 37.80 }
+      ],
+      "quarterly": [
+        { "label": "Q1 2026\n(Jan–Mar 2026)", "period": "2026-03", "ocf": 40.27, "capex": 17.13, "fcf": 23.14 },
+        { "label": "Q4 2025\n(Oct–Dec 2025)", "period": "2025-12", "ocf": 28.80, "capex": 11.55, "fcf": 17.25 },
+        { "label": "Q3 2025\n(Jul–Sep 2025)", "period": "2025-09", "ocf": 22.62, "capex": 10.81, "fcf": 11.81 },
+        { "label": "Q2 2025\n(Apr–Jun 2025)", "period": "2025-06", "ocf": 17.31, "capex": 13.04, "fcf": 4.27 },
+        { "label": "Q1 2025\n(Jan–Mar 2025)", "period": "2025-03", "ocf": 16.58, "capex": 12.13, "fcf": 4.45 }
+      ]
+    },
+    {
+      "ticker": "000660",
+      "name": "SK하이닉스",
+      "flag": "🇰🇷",
+      "unit": "조원",
+      "ir_url": "https://www.skhynix.com/ir/",
+      "note": "FCF = OCF - CapEx(시설투자). 출처: SK하이닉스 IR 자료 (연간 기준). 분기별 공식 FCF 미공개. AI 메모리(HBM) 호조로 2025년 FCF 급증.",
+      "annual": [
+        { "label": "FY2025", "period": "2025-12", "ocf": 53.5, "capex": 28.0, "fcf": 25.5 },
+        { "label": "FY2024", "period": "2024-12", "ocf": 29.8, "capex": 15.9, "fcf": 13.9 }
+      ],
+      "quarterly": []
     }
   ]
 }
