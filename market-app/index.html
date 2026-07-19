@@ -3255,28 +3255,30 @@
       }
     }
 
-    function fcfBar(quarters, maxAbs, unit) {
+    function fcfFmtVal(raw, unit, isNeg) {
+      if (raw == null) return '-';
+      if (unit === '조원') return (isNeg ? '-' : '') + Math.abs(raw).toFixed(1) + '조';
+      return (isNeg ? '-$' : '$') + Math.abs(raw / 1000).toFixed(1) + 'B';
+    }
+
+    function fcfBar(quarters, maxAbs, unit, key) {
+      key = key || 'fcf';
+      var isOcf = key === 'ocf';
       return quarters.map(function(q) {
-        var pct = maxAbs > 0 ? Math.min(100, Math.abs(q.fcf) / maxAbs * 100) : 0;
-        var isNeg = q.fcf < 0;
-        var color = isNeg ? 'var(--down)' : 'var(--up)';
-        var label = q.label.replace(/\n/g, '<br>');
-        var val;
-        if (q.fcf == null) {
-          val = '-';
-        } else if (unit === '조원') {
-          val = (isNeg ? '-' : '') + Math.abs(q.fcf).toFixed(1) + '조';
-        } else {
-          val = (isNeg ? '-$' : '$') + Math.abs(q.fcf / 1000).toFixed(1) + 'B';
-        }
-        return '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">'
+        var raw = q[key];
+        var pct = (maxAbs > 0 && raw != null) ? Math.min(100, Math.abs(raw) / maxAbs * 100) : 0;
+        var isNeg = raw != null && raw < 0;
+        var color = isOcf ? '#7C3AED' : (isNeg ? 'var(--down)' : 'var(--up)');
+        var label = (q.label || q.period || '').replace(/\n/g, '<br>');
+        var val = fcfFmtVal(raw, unit, isNeg);
+        return '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">'
           + '<div style="width:90px;font-size:10px;color:var(--text-secondary);line-height:1.3;flex-shrink:0;">' + label + '</div>'
-          + '<div style="flex:1;background:var(--bg-secondary);border-radius:4px;height:20px;overflow:hidden;">'
-          + (q.fcf != null
+          + '<div style="flex:1;background:var(--bg-secondary);border-radius:4px;height:18px;overflow:hidden;">'
+          + (raw != null
               ? '<div style="height:100%;width:' + pct + '%;background:' + color + ';border-radius:4px;transition:width 0.4s;"></div>'
               : '<div style="height:100%;width:0%;"></div>')
           + '</div>'
-          + '<div style="width:60px;font-size:11px;font-weight:600;color:' + color + ';text-align:right;flex-shrink:0;">' + val + '</div>'
+          + '<div style="width:62px;font-size:11px;font-weight:600;color:' + color + ';text-align:right;flex-shrink:0;">' + val + '</div>'
           + '</div>';
       }).join('');
     }
@@ -3326,10 +3328,21 @@
       d.companies.forEach(function(c) {
         var unit = c.unit || 'M USD';
         var isKrw = unit === '조원';
-        var allFcf = (c.quarterly || []).map(function(q){ return q.fcf || 0; });
-        if (c.ttm) c.ttm.forEach(function(t){ allFcf.push(t.fcf || 0); });
-        if (c.annual) c.annual.forEach(function(a){ allFcf.push(a.fcf || 0); });
-        var maxAbs = allFcf.length > 0 ? Math.max.apply(null, allFcf.map(Math.abs)) : 1;
+
+        // 표시할 데이터 배열 결정 (분기 우선, 없으면 연간)
+        var quarterly = (c.quarterly || []).filter(function(q){ return q.fcf != null || q.ocf != null; });
+        var useAnnual = quarterly.length === 0 && c.annual && c.annual.length > 0;
+        var rows = useAnnual
+          ? c.annual.map(function(a){ return { label: a.label || a.period, ocf: a.ocf, capex: a.capex, fcf: a.fcf }; })
+          : quarterly;
+
+        // maxAbs: OCF·FCF·TTM 통합
+        var allVals = rows.map(function(r){ return [Math.abs(r.ocf||0), Math.abs(r.fcf||0)]; })
+          .reduce(function(a,b){ return a.concat(b); }, []);
+        if (c.ttm) c.ttm.forEach(function(t){
+          allVals.push(Math.abs(t.ocf||0), Math.abs(t.fcf||0));
+        });
+        var maxAbs = allVals.length > 0 ? Math.max.apply(null, allVals) : 1;
 
         html += '<div class="card">';
         html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">'
@@ -3338,22 +3351,30 @@
           + '<a href="' + c.ir_url + '" target="_blank" rel="noopener" style="font-size:10px;color:var(--accent);text-decoration:none;">IR →</a>'
           + '</div>';
 
+        function sectionLabel(txt) {
+          return '<div style="font-size:10px;color:var(--text-secondary);margin-bottom:5px;font-weight:600;">' + txt + '</div>';
+        }
+        function divider() {
+          return '<div style="height:0.5px;background:var(--border);margin:10px 0;"></div>';
+        }
+
         // Amazon: TTM 먼저
         if (c.ttm) {
-          html += '<div style="font-size:10px;color:var(--text-secondary);margin-bottom:6px;font-weight:600;">TTM (최근 12개월)</div>';
-          html += fcfBar(c.ttm, maxAbs, unit);
-          html += '<div style="font-size:10px;color:var(--text-secondary);margin:10px 0 6px;font-weight:600;">분기별</div>';
+          html += sectionLabel('📊 영업현금흐름 (OCF) — TTM');
+          html += fcfBar(c.ttm, maxAbs, unit, 'ocf');
+          html += divider();
+          html += sectionLabel('💰 잉여현금흐름 (FCF) — TTM');
+          html += fcfBar(c.ttm, maxAbs, unit, 'fcf');
+          html += divider();
         }
 
-        var quarterly = (c.quarterly || []).filter(function(q){ return q.fcf != null; });
-        if (quarterly.length > 0) {
-          html += fcfBar(quarterly, maxAbs, unit);
-        }
-
-        // 연간 데이터 (분기 없는 경우 또는 추가 표시)
-        if (c.annual && c.annual.length > 0 && quarterly.length === 0) {
-          html += '<div style="font-size:10px;color:var(--text-secondary);margin-bottom:6px;font-weight:600;">연간</div>';
-          html += fcfBar(c.annual.map(function(a){ return { label: a.label || a.period, fcf: a.fcf }; }), maxAbs, unit);
+        if (rows.length > 0) {
+          var periodLabel = useAnnual ? '연간' : (c.ttm ? '분기별' : '분기별');
+          html += sectionLabel('📊 영업현금흐름 (OCF)' + (c.ttm ? ' — ' + periodLabel : ''));
+          html += fcfBar(rows, maxAbs, unit, 'ocf');
+          html += divider();
+          html += sectionLabel('💰 잉여현금흐름 (FCF)' + (c.ttm ? ' — ' + periodLabel : ''));
+          html += fcfBar(rows, maxAbs, unit, 'fcf');
         }
 
         if (c.note) {
