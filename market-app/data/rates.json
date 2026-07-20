@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20T16:53:46.742Z",
+  "updated_at": "2026-07-20T18:51:03.976Z",
   "date": "2026-07-16",
   "us2y": 4.16,
   "us3y": 4.2,
@@ -25,8 +25,8 @@
   "fed_range": "3.50~3.75%",
   "iorb": 3.65,
   "onrrp_rate": 3.38,
-  "onrrp_balance": 0.1,
-  "onrrp_prev": 0.545,
+  "onrrp_balance": 0.03,
+  "onrrp_prev": 0.795,
   "rpontsyd": 0,
   "rpontsyd_prev": 0,
   "reserves": 3142.721,
