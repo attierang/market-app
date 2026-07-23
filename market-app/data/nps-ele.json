@@ -1,7 +1,40 @@
 {
-  "updated_at": "2026-07-23T05:43:01.935Z",
+  "updated_at": "2026-07-23T08:20:31.026Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "효성중공업",
+      "stock_code": "298040",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260723",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.61,
+      "change": -0.59,
+      "stock_count": 55705,
+      "type": "sell"
+    },
+    {
+      "corp_name": "파라다이스",
+      "stock_code": "034230",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260723",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 2000,
+      "type": "buy"
+    },
+    {
+      "corp_name": "롯데관광개발",
+      "stock_code": "032350",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260723",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.25,
+      "change": -0.06,
+      "stock_count": 5471,
+      "type": "sell"
+    },
     {
       "corp_name": "롯데관광개발",
       "stock_code": "032350",
@@ -517,39 +550,6 @@
       "ratio": 10.61,
       "change": 0.6,
       "stock_count": 232025,
-      "type": "buy"
-    },
-    {
-      "corp_name": "현대엘리베이터",
-      "stock_code": "017800",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260626",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.34,
-      "change": -0.29,
-      "stock_count": 111978,
-      "type": "sell"
-    },
-    {
-      "corp_name": "코리아써키트",
-      "stock_code": "007810",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260623",
-      "flr_nm": "국민연금공단",
-      "ratio": 40.96,
-      "change": 3.87,
-      "stock_count": 1208198,
-      "type": "buy"
-    },
-    {
-      "corp_name": "진성티이씨",
-      "stock_code": "036890",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260623",
-      "flr_nm": "국민연금공단",
-      "ratio": 14.43,
-      "change": 0.2,
-      "stock_count": 44645,
       "type": "buy"
     }
   ]
