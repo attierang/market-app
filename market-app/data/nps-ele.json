@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-25T05:32:49.932Z",
+  "updated_at": "2026-07-25T07:37:23.206Z",
   "count": 50,
   "data": [
     {
@@ -228,10 +228,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 9.97,
-      "change": -0.06,
-      "stock_count": 31390,
-      "type": "sell"
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 383,
+      "type": "buy"
     },
     {
       "corp_name": "코스맥스",

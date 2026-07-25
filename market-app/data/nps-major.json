@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-25T05:32:49.931Z",
+  "updated_at": "2026-07-25T07:37:23.205Z",
   "count": 50,
   "data": [
     {
@@ -30,10 +30,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 36.41,
-      "change": -0.02,
-      "stock_count": 8419,
-      "type": "sell"
+      "ratio": 36.33,
+      "change": 0,
+      "stock_count": 0,
+      "type": "buy"
     },
     {
       "corp_name": "씨엠티엑스",
