@@ -1052,6 +1052,7 @@
       <div class="tabs">
         <div class="tab active" onclick="switchTab('rates')">금리 리포트</div>
         <div class="tab" onclick="switchTab('fcf')">FCF</div>
+        <div class="tab" onclick="switchTab('supply')">수급</div>
         <div class="tab" onclick="switchTab('kr')">한국 지수</div>
         <div class="tab" onclick="switchTab('commodity')">원자재</div>
         <div class="tab" onclick="switchTab('nps')">국민연금</div>
@@ -1453,6 +1454,13 @@
       </div>
     </div>
 
+    <!-- ── 수급 ── -->
+    <div class="scroll-area" id="tab-supply" style="display:none;">
+      <div id="supply-content">
+        <div class="nps-loading">불러오는 중...</div>
+      </div>
+    </div>
+
     <!-- ── 국민연금 ── -->
     <div class="scroll-area" id="tab-nps" style="display:none;">
 
@@ -1830,7 +1838,7 @@
     })();
 
     // ── 탭 전환 ──
-    const tabs = ['rates', 'fcf', 'kr', 'commodity', 'nps', 'watch', 'trade'];
+    const tabs = ['rates', 'fcf', 'supply', 'kr', 'commodity', 'nps', 'watch', 'trade'];
     function switchTab(tab) {
       tabs.forEach(t => {
         document.getElementById('tab-' + t).style.display = t === tab ? 'flex' : 'none';
@@ -1847,6 +1855,7 @@
       if (tab === 'kr') { loadProgramTrading(); loadKrxNetbuy(); }
       if (tab === 'trade' && typeof refreshTrades === 'function') refreshTrades();
       if (tab === 'fcf') loadFcf();
+      if (tab === 'supply') loadSupply();
     }
 
     // ── 관심종목 데이터 (로컬스토리지) ──
@@ -3237,6 +3246,94 @@
       } catch(e) {
         // 조용히 실패
       }
+    }
+
+    // ── 메이저 수급 현황 ──
+    var _supplyLoaded = false;
+    async function loadSupply() {
+      if (_supplyLoaded) return;
+      var el = document.getElementById('supply-content');
+      if (!el) return;
+      try {
+        var res = await fetch('data/major-flow.json?v=' + Date.now());
+        var d = await res.json();
+        _supplyLoaded = true;
+        renderSupply(d, el);
+      } catch(e) {
+        el.innerHTML = '<div style="color:var(--text-secondary);font-size:13px;padding:20px 0;">데이터 로드 실패: ' + e.message + '</div>';
+      }
+    }
+
+    function renderSupply(d, el) {
+      var UP = 'var(--up)', DOWN = 'var(--down)', NEU = 'var(--text-secondary)';
+      function flowColor(v) { return v > 0 ? UP : v < 0 ? DOWN : NEU; }
+      function fmtFlow(v) {
+        if (v == null) return '-';
+        var abs = Math.abs(v);
+        var str = abs >= 10000
+          ? (v > 0 ? '+' : '-') + (abs / 10000).toFixed(1) + '조'
+          : (v > 0 ? '+' : '') + v.toLocaleString('ko-KR') + '억';
+        return str;
+      }
+      function fmtWl(wl) {
+        var color = wl >= 80 ? '#D04040' : wl >= 50 ? '#E2A800' : wl >= 20 ? NEU : DOWN;
+        return '<span style="color:' + color + ';font-weight:600;">' + wl.toFixed(1) + '%</span>';
+      }
+
+      var rows = (d.rows || []).slice().reverse(); // 최신순
+
+      var html = '<div style="font-size:11px;color:var(--text-secondary);margin-bottom:10px;">'
+        + d.title + ' · 단위: ' + d.unit + ' · ' + d.updated_at + ' 기준</div>';
+
+      // 최신 누적·저수지 요약 카드
+      var latest = d.rows[d.rows.length - 1];
+      var peak   = d.rows.reduce(function(a, b) { return b.cumulative > a.cumulative ? b : a; }, d.rows[0]);
+      html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;">';
+      html += '<div class="card" style="padding:12px;">'
+        + '<div style="font-size:11px;color:var(--text-secondary);margin-bottom:4px;">누적 순매수</div>'
+        + '<div style="font-size:20px;font-weight:700;color:' + flowColor(latest.cumulative) + ';">' + fmtFlow(latest.cumulative) + '</div>'
+        + '<div style="font-size:10px;color:var(--text-secondary);">' + latest.month + ' 기준</div>'
+        + '</div>';
+      html += '<div class="card" style="padding:12px;">'
+        + '<div style="font-size:11px;color:var(--text-secondary);margin-bottom:4px;">저수지 수위</div>'
+        + '<div style="font-size:20px;font-weight:700;margin-bottom:2px;">' + fmtWl(latest.water_level) + '</div>'
+        + '<div style="font-size:10px;color:var(--text-secondary);">최고점 ' + peak.month + ' ' + peak.water_level + '%</div>'
+        + '</div>';
+      html += '</div>';
+
+      // 테이블
+      html += '<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">'
+        + '<table style="width:100%;border-collapse:collapse;font-size:11px;min-width:520px;">'
+        + '<thead><tr style="border-bottom:1px solid var(--border);color:var(--text-secondary);">'
+        + '<th style="padding:6px 4px;text-align:left;font-weight:500;white-space:nowrap;">월</th>'
+        + '<th style="padding:6px 4px;text-align:right;font-weight:500;">등락</th>'
+        + '<th style="padding:6px 4px;text-align:right;font-weight:500;">외국인</th>'
+        + '<th style="padding:6px 4px;text-align:right;font-weight:500;">기관</th>'
+        + '<th style="padding:6px 4px;text-align:right;font-weight:500;">합산</th>'
+        + '<th style="padding:6px 4px;text-align:right;font-weight:500;">누적</th>'
+        + '<th style="padding:6px 4px;text-align:right;font-weight:500;">수위</th>'
+        + '</tr></thead><tbody>';
+
+      rows.forEach(function(r) {
+        var isPeak = r.highlight === 'peak';
+        var isLow  = r.highlight === 'low';
+        var rowBg  = isPeak ? 'rgba(46,160,67,0.08)' : isLow ? 'rgba(208,64,64,0.08)' : 'transparent';
+        var border = isPeak ? '1px solid rgba(46,160,67,0.4)' : isLow ? '1px solid rgba(208,64,64,0.3)' : 'none';
+        html += '<tr style="border-bottom:0.5px solid var(--border);background:' + rowBg + ';outline:' + border + ';">'
+          + '<td style="padding:6px 4px;white-space:nowrap;font-weight:' + (isPeak || isLow ? '600' : '400') + ';">' + r.month + '</td>'
+          + '<td style="padding:6px 4px;text-align:right;color:' + flowColor(r.chg) + ';font-weight:600;">' + (r.chg > 0 ? '+' : '') + r.chg.toFixed(1) + '%</td>'
+          + '<td style="padding:6px 4px;text-align:right;color:' + flowColor(r.foreign) + ';">' + fmtFlow(r.foreign) + '</td>'
+          + '<td style="padding:6px 4px;text-align:right;color:' + flowColor(r.institution) + ';">' + fmtFlow(r.institution) + '</td>'
+          + '<td style="padding:6px 4px;text-align:right;color:' + flowColor(r.total) + ';font-weight:600;">' + fmtFlow(r.total) + '</td>'
+          + '<td style="padding:6px 4px;text-align:right;color:' + flowColor(r.cumulative) + ';font-weight:600;">' + fmtFlow(r.cumulative) + '</td>'
+          + '<td style="padding:6px 4px;text-align:right;">' + fmtWl(r.water_level) + '</td>'
+          + '</tr>';
+      });
+
+      html += '</tbody></table></div>';
+      html += '<div style="font-size:10px;color:var(--text-tertiary);margin-top:8px;line-height:1.6;">* ' + d.note + '</div>';
+
+      el.innerHTML = html;
     }
 
     // ── FCF (Free Cash Flow) ──
