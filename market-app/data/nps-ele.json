@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-07-28T02:10:05.168Z",
+  "updated_at": "2026-07-28T05:31:37.634Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "효성중공업",
+      "stock_code": "298040",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260728",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.61,
+      "change": -0.59,
+      "stock_count": 55705,
+      "type": "sell"
+    },
     {
       "corp_name": "효성중공업",
       "stock_code": "298040",
@@ -540,17 +551,6 @@
       "change": -0.57,
       "stock_count": 42362,
       "type": "sell"
-    },
-    {
-      "corp_name": "LX인터내셔널",
-      "stock_code": "001120",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260626",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.61,
-      "change": 0.6,
-      "stock_count": 232025,
-      "type": "buy"
     }
   ]
 }
