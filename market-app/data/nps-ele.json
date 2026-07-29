@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29T05:20:09.503Z",
+  "updated_at": "2026-07-29T08:07:18.529Z",
   "count": 50,
   "data": [
     {
@@ -448,10 +448,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 1580,
-      "type": "buy"
+      "ratio": 10.58,
+      "change": -0.98,
+      "stock_count": 507526,
+      "type": "sell"
     },
     {
       "corp_name": "코리아써키트",
