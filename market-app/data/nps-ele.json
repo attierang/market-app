@@ -1,7 +1,51 @@
 {
-  "updated_at": "2026-07-31T00:05:00.821Z",
+  "updated_at": "2026-07-31T03:19:20.904Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "금호석유화학",
+      "stock_code": "011780",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260731",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.99,
+      "change": 0.1,
+      "stock_count": 3650,
+      "type": "buy"
+    },
+    {
+      "corp_name": "한화엔진",
+      "stock_code": "082740",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260731",
+      "flr_nm": "국민연금공단",
+      "ratio": 12.75,
+      "change": -0.17,
+      "stock_count": 143909,
+      "type": "sell"
+    },
+    {
+      "corp_name": "씨에스윈드",
+      "stock_code": "112610",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260731",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": -0.01,
+      "stock_count": 4000,
+      "type": "sell"
+    },
+    {
+      "corp_name": "금호석유화학",
+      "stock_code": "011780",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260731",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.99,
+      "change": 0.1,
+      "stock_count": 3650,
+      "type": "buy"
+    },
     {
       "corp_name": "효성중공업",
       "stock_code": "298040",
@@ -506,50 +550,6 @@
       "ratio": 11.71,
       "change": -0.04,
       "stock_count": 12058,
-      "type": "sell"
-    },
-    {
-      "corp_name": "CJ",
-      "stock_code": "001040",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.24,
-      "change": -0.18,
-      "stock_count": 65455,
-      "type": "sell"
-    },
-    {
-      "corp_name": "동아쏘시오홀딩스",
-      "stock_code": "000640",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 0.02,
-      "change": 0.02,
-      "stock_count": 1456,
-      "type": "buy"
-    },
-    {
-      "corp_name": "효성티앤씨",
-      "stock_code": "298020",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": -3.37,
-      "stock_count": 145719,
-      "type": "sell"
-    },
-    {
-      "corp_name": "삼양식품",
-      "stock_code": "003230",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 3.76,
-      "change": -0.57,
-      "stock_count": 42362,
       "type": "sell"
     }
   ]
