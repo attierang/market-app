@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31T06:33:11.797Z",
+  "updated_at": "2026-07-31T09:26:35.506Z",
   "count": 50,
   "data": [
     {
@@ -97,9 +97,9 @@
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
       "ratio": 45.02,
-      "change": -0.11,
-      "stock_count": 9108,
-      "type": "sell"
+      "change": 0,
+      "stock_count": 0,
+      "type": "buy"
     },
     {
       "corp_name": "RF머트리얼즈",
