@@ -1,7 +1,51 @@
 {
-  "updated_at": "2026-07-31T03:19:20.903Z",
+  "updated_at": "2026-07-31T06:33:11.797Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "삼성바이오로직스",
+      "stock_code": "207940",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260731",
+      "flr_nm": "국민연금공단",
+      "ratio": 74.32,
+      "change": -0.03,
+      "stock_count": 18514116,
+      "type": "sell"
+    },
+    {
+      "corp_name": "두산에너빌리티",
+      "stock_code": "034020",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260731",
+      "flr_nm": "국민연금공단",
+      "ratio": 30.67,
+      "change": 0,
+      "stock_count": 0,
+      "type": "buy"
+    },
+    {
+      "corp_name": "고려아연",
+      "stock_code": "010130",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260731",
+      "flr_nm": "국민연금공단",
+      "ratio": 48.78,
+      "change": 0.13,
+      "stock_count": 26805,
+      "type": "buy"
+    },
+    {
+      "corp_name": "케이씨씨",
+      "stock_code": "002380",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260731",
+      "flr_nm": "국민연금공단",
+      "ratio": 35.19,
+      "change": -0.07,
+      "stock_count": 5780,
+      "type": "sell"
+    },
     {
       "corp_name": "알지노믹스",
       "stock_code": "476830",
@@ -506,50 +550,6 @@
       "ratio": 50.54,
       "change": 0.19,
       "stock_count": 51246,
-      "type": "buy"
-    },
-    {
-      "corp_name": "IPARK현대산업개발",
-      "stock_code": "294870",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260701",
-      "flr_nm": "국민연금공단",
-      "ratio": 9.61,
-      "change": 1.02,
-      "stock_count": 667503,
-      "type": "buy"
-    },
-    {
-      "corp_name": "한샘",
-      "stock_code": "009240",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260701",
-      "flr_nm": "국민연금공단",
-      "ratio": 35.98,
-      "change": 0.01,
-      "stock_count": 1500,
-      "type": "buy"
-    },
-    {
-      "corp_name": "엘앤에프",
-      "stock_code": "066970",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260701",
-      "flr_nm": "국민연금공단",
-      "ratio": 23.97,
-      "change": 0,
-      "stock_count": 0,
-      "type": "buy"
-    },
-    {
-      "corp_name": "GS건설",
-      "stock_code": "006360",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260701",
-      "flr_nm": "국민연금공단",
-      "ratio": 9.51,
-      "change": 2.1,
-      "stock_count": 1790856,
       "type": "buy"
     }
   ]
