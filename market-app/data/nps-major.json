@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31T23:59:47.609Z",
+  "updated_at": "2026-08-01T02:05:07.021Z",
   "count": 50,
   "data": [
     {
@@ -206,9 +206,9 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 6.33,
-      "change": 1.01,
-      "stock_count": 76280,
+      "ratio": 10.07,
+      "change": 10.07,
+      "stock_count": 663955,
       "type": "buy"
     },
     {
@@ -371,10 +371,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 4.79,
-      "change": -1.77,
-      "stock_count": 280115,
-      "type": "sell"
+      "ratio": 5.14,
+      "change": 0.31,
+      "stock_count": 49600,
+      "type": "buy"
     },
     {
       "corp_name": "진성티이씨",
