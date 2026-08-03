@@ -1,7 +1,62 @@
 {
-  "updated_at": "2026-08-03T05:03:59.637Z",
+  "updated_at": "2026-08-03T08:31:24.674Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "셀트리온",
+      "stock_code": "068270",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260803",
+      "flr_nm": "국민연금공단",
+      "ratio": 28.61,
+      "change": 0,
+      "stock_count": 3457,
+      "type": "buy"
+    },
+    {
+      "corp_name": "현대로템",
+      "stock_code": "064350",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260803",
+      "flr_nm": "국민연금공단",
+      "ratio": 4.33,
+      "change": -1.04,
+      "stock_count": 1130439,
+      "type": "sell"
+    },
+    {
+      "corp_name": "LG화학",
+      "stock_code": "051910",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260803",
+      "flr_nm": "국민연금공단",
+      "ratio": 7.57,
+      "change": 0.21,
+      "stock_count": 149763,
+      "type": "buy"
+    },
+    {
+      "corp_name": "SK텔레콤",
+      "stock_code": "017670",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260803",
+      "flr_nm": "국민연금공단",
+      "ratio": 8.71,
+      "change": 1.04,
+      "stock_count": 1911516,
+      "type": "buy"
+    },
+    {
+      "corp_name": "HJ중공업",
+      "stock_code": "097230",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260803",
+      "flr_nm": "국민연금공단",
+      "ratio": 66.85,
+      "change": 0,
+      "stock_count": 0,
+      "type": "buy"
+    },
     {
       "corp_name": "삼성바이오로직스",
       "stock_code": "207940",
@@ -495,61 +550,6 @@
       "ratio": 6.16,
       "change": 1.17,
       "stock_count": 106879,
-      "type": "buy"
-    },
-    {
-      "corp_name": "하나투어",
-      "stock_code": "039130",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260701",
-      "flr_nm": "국민연금공단",
-      "ratio": 6.63,
-      "change": -2.01,
-      "stock_count": 323593,
-      "type": "sell"
-    },
-    {
-      "corp_name": "STX엔진",
-      "stock_code": "077970",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260701",
-      "flr_nm": "국민연금공단",
-      "ratio": 82.1,
-      "change": -2.99,
-      "stock_count": 1200000,
-      "type": "sell"
-    },
-    {
-      "corp_name": "LX세미콘",
-      "stock_code": "108320",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260701",
-      "flr_nm": "국민연금공단",
-      "ratio": 5.11,
-      "change": -1.05,
-      "stock_count": 171375,
-      "type": "sell"
-    },
-    {
-      "corp_name": "율촌화학",
-      "stock_code": "008730",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260701",
-      "flr_nm": "국민연금공단",
-      "ratio": 56.45,
-      "change": 0,
-      "stock_count": 0,
-      "type": "buy"
-    },
-    {
-      "corp_name": "코리아써키트",
-      "stock_code": "007810",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260701",
-      "flr_nm": "국민연금공단",
-      "ratio": 50.54,
-      "change": 0.19,
-      "stock_count": 51246,
       "type": "buy"
     }
   ]
