@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-07T06:51:01.944Z",
+  "updated_at": "2026-08-07T08:11:33.521Z",
   "count": 50,
   "data": [
     {
@@ -195,10 +195,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260707",
       "flr_nm": "국민연금공단",
-      "ratio": 0.02,
-      "change": 0.02,
-      "stock_count": 1456,
-      "type": "buy"
+      "ratio": 29.25,
+      "change": -0.13,
+      "stock_count": 8700,
+      "type": "sell"
     },
     {
       "corp_name": "대웅제약",
