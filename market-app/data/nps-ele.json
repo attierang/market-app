@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-08T05:38:12.079Z",
+  "updated_at": "2026-08-08T06:39:45.145Z",
   "count": 50,
   "data": [
     {
@@ -272,10 +272,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 9.25,
-      "change": 9.25,
-      "stock_count": 3971071,
-      "type": "buy"
+      "ratio": 9.21,
+      "change": -0.04,
+      "stock_count": 16969,
+      "type": "sell"
     },
     {
       "corp_name": "대덕전자",
