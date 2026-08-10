@@ -1,7 +1,51 @@
 {
-  "updated_at": "2026-08-10T06:54:43.458Z",
+  "updated_at": "2026-08-10T08:24:21.719Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "GS리테일",
+      "stock_code": "007070",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260810",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 724,
+      "type": "buy"
+    },
+    {
+      "corp_name": "대한유화",
+      "stock_code": "006650",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260810",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.01,
+      "change": 10.01,
+      "stock_count": 650920,
+      "type": "buy"
+    },
+    {
+      "corp_name": "한화엔진",
+      "stock_code": "082740",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260810",
+      "flr_nm": "국민연금공단",
+      "ratio": 12.75,
+      "change": -0.17,
+      "stock_count": 143909,
+      "type": "sell"
+    },
+    {
+      "corp_name": "GS건설",
+      "stock_code": "006360",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260810",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.01,
+      "change": 10.01,
+      "stock_count": 8570949,
+      "type": "buy"
+    },
     {
       "corp_name": "한미약품",
       "stock_code": "128940",
@@ -507,50 +551,6 @@
       "change": 0,
       "stock_count": 176,
       "type": "buy"
-    },
-    {
-      "corp_name": "삼성증권",
-      "stock_code": "016360",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 13.03,
-      "change": 0.2,
-      "stock_count": 180592,
-      "type": "buy"
-    },
-    {
-      "corp_name": "한솔케미칼",
-      "stock_code": "014680",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.09,
-      "change": -1.53,
-      "stock_count": 173479,
-      "type": "sell"
-    },
-    {
-      "corp_name": "OCI홀딩스",
-      "stock_code": "010060",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 6.78,
-      "change": 0.23,
-      "stock_count": 28490,
-      "type": "buy"
-    },
-    {
-      "corp_name": "한올바이오파마",
-      "stock_code": "009420",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.58,
-      "change": -0.98,
-      "stock_count": 507526,
-      "type": "sell"
     }
   ]
 }
