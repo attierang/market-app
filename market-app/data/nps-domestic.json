@@ -1,307 +1,307 @@
 {
   "quarter": "2024년 말 기준",
-  "updated_at": "2026-08-11T03:30:30.497Z",
+  "updated_at": "2026-08-11T04:54:19.365Z",
   "source": "fund.nps.or.kr",
   "data": [
     {
       "rank": 1,
       "corp_name": "삼성전자",
-      "value_kr": 230421,
-      "ratio": 7.26
+      "value_kr": 551095,
+      "ratio": 7.76
     },
     {
       "rank": 2,
       "corp_name": "SK하이닉스",
-      "value_kr": 95627,
-      "ratio": 7.55
+      "value_kr": 374316,
+      "ratio": 7.9
     },
     {
       "rank": 3,
       "corp_name": "LG에너지솔루션",
-      "value_kr": 51706,
-      "ratio": 6.35
+      "value_kr": 57793,
+      "ratio": 6.7
     },
     {
       "rank": 4,
       "corp_name": "삼성바이오로직스",
-      "value_kr": 46721,
-      "ratio": 6.92
+      "value_kr": 57673,
+      "ratio": 7.35
     },
     {
       "rank": 5,
       "corp_name": "현대차",
-      "value_kr": 33529,
-      "ratio": 7.55
+      "value_kr": 47072,
+      "ratio": 7.75
     },
     {
       "rank": 6,
-      "corp_name": "기아",
-      "value_kr": 28589,
-      "ratio": 7.14
+      "corp_name": "HD현대중공업",
+      "value_kr": 42571,
+      "ratio": 7.97
     },
     {
       "rank": 7,
-      "corp_name": "NAVER",
-      "value_kr": 28134,
-      "ratio": 8.94
+      "corp_name": "SK스퀘어",
+      "value_kr": 41434,
+      "ratio": 8.52
     },
     {
       "rank": 8,
-      "corp_name": "셀트리온",
-      "value_kr": 27624,
-      "ratio": 6.79
+      "corp_name": "KB금융",
+      "value_kr": 41250,
+      "ratio": 8.67
     },
     {
       "rank": 9,
-      "corp_name": "KB금융",
-      "value_kr": 27405,
-      "ratio": 8.4
+      "corp_name": "한화에어로스페이스",
+      "value_kr": 38570,
+      "ratio": 7.95
     },
     {
       "rank": 10,
-      "corp_name": "신한지주",
-      "value_kr": 20547,
-      "ratio": 8.56
+      "corp_name": "두산에너빌리티",
+      "value_kr": 37475,
+      "ratio": 7.77
     },
     {
       "rank": 11,
-      "corp_name": "현대모비스",
-      "value_kr": 19937,
-      "ratio": 9.06
+      "corp_name": "NAVER",
+      "value_kr": 35247,
+      "ratio": 9.27
     },
     {
       "rank": 12,
-      "corp_name": "HD현대중공업",
-      "value_kr": 16837,
-      "ratio": 6.6
+      "corp_name": "기아",
+      "value_kr": 34411,
+      "ratio": 7.24
     },
     {
       "rank": 13,
-      "corp_name": "POSCO홀딩스",
-      "value_kr": 15628,
-      "ratio": 7.46
+      "corp_name": "신한지주",
+      "value_kr": 33709,
+      "ratio": 9.03
     },
     {
       "rank": 14,
-      "corp_name": "하나금융지주",
-      "value_kr": 15081,
-      "ratio": 9.25
+      "corp_name": "삼성물산",
+      "value_kr": 32800,
+      "ratio": 8.06
     },
     {
       "rank": 15,
-      "corp_name": "삼성물산",
-      "value_kr": 14852,
-      "ratio": 7.28
+      "corp_name": "현대모비스",
+      "value_kr": 31065,
+      "ratio": 9.18
     },
     {
       "rank": 16,
-      "corp_name": "LG화학",
-      "value_kr": 14546,
-      "ratio": 8.25
+      "corp_name": "셀트리온",
+      "value_kr": 27852,
+      "ratio": 6.66
     },
     {
       "rank": 17,
-      "corp_name": "삼성생명",
-      "value_kr": 13400,
-      "ratio": 7.07
+      "corp_name": "한국전력",
+      "value_kr": 23985,
+      "ratio": 7.92
     },
     {
       "rank": 18,
-      "corp_name": "메리츠금융지주",
-      "value_kr": 13180,
-      "ratio": 6.65
+      "corp_name": "하나금융지주",
+      "value_kr": 22698,
+      "ratio": 8.67
     },
     {
       "rank": 19,
-      "corp_name": "삼성SDI",
-      "value_kr": 12598,
-      "ratio": 7.41
+      "corp_name": "한화오션",
+      "value_kr": 22222,
+      "ratio": 6.38
     },
     {
       "rank": 20,
-      "corp_name": "삼성화재",
-      "value_kr": 11794,
-      "ratio": 6.94
+      "corp_name": "삼성생명",
+      "value_kr": 21418,
+      "ratio": 6.8
     },
     {
       "rank": 21,
-      "corp_name": "한화에어로스페이스",
-      "value_kr": 11063,
-      "ratio": 7.44
+      "corp_name": "HD한국조선해양",
+      "value_kr": 21361,
+      "ratio": 7.42
     },
     {
       "rank": 22,
-      "corp_name": "HD한국조선해양",
-      "value_kr": 10583,
-      "ratio": 6.55
+      "corp_name": "HD현대일렉트릭",
+      "value_kr": 21298,
+      "ratio": 7.63
     },
     {
       "rank": 23,
-      "corp_name": "HD현대일렉트릭",
-      "value_kr": 10556,
-      "ratio": 7.67
+      "corp_name": "삼성전기",
+      "value_kr": 20917,
+      "ratio": 10.98
     },
     {
       "rank": 24,
-      "corp_name": "SK텔레콤",
-      "value_kr": 10435,
-      "ratio": 8.8
+      "corp_name": "LG화학",
+      "value_kr": 20152,
+      "ratio": 8.57
     },
     {
       "rank": 25,
-      "corp_name": "LG전자",
-      "value_kr": 10374,
-      "ratio": 7.59
+      "corp_name": "POSCO홀딩스",
+      "value_kr": 19662,
+      "ratio": 7.97
     },
     {
       "rank": 26,
       "corp_name": "카카오",
-      "value_kr": 10196,
-      "ratio": 6.02
+      "value_kr": 17536,
+      "ratio": 6.6
     },
     {
       "rank": 27,
-      "corp_name": "크래프톤",
-      "value_kr": 10014,
-      "ratio": 6.69
+      "corp_name": "효성중공업",
+      "value_kr": 17015,
+      "ratio": 10.25
     },
     {
       "rank": 28,
-      "corp_name": "SK이노베이션",
-      "value_kr": 10006,
-      "ratio": 5.92
+      "corp_name": "삼성중공업",
+      "value_kr": 16154,
+      "ratio": 7.62
     },
     {
       "rank": 29,
-      "corp_name": "한국전력",
-      "value_kr": 9662,
-      "ratio": 7.5
+      "corp_name": "현대로템",
+      "value_kr": 16126,
+      "ratio": 7.86
     },
     {
       "rank": 30,
-      "corp_name": "KT&G",
-      "value_kr": 9517,
-      "ratio": 7.09
+      "corp_name": "삼성SDI",
+      "value_kr": 14958,
+      "ratio": 6.89
     },
     {
       "rank": 31,
-      "corp_name": "삼성전기",
-      "value_kr": 9388,
-      "ratio": 10.16
+      "corp_name": "삼성화재",
+      "value_kr": 14516,
+      "ratio": 6.35
     },
     {
       "rank": 32,
-      "corp_name": "삼성에스디에스",
-      "value_kr": 9307,
-      "ratio": 9.41
+      "corp_name": "고려아연",
+      "value_kr": 14203,
+      "ratio": 5.78
     },
     {
       "rank": 33,
-      "corp_name": "현대글로비스",
-      "value_kr": 8878,
-      "ratio": 10.03
+      "corp_name": "우리금융지주",
+      "value_kr": 13759,
+      "ratio": 6.69
     },
     {
       "rank": 34,
-      "corp_name": "KT",
-      "value_kr": 8583,
-      "ratio": 7.76
+      "corp_name": "SK",
+      "value_kr": 13705,
+      "ratio": 7.37
     },
     {
       "rank": 35,
-      "corp_name": "두산에너빌리티",
-      "value_kr": 8254,
-      "ratio": 7.34
+      "corp_name": "현대글로비스",
+      "value_kr": 13300,
+      "ratio": 9.82
     },
     {
       "rank": 36,
-      "corp_name": "삼성중공업",
-      "value_kr": 8184,
-      "ratio": 8.23
+      "corp_name": "삼성에스디에스",
+      "value_kr": 13054,
+      "ratio": 9.84
     },
     {
       "rank": 37,
-      "corp_name": "고려아연",
-      "value_kr": 8171,
-      "ratio": 3.92
+      "corp_name": "메리츠금융지주",
+      "value_kr": 12957,
+      "ratio": 6.54
     },
     {
       "rank": 38,
-      "corp_name": "HMM",
-      "value_kr": 7940,
-      "ratio": 5.11
+      "corp_name": "KT&G",
+      "value_kr": 12956,
+      "ratio": 7.73
     },
     {
       "rank": 39,
-      "corp_name": "우리금융지주",
-      "value_kr": 7808,
-      "ratio": 6.84
+      "corp_name": "LS ELECTRIC",
+      "value_kr": 12936,
+      "ratio": 9.37
     },
     {
       "rank": 40,
-      "corp_name": "SK스퀘어",
-      "value_kr": 7734,
-      "ratio": 7.23
+      "corp_name": "하이브",
+      "value_kr": 12201,
+      "ratio": 8.69
     },
     {
       "rank": 41,
-      "corp_name": "대한항공",
-      "value_kr": 7696,
-      "ratio": 9.25
+      "corp_name": "두산",
+      "value_kr": 12111,
+      "ratio": 9.58
     },
     {
       "rank": 42,
-      "corp_name": "LG",
-      "value_kr": 7618,
-      "ratio": 6.72
+      "corp_name": "한국금융지주",
+      "value_kr": 12089,
+      "ratio": 13.42
     },
     {
       "rank": 43,
-      "corp_name": "SK",
-      "value_kr": 7263,
-      "ratio": 7.63
+      "corp_name": "삼성에피스홀딩스",
+      "value_kr": 11598,
+      "ratio": 6.27
     },
     {
       "rank": 44,
-      "corp_name": "유한양행",
-      "value_kr": 6983,
-      "ratio": 7.29
+      "corp_name": "미래에셋증권",
+      "value_kr": 10610,
+      "ratio": 8.01
     },
     {
       "rank": 45,
-      "corp_name": "한화오션",
-      "value_kr": 6741,
-      "ratio": 5.9
+      "corp_name": "HMM",
+      "value_kr": 10305,
+      "ratio": 5.33
     },
     {
       "rank": 46,
-      "corp_name": "HD현대미포",
-      "value_kr": 6557,
-      "ratio": 12.23
+      "corp_name": "HD현대",
+      "value_kr": 10112,
+      "ratio": 6.79
     },
     {
       "rank": 47,
-      "corp_name": "기업은행",
-      "value_kr": 6215,
-      "ratio": 5.43
+      "corp_name": "LG전자",
+      "value_kr": 9647,
+      "ratio": 6.44
     },
     {
       "rank": 48,
-      "corp_name": "하이브",
-      "value_kr": 6054,
-      "ratio": 7.52
+      "corp_name": "KT",
+      "value_kr": 9397,
+      "ratio": 7.09
     },
     {
       "rank": 49,
-      "corp_name": "포스코퓨처엠",
-      "value_kr": 5921,
-      "ratio": 5.37
+      "corp_name": "SK이노베이션",
+      "value_kr": 9317,
+      "ratio": 5.45
     },
     {
       "rank": 50,
-      "corp_name": "카카오뱅크",
-      "value_kr": 5780,
-      "ratio": 5.76
+      "corp_name": "한국항공우주",
+      "value_kr": 9280,
+      "ratio": 8.32
     }
   ]
 }
