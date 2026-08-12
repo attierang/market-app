@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T08:12:57.468Z",
+  "updated_at": "2026-08-12T09:42:34.215Z",
   "count": 50,
   "data": [
     {
@@ -349,10 +349,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 10,
-      "change": -0.01,
-      "stock_count": 7971,
-      "type": "sell"
+      "ratio": 10.1,
+      "change": 10.1,
+      "stock_count": 6657263,
+      "type": "buy"
     },
     {
       "corp_name": "HD건설기계",
