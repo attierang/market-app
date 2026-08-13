@@ -3270,22 +3270,20 @@
       function fmtFlow(v) {
         if (v == null) return '-';
         var abs = Math.abs(v);
-        var str = abs >= 10000
+        return abs >= 10000
           ? (v > 0 ? '+' : '-') + (abs / 10000).toFixed(1) + '조'
           : (v > 0 ? '+' : '') + v.toLocaleString('ko-KR') + '억';
-        return str;
       }
       function fmtWl(wl) {
         var color = wl >= 80 ? '#D04040' : wl >= 50 ? '#E2A800' : wl >= 20 ? NEU : DOWN;
         return '<span style="color:' + color + ';font-weight:600;">' + wl.toFixed(1) + '%</span>';
       }
 
-      var rows = (d.rows || []).slice().reverse(); // 최신순
+      var rows = (d.rows || []).slice().reverse();
 
       var html = '<div style="font-size:11px;color:var(--text-secondary);margin-bottom:10px;">'
         + d.title + ' · 단위: ' + d.unit + ' · ' + d.updated_at + ' 기준</div>';
 
-      // 최신 누적·저수지 요약 카드
       var latest = d.rows[d.rows.length - 1];
       var peak   = d.rows.reduce(function(a, b) { return b.cumulative > a.cumulative ? b : a; }, d.rows[0]);
       html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;">';
@@ -3301,7 +3299,6 @@
         + '</div>';
       html += '</div>';
 
-      // 테이블
       html += '<div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">'
         + '<table style="width:100%;border-collapse:collapse;font-size:11px;min-width:520px;">'
         + '<thead><tr style="border-bottom:1px solid var(--border);color:var(--text-secondary);">'
@@ -3312,15 +3309,23 @@
         + '<th style="padding:6px 4px;text-align:right;font-weight:500;">합산</th>'
         + '<th style="padding:6px 4px;text-align:right;font-weight:500;">누적</th>'
         + '<th style="padding:6px 4px;text-align:right;font-weight:500;">수위</th>'
-        + '</tr></thead><tbody>';
+        + '</tr></thead><tbody id="supply-tbody">';
 
       rows.forEach(function(r) {
-        var isPeak = r.highlight === 'peak';
-        var isLow  = r.highlight === 'low';
-        var rowBg  = isPeak ? 'rgba(46,160,67,0.08)' : isLow ? 'rgba(208,64,64,0.08)' : 'transparent';
-        var border = isPeak ? '1px solid rgba(46,160,67,0.4)' : isLow ? '1px solid rgba(208,64,64,0.3)' : 'none';
-        html += '<tr style="border-bottom:0.5px solid var(--border);background:' + rowBg + ';outline:' + border + ';">'
-          + '<td style="padding:6px 4px;white-space:nowrap;font-weight:' + (isPeak || isLow ? '600' : '400') + ';">' + r.month + '</td>'
+        var isPeak   = r.highlight === 'peak';
+        var isLow    = r.highlight === 'low';
+        var hasDays  = r.days && r.days.length > 0;
+        var rowBg    = isPeak ? 'rgba(46,160,67,0.08)' : isLow ? 'rgba(208,64,64,0.08)' : 'transparent';
+        var border   = isPeak ? '1px solid rgba(46,160,67,0.4)' : isLow ? '1px solid rgba(208,64,64,0.3)' : 'none';
+        var mkey     = r.month.replace('-', '');
+        var arrow    = hasDays ? '<span id="sarr-' + mkey + '" style="font-size:9px;margin-left:3px;color:var(--text-secondary);">▶</span>' : '';
+
+        html += '<tr id="srow-' + mkey + '" '
+          + (hasDays ? 'onclick="toggleSupplyDay(\'' + mkey + '\')" style="cursor:pointer;"' : '')
+          + ' style="border-bottom:0.5px solid var(--border);background:' + rowBg + ';outline:' + border + ';'
+          + (hasDays ? 'cursor:pointer;' : '') + '">'
+          + '<td style="padding:6px 4px;white-space:nowrap;font-weight:' + (isPeak || isLow ? '600' : '400') + ';">'
+          + r.month + arrow + '</td>'
           + '<td style="padding:6px 4px;text-align:right;color:' + flowColor(r.chg) + ';font-weight:600;">' + (r.chg > 0 ? '+' : '') + r.chg.toFixed(1) + '%</td>'
           + '<td style="padding:6px 4px;text-align:right;color:' + flowColor(r.foreign) + ';">' + fmtFlow(r.foreign) + '</td>'
           + '<td style="padding:6px 4px;text-align:right;color:' + flowColor(r.institution) + ';">' + fmtFlow(r.institution) + '</td>'
@@ -3328,13 +3333,39 @@
           + '<td style="padding:6px 4px;text-align:right;color:' + flowColor(r.cumulative) + ';font-weight:600;">' + fmtFlow(r.cumulative) + '</td>'
           + '<td style="padding:6px 4px;text-align:right;">' + fmtWl(r.water_level) + '</td>'
           + '</tr>';
+
+        if (hasDays) {
+          var dayRows = r.days.map(function(day) {
+            return '<tr style="background:var(--bg-secondary);">'
+              + '<td style="padding:4px 4px 4px 16px;color:var(--text-secondary);white-space:nowrap;">' + day.date + '</td>'
+              + '<td></td>'
+              + '<td style="padding:4px;text-align:right;color:' + flowColor(day.foreign) + ';font-size:10px;">' + fmtFlow(day.foreign) + '</td>'
+              + '<td style="padding:4px;text-align:right;color:' + flowColor(day.institution) + ';font-size:10px;">' + fmtFlow(day.institution) + '</td>'
+              + '<td style="padding:4px;text-align:right;color:' + flowColor(day.total) + ';font-size:10px;font-weight:600;">' + fmtFlow(day.total) + '</td>'
+              + '<td></td><td></td>'
+              + '</tr>';
+          }).join('');
+          html += '<tr id="sday-' + mkey + '" style="display:none;">'
+            + '<td colspan="7" style="padding:0;border-bottom:1px solid var(--border);">'
+            + '<table style="width:100%;border-collapse:collapse;">' + dayRows + '</table>'
+            + '</td></tr>';
+        }
       });
 
       html += '</tbody></table></div>';
-      html += '<div style="font-size:10px;color:var(--text-tertiary);margin-top:8px;line-height:1.6;">* ' + d.note + '</div>';
+      html += '<div style="font-size:10px;color:var(--text-tertiary);margin-top:8px;line-height:1.6;">* ' + d.note + '<br>* 일별 데이터가 있는 월은 클릭하면 펼쳐집니다.</div>';
 
       el.innerHTML = html;
     }
+
+    window.toggleSupplyDay = function(mkey) {
+      var detail = document.getElementById('sday-' + mkey);
+      var arrow  = document.getElementById('sarr-' + mkey);
+      if (!detail) return;
+      var open = detail.style.display !== 'none';
+      detail.style.display = open ? 'none' : 'table-row';
+      if (arrow) arrow.textContent = open ? '▶' : '▼';
+    };
 
     // ── FCF (Free Cash Flow) ──
     var _fcfLoaded = false;
