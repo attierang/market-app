@@ -1,7 +1,40 @@
 {
-  "updated_at": "2026-08-13T01:20:28.131Z",
+  "updated_at": "2026-08-13T05:34:00.609Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "한섬",
+      "stock_code": "020000",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260813",
+      "flr_nm": "국민연금공단",
+      "ratio": 37.29,
+      "change": 2.65,
+      "stock_count": 192377,
+      "type": "buy"
+    },
+    {
+      "corp_name": "NHN",
+      "stock_code": "181710",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260813",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 70,
+      "type": "buy"
+    },
+    {
+      "corp_name": "GS리테일",
+      "stock_code": "007070",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260813",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 724,
+      "type": "buy"
+    },
     {
       "corp_name": "GS리테일",
       "stock_code": "007070",
@@ -514,42 +547,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 14.43,
-      "change": 0.2,
-      "stock_count": 44645,
-      "type": "buy"
-    },
-    {
-      "corp_name": "NC",
-      "stock_code": "036570",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 440,
-      "type": "buy"
-    },
-    {
-      "corp_name": "파라다이스",
-      "stock_code": "034230",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 2000,
-      "type": "buy"
-    },
-    {
-      "corp_name": "롯데쇼핑",
-      "stock_code": "023530",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 176,
+      "ratio": 14.49,
+      "change": 0.06,
+      "stock_count": 12394,
       "type": "buy"
     }
   ]
