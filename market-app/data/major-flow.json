@@ -2,58 +2,748 @@
   "title": "메이저 수급 현황",
   "unit": "억원",
   "note": "외국인+기관 합산 순매수 누적. 저수지 수위 = 최근 3년 누적 기준 백분위.",
-  "updated_at": "2026-07-24",
+  "updated_at": "2026-08-14",
   "rows": [
-    { "month": "2024-01", "period": "2024-01-02 ~ 2024-01-31", "chg": -5.1, "foreign": 37073,   "institution": -66621,  "total": -29549,  "cumulative": -3182,   "water_level": 45.5 },
-    { "month": "2024-02", "period": "2024-02-01 ~ 2024-02-29", "chg":  7.7, "foreign": 85463,   "institution": -6496,   "total":  78966,  "cumulative":  75784,  "water_level": 96.1 },
-    { "month": "2024-03", "period": "2024-03-04 ~ 2024-03-29", "chg":  5.5, "foreign": 47001,   "institution":  8199,   "total":  55200,  "cumulative": 130984,  "water_level": 100.0 },
-    { "month": "2024-04", "period": "2024-04-01 ~ 2024-04-30", "chg": -1.5, "foreign": 23351,   "institution": -38631,  "total": -15281,  "cumulative": 115703,  "water_level": 87.3 },
-    { "month": "2024-05", "period": "2024-05-02 ~ 2024-05-31", "chg": -1.1, "foreign": -8811,   "institution":  10654,  "total":   1844,  "cumulative": 117547,  "water_level": 81.1 },
-    { "month": "2024-06", "period": "2024-06-03 ~ 2024-06-28", "chg":  6.5, "foreign": 58570,   "institution": -30146,  "total":  28424,  "cumulative": 145971,  "water_level": 95.3 },
-    { "month": "2024-07", "period": "2024-07-01 ~ 2024-07-31", "chg": -0.0, "foreign": 25492,   "institution":  19576,  "total":  45068,  "cumulative": 191039,  "water_level": 96.4 },
-    { "month": "2024-08", "period": "2024-08-01 ~ 2024-08-30", "chg": -1.6, "foreign": -20650,  "institution":  -2591,  "total": -23240,  "cumulative": 167799,  "water_level": 86.4 },
-    { "month": "2024-09", "period": "2024-09-02 ~ 2024-09-30", "chg": -1.3, "foreign": -70438,  "institution":  21106,  "total": -49333,  "cumulative": 118466,  "water_level": 65.0 },
-    { "month": "2024-10", "period": "2024-10-02 ~ 2024-10-31", "chg": -0.2, "foreign": -44940,  "institution":   3397,  "total": -41543,  "cumulative":  76923,  "water_level": 47.1 },
-    { "month": "2024-11", "period": "2024-11-01 ~ 2024-11-29", "chg": -2.7, "foreign": -41894,  "institution":  29512,  "total": -12382,  "cumulative":  64541,  "water_level": 41.7 },
-    { "month": "2024-12", "period": "2024-12-02 ~ 2024-12-30", "chg": -0.3, "foreign": -19604,  "institution":  39379,  "total":  19775,  "cumulative":  84317,  "water_level": 50.2 },
-    { "month": "2025-01", "period": "2025-01-02 ~ 2025-01-31", "chg":  6.6, "foreign": -9473,   "institution":  -1354,  "total": -10827,  "cumulative":  73490,  "water_level": 45.6 },
-    { "month": "2025-02", "period": "2025-02-03 ~ 2025-02-28", "chg":  2.6, "foreign": -37001,  "institution":   7844,  "total": -29157,  "cumulative":  44332,  "water_level": 33.0 },
-    { "month": "2025-03", "period": "2025-03-04 ~ 2025-03-31", "chg": -1.6, "foreign": -22913,  "institution":  15287,  "total":  -7706,  "cumulative":  36626,  "water_level": 29.6 },
-    { "month": "2025-04", "period": "2025-04-01 ~ 2025-04-30", "chg":  5.0, "foreign": -102496, "institution":  37807,  "total": -64688,  "cumulative": -28062,  "water_level": 3.6 },
-    { "month": "2025-05", "period": "2025-05-02 ~ 2025-05-30", "chg":  6.4, "foreign": 13642,   "institution":  22849,  "total":  36492,  "cumulative":   8429,  "water_level": 19.0 },
-    { "month": "2025-06", "period": "2025-06-02 ~ 2025-06-30", "chg": 14.1, "foreign": 28139,   "institution": -21741,  "total":   6398,  "cumulative":  14828,  "water_level": 21.8 },
-    { "month": "2025-07", "period": "2025-07-01 ~ 2025-07-31", "chg":  7.0, "foreign": 62624,   "institution":  -6139,  "total":  56485,  "cumulative":  71312,  "water_level": 45.7 },
-    { "month": "2025-08", "period": "2025-08-01 ~ 2025-08-29", "chg": -0.6, "foreign": -15402,  "institution":  -2628,  "total": -18030,  "cumulative":  53283,  "water_level": 38.1 },
-    { "month": "2025-09", "period": "2025-09-01 ~ 2025-09-30", "chg":  8.4, "foreign": 73246,   "institution":  19602,  "total":  92848,  "cumulative": 146130,  "water_level": 77.4 },
-    { "month": "2025-10", "period": "2025-10-01 ~ 2025-10-31", "chg": 19.0, "foreign": 52960,   "institution":  10102,  "total":  63061,  "cumulative": 209192,  "water_level": 92.6 },
-    { "month": "2025-11", "period": "2025-11-03 ~ 2025-11-28", "chg": -0.6, "foreign": -131234, "institution":  66173,  "total": -65061,  "cumulative": 144130,  "water_level": 68.1 },
-    { "month": "2025-12", "period": "2025-12-01 ~ 2025-12-30", "chg":  7.8, "foreign": 35484,   "institution":  54617,  "total":  90100,  "cumulative": 234231,  "water_level": 94.8 },
-    { "month": "2026-01", "period": "2026-01-02 ~ 2026-01-30", "chg": 24.6, "foreign": 16873,   "institution":  78573,  "total":  95446,  "cumulative": 329677,  "water_level": 96.8, "highlight": "peak" },
-    { "month": "2026-02", "period": "2026-02-03 ~ 2026-02-27", "chg": 18.9, "foreign": -189063, "institution": 154312,  "total": -34751,  "cumulative": 294926,  "water_level": 84.9 },
-    { "month": "2026-03", "period": "2026-03-03 ~ 2026-03-31", "chg":-15.3, "foreign": -336307, "institution":  -3079,  "total":-339385,  "cumulative": -44459,  "water_level": 0.0, "highlight": "low" },
-    { "month": "2026-04", "period": "2026-04-01 ~ 2026-04-30", "chg": 27.8, "foreign": -27076,  "institution":  79237,  "total":  52161,  "cumulative":   7702,  "water_level": 13.1, "highlight": "low" },
-    { "month": "2026-05", "period": "2026-05-02 ~ 2026-05-29", "chg": 26.9, "foreign": -428474, "institution":  61633,  "total":-366841,  "cumulative": -359139, "water_level": 1.0, "highlight": "low" },
-    { "month": "2026-06", "period": "2026-06-02 ~ 2026-06-30", "chg":  5.0, "foreign": -431747, "institution":  58818,  "total":-372929,  "cumulative": -732068, "water_level": 0.0, "highlight": "low" },
-    { "month": "2026-07", "period": "2026-07-01 ~ 2026-07-24", "chg":-18.8, "foreign": -101486, "institution": -16511,  "total":-117997,  "cumulative": -850065, "water_level": 1.0, "highlight": "low",
+    {
+      "month": "2024-01",
+      "period": "2024-01-02 ~ 2024-01-31",
+      "chg": -5.1,
+      "foreign": 37073,
+      "institution": -66621,
+      "total": -29549,
+      "cumulative": -3182,
+      "water_level": 45.5
+    },
+    {
+      "month": "2024-02",
+      "period": "2024-02-01 ~ 2024-02-29",
+      "chg": 7.7,
+      "foreign": 85463,
+      "institution": -6496,
+      "total": 78966,
+      "cumulative": 75784,
+      "water_level": 96.1
+    },
+    {
+      "month": "2024-03",
+      "period": "2024-03-04 ~ 2024-03-29",
+      "chg": 5.5,
+      "foreign": 47001,
+      "institution": 8199,
+      "total": 55200,
+      "cumulative": 130984,
+      "water_level": 100.0
+    },
+    {
+      "month": "2024-04",
+      "period": "2024-04-01 ~ 2024-04-30",
+      "chg": -1.5,
+      "foreign": 23351,
+      "institution": -38631,
+      "total": -15281,
+      "cumulative": 115703,
+      "water_level": 87.3
+    },
+    {
+      "month": "2024-05",
+      "period": "2024-05-02 ~ 2024-05-31",
+      "chg": -1.1,
+      "foreign": -8811,
+      "institution": 10654,
+      "total": 1844,
+      "cumulative": 117547,
+      "water_level": 81.1
+    },
+    {
+      "month": "2024-06",
+      "period": "2024-06-03 ~ 2024-06-28",
+      "chg": 6.5,
+      "foreign": 58570,
+      "institution": -30146,
+      "total": 28424,
+      "cumulative": 145971,
+      "water_level": 95.3
+    },
+    {
+      "month": "2024-07",
+      "period": "2024-07-01 ~ 2024-07-31",
+      "chg": -0.0,
+      "foreign": 25492,
+      "institution": 19576,
+      "total": 45068,
+      "cumulative": 191039,
+      "water_level": 96.4
+    },
+    {
+      "month": "2024-08",
+      "period": "2024-08-01 ~ 2024-08-30",
+      "chg": -1.6,
+      "foreign": -20650,
+      "institution": -2591,
+      "total": -23240,
+      "cumulative": 167799,
+      "water_level": 86.4
+    },
+    {
+      "month": "2024-09",
+      "period": "2024-09-02 ~ 2024-09-30",
+      "chg": -1.3,
+      "foreign": -70438,
+      "institution": 21106,
+      "total": -49333,
+      "cumulative": 118466,
+      "water_level": 65.0
+    },
+    {
+      "month": "2024-10",
+      "period": "2024-10-02 ~ 2024-10-31",
+      "chg": -0.2,
+      "foreign": -44940,
+      "institution": 3397,
+      "total": -41543,
+      "cumulative": 76923,
+      "water_level": 47.1
+    },
+    {
+      "month": "2024-11",
+      "period": "2024-11-01 ~ 2024-11-29",
+      "chg": -2.7,
+      "foreign": -41894,
+      "institution": 29512,
+      "total": -12382,
+      "cumulative": 64541,
+      "water_level": 41.7
+    },
+    {
+      "month": "2024-12",
+      "period": "2024-12-02 ~ 2024-12-30",
+      "chg": -0.3,
+      "foreign": -19604,
+      "institution": 39379,
+      "total": 19775,
+      "cumulative": 84317,
+      "water_level": 50.2
+    },
+    {
+      "month": "2025-01",
+      "period": "2025-01-02 ~ 2025-01-31",
+      "chg": 6.6,
+      "foreign": -9473,
+      "institution": -1354,
+      "total": -10827,
+      "cumulative": 73490,
+      "water_level": 45.6
+    },
+    {
+      "month": "2025-02",
+      "period": "2025-02-03 ~ 2025-02-28",
+      "chg": 2.6,
+      "foreign": -37001,
+      "institution": 7844,
+      "total": -29157,
+      "cumulative": 44332,
+      "water_level": 33.0
+    },
+    {
+      "month": "2025-03",
+      "period": "2025-03-04 ~ 2025-03-31",
+      "chg": -1.6,
+      "foreign": -22913,
+      "institution": 15287,
+      "total": -7706,
+      "cumulative": 36626,
+      "water_level": 29.6
+    },
+    {
+      "month": "2025-04",
+      "period": "2025-04-01 ~ 2025-04-30",
+      "chg": 5.0,
+      "foreign": -102496,
+      "institution": 37807,
+      "total": -64688,
+      "cumulative": -28062,
+      "water_level": 3.6
+    },
+    {
+      "month": "2025-05",
+      "period": "2025-05-02 ~ 2025-05-30",
+      "chg": 6.4,
+      "foreign": 13642,
+      "institution": 22849,
+      "total": 36492,
+      "cumulative": 8429,
+      "water_level": 19.0
+    },
+    {
+      "month": "2025-06",
+      "period": "2025-06-02 ~ 2025-06-30",
+      "chg": 14.1,
+      "foreign": 28139,
+      "institution": -21741,
+      "total": 6398,
+      "cumulative": 14828,
+      "water_level": 21.8
+    },
+    {
+      "month": "2025-07",
+      "period": "2025-07-01 ~ 2025-07-31",
+      "chg": 7.0,
+      "foreign": 62624,
+      "institution": -6139,
+      "total": 56485,
+      "cumulative": 71312,
+      "water_level": 45.7
+    },
+    {
+      "month": "2025-08",
+      "period": "2025-08-01 ~ 2025-08-29",
+      "chg": -0.6,
+      "foreign": -15402,
+      "institution": -2628,
+      "total": -18030,
+      "cumulative": 53283,
+      "water_level": 38.1
+    },
+    {
+      "month": "2025-09",
+      "period": "2025-09-01 ~ 2025-09-30",
+      "chg": 8.4,
+      "foreign": 73246,
+      "institution": 19602,
+      "total": 92848,
+      "cumulative": 146130,
+      "water_level": 77.4
+    },
+    {
+      "month": "2025-10",
+      "period": "2025-10-01 ~ 2025-10-31",
+      "chg": 19.0,
+      "foreign": 52960,
+      "institution": 10102,
+      "total": 63061,
+      "cumulative": 209192,
+      "water_level": 92.6
+    },
+    {
+      "month": "2025-11",
+      "period": "2025-11-03 ~ 2025-11-28",
+      "chg": -0.6,
+      "foreign": -131234,
+      "institution": 66173,
+      "total": -65061,
+      "cumulative": 144130,
+      "water_level": 68.1
+    },
+    {
+      "month": "2025-12",
+      "period": "2025-12-01 ~ 2025-12-30",
+      "chg": 7.8,
+      "foreign": 35484,
+      "institution": 54617,
+      "total": 90100,
+      "cumulative": 234231,
+      "water_level": 94.8
+    },
+    {
+      "month": "2026-01",
+      "period": "2026-01-02 ~ 2026-01-30",
+      "chg": 24.6,
+      "foreign": 16873,
+      "institution": 78573,
+      "total": 95446,
+      "cumulative": 329677,
+      "water_level": 96.8,
+      "highlight": "peak"
+    },
+    {
+      "month": "2026-02",
+      "period": "2026-02-03 ~ 2026-02-27",
+      "chg": 18.9,
+      "foreign": -189063,
+      "institution": 154312,
+      "total": -34751,
+      "cumulative": 294926,
+      "water_level": 84.9
+    },
+    {
+      "month": "2026-03",
+      "period": "2026-03-03 ~ 2026-03-31",
+      "chg": -15.3,
+      "foreign": -336307,
+      "institution": -3079,
+      "total": -339385,
+      "cumulative": -44459,
+      "water_level": 0.0,
+      "highlight": "low"
+    },
+    {
+      "month": "2026-04",
+      "period": "2026-04-01 ~ 2026-04-30",
+      "chg": 27.8,
+      "foreign": -27076,
+      "institution": 79237,
+      "total": 52161,
+      "cumulative": 7702,
+      "water_level": 13.1,
+      "highlight": "low"
+    },
+    {
+      "month": "2026-05",
+      "period": "2026-05-04 ~ 2026-05-29",
+      "chg": 26.9,
+      "foreign": -444641,
+      "institution": 91971,
+      "total": -352670,
+      "cumulative": -359139,
+      "water_level": 1.0,
+      "highlight": "low",
       "days": [
-        { "date": "07-01", "foreign":  -3521, "institution":  -812, "total":  -4333 },
-        { "date": "07-02", "foreign":  -4102, "institution":  1203, "total":  -2899 },
-        { "date": "07-03", "foreign":  -5830, "institution": -2105, "total":  -7935 },
-        { "date": "07-04", "foreign":  -7241, "institution": -1820, "total":  -9061 },
-        { "date": "07-07", "foreign":  -6012, "institution":   530, "total":  -5482 },
-        { "date": "07-08", "foreign":  -8320, "institution": -1940, "total": -10260 },
-        { "date": "07-09", "foreign":  -4890, "institution":  2310, "total":  -2580 },
-        { "date": "07-10", "foreign":  -3105, "institution":  -780, "total":  -3885 },
-        { "date": "07-11", "foreign":  -5640, "institution": -1430, "total":  -7070 },
-        { "date": "07-14", "foreign":  -7230, "institution": -2680, "total":  -9910 },
-        { "date": "07-15", "foreign":  -6810, "institution":  1540, "total":  -5270 },
-        { "date": "07-16", "foreign":  -4320, "institution":  -930, "total":  -5250 },
-        { "date": "07-17", "foreign":  -8940, "institution": -3120, "total": -12060 },
-        { "date": "07-18", "foreign":  -5170, "institution":   870, "total":  -4300 },
-        { "date": "07-21", "foreign":  -3980, "institution":  -560, "total":  -4540 },
-        { "date": "07-22", "foreign":  -6430, "institution": -1820, "total":  -8250 },
-        { "date": "07-23", "foreign":  -4890, "institution":  1230, "total":  -3660 },
-        { "date": "07-24", "foreign":  -5051, "institution": -2184, "total":  -7235 }
+        {
+          "date": "05-04",
+          "foreign": 29308,
+          "institution": 20098,
+          "total": 49406
+        },
+        {
+          "date": "05-06",
+          "foreign": 31085,
+          "institution": -22894,
+          "total": 8191
+        },
+        {
+          "date": "05-07",
+          "foreign": -66987,
+          "institution": 8917,
+          "total": -58070
+        },
+        {
+          "date": "05-08",
+          "foreign": -52967,
+          "institution": 12542,
+          "total": -40425
+        },
+        {
+          "date": "05-11",
+          "foreign": -28147,
+          "institution": -458,
+          "total": -28605
+        },
+        {
+          "date": "05-12",
+          "foreign": -56090,
+          "institution": -12138,
+          "total": -68228
+        },
+        {
+          "date": "05-13",
+          "foreign": -37227,
+          "institution": 16876,
+          "total": -20351
+        },
+        {
+          "date": "05-14",
+          "foreign": -21450,
+          "institution": 1927,
+          "total": -19523
+        },
+        {
+          "date": "05-15",
+          "foreign": -56040,
+          "institution": -17347,
+          "total": -73387
+        },
+        {
+          "date": "05-18",
+          "foreign": -36492,
+          "institution": 13904,
+          "total": -22588
+        },
+        {
+          "date": "05-19",
+          "foreign": -57242,
+          "institution": 1575,
+          "total": -55667
+        },
+        {
+          "date": "05-20",
+          "foreign": -29310,
+          "institution": 11070,
+          "total": -18240
+        },
+        {
+          "date": "05-21",
+          "foreign": -2212,
+          "institution": 29008,
+          "total": 26796
+        },
+        {
+          "date": "05-22",
+          "foreign": -19221,
+          "institution": 7583,
+          "total": -11638
+        },
+        {
+          "date": "05-26",
+          "foreign": -1321,
+          "institution": 8168,
+          "total": 6847
+        },
+        {
+          "date": "05-27",
+          "foreign": -2493,
+          "institution": -126,
+          "total": -2619
+        },
+        {
+          "date": "05-28",
+          "foreign": -27414,
+          "institution": -10422,
+          "total": -37836
+        },
+        {
+          "date": "05-29",
+          "foreign": -10421,
+          "institution": 23688,
+          "total": 13267
+        }
+      ]
+    },
+    {
+      "month": "2026-06",
+      "period": "2026-06-01 ~ 2026-06-30",
+      "chg": 5.0,
+      "foreign": -499616,
+      "institution": 44396,
+      "total": -455220,
+      "cumulative": -732068,
+      "water_level": 0.0,
+      "highlight": "low",
+      "days": [
+        {
+          "date": "06-01",
+          "foreign": -28219,
+          "institution": 24427,
+          "total": -3792
+        },
+        {
+          "date": "06-02",
+          "foreign": -63035,
+          "institution": -546,
+          "total": -63581
+        },
+        {
+          "date": "06-04",
+          "foreign": -66663,
+          "institution": 15255,
+          "total": -51408
+        },
+        {
+          "date": "06-05",
+          "foreign": -27638,
+          "institution": -13809,
+          "total": -41447
+        },
+        {
+          "date": "06-08",
+          "foreign": -2644,
+          "institution": -17164,
+          "total": -19808
+        },
+        {
+          "date": "06-09",
+          "foreign": -20064,
+          "institution": 25048,
+          "total": 4984
+        },
+        {
+          "date": "06-10",
+          "foreign": -27754,
+          "institution": -22665,
+          "total": -50419
+        },
+        {
+          "date": "06-11",
+          "foreign": -14640,
+          "institution": -7561,
+          "total": -22201
+        },
+        {
+          "date": "06-12",
+          "foreign": 22041,
+          "institution": 22870,
+          "total": 44911
+        },
+        {
+          "date": "06-15",
+          "foreign": 10774,
+          "institution": 4462,
+          "total": 15236
+        },
+        {
+          "date": "06-17",
+          "foreign": -9952,
+          "institution": 5957,
+          "total": -3995
+        },
+        {
+          "date": "06-18",
+          "foreign": 12776,
+          "institution": -7682,
+          "total": 5094
+        },
+        {
+          "date": "06-19",
+          "foreign": -3555,
+          "institution": -12244,
+          "total": -15799
+        },
+        {
+          "date": "06-22",
+          "foreign": -25466,
+          "institution": 3034,
+          "total": -22432
+        },
+        {
+          "date": "06-23",
+          "foreign": -42047,
+          "institution": -44760,
+          "total": -86807
+        },
+        {
+          "date": "06-24",
+          "foreign": -46546,
+          "institution": 19095,
+          "total": -27451
+        },
+        {
+          "date": "06-25",
+          "foreign": -8754,
+          "institution": 33244,
+          "total": 24490
+        },
+        {
+          "date": "06-26",
+          "foreign": -42906,
+          "institution": -41224,
+          "total": -84130
+        },
+        {
+          "date": "06-29",
+          "foreign": -77332,
+          "institution": 29327,
+          "total": -48005
+        },
+        {
+          "date": "06-30",
+          "foreign": -37992,
+          "institution": 29332,
+          "total": -8660
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "period": "2026-07-02 ~ 2026-07-31",
+      "chg": -18.8,
+      "foreign": -67924,
+      "institution": 64455,
+      "total": -3469,
+      "cumulative": -850065,
+      "water_level": 1.0,
+      "highlight": "low",
+      "days": [
+        {
+          "date": "07-02",
+          "foreign": -43706,
+          "institution": -20825,
+          "total": -64531
+        },
+        {
+          "date": "07-03",
+          "foreign": -21750,
+          "institution": 44079,
+          "total": 22329
+        },
+        {
+          "date": "07-06",
+          "foreign": -13144,
+          "institution": -14618,
+          "total": -27762
+        },
+        {
+          "date": "07-07",
+          "foreign": -29172,
+          "institution": -3108,
+          "total": -32280
+        },
+        {
+          "date": "07-08",
+          "foreign": 3437,
+          "institution": -3552,
+          "total": -115
+        },
+        {
+          "date": "07-09",
+          "foreign": 1343,
+          "institution": 12884,
+          "total": 14227
+        },
+        {
+          "date": "07-10",
+          "foreign": -3228,
+          "institution": 11314,
+          "total": 8086
+        },
+        {
+          "date": "07-13",
+          "foreign": -16705,
+          "institution": -22338,
+          "total": -39043
+        },
+        {
+          "date": "07-14",
+          "foreign": 9565,
+          "institution": 32117,
+          "total": 41682
+        },
+        {
+          "date": "07-15",
+          "foreign": 23031,
+          "institution": 1992,
+          "total": 25023
+        },
+        {
+          "date": "07-20",
+          "foreign": 5198,
+          "institution": -9235,
+          "total": -4037
+        },
+        {
+          "date": "07-21",
+          "foreign": 2952,
+          "institution": 13744,
+          "total": 16696
+        },
+        {
+          "date": "07-22",
+          "foreign": 26211,
+          "institution": -13963,
+          "total": 12248
+        },
+        {
+          "date": "07-23",
+          "foreign": 21359,
+          "institution": 976,
+          "total": 22335
+        },
+        {
+          "date": "07-24",
+          "foreign": -32683,
+          "institution": -19514,
+          "total": -52197
+        },
+        {
+          "date": "07-27",
+          "foreign": -28811,
+          "institution": 8595,
+          "total": -20216
+        },
+        {
+          "date": "07-28",
+          "foreign": -45009,
+          "institution": 1830,
+          "total": -43179
+        },
+        {
+          "date": "07-29",
+          "foreign": -12502,
+          "institution": 31769,
+          "total": 19267
+        },
+        {
+          "date": "07-30",
+          "foreign": 13280,
+          "institution": 805,
+          "total": 14085
+        },
+        {
+          "date": "07-31",
+          "foreign": 72410,
+          "institution": 11503,
+          "total": 83913
+        }
+      ]
+    },
+    {
+      "month": "2026-08",
+      "period": "2026-08-03 ~ 2026-08-14",
+      "chg": 0.0,
+      "foreign": 6453,
+      "institution": -15380,
+      "total": -8927,
+      "cumulative": 0,
+      "water_level": 0.0,
+      "days": [
+        {
+          "date": "08-03",
+          "foreign": -28220,
+          "institution": -19516,
+          "total": -47736
+        },
+        {
+          "date": "08-04",
+          "foreign": -3716,
+          "institution": -5385,
+          "total": -9101
+        },
+        {
+          "date": "08-05",
+          "foreign": 14464,
+          "institution": -2838,
+          "total": 11626
+        },
+        {
+          "date": "08-06",
+          "foreign": -32893,
+          "institution": -1214,
+          "total": -34107
+        },
+        {
+          "date": "08-07",
+          "foreign": -8651,
+          "institution": 5854,
+          "total": -2797
+        },
+        {
+          "date": "08-10",
+          "foreign": -14909,
+          "institution": 5692,
+          "total": -9217
+        },
+        {
+          "date": "08-11",
+          "foreign": 535,
+          "institution": 212,
+          "total": 747
+        },
+        {
+          "date": "08-12",
+          "foreign": 28354,
+          "institution": 5279,
+          "total": 33633
+        },
+        {
+          "date": "08-13",
+          "foreign": 21102,
+          "institution": 6834,
+          "total": 27936
+        },
+        {
+          "date": "08-14",
+          "foreign": 30387,
+          "institution": -10298,
+          "total": 20089
+        }
       ]
     }
   ]

@@ -34,7 +34,18 @@ jobs:
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: node market-app/scripts/collect-rates.js
-        
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: pip 의존성 설치
+        run: pip install requests
+
+      - name: KOSPI 메이저 수급 수집 (네이버 금융)
+        run: python market-app/scripts/collect-major-flow.py
+
       - name: 변경사항 커밋
         run: |
           git config --local user.email "action@github.com"
