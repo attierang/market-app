@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T06:30:55.595Z",
+  "updated_at": "2026-08-16T07:10:56.254Z",
   "count": 50,
   "data": [
     {
@@ -163,9 +163,9 @@
       "rcept_dt": "20260731",
       "flr_nm": "국민연금공단",
       "ratio": 0,
-      "change": -0.01,
-      "stock_count": 4000,
-      "type": "sell"
+      "change": 0,
+      "stock_count": 1200,
+      "type": "buy"
     },
     {
       "corp_name": "금호석유화학",
