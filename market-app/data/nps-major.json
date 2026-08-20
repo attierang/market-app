@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T06:35:41.942Z",
+  "updated_at": "2026-08-20T07:39:04.885Z",
   "count": 50,
   "data": [
     {
@@ -96,10 +96,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260731",
       "flr_nm": "국민연금공단",
-      "ratio": 35.19,
-      "change": -0.07,
-      "stock_count": 5780,
-      "type": "sell"
+      "ratio": 10.15,
+      "change": 1.11,
+      "stock_count": 98558,
+      "type": "buy"
     },
     {
       "corp_name": "알지노믹스",
