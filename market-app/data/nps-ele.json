@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-08-21T04:13:37.633Z",
+  "updated_at": "2026-08-21T05:09:46.701Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "대웅제약",
+      "stock_code": "069620",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260821",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.03,
+      "change": 10.03,
+      "stock_count": 1162447,
+      "type": "buy"
+    },
     {
       "corp_name": "한섬",
       "stock_code": "020000",
@@ -540,17 +551,6 @@
       "change": -0.15,
       "stock_count": 43841,
       "type": "sell"
-    },
-    {
-      "corp_name": "진성티이씨",
-      "stock_code": "036890",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 14.49,
-      "change": 0.06,
-      "stock_count": 12394,
-      "type": "buy"
     }
   ]
 }
