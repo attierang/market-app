@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T23:48:58.535Z",
+  "updated_at": "2026-08-22T00:48:31.969Z",
   "count": 50,
   "data": [
     {
@@ -250,10 +250,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 41.21,
-      "change": 0.02,
-      "stock_count": 1627,
-      "type": "buy"
+      "ratio": 41.11,
+      "change": -0.1,
+      "stock_count": 5271,
+      "type": "sell"
     },
     {
       "corp_name": "비나텍",
