@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T06:32:35.804Z",
+  "updated_at": "2026-08-23T07:13:10.346Z",
   "count": 50,
   "data": [
     {
@@ -151,10 +151,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 44.92,
-      "change": -0.1,
-      "stock_count": 7443,
-      "type": "sell"
+      "ratio": 9.21,
+      "change": 1,
+      "stock_count": 77887,
+      "type": "buy"
     },
     {
       "corp_name": "RF머트리얼즈",

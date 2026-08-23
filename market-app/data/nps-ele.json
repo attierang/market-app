@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T06:32:35.804Z",
+  "updated_at": "2026-08-23T07:13:10.346Z",
   "count": 50,
   "data": [
     {
@@ -437,10 +437,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 27.23,
-      "change": 0.84,
-      "stock_count": 94607,
-      "type": "buy"
+      "ratio": 11.08,
+      "change": -1.21,
+      "stock_count": 138142,
+      "type": "sell"
     },
     {
       "corp_name": "한국콜마",
