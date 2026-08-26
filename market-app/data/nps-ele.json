@@ -1,7 +1,40 @@
 {
-  "updated_at": "2026-08-26T00:55:46.758Z",
+  "updated_at": "2026-08-26T02:24:52.984Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "진성티이씨",
+      "stock_code": "036890",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260826",
+      "flr_nm": "국민연금공단",
+      "ratio": 14.49,
+      "change": 0.06,
+      "stock_count": 12394,
+      "type": "buy"
+    },
+    {
+      "corp_name": "S-Oil",
+      "stock_code": "010950",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260826",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 300,
+      "type": "buy"
+    },
+    {
+      "corp_name": "S-Oil",
+      "stock_code": "010950",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260826",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 300,
+      "type": "buy"
+    },
     {
       "corp_name": "대웅제약",
       "stock_code": "069620",
@@ -518,39 +551,6 @@
       "change": 9.13,
       "stock_count": 5619634,
       "type": "buy"
-    },
-    {
-      "corp_name": "현대백화점",
-      "stock_code": "069960",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 31.03,
-      "change": 1.03,
-      "stock_count": 0,
-      "type": "buy"
-    },
-    {
-      "corp_name": "한전기술",
-      "stock_code": "052690",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 3361,
-      "type": "buy"
-    },
-    {
-      "corp_name": "키움증권",
-      "stock_code": "039490",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 11.6,
-      "change": -0.15,
-      "stock_count": 43841,
-      "type": "sell"
     }
   ]
 }
