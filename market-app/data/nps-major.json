@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-08-26T05:30:20.943Z",
+  "updated_at": "2026-08-26T06:06:22.117Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "HDC",
+      "stock_code": "012630",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260826",
+      "flr_nm": "국민연금공단",
+      "ratio": 41.96,
+      "change": 0,
+      "stock_count": 0,
+      "type": "buy"
+    },
     {
       "corp_name": "셀트리온",
       "stock_code": "068270",
@@ -540,17 +551,6 @@
       "change": -2.04,
       "stock_count": 225611,
       "type": "sell"
-    },
-    {
-      "corp_name": "엠앤씨솔루션",
-      "stock_code": "484870",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260701",
-      "flr_nm": "국민연금공단",
-      "ratio": 6.16,
-      "change": 1.17,
-      "stock_count": 106879,
-      "type": "buy"
     }
   ]
 }
