@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T02:49:03.100Z",
+  "updated_at": "2026-08-30T08:49:49.540Z",
   "count": 50,
   "data": [
     {
@@ -140,9 +140,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260803",
       "flr_nm": "국민연금공단",
-      "ratio": 0.61,
-      "change": -0.59,
-      "stock_count": 55705,
+      "ratio": 12.88,
+      "change": -0.27,
+      "stock_count": 25137,
       "type": "sell"
     },
     {
@@ -152,9 +152,9 @@
       "rcept_dt": "20260803",
       "flr_nm": "국민연금공단",
       "ratio": 0,
-      "change": -3.37,
-      "stock_count": 145719,
-      "type": "sell"
+      "change": 0,
+      "stock_count": 210,
+      "type": "buy"
     },
     {
       "corp_name": "한화엔진",
@@ -228,9 +228,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260728",
       "flr_nm": "국민연금공단",
-      "ratio": 0.61,
-      "change": -0.59,
-      "stock_count": 55705,
+      "ratio": 12.88,
+      "change": -0.27,
+      "stock_count": 25137,
       "type": "sell"
     },
     {
@@ -239,9 +239,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260723",
       "flr_nm": "국민연금공단",
-      "ratio": 0.61,
-      "change": -0.59,
-      "stock_count": 55705,
+      "ratio": 12.88,
+      "change": -0.27,
+      "stock_count": 25137,
       "type": "sell"
     },
     {
@@ -415,9 +415,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260702",
       "flr_nm": "국민연금공단",
-      "ratio": 0.61,
-      "change": -0.59,
-      "stock_count": 55705,
+      "ratio": 12.88,
+      "change": -0.27,
+      "stock_count": 25137,
       "type": "sell"
     },
     {
