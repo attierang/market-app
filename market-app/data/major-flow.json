@@ -2,7 +2,7 @@
   "title": "메이저 수급 현황",
   "unit": "억원",
   "note": "외국인+기관 합산 순매수 누적. 저수지 수위 = 최근 3년 누적 기준 백분위.",
-  "updated_at": "2026-08-30",
+  "updated_at": "2026-08-31",
   "rows": [
     {
       "month": "2024-01",
@@ -676,11 +676,11 @@
     },
     {
       "month": "2026-08",
-      "period": "2026-08-03 ~ 2026-08-14",
+      "period": "2026-08-03 ~ 2026-08-31",
       "chg": 0.0,
-      "foreign": 6453,
-      "institution": -15380,
-      "total": -8927,
+      "foreign": -100655,
+      "institution": -49614,
+      "total": -150269,
       "cumulative": 0,
       "water_level": 0.0,
       "days": [
@@ -743,6 +743,66 @@
           "foreign": 30387,
           "institution": -10298,
           "total": 20089
+        },
+        {
+          "date": "08-18",
+          "foreign": 914,
+          "institution": -7951,
+          "total": -7037
+        },
+        {
+          "date": "08-19",
+          "foreign": -34726,
+          "institution": -13390,
+          "total": -48116
+        },
+        {
+          "date": "08-20",
+          "foreign": 17068,
+          "institution": -4895,
+          "total": 12173
+        },
+        {
+          "date": "08-21",
+          "foreign": -1760,
+          "institution": 2481,
+          "total": 721
+        },
+        {
+          "date": "08-24",
+          "foreign": -36691,
+          "institution": -12901,
+          "total": -49592
+        },
+        {
+          "date": "08-25",
+          "foreign": -38140,
+          "institution": 11711,
+          "total": -26429
+        },
+        {
+          "date": "08-26",
+          "foreign": -1148,
+          "institution": 7615,
+          "total": 6467
+        },
+        {
+          "date": "08-27",
+          "foreign": 1333,
+          "institution": 1835,
+          "total": 3168
+        },
+        {
+          "date": "08-28",
+          "foreign": -8525,
+          "institution": -11876,
+          "total": -20401
+        },
+        {
+          "date": "08-31",
+          "foreign": -5433,
+          "institution": -6863,
+          "total": -12296
         }
       ]
     }
