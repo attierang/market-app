@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T07:55:52.825Z",
+  "updated_at": "2026-09-03T11:52:22.600Z",
   "date": "20260903",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -55,94 +55,94 @@
     },
     {
       "rank": 8,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "1982",
+      "code": "047050",
+      "name": "포스코인터내셔널",
+      "price": "55500",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25840",
-      "direction": "down"
-    },
-    {
-      "rank": 10,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13295",
       "direction": "down"
     },
     {
+      "rank": 10,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "1982",
+      "direction": "up"
+    },
+    {
       "rank": 11,
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25840",
+      "direction": "down"
+    },
+    {
+      "rank": 12,
       "code": "069500",
       "name": "KODEX 200",
       "price": "103610",
       "direction": "up"
     },
     {
-      "rank": 12,
+      "rank": 13,
+      "code": "022100",
+      "name": "포스코DX",
+      "price": "21400",
+      "direction": "up"
+    },
+    {
+      "rank": 14,
       "code": "088350",
       "name": "한화생명",
       "price": "6110",
       "direction": "up"
     },
     {
-      "rank": 13,
+      "rank": 15,
       "code": "079650",
       "name": "서산",
       "price": "7570",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 16,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "23485",
       "direction": "down"
     },
     {
-      "rank": 15,
+      "rank": 17,
       "code": "122630",
       "name": "KODEX 레버리지",
       "price": "99100",
       "direction": "up"
     },
     {
-      "rank": 16,
+      "rank": 18,
       "code": "0193T0",
       "name": "KODEX SK하이닉스단일종목레버리지",
       "price": "8920",
       "direction": "down"
     },
     {
-      "rank": 17,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "26205",
-      "direction": "down"
-    },
-    {
-      "rank": 18,
-      "code": "004310",
-      "name": "현대약품",
-      "price": "7680",
-      "direction": "up"
-    },
-    {
       "rank": 19,
-      "code": "288980",
-      "name": "모아데이타",
-      "price": "322",
+      "code": "316140",
+      "name": "우리금융지주",
+      "price": "34650",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "032940",
-      "name": "원익",
-      "price": "8580",
-      "direction": "up"
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "26205",
+      "direction": "down"
     }
   ],
   "kospi_foreigner_sell": [
@@ -197,94 +197,94 @@
     },
     {
       "rank": 8,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "1982",
+      "code": "047050",
+      "name": "포스코인터내셔널",
+      "price": "55500",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25840",
-      "direction": "down"
-    },
-    {
-      "rank": 10,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13295",
       "direction": "down"
     },
     {
+      "rank": 10,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "1982",
+      "direction": "up"
+    },
+    {
       "rank": 11,
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25840",
+      "direction": "down"
+    },
+    {
+      "rank": 12,
       "code": "069500",
       "name": "KODEX 200",
       "price": "103610",
       "direction": "up"
     },
     {
-      "rank": 12,
+      "rank": 13,
+      "code": "022100",
+      "name": "포스코DX",
+      "price": "21400",
+      "direction": "up"
+    },
+    {
+      "rank": 14,
       "code": "088350",
       "name": "한화생명",
       "price": "6110",
       "direction": "up"
     },
     {
-      "rank": 13,
+      "rank": 15,
       "code": "079650",
       "name": "서산",
       "price": "7570",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 16,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "23485",
       "direction": "down"
     },
     {
-      "rank": 15,
+      "rank": 17,
       "code": "122630",
       "name": "KODEX 레버리지",
       "price": "99100",
       "direction": "up"
     },
     {
-      "rank": 16,
+      "rank": 18,
       "code": "0193T0",
       "name": "KODEX SK하이닉스단일종목레버리지",
       "price": "8920",
       "direction": "down"
     },
     {
-      "rank": 17,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "26205",
-      "direction": "down"
-    },
-    {
-      "rank": 18,
-      "code": "004310",
-      "name": "현대약품",
-      "price": "7680",
-      "direction": "up"
-    },
-    {
       "rank": 19,
-      "code": "288980",
-      "name": "모아데이타",
-      "price": "322",
+      "code": "316140",
+      "name": "우리금융지주",
+      "price": "34650",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "032940",
-      "name": "원익",
-      "price": "8580",
-      "direction": "up"
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "26205",
+      "direction": "down"
     }
   ],
   "kospi_institute_buy": [
@@ -623,94 +623,94 @@
     },
     {
       "rank": 8,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "1982",
+      "code": "047050",
+      "name": "포스코인터내셔널",
+      "price": "55500",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25840",
-      "direction": "down"
-    },
-    {
-      "rank": 10,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13295",
       "direction": "down"
     },
     {
+      "rank": 10,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "1982",
+      "direction": "up"
+    },
+    {
       "rank": 11,
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25840",
+      "direction": "down"
+    },
+    {
+      "rank": 12,
       "code": "069500",
       "name": "KODEX 200",
       "price": "103610",
       "direction": "up"
     },
     {
-      "rank": 12,
+      "rank": 13,
+      "code": "022100",
+      "name": "포스코DX",
+      "price": "21400",
+      "direction": "up"
+    },
+    {
+      "rank": 14,
       "code": "088350",
       "name": "한화생명",
       "price": "6110",
       "direction": "up"
     },
     {
-      "rank": 13,
+      "rank": 15,
       "code": "079650",
       "name": "서산",
       "price": "7570",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 16,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "23485",
       "direction": "down"
     },
     {
-      "rank": 15,
+      "rank": 17,
       "code": "122630",
       "name": "KODEX 레버리지",
       "price": "99100",
       "direction": "up"
     },
     {
-      "rank": 16,
+      "rank": 18,
       "code": "0193T0",
       "name": "KODEX SK하이닉스단일종목레버리지",
       "price": "8920",
       "direction": "down"
     },
     {
-      "rank": 17,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "26205",
-      "direction": "down"
-    },
-    {
-      "rank": 18,
-      "code": "004310",
-      "name": "현대약품",
-      "price": "7680",
-      "direction": "up"
-    },
-    {
       "rank": 19,
-      "code": "288980",
-      "name": "모아데이타",
-      "price": "322",
+      "code": "316140",
+      "name": "우리금융지주",
+      "price": "34650",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "032940",
-      "name": "원익",
-      "price": "8580",
-      "direction": "up"
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "26205",
+      "direction": "down"
     }
   ],
   "kospi_institute": [
@@ -907,94 +907,94 @@
     },
     {
       "rank": 8,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "1982",
+      "code": "047050",
+      "name": "포스코인터내셔널",
+      "price": "55500",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25840",
-      "direction": "down"
-    },
-    {
-      "rank": 10,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13295",
       "direction": "down"
     },
     {
+      "rank": 10,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "1982",
+      "direction": "up"
+    },
+    {
       "rank": 11,
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25840",
+      "direction": "down"
+    },
+    {
+      "rank": 12,
       "code": "069500",
       "name": "KODEX 200",
       "price": "103610",
       "direction": "up"
     },
     {
-      "rank": 12,
+      "rank": 13,
+      "code": "022100",
+      "name": "포스코DX",
+      "price": "21400",
+      "direction": "up"
+    },
+    {
+      "rank": 14,
       "code": "088350",
       "name": "한화생명",
       "price": "6110",
       "direction": "up"
     },
     {
-      "rank": 13,
+      "rank": 15,
       "code": "079650",
       "name": "서산",
       "price": "7570",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 16,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "23485",
       "direction": "down"
     },
     {
-      "rank": 15,
+      "rank": 17,
       "code": "122630",
       "name": "KODEX 레버리지",
       "price": "99100",
       "direction": "up"
     },
     {
-      "rank": 16,
+      "rank": 18,
       "code": "0193T0",
       "name": "KODEX SK하이닉스단일종목레버리지",
       "price": "8920",
       "direction": "down"
     },
     {
-      "rank": 17,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "26205",
-      "direction": "down"
-    },
-    {
-      "rank": 18,
-      "code": "004310",
-      "name": "현대약품",
-      "price": "7680",
-      "direction": "up"
-    },
-    {
       "rank": 19,
-      "code": "288980",
-      "name": "모아데이타",
-      "price": "322",
+      "code": "316140",
+      "name": "우리금융지주",
+      "price": "34650",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "032940",
-      "name": "원익",
-      "price": "8580",
-      "direction": "up"
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "26205",
+      "direction": "down"
     }
   ],
   "kosdaq": []
