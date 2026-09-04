@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T04:55:18.487Z",
+  "updated_at": "2026-09-04T13:43:43.204Z",
   "count": 50,
   "data": [
     {
@@ -107,10 +107,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260731",
       "flr_nm": "국민연금공단",
-      "ratio": 48.78,
-      "change": 0.13,
-      "stock_count": 26805,
-      "type": "buy"
+      "ratio": 15.65,
+      "change": -33.13,
+      "stock_count": 6859254,
+      "type": "sell"
     },
     {
       "corp_name": "케이씨씨",
