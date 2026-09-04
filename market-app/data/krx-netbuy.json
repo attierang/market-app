@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T07:51:56.076Z",
+  "updated_at": "2026-09-04T11:55:19.462Z",
   "date": "20260904",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -69,24 +69,24 @@
     },
     {
       "rank": 10,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13820",
+      "direction": "up"
+    },
+    {
+      "rank": 11,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "23620",
       "direction": "up"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "code": "033340",
       "name": "좋은사람들",
       "price": "551",
       "direction": "down"
-    },
-    {
-      "rank": 12,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13820",
-      "direction": "up"
     },
     {
       "rank": 13,
@@ -211,24 +211,24 @@
     },
     {
       "rank": 10,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13820",
+      "direction": "up"
+    },
+    {
+      "rank": 11,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "23620",
       "direction": "up"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "code": "033340",
       "name": "좋은사람들",
       "price": "551",
       "direction": "down"
-    },
-    {
-      "rank": 12,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13820",
-      "direction": "up"
     },
     {
       "rank": 13,
@@ -637,24 +637,24 @@
     },
     {
       "rank": 10,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13820",
+      "direction": "up"
+    },
+    {
+      "rank": 11,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "23620",
       "direction": "up"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "code": "033340",
       "name": "좋은사람들",
       "price": "551",
       "direction": "down"
-    },
-    {
-      "rank": 12,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13820",
-      "direction": "up"
     },
     {
       "rank": 13,
@@ -921,24 +921,24 @@
     },
     {
       "rank": 10,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13820",
+      "direction": "up"
+    },
+    {
+      "rank": 11,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "23620",
       "direction": "up"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "code": "033340",
       "name": "좋은사람들",
       "price": "551",
       "direction": "down"
-    },
-    {
-      "rank": 12,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13820",
-      "direction": "up"
     },
     {
       "rank": 13,
