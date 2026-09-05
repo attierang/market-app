@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05T07:05:42.987Z",
+  "updated_at": "2026-09-05T11:24:27.138Z",
   "count": 50,
   "data": [
     {
@@ -283,10 +283,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 10.07,
-      "change": 10.07,
-      "stock_count": 663955,
-      "type": "buy"
+      "ratio": 30.33,
+      "change": -0.53,
+      "stock_count": 158061,
+      "type": "sell"
     },
     {
       "corp_name": "와이지엔터테인먼트",
