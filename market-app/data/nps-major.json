@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-09-08T05:31:55.031Z",
+  "updated_at": "2026-09-08T10:00:55.477Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "HD현대중공업",
+      "stock_code": "329180",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20260908",
+      "flr_nm": "국민연금공단",
+      "ratio": 75.02,
+      "change": 0,
+      "stock_count": 0,
+      "type": "buy"
+    },
     {
       "corp_name": "HS효성첨단소재",
       "stock_code": "298050",
@@ -540,17 +551,6 @@
       "change": -1.06,
       "stock_count": 109354,
       "type": "sell"
-    },
-    {
-      "corp_name": "세아제강지주",
-      "stock_code": "003030",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20260701",
-      "flr_nm": "국민연금공단",
-      "ratio": 11.21,
-      "change": 1.03,
-      "stock_count": 42330,
-      "type": "buy"
     }
   ]
 }
