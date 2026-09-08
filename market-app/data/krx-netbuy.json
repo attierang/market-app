@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T07:57:27.165Z",
+  "updated_at": "2026-09-08T11:55:28.925Z",
   "date": "20260908",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -97,38 +97,38 @@
     },
     {
       "rank": 14,
-      "code": "047040",
-      "name": "대우건설",
-      "price": "19970",
-      "direction": "up"
-    },
-    {
-      "rank": 15,
       "code": "069500",
       "name": "KODEX 200",
       "price": "110335",
       "direction": "down"
     },
     {
+      "rank": 15,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13690",
+      "direction": "down"
+    },
+    {
       "rank": 16,
+      "code": "047040",
+      "name": "대우건설",
+      "price": "19970",
+      "direction": "up"
+    },
+    {
+      "rank": 17,
       "code": "162300",
       "name": "신스틸",
       "price": "2470",
       "direction": "up"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "code": "251340",
       "name": "KODEX 코스닥150선물인버스",
       "price": "2485",
       "direction": "up"
-    },
-    {
-      "rank": 18,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13690",
-      "direction": "down"
     },
     {
       "rank": 19,
@@ -239,38 +239,38 @@
     },
     {
       "rank": 14,
-      "code": "047040",
-      "name": "대우건설",
-      "price": "19970",
-      "direction": "up"
-    },
-    {
-      "rank": 15,
       "code": "069500",
       "name": "KODEX 200",
       "price": "110335",
       "direction": "down"
     },
     {
+      "rank": 15,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13690",
+      "direction": "down"
+    },
+    {
       "rank": 16,
+      "code": "047040",
+      "name": "대우건설",
+      "price": "19970",
+      "direction": "up"
+    },
+    {
+      "rank": 17,
       "code": "162300",
       "name": "신스틸",
       "price": "2470",
       "direction": "up"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "code": "251340",
       "name": "KODEX 코스닥150선물인버스",
       "price": "2485",
       "direction": "up"
-    },
-    {
-      "rank": 18,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13690",
-      "direction": "down"
     },
     {
       "rank": 19,
@@ -665,38 +665,38 @@
     },
     {
       "rank": 14,
-      "code": "047040",
-      "name": "대우건설",
-      "price": "19970",
-      "direction": "up"
-    },
-    {
-      "rank": 15,
       "code": "069500",
       "name": "KODEX 200",
       "price": "110335",
       "direction": "down"
     },
     {
+      "rank": 15,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13690",
+      "direction": "down"
+    },
+    {
       "rank": 16,
+      "code": "047040",
+      "name": "대우건설",
+      "price": "19970",
+      "direction": "up"
+    },
+    {
+      "rank": 17,
       "code": "162300",
       "name": "신스틸",
       "price": "2470",
       "direction": "up"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "code": "251340",
       "name": "KODEX 코스닥150선물인버스",
       "price": "2485",
       "direction": "up"
-    },
-    {
-      "rank": 18,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13690",
-      "direction": "down"
     },
     {
       "rank": 19,
@@ -949,38 +949,38 @@
     },
     {
       "rank": 14,
-      "code": "047040",
-      "name": "대우건설",
-      "price": "19970",
-      "direction": "up"
-    },
-    {
-      "rank": 15,
       "code": "069500",
       "name": "KODEX 200",
       "price": "110335",
       "direction": "down"
     },
     {
+      "rank": 15,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13690",
+      "direction": "down"
+    },
+    {
       "rank": 16,
+      "code": "047040",
+      "name": "대우건설",
+      "price": "19970",
+      "direction": "up"
+    },
+    {
+      "rank": 17,
       "code": "162300",
       "name": "신스틸",
       "price": "2470",
       "direction": "up"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "code": "251340",
       "name": "KODEX 코스닥150선물인버스",
       "price": "2485",
       "direction": "up"
-    },
-    {
-      "rank": 18,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13690",
-      "direction": "down"
     },
     {
       "rank": 19,
