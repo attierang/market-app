@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T01:25:03.789Z",
+  "updated_at": "2026-09-09T11:39:57.100Z",
   "count": 50,
   "data": [
     {
@@ -43,7 +43,7 @@
       "flr_nm": "국민연금공단",
       "ratio": 28.61,
       "change": 0,
-      "stock_count": 3457,
+      "stock_count": 11676,
       "type": "buy"
     },
     {
@@ -85,10 +85,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260803",
       "flr_nm": "국민연금공단",
-      "ratio": 66.85,
-      "change": 0,
-      "stock_count": 0,
-      "type": "buy"
+      "ratio": 5.11,
+      "change": -2.07,
+      "stock_count": 1727978,
+      "type": "sell"
     },
     {
       "corp_name": "삼성바이오로직스",
