@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T08:00:21.055Z",
+  "updated_at": "2026-09-09T12:05:16.348Z",
   "date": "20260909",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -55,16 +55,16 @@
     },
     {
       "rank": 8,
-      "code": "162300",
-      "name": "신스틸",
-      "price": "2765",
+      "code": "032820",
+      "name": "우리기술",
+      "price": "14320",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "032820",
-      "name": "우리기술",
-      "price": "14320",
+      "code": "162300",
+      "name": "신스틸",
+      "price": "2765",
       "direction": "up"
     },
     {
@@ -90,17 +90,17 @@
     },
     {
       "rank": 13,
-      "code": "0197X0",
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "5595",
-      "direction": "down"
-    },
-    {
-      "rank": 14,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "14120",
       "direction": "up"
+    },
+    {
+      "rank": 14,
+      "code": "0197X0",
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "price": "5595",
+      "direction": "down"
     },
     {
       "rank": 15,
@@ -197,16 +197,16 @@
     },
     {
       "rank": 8,
-      "code": "162300",
-      "name": "신스틸",
-      "price": "2765",
+      "code": "032820",
+      "name": "우리기술",
+      "price": "14320",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "032820",
-      "name": "우리기술",
-      "price": "14320",
+      "code": "162300",
+      "name": "신스틸",
+      "price": "2765",
       "direction": "up"
     },
     {
@@ -232,17 +232,17 @@
     },
     {
       "rank": 13,
-      "code": "0197X0",
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "5595",
-      "direction": "down"
-    },
-    {
-      "rank": 14,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "14120",
       "direction": "up"
+    },
+    {
+      "rank": 14,
+      "code": "0197X0",
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "price": "5595",
+      "direction": "down"
     },
     {
       "rank": 15,
@@ -623,16 +623,16 @@
     },
     {
       "rank": 8,
-      "code": "162300",
-      "name": "신스틸",
-      "price": "2765",
+      "code": "032820",
+      "name": "우리기술",
+      "price": "14320",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "032820",
-      "name": "우리기술",
-      "price": "14320",
+      "code": "162300",
+      "name": "신스틸",
+      "price": "2765",
       "direction": "up"
     },
     {
@@ -658,17 +658,17 @@
     },
     {
       "rank": 13,
-      "code": "0197X0",
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "5595",
-      "direction": "down"
-    },
-    {
-      "rank": 14,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "14120",
       "direction": "up"
+    },
+    {
+      "rank": 14,
+      "code": "0197X0",
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "price": "5595",
+      "direction": "down"
     },
     {
       "rank": 15,
@@ -907,16 +907,16 @@
     },
     {
       "rank": 8,
-      "code": "162300",
-      "name": "신스틸",
-      "price": "2765",
+      "code": "032820",
+      "name": "우리기술",
+      "price": "14320",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "032820",
-      "name": "우리기술",
-      "price": "14320",
+      "code": "162300",
+      "name": "신스틸",
+      "price": "2765",
       "direction": "up"
     },
     {
@@ -942,17 +942,17 @@
     },
     {
       "rank": 13,
-      "code": "0197X0",
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "5595",
-      "direction": "down"
-    },
-    {
-      "rank": 14,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "14120",
       "direction": "up"
+    },
+    {
+      "rank": 14,
+      "code": "0197X0",
+      "name": "SOL SK하이닉스선물단일종목인버스2X",
+      "price": "5595",
+      "direction": "down"
     },
     {
       "rank": 15,
