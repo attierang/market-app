@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T07:59:51.712Z",
+  "updated_at": "2026-09-10T11:59:37.329Z",
   "date": "20260910",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -62,16 +62,16 @@
     },
     {
       "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25425",
+      "code": "082660",
+      "name": "코스나인",
+      "price": "13",
       "direction": "down"
     },
     {
       "rank": 10,
-      "code": "082660",
-      "name": "코스나인",
-      "price": "13",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25425",
       "direction": "down"
     },
     {
@@ -90,17 +90,17 @@
     },
     {
       "rank": 13,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "11910",
-      "direction": "down"
-    },
-    {
-      "rank": 14,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "14365",
       "direction": "up"
+    },
+    {
+      "rank": 14,
+      "code": "0193T0",
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "11910",
+      "direction": "down"
     },
     {
       "rank": 15,
@@ -132,10 +132,10 @@
     },
     {
       "rank": 19,
-      "code": "0197X0",
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "5605",
-      "direction": "up"
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "269000",
+      "direction": "down"
     },
     {
       "rank": 20,
@@ -204,16 +204,16 @@
     },
     {
       "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25425",
+      "code": "082660",
+      "name": "코스나인",
+      "price": "13",
       "direction": "down"
     },
     {
       "rank": 10,
-      "code": "082660",
-      "name": "코스나인",
-      "price": "13",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25425",
       "direction": "down"
     },
     {
@@ -232,17 +232,17 @@
     },
     {
       "rank": 13,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "11910",
-      "direction": "down"
-    },
-    {
-      "rank": 14,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "14365",
       "direction": "up"
+    },
+    {
+      "rank": 14,
+      "code": "0193T0",
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "11910",
+      "direction": "down"
     },
     {
       "rank": 15,
@@ -274,10 +274,10 @@
     },
     {
       "rank": 19,
-      "code": "0197X0",
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "5605",
-      "direction": "up"
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "269000",
+      "direction": "down"
     },
     {
       "rank": 20,
@@ -630,16 +630,16 @@
     },
     {
       "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25425",
+      "code": "082660",
+      "name": "코스나인",
+      "price": "13",
       "direction": "down"
     },
     {
       "rank": 10,
-      "code": "082660",
-      "name": "코스나인",
-      "price": "13",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25425",
       "direction": "down"
     },
     {
@@ -658,17 +658,17 @@
     },
     {
       "rank": 13,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "11910",
-      "direction": "down"
-    },
-    {
-      "rank": 14,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "14365",
       "direction": "up"
+    },
+    {
+      "rank": 14,
+      "code": "0193T0",
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "11910",
+      "direction": "down"
     },
     {
       "rank": 15,
@@ -700,10 +700,10 @@
     },
     {
       "rank": 19,
-      "code": "0197X0",
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "5605",
-      "direction": "up"
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "269000",
+      "direction": "down"
     },
     {
       "rank": 20,
@@ -914,16 +914,16 @@
     },
     {
       "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25425",
+      "code": "082660",
+      "name": "코스나인",
+      "price": "13",
       "direction": "down"
     },
     {
       "rank": 10,
-      "code": "082660",
-      "name": "코스나인",
-      "price": "13",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25425",
       "direction": "down"
     },
     {
@@ -942,17 +942,17 @@
     },
     {
       "rank": 13,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "11910",
-      "direction": "down"
-    },
-    {
-      "rank": 14,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "14365",
       "direction": "up"
+    },
+    {
+      "rank": 14,
+      "code": "0193T0",
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "11910",
+      "direction": "down"
     },
     {
       "rank": 15,
@@ -984,10 +984,10 @@
     },
     {
       "rank": 19,
-      "code": "0197X0",
-      "name": "SOL SK하이닉스선물단일종목인버스2X",
-      "price": "5605",
-      "direction": "up"
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "269000",
+      "direction": "down"
     },
     {
       "rank": 20,
