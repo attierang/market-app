@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T07:56:04.068Z",
+  "updated_at": "2026-09-11T11:58:32.129Z",
   "date": "20260911",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -76,9 +76,9 @@
     },
     {
       "rank": 11,
-      "code": "069540",
-      "name": "빛과전자",
-      "price": "3870",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "109500",
       "direction": "down"
     },
     {
@@ -90,9 +90,9 @@
     },
     {
       "rank": 13,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "109500",
+      "code": "069540",
+      "name": "빛과전자",
+      "price": "3870",
       "direction": "down"
     },
     {
@@ -218,9 +218,9 @@
     },
     {
       "rank": 11,
-      "code": "069540",
-      "name": "빛과전자",
-      "price": "3870",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "109500",
       "direction": "down"
     },
     {
@@ -232,9 +232,9 @@
     },
     {
       "rank": 13,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "109500",
+      "code": "069540",
+      "name": "빛과전자",
+      "price": "3870",
       "direction": "down"
     },
     {
@@ -644,9 +644,9 @@
     },
     {
       "rank": 11,
-      "code": "069540",
-      "name": "빛과전자",
-      "price": "3870",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "109500",
       "direction": "down"
     },
     {
@@ -658,9 +658,9 @@
     },
     {
       "rank": 13,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "109500",
+      "code": "069540",
+      "name": "빛과전자",
+      "price": "3870",
       "direction": "down"
     },
     {
@@ -928,9 +928,9 @@
     },
     {
       "rank": 11,
-      "code": "069540",
-      "name": "빛과전자",
-      "price": "3870",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "109500",
       "direction": "down"
     },
     {
@@ -942,9 +942,9 @@
     },
     {
       "rank": 13,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "109500",
+      "code": "069540",
+      "name": "빛과전자",
+      "price": "3870",
       "direction": "down"
     },
     {
