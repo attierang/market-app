@@ -1,7 +1,40 @@
 {
-  "updated_at": "2026-09-14T02:40:34.380Z",
+  "updated_at": "2026-09-14T08:27:24.182Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "대덕전자",
+      "stock_code": "353200",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260914",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 678,
+      "type": "buy"
+    },
+    {
+      "corp_name": "GS리테일",
+      "stock_code": "007070",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260914",
+      "flr_nm": "국민연금공단",
+      "ratio": 58.62,
+      "change": 0.72,
+      "stock_count": 11624536,
+      "type": "buy"
+    },
+    {
+      "corp_name": "S-Oil",
+      "stock_code": "010950",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260914",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 300,
+      "type": "buy"
+    },
     {
       "corp_name": "NHN",
       "stock_code": "181710",
@@ -517,39 +550,6 @@
       "ratio": 11.94,
       "change": 1.92,
       "stock_count": 204033,
-      "type": "buy"
-    },
-    {
-      "corp_name": "HL만도",
-      "stock_code": "204320",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 35,
-      "type": "buy"
-    },
-    {
-      "corp_name": "코스맥스",
-      "stock_code": "192820",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 11.08,
-      "change": -1.21,
-      "stock_count": 138142,
-      "type": "sell"
-    },
-    {
-      "corp_name": "한국콜마",
-      "stock_code": "161890",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260702",
-      "flr_nm": "국민연금공단",
-      "ratio": 11.72,
-      "change": 0.41,
-      "stock_count": 96428,
       "type": "buy"
     }
   ]
