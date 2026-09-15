@@ -2,7 +2,7 @@
   "title": "메이저 수급 현황",
   "unit": "억원",
   "note": "외국인+기관 합산 순매수 누적. 저수지 수위 = 최근 3년 누적 기준 백분위.",
-  "updated_at": "2026-09-14",
+  "updated_at": "2026-09-15",
   "rows": [
     {
       "month": "2024-01",
@@ -803,6 +803,78 @@
           "foreign": -6434,
           "institution": -7891,
           "total": -14325
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "period": "2026-09-02 ~ 2026-09-15",
+      "chg": 0.0,
+      "foreign": -73469,
+      "institution": 26169,
+      "total": -47300,
+      "cumulative": 0,
+      "water_level": 0.0,
+      "days": [
+        {
+          "date": "09-02",
+          "foreign": -19173,
+          "institution": -20361,
+          "total": -39534
+        },
+        {
+          "date": "09-03",
+          "foreign": 414,
+          "institution": 9143,
+          "total": 9557
+        },
+        {
+          "date": "09-04",
+          "foreign": 4796,
+          "institution": 16694,
+          "total": 21490
+        },
+        {
+          "date": "09-07",
+          "foreign": 25532,
+          "institution": 26491,
+          "total": 52023
+        },
+        {
+          "date": "09-08",
+          "foreign": 6316,
+          "institution": 6427,
+          "total": 12743
+        },
+        {
+          "date": "09-09",
+          "foreign": -4348,
+          "institution": 9422,
+          "total": 5074
+        },
+        {
+          "date": "09-10",
+          "foreign": -26217,
+          "institution": 5744,
+          "total": -20473
+        },
+        {
+          "date": "09-11",
+          "foreign": -22984,
+          "institution": -12184,
+          "total": -35168
+        },
+        {
+          "date": "09-14",
+          "foreign": -33363,
+          "institution": -11869,
+          "total": -45232
+        },
+        {
+          "date": "09-15",
+          "foreign": -4442,
+          "institution": -3338,
+          "total": -7780
         }
       ]
     }
