@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T08:32:52.961Z",
+  "updated_at": "2026-09-15T12:23:39.785Z",
   "date": "20260915",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -57,7 +57,7 @@
       "rank": 8,
       "code": "067290",
       "name": "JW신약",
-      "price": "3670",
+      "price": "3710",
       "direction": "up"
     },
     {
@@ -69,38 +69,38 @@
     },
     {
       "rank": 10,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13685",
+      "direction": "up"
+    },
+    {
+      "rank": 11,
       "code": "Q530107",
       "name": "삼성 인버스 2X 코스닥150 선물 ETN",
       "price": "1838",
       "direction": "down"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "code": "017900",
       "name": "광전자",
-      "price": "10590",
+      "price": "10720",
       "direction": "up"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "23295",
       "direction": "up"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "code": "203650",
       "name": "드림시큐리티",
-      "price": "2750",
+      "price": "2785",
       "direction": "down"
-    },
-    {
-      "rank": 14,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13685",
-      "direction": "up"
     },
     {
       "rank": 15,
@@ -118,31 +118,31 @@
     },
     {
       "rank": 17,
-      "code": "010580",
-      "name": "에스엠벡셀",
-      "price": "2780",
+      "code": "201490",
+      "name": "미투온",
+      "price": "4030",
       "direction": "up"
     },
     {
       "rank": 18,
-      "code": "014950",
-      "name": "삼익제약",
-      "price": "11440",
+      "code": "010580",
+      "name": "에스엠벡셀",
+      "price": "2675",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "26150",
+      "code": "014950",
+      "name": "삼익제약",
+      "price": "11420",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "9840",
-      "direction": "down"
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "26150",
+      "direction": "up"
     }
   ],
   "kospi_foreigner_sell": [
@@ -199,7 +199,7 @@
       "rank": 8,
       "code": "067290",
       "name": "JW신약",
-      "price": "3670",
+      "price": "3710",
       "direction": "up"
     },
     {
@@ -211,38 +211,38 @@
     },
     {
       "rank": 10,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13685",
+      "direction": "up"
+    },
+    {
+      "rank": 11,
       "code": "Q530107",
       "name": "삼성 인버스 2X 코스닥150 선물 ETN",
       "price": "1838",
       "direction": "down"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "code": "017900",
       "name": "광전자",
-      "price": "10590",
+      "price": "10720",
       "direction": "up"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "23295",
       "direction": "up"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "code": "203650",
       "name": "드림시큐리티",
-      "price": "2750",
+      "price": "2785",
       "direction": "down"
-    },
-    {
-      "rank": 14,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13685",
-      "direction": "up"
     },
     {
       "rank": 15,
@@ -260,31 +260,31 @@
     },
     {
       "rank": 17,
-      "code": "010580",
-      "name": "에스엠벡셀",
-      "price": "2780",
+      "code": "201490",
+      "name": "미투온",
+      "price": "4030",
       "direction": "up"
     },
     {
       "rank": 18,
-      "code": "014950",
-      "name": "삼익제약",
-      "price": "11440",
+      "code": "010580",
+      "name": "에스엠벡셀",
+      "price": "2675",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "26150",
+      "code": "014950",
+      "name": "삼익제약",
+      "price": "11420",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "9840",
-      "direction": "down"
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "26150",
+      "direction": "up"
     }
   ],
   "kospi_institute_buy": [
@@ -346,24 +346,24 @@
     },
     {
       "rank": 9,
-      "code": "062970",
-      "name": "한국첨단소재",
-      "price": "3360",
-      "direction": "up"
-    },
-    {
-      "rank": 10,
       "code": "006380",
       "name": "카프로",
       "price": "44",
       "direction": "down"
     },
     {
-      "rank": 11,
+      "rank": 10,
       "code": "0162Z0",
       "name": "RISE 삼성전자SK하이닉스채권혼합50",
       "price": "13205",
       "direction": "down"
+    },
+    {
+      "rank": 11,
+      "code": "062970",
+      "name": "한국첨단소재",
+      "price": "3360",
+      "direction": "up"
     },
     {
       "rank": 12,
@@ -488,24 +488,24 @@
     },
     {
       "rank": 9,
-      "code": "062970",
-      "name": "한국첨단소재",
-      "price": "3360",
-      "direction": "up"
-    },
-    {
-      "rank": 10,
       "code": "006380",
       "name": "카프로",
       "price": "44",
       "direction": "down"
     },
     {
-      "rank": 11,
+      "rank": 10,
       "code": "0162Z0",
       "name": "RISE 삼성전자SK하이닉스채권혼합50",
       "price": "13205",
       "direction": "down"
+    },
+    {
+      "rank": 11,
+      "code": "062970",
+      "name": "한국첨단소재",
+      "price": "3360",
+      "direction": "up"
     },
     {
       "rank": 12,
@@ -625,7 +625,7 @@
       "rank": 8,
       "code": "067290",
       "name": "JW신약",
-      "price": "3670",
+      "price": "3710",
       "direction": "up"
     },
     {
@@ -637,38 +637,38 @@
     },
     {
       "rank": 10,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13685",
+      "direction": "up"
+    },
+    {
+      "rank": 11,
       "code": "Q530107",
       "name": "삼성 인버스 2X 코스닥150 선물 ETN",
       "price": "1838",
       "direction": "down"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "code": "017900",
       "name": "광전자",
-      "price": "10590",
+      "price": "10720",
       "direction": "up"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "23295",
       "direction": "up"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "code": "203650",
       "name": "드림시큐리티",
-      "price": "2750",
+      "price": "2785",
       "direction": "down"
-    },
-    {
-      "rank": 14,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13685",
-      "direction": "up"
     },
     {
       "rank": 15,
@@ -686,31 +686,31 @@
     },
     {
       "rank": 17,
-      "code": "010580",
-      "name": "에스엠벡셀",
-      "price": "2780",
+      "code": "201490",
+      "name": "미투온",
+      "price": "4030",
       "direction": "up"
     },
     {
       "rank": 18,
-      "code": "014950",
-      "name": "삼익제약",
-      "price": "11440",
+      "code": "010580",
+      "name": "에스엠벡셀",
+      "price": "2675",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "26150",
+      "code": "014950",
+      "name": "삼익제약",
+      "price": "11420",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "9840",
-      "direction": "down"
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "26150",
+      "direction": "up"
     }
   ],
   "kospi_institute": [
@@ -772,24 +772,24 @@
     },
     {
       "rank": 9,
-      "code": "062970",
-      "name": "한국첨단소재",
-      "price": "3360",
-      "direction": "up"
-    },
-    {
-      "rank": 10,
       "code": "006380",
       "name": "카프로",
       "price": "44",
       "direction": "down"
     },
     {
-      "rank": 11,
+      "rank": 10,
       "code": "0162Z0",
       "name": "RISE 삼성전자SK하이닉스채권혼합50",
       "price": "13205",
       "direction": "down"
+    },
+    {
+      "rank": 11,
+      "code": "062970",
+      "name": "한국첨단소재",
+      "price": "3360",
+      "direction": "up"
     },
     {
       "rank": 12,
@@ -909,7 +909,7 @@
       "rank": 8,
       "code": "067290",
       "name": "JW신약",
-      "price": "3670",
+      "price": "3710",
       "direction": "up"
     },
     {
@@ -921,38 +921,38 @@
     },
     {
       "rank": 10,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13685",
+      "direction": "up"
+    },
+    {
+      "rank": 11,
       "code": "Q530107",
       "name": "삼성 인버스 2X 코스닥150 선물 ETN",
       "price": "1838",
       "direction": "down"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "code": "017900",
       "name": "광전자",
-      "price": "10590",
+      "price": "10720",
       "direction": "up"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "23295",
       "direction": "up"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "code": "203650",
       "name": "드림시큐리티",
-      "price": "2750",
+      "price": "2785",
       "direction": "down"
-    },
-    {
-      "rank": 14,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13685",
-      "direction": "up"
     },
     {
       "rank": 15,
@@ -970,31 +970,31 @@
     },
     {
       "rank": 17,
-      "code": "010580",
-      "name": "에스엠벡셀",
-      "price": "2780",
+      "code": "201490",
+      "name": "미투온",
+      "price": "4030",
       "direction": "up"
     },
     {
       "rank": 18,
-      "code": "014950",
-      "name": "삼익제약",
-      "price": "11440",
+      "code": "010580",
+      "name": "에스엠벡셀",
+      "price": "2675",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "26150",
+      "code": "014950",
+      "name": "삼익제약",
+      "price": "11420",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "9840",
-      "direction": "down"
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "26150",
+      "direction": "up"
     }
   ],
   "kosdaq": []
