@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T08:26:37.433Z",
+  "updated_at": "2026-09-16T12:21:36.113Z",
   "date": "20260916",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -29,7 +29,7 @@
       "rank": 4,
       "code": "069540",
       "name": "빛과전자",
-      "price": "4370",
+      "price": "4425",
       "direction": "up"
     },
     {
@@ -50,7 +50,7 @@
       "rank": 7,
       "code": "010170",
       "name": "대한광통신",
-      "price": "16100",
+      "price": "16230",
       "direction": "up"
     },
     {
@@ -78,28 +78,28 @@
       "rank": 11,
       "code": "062970",
       "name": "한국첨단소재",
-      "price": "3255",
-      "direction": "down"
+      "price": "3365",
+      "direction": "up"
     },
     {
       "rank": 12,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2450",
-      "direction": "down"
-    },
-    {
-      "rank": 13,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13775",
       "direction": "up"
     },
     {
+      "rank": 13,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2450",
+      "direction": "down"
+    },
+    {
       "rank": 14,
       "code": "413630",
       "name": "씨피시스템",
-      "price": "4675",
+      "price": "4680",
       "direction": "up"
     },
     {
@@ -113,7 +113,7 @@
       "rank": 16,
       "code": "321370",
       "name": "센서뷰",
-      "price": "1400",
+      "price": "1372",
       "direction": "up"
     },
     {
@@ -171,7 +171,7 @@
       "rank": 4,
       "code": "069540",
       "name": "빛과전자",
-      "price": "4370",
+      "price": "4425",
       "direction": "up"
     },
     {
@@ -192,7 +192,7 @@
       "rank": 7,
       "code": "010170",
       "name": "대한광통신",
-      "price": "16100",
+      "price": "16230",
       "direction": "up"
     },
     {
@@ -220,28 +220,28 @@
       "rank": 11,
       "code": "062970",
       "name": "한국첨단소재",
-      "price": "3255",
-      "direction": "down"
+      "price": "3365",
+      "direction": "up"
     },
     {
       "rank": 12,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2450",
-      "direction": "down"
-    },
-    {
-      "rank": 13,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13775",
       "direction": "up"
     },
     {
+      "rank": 13,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2450",
+      "direction": "down"
+    },
+    {
       "rank": 14,
       "code": "413630",
       "name": "씨피시스템",
-      "price": "4675",
+      "price": "4680",
       "direction": "up"
     },
     {
@@ -255,7 +255,7 @@
       "rank": 16,
       "code": "321370",
       "name": "센서뷰",
-      "price": "1400",
+      "price": "1372",
       "direction": "up"
     },
     {
@@ -597,7 +597,7 @@
       "rank": 4,
       "code": "069540",
       "name": "빛과전자",
-      "price": "4370",
+      "price": "4425",
       "direction": "up"
     },
     {
@@ -618,7 +618,7 @@
       "rank": 7,
       "code": "010170",
       "name": "대한광통신",
-      "price": "16100",
+      "price": "16230",
       "direction": "up"
     },
     {
@@ -646,28 +646,28 @@
       "rank": 11,
       "code": "062970",
       "name": "한국첨단소재",
-      "price": "3255",
-      "direction": "down"
+      "price": "3365",
+      "direction": "up"
     },
     {
       "rank": 12,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2450",
-      "direction": "down"
-    },
-    {
-      "rank": 13,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13775",
       "direction": "up"
     },
     {
+      "rank": 13,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2450",
+      "direction": "down"
+    },
+    {
       "rank": 14,
       "code": "413630",
       "name": "씨피시스템",
-      "price": "4675",
+      "price": "4680",
       "direction": "up"
     },
     {
@@ -681,7 +681,7 @@
       "rank": 16,
       "code": "321370",
       "name": "센서뷰",
-      "price": "1400",
+      "price": "1372",
       "direction": "up"
     },
     {
@@ -881,7 +881,7 @@
       "rank": 4,
       "code": "069540",
       "name": "빛과전자",
-      "price": "4370",
+      "price": "4425",
       "direction": "up"
     },
     {
@@ -902,7 +902,7 @@
       "rank": 7,
       "code": "010170",
       "name": "대한광통신",
-      "price": "16100",
+      "price": "16230",
       "direction": "up"
     },
     {
@@ -930,28 +930,28 @@
       "rank": 11,
       "code": "062970",
       "name": "한국첨단소재",
-      "price": "3255",
-      "direction": "down"
+      "price": "3365",
+      "direction": "up"
     },
     {
       "rank": 12,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2450",
-      "direction": "down"
-    },
-    {
-      "rank": 13,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13775",
       "direction": "up"
     },
     {
+      "rank": 13,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2450",
+      "direction": "down"
+    },
+    {
       "rank": 14,
       "code": "413630",
       "name": "씨피시스템",
-      "price": "4675",
+      "price": "4680",
       "direction": "up"
     },
     {
@@ -965,7 +965,7 @@
       "rank": 16,
       "code": "321370",
       "name": "센서뷰",
-      "price": "1400",
+      "price": "1372",
       "direction": "up"
     },
     {
