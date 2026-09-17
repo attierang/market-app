@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T08:31:57.444Z",
+  "updated_at": "2026-09-17T12:21:06.529Z",
   "date": "20260917",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -29,7 +29,7 @@
       "rank": 4,
       "code": "201490",
       "name": "미투온",
-      "price": "4615",
+      "price": "4550",
       "direction": "up"
     },
     {
@@ -50,7 +50,7 @@
       "rank": 7,
       "code": "321370",
       "name": "센서뷰",
-      "price": "1679",
+      "price": "1701",
       "direction": "up"
     },
     {
@@ -76,37 +76,37 @@
     },
     {
       "rank": 11,
-      "code": "027360",
-      "name": "아주IB투자",
-      "price": "3850",
-      "direction": "up"
-    },
-    {
-      "rank": 12,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2445",
-      "direction": "down"
-    },
-    {
-      "rank": 13,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13800",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 12,
+      "code": "027360",
+      "name": "아주IB투자",
+      "price": "3810",
+      "direction": "up"
+    },
+    {
+      "rank": 13,
       "code": "069500",
       "name": "KODEX 200",
       "price": "106280",
       "direction": "down"
     },
     {
+      "rank": 14,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2445",
+      "direction": "down"
+    },
+    {
       "rank": 15,
       "code": "010170",
       "name": "대한광통신",
-      "price": "16110",
+      "price": "16250",
       "direction": "up"
     },
     {
@@ -127,7 +127,7 @@
       "rank": 18,
       "code": "004310",
       "name": "현대약품",
-      "price": "10480",
+      "price": "10500",
       "direction": "up"
     },
     {
@@ -171,7 +171,7 @@
       "rank": 4,
       "code": "201490",
       "name": "미투온",
-      "price": "4615",
+      "price": "4550",
       "direction": "up"
     },
     {
@@ -192,7 +192,7 @@
       "rank": 7,
       "code": "321370",
       "name": "센서뷰",
-      "price": "1679",
+      "price": "1701",
       "direction": "up"
     },
     {
@@ -218,37 +218,37 @@
     },
     {
       "rank": 11,
-      "code": "027360",
-      "name": "아주IB투자",
-      "price": "3850",
-      "direction": "up"
-    },
-    {
-      "rank": 12,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2445",
-      "direction": "down"
-    },
-    {
-      "rank": 13,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13800",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 12,
+      "code": "027360",
+      "name": "아주IB투자",
+      "price": "3810",
+      "direction": "up"
+    },
+    {
+      "rank": 13,
       "code": "069500",
       "name": "KODEX 200",
       "price": "106280",
       "direction": "down"
     },
     {
+      "rank": 14,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2445",
+      "direction": "down"
+    },
+    {
       "rank": 15,
       "code": "010170",
       "name": "대한광통신",
-      "price": "16110",
+      "price": "16250",
       "direction": "up"
     },
     {
@@ -269,7 +269,7 @@
       "rank": 18,
       "code": "004310",
       "name": "현대약품",
-      "price": "10480",
+      "price": "10500",
       "direction": "up"
     },
     {
@@ -388,44 +388,44 @@
     },
     {
       "rank": 15,
+      "code": "140070",
+      "name": "서플러스글로벌",
+      "price": "2080",
+      "direction": "up"
+    },
+    {
+      "rank": 16,
       "code": "0193T0",
       "name": "KODEX SK하이닉스단일종목레버리지",
       "price": "10510",
       "direction": "down"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "code": "253160",
       "name": "PLUS 200선물인버스2X",
       "price": "160",
       "direction": "up"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "code": "329200",
       "name": "TIGER 리츠부동산인프라",
       "price": "4070",
       "direction": "up"
     },
     {
-      "rank": 18,
+      "rank": 19,
       "code": "008290",
       "name": "원풍물산",
       "price": "43",
       "direction": "down"
     },
     {
-      "rank": 19,
+      "rank": 20,
       "code": "453330",
       "name": "RISE 미국S&P500(H)",
       "price": "17980",
-      "direction": "up"
-    },
-    {
-      "rank": 20,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "26055",
       "direction": "up"
     }
   ],
@@ -530,44 +530,44 @@
     },
     {
       "rank": 15,
+      "code": "140070",
+      "name": "서플러스글로벌",
+      "price": "2080",
+      "direction": "up"
+    },
+    {
+      "rank": 16,
       "code": "0193T0",
       "name": "KODEX SK하이닉스단일종목레버리지",
       "price": "10510",
       "direction": "down"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "code": "253160",
       "name": "PLUS 200선물인버스2X",
       "price": "160",
       "direction": "up"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "code": "329200",
       "name": "TIGER 리츠부동산인프라",
       "price": "4070",
       "direction": "up"
     },
     {
-      "rank": 18,
+      "rank": 19,
       "code": "008290",
       "name": "원풍물산",
       "price": "43",
       "direction": "down"
     },
     {
-      "rank": 19,
+      "rank": 20,
       "code": "453330",
       "name": "RISE 미국S&P500(H)",
       "price": "17980",
-      "direction": "up"
-    },
-    {
-      "rank": 20,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "26055",
       "direction": "up"
     }
   ],
@@ -597,7 +597,7 @@
       "rank": 4,
       "code": "201490",
       "name": "미투온",
-      "price": "4615",
+      "price": "4550",
       "direction": "up"
     },
     {
@@ -618,7 +618,7 @@
       "rank": 7,
       "code": "321370",
       "name": "센서뷰",
-      "price": "1679",
+      "price": "1701",
       "direction": "up"
     },
     {
@@ -644,37 +644,37 @@
     },
     {
       "rank": 11,
-      "code": "027360",
-      "name": "아주IB투자",
-      "price": "3850",
-      "direction": "up"
-    },
-    {
-      "rank": 12,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2445",
-      "direction": "down"
-    },
-    {
-      "rank": 13,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13800",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 12,
+      "code": "027360",
+      "name": "아주IB투자",
+      "price": "3810",
+      "direction": "up"
+    },
+    {
+      "rank": 13,
       "code": "069500",
       "name": "KODEX 200",
       "price": "106280",
       "direction": "down"
     },
     {
+      "rank": 14,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2445",
+      "direction": "down"
+    },
+    {
       "rank": 15,
       "code": "010170",
       "name": "대한광통신",
-      "price": "16110",
+      "price": "16250",
       "direction": "up"
     },
     {
@@ -695,7 +695,7 @@
       "rank": 18,
       "code": "004310",
       "name": "현대약품",
-      "price": "10480",
+      "price": "10500",
       "direction": "up"
     },
     {
@@ -814,44 +814,44 @@
     },
     {
       "rank": 15,
+      "code": "140070",
+      "name": "서플러스글로벌",
+      "price": "2080",
+      "direction": "up"
+    },
+    {
+      "rank": 16,
       "code": "0193T0",
       "name": "KODEX SK하이닉스단일종목레버리지",
       "price": "10510",
       "direction": "down"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "code": "253160",
       "name": "PLUS 200선물인버스2X",
       "price": "160",
       "direction": "up"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "code": "329200",
       "name": "TIGER 리츠부동산인프라",
       "price": "4070",
       "direction": "up"
     },
     {
-      "rank": 18,
+      "rank": 19,
       "code": "008290",
       "name": "원풍물산",
       "price": "43",
       "direction": "down"
     },
     {
-      "rank": 19,
+      "rank": 20,
       "code": "453330",
       "name": "RISE 미국S&P500(H)",
       "price": "17980",
-      "direction": "up"
-    },
-    {
-      "rank": 20,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "26055",
       "direction": "up"
     }
   ],
@@ -881,7 +881,7 @@
       "rank": 4,
       "code": "201490",
       "name": "미투온",
-      "price": "4615",
+      "price": "4550",
       "direction": "up"
     },
     {
@@ -902,7 +902,7 @@
       "rank": 7,
       "code": "321370",
       "name": "센서뷰",
-      "price": "1679",
+      "price": "1701",
       "direction": "up"
     },
     {
@@ -928,37 +928,37 @@
     },
     {
       "rank": 11,
-      "code": "027360",
-      "name": "아주IB투자",
-      "price": "3850",
-      "direction": "up"
-    },
-    {
-      "rank": 12,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2445",
-      "direction": "down"
-    },
-    {
-      "rank": 13,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13800",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 12,
+      "code": "027360",
+      "name": "아주IB투자",
+      "price": "3810",
+      "direction": "up"
+    },
+    {
+      "rank": 13,
       "code": "069500",
       "name": "KODEX 200",
       "price": "106280",
       "direction": "down"
     },
     {
+      "rank": 14,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2445",
+      "direction": "down"
+    },
+    {
       "rank": 15,
       "code": "010170",
       "name": "대한광통신",
-      "price": "16110",
+      "price": "16250",
       "direction": "up"
     },
     {
@@ -979,7 +979,7 @@
       "rank": 18,
       "code": "004310",
       "name": "현대약품",
-      "price": "10480",
+      "price": "10500",
       "direction": "up"
     },
     {
