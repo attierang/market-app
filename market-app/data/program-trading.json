@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-17T03:56:15.537Z",
+  "updated_at": "2026-09-17T09:19:17.212Z",
   "kospi": {
     "market": "KOSPI",
-    "buyAmt": 2273266,
-    "sellAmt": 3365573,
-    "netAmt": -1092307,
-    "updatedAt": "125500"
+    "buyAmt": 4266697,
+    "sellAmt": 6260304,
+    "netAmt": -1993607,
+    "updatedAt": "181900"
   },
   "kosdaq": {
     "market": "KOSDAQ",
-    "buyAmt": 1010449,
-    "sellAmt": 1055591,
-    "netAmt": -45142,
-    "updatedAt": "125500"
+    "buyAmt": 1408042,
+    "sellAmt": 1454213,
+    "netAmt": -46171,
+    "updatedAt": "181900"
   }
 }
