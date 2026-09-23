@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T01:38:05.833Z",
+  "updated_at": "2026-09-23T07:08:55.648Z",
   "count": 50,
   "data": [
     {
@@ -360,10 +360,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20260701",
       "flr_nm": "국민연금공단",
-      "ratio": 21.17,
-      "change": 0.04,
-      "stock_count": 13743,
-      "type": "buy"
+      "ratio": 7.19,
+      "change": -0.14,
+      "stock_count": 47469,
+      "type": "sell"
     },
     {
       "corp_name": "브이엠",
