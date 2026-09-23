@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T08:26:16.899Z",
+  "updated_at": "2026-09-23T12:28:55.638Z",
   "date": "20260923",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -43,7 +43,7 @@
       "rank": 6,
       "code": "419050",
       "name": "삼기에너지솔루션즈",
-      "price": "1898",
+      "price": "1884",
       "direction": "up"
     },
     {
@@ -64,14 +64,14 @@
       "rank": 9,
       "code": "321370",
       "name": "센서뷰",
-      "price": "1797",
+      "price": "1794",
       "direction": "up"
     },
     {
       "rank": 10,
       "code": "0010S0",
       "name": "와이즈플래닛컴퍼니",
-      "price": "45900",
+      "price": "45700",
       "direction": "up"
     },
     {
@@ -90,23 +90,23 @@
     },
     {
       "rank": 13,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "23810",
-      "direction": "up"
-    },
-    {
-      "rank": 14,
       "code": "069500",
       "name": "KODEX 200",
       "price": "113145",
       "direction": "up"
     },
     {
-      "rank": 15,
+      "rank": 14,
       "code": "005930",
       "name": "삼성전자",
-      "price": "284500",
+      "price": "286500",
+      "direction": "up"
+    },
+    {
+      "rank": 15,
+      "code": "379800",
+      "name": "KODEX 미국S&P500",
+      "price": "23810",
       "direction": "up"
     },
     {
@@ -120,14 +120,14 @@
       "rank": 17,
       "code": "201490",
       "name": "미투온",
-      "price": "3685",
+      "price": "3675",
       "direction": "down"
     },
     {
       "rank": 18,
       "code": "356680",
       "name": "엑스게이트",
-      "price": "18330",
+      "price": "18320",
       "direction": "up"
     },
     {
@@ -139,9 +139,9 @@
     },
     {
       "rank": 20,
-      "code": "102110",
-      "name": "TIGER 200",
-      "price": "113360",
+      "code": "203650",
+      "name": "드림시큐리티",
+      "price": "2830",
       "direction": "up"
     }
   ],
@@ -185,7 +185,7 @@
       "rank": 6,
       "code": "419050",
       "name": "삼기에너지솔루션즈",
-      "price": "1898",
+      "price": "1884",
       "direction": "up"
     },
     {
@@ -206,14 +206,14 @@
       "rank": 9,
       "code": "321370",
       "name": "센서뷰",
-      "price": "1797",
+      "price": "1794",
       "direction": "up"
     },
     {
       "rank": 10,
       "code": "0010S0",
       "name": "와이즈플래닛컴퍼니",
-      "price": "45900",
+      "price": "45700",
       "direction": "up"
     },
     {
@@ -232,23 +232,23 @@
     },
     {
       "rank": 13,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "23810",
-      "direction": "up"
-    },
-    {
-      "rank": 14,
       "code": "069500",
       "name": "KODEX 200",
       "price": "113145",
       "direction": "up"
     },
     {
-      "rank": 15,
+      "rank": 14,
       "code": "005930",
       "name": "삼성전자",
-      "price": "284500",
+      "price": "286500",
+      "direction": "up"
+    },
+    {
+      "rank": 15,
+      "code": "379800",
+      "name": "KODEX 미국S&P500",
+      "price": "23810",
       "direction": "up"
     },
     {
@@ -262,14 +262,14 @@
       "rank": 17,
       "code": "201490",
       "name": "미투온",
-      "price": "3685",
+      "price": "3675",
       "direction": "down"
     },
     {
       "rank": 18,
       "code": "356680",
       "name": "엑스게이트",
-      "price": "18330",
+      "price": "18320",
       "direction": "up"
     },
     {
@@ -281,9 +281,9 @@
     },
     {
       "rank": 20,
-      "code": "102110",
-      "name": "TIGER 200",
-      "price": "113360",
+      "code": "203650",
+      "name": "드림시큐리티",
+      "price": "2830",
       "direction": "up"
     }
   ],
@@ -416,17 +416,17 @@
     },
     {
       "rank": 19,
-      "code": "0193L0",
-      "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "7525",
+      "code": "0200G0",
+      "name": "한국제17호스팩",
+      "price": "1900",
       "direction": "down"
     },
     {
       "rank": 20,
-      "code": "0192L0",
-      "name": "RISE SK하이닉스단일종목레버리지",
-      "price": "10275",
-      "direction": "up"
+      "code": "0193L0",
+      "name": "PLUS 삼성전자선물단일종목인버스2X",
+      "price": "7525",
+      "direction": "down"
     }
   ],
   "kospi_institute_sell": [
@@ -558,17 +558,17 @@
     },
     {
       "rank": 19,
-      "code": "0193L0",
-      "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "7525",
+      "code": "0200G0",
+      "name": "한국제17호스팩",
+      "price": "1900",
       "direction": "down"
     },
     {
       "rank": 20,
-      "code": "0192L0",
-      "name": "RISE SK하이닉스단일종목레버리지",
-      "price": "10275",
-      "direction": "up"
+      "code": "0193L0",
+      "name": "PLUS 삼성전자선물단일종목인버스2X",
+      "price": "7525",
+      "direction": "down"
     }
   ],
   "kospi_foreigner": [
@@ -611,7 +611,7 @@
       "rank": 6,
       "code": "419050",
       "name": "삼기에너지솔루션즈",
-      "price": "1898",
+      "price": "1884",
       "direction": "up"
     },
     {
@@ -632,14 +632,14 @@
       "rank": 9,
       "code": "321370",
       "name": "센서뷰",
-      "price": "1797",
+      "price": "1794",
       "direction": "up"
     },
     {
       "rank": 10,
       "code": "0010S0",
       "name": "와이즈플래닛컴퍼니",
-      "price": "45900",
+      "price": "45700",
       "direction": "up"
     },
     {
@@ -658,23 +658,23 @@
     },
     {
       "rank": 13,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "23810",
-      "direction": "up"
-    },
-    {
-      "rank": 14,
       "code": "069500",
       "name": "KODEX 200",
       "price": "113145",
       "direction": "up"
     },
     {
-      "rank": 15,
+      "rank": 14,
       "code": "005930",
       "name": "삼성전자",
-      "price": "284500",
+      "price": "286500",
+      "direction": "up"
+    },
+    {
+      "rank": 15,
+      "code": "379800",
+      "name": "KODEX 미국S&P500",
+      "price": "23810",
       "direction": "up"
     },
     {
@@ -688,14 +688,14 @@
       "rank": 17,
       "code": "201490",
       "name": "미투온",
-      "price": "3685",
+      "price": "3675",
       "direction": "down"
     },
     {
       "rank": 18,
       "code": "356680",
       "name": "엑스게이트",
-      "price": "18330",
+      "price": "18320",
       "direction": "up"
     },
     {
@@ -707,9 +707,9 @@
     },
     {
       "rank": 20,
-      "code": "102110",
-      "name": "TIGER 200",
-      "price": "113360",
+      "code": "203650",
+      "name": "드림시큐리티",
+      "price": "2830",
       "direction": "up"
     }
   ],
@@ -842,17 +842,17 @@
     },
     {
       "rank": 19,
-      "code": "0193L0",
-      "name": "PLUS 삼성전자선물단일종목인버스2X",
-      "price": "7525",
+      "code": "0200G0",
+      "name": "한국제17호스팩",
+      "price": "1900",
       "direction": "down"
     },
     {
       "rank": 20,
-      "code": "0192L0",
-      "name": "RISE SK하이닉스단일종목레버리지",
-      "price": "10275",
-      "direction": "up"
+      "code": "0193L0",
+      "name": "PLUS 삼성전자선물단일종목인버스2X",
+      "price": "7525",
+      "direction": "down"
     }
   ],
   "kospi": [
@@ -895,7 +895,7 @@
       "rank": 6,
       "code": "419050",
       "name": "삼기에너지솔루션즈",
-      "price": "1898",
+      "price": "1884",
       "direction": "up"
     },
     {
@@ -916,14 +916,14 @@
       "rank": 9,
       "code": "321370",
       "name": "센서뷰",
-      "price": "1797",
+      "price": "1794",
       "direction": "up"
     },
     {
       "rank": 10,
       "code": "0010S0",
       "name": "와이즈플래닛컴퍼니",
-      "price": "45900",
+      "price": "45700",
       "direction": "up"
     },
     {
@@ -942,23 +942,23 @@
     },
     {
       "rank": 13,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "23810",
-      "direction": "up"
-    },
-    {
-      "rank": 14,
       "code": "069500",
       "name": "KODEX 200",
       "price": "113145",
       "direction": "up"
     },
     {
-      "rank": 15,
+      "rank": 14,
       "code": "005930",
       "name": "삼성전자",
-      "price": "284500",
+      "price": "286500",
+      "direction": "up"
+    },
+    {
+      "rank": 15,
+      "code": "379800",
+      "name": "KODEX 미국S&P500",
+      "price": "23810",
       "direction": "up"
     },
     {
@@ -972,14 +972,14 @@
       "rank": 17,
       "code": "201490",
       "name": "미투온",
-      "price": "3685",
+      "price": "3675",
       "direction": "down"
     },
     {
       "rank": 18,
       "code": "356680",
       "name": "엑스게이트",
-      "price": "18330",
+      "price": "18320",
       "direction": "up"
     },
     {
@@ -991,9 +991,9 @@
     },
     {
       "rank": 20,
-      "code": "102110",
-      "name": "TIGER 200",
-      "price": "113360",
+      "code": "203650",
+      "name": "드림시큐리티",
+      "price": "2830",
       "direction": "up"
     }
   ],
