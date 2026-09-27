@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-26T23:46:20.008Z",
-  "count": 47,
+  "updated_at": "2026-09-27T02:51:49.555Z",
+  "count": 43,
   "data": [
     {
       "corp_name": "아모레퍼시픽",
@@ -473,50 +473,6 @@
       "ratio": 58.62,
       "change": 0.72,
       "stock_count": 11624536,
-      "type": "buy"
-    },
-    {
-      "corp_name": "현대엘리베이터",
-      "stock_code": "017800",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260703",
-      "flr_nm": "국민연금공단",
-      "ratio": 0.01,
-      "change": 0.01,
-      "stock_count": 4500,
-      "type": "buy"
-    },
-    {
-      "corp_name": "금호석유화학",
-      "stock_code": "011780",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260703",
-      "flr_nm": "국민연금공단",
-      "ratio": 0.99,
-      "change": 0.1,
-      "stock_count": 3650,
-      "type": "buy"
-    },
-    {
-      "corp_name": "LG이노텍",
-      "stock_code": "011070",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260703",
-      "flr_nm": "국민연금공단",
-      "ratio": 0.01,
-      "change": 0,
-      "stock_count": 300,
-      "type": "buy"
-    },
-    {
-      "corp_name": "금호석유화학",
-      "stock_code": "011780",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260703",
-      "flr_nm": "국민연금공단",
-      "ratio": 0.99,
-      "change": 0.1,
-      "stock_count": 3650,
       "type": "buy"
     }
   ]
