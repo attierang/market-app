@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T09:35:08.054Z",
+  "updated_at": "2026-09-28T14:49:58.506Z",
   "date": "20260928",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -48,17 +48,17 @@
     },
     {
       "rank": 7,
+      "code": "303810",
+      "name": "동국생명과학",
+      "price": "3310",
+      "direction": "up"
+    },
+    {
+      "rank": 8,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "26105",
       "direction": "down"
-    },
-    {
-      "rank": 8,
-      "code": "303810",
-      "name": "동국생명과학",
-      "price": "3430",
-      "direction": "up"
     },
     {
       "rank": 9,
@@ -92,42 +92,42 @@
       "rank": 13,
       "code": "005930",
       "name": "삼성전자",
-      "price": "270500",
+      "price": "270000",
       "direction": "down"
     },
     {
       "rank": 14,
       "code": "299170",
       "name": "더블유에스아이",
-      "price": "1490",
+      "price": "1502",
       "direction": "up"
     },
     {
       "rank": 15,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "14125",
+      "direction": "down"
+    },
+    {
+      "rank": 16,
       "code": "256840",
       "name": "한국비엔씨",
       "price": "3425",
       "direction": "up"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "code": "396300",
       "name": "HT로보틱스",
-      "price": "5850",
+      "price": "5890",
       "direction": "down"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "code": "393210",
       "name": "토마토시스템",
-      "price": "4215",
-      "direction": "up"
-    },
-    {
-      "rank": 18,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "14125",
+      "price": "3995",
       "direction": "down"
     },
     {
@@ -190,17 +190,17 @@
     },
     {
       "rank": 7,
+      "code": "303810",
+      "name": "동국생명과학",
+      "price": "3310",
+      "direction": "up"
+    },
+    {
+      "rank": 8,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "26105",
       "direction": "down"
-    },
-    {
-      "rank": 8,
-      "code": "303810",
-      "name": "동국생명과학",
-      "price": "3430",
-      "direction": "up"
     },
     {
       "rank": 9,
@@ -234,42 +234,42 @@
       "rank": 13,
       "code": "005930",
       "name": "삼성전자",
-      "price": "270500",
+      "price": "270000",
       "direction": "down"
     },
     {
       "rank": 14,
       "code": "299170",
       "name": "더블유에스아이",
-      "price": "1490",
+      "price": "1502",
       "direction": "up"
     },
     {
       "rank": 15,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "14125",
+      "direction": "down"
+    },
+    {
+      "rank": 16,
       "code": "256840",
       "name": "한국비엔씨",
       "price": "3425",
       "direction": "up"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "code": "396300",
       "name": "HT로보틱스",
-      "price": "5850",
+      "price": "5890",
       "direction": "down"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "code": "393210",
       "name": "토마토시스템",
-      "price": "4215",
-      "direction": "up"
-    },
-    {
-      "rank": 18,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "14125",
+      "price": "3995",
       "direction": "down"
     },
     {
@@ -376,7 +376,7 @@
       "rank": 13,
       "code": "140070",
       "name": "서플러스글로벌",
-      "price": "2200",
+      "price": "2195",
       "direction": "up"
     },
     {
@@ -518,7 +518,7 @@
       "rank": 13,
       "code": "140070",
       "name": "서플러스글로벌",
-      "price": "2200",
+      "price": "2195",
       "direction": "up"
     },
     {
@@ -616,17 +616,17 @@
     },
     {
       "rank": 7,
+      "code": "303810",
+      "name": "동국생명과학",
+      "price": "3310",
+      "direction": "up"
+    },
+    {
+      "rank": 8,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "26105",
       "direction": "down"
-    },
-    {
-      "rank": 8,
-      "code": "303810",
-      "name": "동국생명과학",
-      "price": "3430",
-      "direction": "up"
     },
     {
       "rank": 9,
@@ -660,42 +660,42 @@
       "rank": 13,
       "code": "005930",
       "name": "삼성전자",
-      "price": "270500",
+      "price": "270000",
       "direction": "down"
     },
     {
       "rank": 14,
       "code": "299170",
       "name": "더블유에스아이",
-      "price": "1490",
+      "price": "1502",
       "direction": "up"
     },
     {
       "rank": 15,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "14125",
+      "direction": "down"
+    },
+    {
+      "rank": 16,
       "code": "256840",
       "name": "한국비엔씨",
       "price": "3425",
       "direction": "up"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "code": "396300",
       "name": "HT로보틱스",
-      "price": "5850",
+      "price": "5890",
       "direction": "down"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "code": "393210",
       "name": "토마토시스템",
-      "price": "4215",
-      "direction": "up"
-    },
-    {
-      "rank": 18,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "14125",
+      "price": "3995",
       "direction": "down"
     },
     {
@@ -802,7 +802,7 @@
       "rank": 13,
       "code": "140070",
       "name": "서플러스글로벌",
-      "price": "2200",
+      "price": "2195",
       "direction": "up"
     },
     {
@@ -900,17 +900,17 @@
     },
     {
       "rank": 7,
+      "code": "303810",
+      "name": "동국생명과학",
+      "price": "3310",
+      "direction": "up"
+    },
+    {
+      "rank": 8,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "26105",
       "direction": "down"
-    },
-    {
-      "rank": 8,
-      "code": "303810",
-      "name": "동국생명과학",
-      "price": "3430",
-      "direction": "up"
     },
     {
       "rank": 9,
@@ -944,42 +944,42 @@
       "rank": 13,
       "code": "005930",
       "name": "삼성전자",
-      "price": "270500",
+      "price": "270000",
       "direction": "down"
     },
     {
       "rank": 14,
       "code": "299170",
       "name": "더블유에스아이",
-      "price": "1490",
+      "price": "1502",
       "direction": "up"
     },
     {
       "rank": 15,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "14125",
+      "direction": "down"
+    },
+    {
+      "rank": 16,
       "code": "256840",
       "name": "한국비엔씨",
       "price": "3425",
       "direction": "up"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "code": "396300",
       "name": "HT로보틱스",
-      "price": "5850",
+      "price": "5890",
       "direction": "down"
     },
     {
-      "rank": 17,
+      "rank": 18,
       "code": "393210",
       "name": "토마토시스템",
-      "price": "4215",
-      "direction": "up"
-    },
-    {
-      "rank": 18,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "14125",
+      "price": "3995",
       "direction": "down"
     },
     {
