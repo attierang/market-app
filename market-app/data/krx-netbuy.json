@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T09:39:40.073Z",
+  "updated_at": "2026-09-29T13:39:13.088Z",
   "date": "20260929",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -34,16 +34,16 @@
     },
     {
       "rank": 5,
-      "code": "233740",
-      "name": "KODEX 코스닥150레버리지",
-      "price": "7130",
+      "code": "486510",
+      "name": "글로벌테크놀로지",
+      "price": "14500",
       "direction": "up"
     },
     {
       "rank": 6,
-      "code": "486510",
-      "name": "글로벌테크놀로지",
-      "price": "14730",
+      "code": "233740",
+      "name": "KODEX 코스닥150레버리지",
+      "price": "7130",
       "direction": "up"
     },
     {
@@ -99,14 +99,14 @@
       "rank": 14,
       "code": "256840",
       "name": "한국비엔씨",
-      "price": "3265",
+      "price": "3295",
       "direction": "down"
     },
     {
       "rank": 15,
       "code": "452190",
       "name": "한빛레이저",
-      "price": "6110",
+      "price": "6060",
       "direction": "up"
     },
     {
@@ -134,14 +134,14 @@
       "rank": 19,
       "code": "267320",
       "name": "나인테크",
-      "price": "2620",
+      "price": "2640",
       "direction": "up"
     },
     {
       "rank": 20,
       "code": "005930",
       "name": "삼성전자",
-      "price": "273000",
+      "price": "275000",
       "direction": "up"
     }
   ],
@@ -176,16 +176,16 @@
     },
     {
       "rank": 5,
-      "code": "233740",
-      "name": "KODEX 코스닥150레버리지",
-      "price": "7130",
+      "code": "486510",
+      "name": "글로벌테크놀로지",
+      "price": "14500",
       "direction": "up"
     },
     {
       "rank": 6,
-      "code": "486510",
-      "name": "글로벌테크놀로지",
-      "price": "14730",
+      "code": "233740",
+      "name": "KODEX 코스닥150레버리지",
+      "price": "7130",
       "direction": "up"
     },
     {
@@ -241,14 +241,14 @@
       "rank": 14,
       "code": "256840",
       "name": "한국비엔씨",
-      "price": "3265",
+      "price": "3295",
       "direction": "down"
     },
     {
       "rank": 15,
       "code": "452190",
       "name": "한빛레이저",
-      "price": "6110",
+      "price": "6060",
       "direction": "up"
     },
     {
@@ -276,14 +276,14 @@
       "rank": 19,
       "code": "267320",
       "name": "나인테크",
-      "price": "2620",
+      "price": "2640",
       "direction": "up"
     },
     {
       "rank": 20,
       "code": "005930",
       "name": "삼성전자",
-      "price": "273000",
+      "price": "275000",
       "direction": "up"
     }
   ],
@@ -602,16 +602,16 @@
     },
     {
       "rank": 5,
-      "code": "233740",
-      "name": "KODEX 코스닥150레버리지",
-      "price": "7130",
+      "code": "486510",
+      "name": "글로벌테크놀로지",
+      "price": "14500",
       "direction": "up"
     },
     {
       "rank": 6,
-      "code": "486510",
-      "name": "글로벌테크놀로지",
-      "price": "14730",
+      "code": "233740",
+      "name": "KODEX 코스닥150레버리지",
+      "price": "7130",
       "direction": "up"
     },
     {
@@ -667,14 +667,14 @@
       "rank": 14,
       "code": "256840",
       "name": "한국비엔씨",
-      "price": "3265",
+      "price": "3295",
       "direction": "down"
     },
     {
       "rank": 15,
       "code": "452190",
       "name": "한빛레이저",
-      "price": "6110",
+      "price": "6060",
       "direction": "up"
     },
     {
@@ -702,14 +702,14 @@
       "rank": 19,
       "code": "267320",
       "name": "나인테크",
-      "price": "2620",
+      "price": "2640",
       "direction": "up"
     },
     {
       "rank": 20,
       "code": "005930",
       "name": "삼성전자",
-      "price": "273000",
+      "price": "275000",
       "direction": "up"
     }
   ],
@@ -886,16 +886,16 @@
     },
     {
       "rank": 5,
-      "code": "233740",
-      "name": "KODEX 코스닥150레버리지",
-      "price": "7130",
+      "code": "486510",
+      "name": "글로벌테크놀로지",
+      "price": "14500",
       "direction": "up"
     },
     {
       "rank": 6,
-      "code": "486510",
-      "name": "글로벌테크놀로지",
-      "price": "14730",
+      "code": "233740",
+      "name": "KODEX 코스닥150레버리지",
+      "price": "7130",
       "direction": "up"
     },
     {
@@ -951,14 +951,14 @@
       "rank": 14,
       "code": "256840",
       "name": "한국비엔씨",
-      "price": "3265",
+      "price": "3295",
       "direction": "down"
     },
     {
       "rank": 15,
       "code": "452190",
       "name": "한빛레이저",
-      "price": "6110",
+      "price": "6060",
       "direction": "up"
     },
     {
@@ -986,14 +986,14 @@
       "rank": 19,
       "code": "267320",
       "name": "나인테크",
-      "price": "2620",
+      "price": "2640",
       "direction": "up"
     },
     {
       "rank": 20,
       "code": "005930",
       "name": "삼성전자",
-      "price": "273000",
+      "price": "275000",
       "direction": "up"
     }
   ],
