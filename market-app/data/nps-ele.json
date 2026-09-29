@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-09-29T00:09:18.012Z",
-  "count": 43,
+  "updated_at": "2026-09-29T06:00:43.253Z",
+  "count": 44,
   "data": [
+    {
+      "corp_name": "한미약품",
+      "stock_code": "128940",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260929",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.06,
+      "change": 10.06,
+      "stock_count": 1288273,
+      "type": "buy"
+    },
     {
       "corp_name": "아모레퍼시픽",
       "stock_code": "090430",
