@@ -1,7 +1,40 @@
 {
-  "updated_at": "2026-09-30T06:18:06.530Z",
-  "count": 44,
+  "updated_at": "2026-09-30T12:52:58.243Z",
+  "count": 47,
   "data": [
+    {
+      "corp_name": "LIG디펜스앤에어로스페이스",
+      "stock_code": "079550",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260930",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 100,
+      "type": "buy"
+    },
+    {
+      "corp_name": "이수페타시스",
+      "stock_code": "007660",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260930",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.34,
+      "change": -2.04,
+      "stock_count": 1288627,
+      "type": "sell"
+    },
+    {
+      "corp_name": "LIG디펜스앤에어로스페이스",
+      "stock_code": "079550",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20260930",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 100,
+      "type": "buy"
+    },
     {
       "corp_name": "한미약품",
       "stock_code": "128940",
