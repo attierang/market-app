@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T09:58:00.350Z",
+  "updated_at": "2026-10-01T14:05:20.422Z",
   "date": "20261001",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -76,16 +76,16 @@
     },
     {
       "rank": 11,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "27755",
+      "code": "439960",
+      "name": "코스모로보틱스",
+      "price": "8630",
       "direction": "up"
     },
     {
       "rank": 12,
-      "code": "439960",
-      "name": "코스모로보틱스",
-      "price": "8540",
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "27755",
       "direction": "up"
     },
     {
@@ -106,42 +106,42 @@
       "rank": 15,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1415",
+      "price": "1423",
       "direction": "down"
     },
     {
       "rank": 16,
-      "code": "018880",
-      "name": "한온시스템",
-      "price": "3660",
-      "direction": "up"
+      "code": "316140",
+      "name": "우리금융지주",
+      "price": "33600",
+      "direction": "down"
     },
     {
       "rank": 17,
-      "code": "468670",
-      "name": "브릴스",
-      "price": "31150",
+      "code": "018880",
+      "name": "한온시스템",
+      "price": "3645",
       "direction": "up"
     },
     {
       "rank": 18,
-      "code": "396300",
-      "name": "HT로보틱스",
-      "price": "6000",
+      "code": "468670",
+      "name": "브릴스",
+      "price": "31100",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "005030",
-      "name": "부산주공",
-      "price": "40",
-      "direction": "down"
+      "code": "396300",
+      "name": "HT로보틱스",
+      "price": "6080",
+      "direction": "up"
     },
     {
       "rank": 20,
-      "code": "266690",
-      "name": "덕산넵코어스",
-      "price": "16720",
+      "code": "005030",
+      "name": "부산주공",
+      "price": "40",
       "direction": "down"
     }
   ],
@@ -218,16 +218,16 @@
     },
     {
       "rank": 11,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "27755",
+      "code": "439960",
+      "name": "코스모로보틱스",
+      "price": "8630",
       "direction": "up"
     },
     {
       "rank": 12,
-      "code": "439960",
-      "name": "코스모로보틱스",
-      "price": "8540",
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "27755",
       "direction": "up"
     },
     {
@@ -248,42 +248,42 @@
       "rank": 15,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1415",
+      "price": "1423",
       "direction": "down"
     },
     {
       "rank": 16,
-      "code": "018880",
-      "name": "한온시스템",
-      "price": "3660",
-      "direction": "up"
+      "code": "316140",
+      "name": "우리금융지주",
+      "price": "33600",
+      "direction": "down"
     },
     {
       "rank": 17,
-      "code": "468670",
-      "name": "브릴스",
-      "price": "31150",
+      "code": "018880",
+      "name": "한온시스템",
+      "price": "3645",
       "direction": "up"
     },
     {
       "rank": 18,
-      "code": "396300",
-      "name": "HT로보틱스",
-      "price": "6000",
+      "code": "468670",
+      "name": "브릴스",
+      "price": "31100",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "005030",
-      "name": "부산주공",
-      "price": "40",
-      "direction": "down"
+      "code": "396300",
+      "name": "HT로보틱스",
+      "price": "6080",
+      "direction": "up"
     },
     {
       "rank": 20,
-      "code": "266690",
-      "name": "덕산넵코어스",
-      "price": "16720",
+      "code": "005030",
+      "name": "부산주공",
+      "price": "40",
       "direction": "down"
     }
   ],
@@ -644,16 +644,16 @@
     },
     {
       "rank": 11,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "27755",
+      "code": "439960",
+      "name": "코스모로보틱스",
+      "price": "8630",
       "direction": "up"
     },
     {
       "rank": 12,
-      "code": "439960",
-      "name": "코스모로보틱스",
-      "price": "8540",
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "27755",
       "direction": "up"
     },
     {
@@ -674,42 +674,42 @@
       "rank": 15,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1415",
+      "price": "1423",
       "direction": "down"
     },
     {
       "rank": 16,
-      "code": "018880",
-      "name": "한온시스템",
-      "price": "3660",
-      "direction": "up"
+      "code": "316140",
+      "name": "우리금융지주",
+      "price": "33600",
+      "direction": "down"
     },
     {
       "rank": 17,
-      "code": "468670",
-      "name": "브릴스",
-      "price": "31150",
+      "code": "018880",
+      "name": "한온시스템",
+      "price": "3645",
       "direction": "up"
     },
     {
       "rank": 18,
-      "code": "396300",
-      "name": "HT로보틱스",
-      "price": "6000",
+      "code": "468670",
+      "name": "브릴스",
+      "price": "31100",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "005030",
-      "name": "부산주공",
-      "price": "40",
-      "direction": "down"
+      "code": "396300",
+      "name": "HT로보틱스",
+      "price": "6080",
+      "direction": "up"
     },
     {
       "rank": 20,
-      "code": "266690",
-      "name": "덕산넵코어스",
-      "price": "16720",
+      "code": "005030",
+      "name": "부산주공",
+      "price": "40",
       "direction": "down"
     }
   ],
@@ -928,16 +928,16 @@
     },
     {
       "rank": 11,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "27755",
+      "code": "439960",
+      "name": "코스모로보틱스",
+      "price": "8630",
       "direction": "up"
     },
     {
       "rank": 12,
-      "code": "439960",
-      "name": "코스모로보틱스",
-      "price": "8540",
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "27755",
       "direction": "up"
     },
     {
@@ -958,42 +958,42 @@
       "rank": 15,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1415",
+      "price": "1423",
       "direction": "down"
     },
     {
       "rank": 16,
-      "code": "018880",
-      "name": "한온시스템",
-      "price": "3660",
-      "direction": "up"
+      "code": "316140",
+      "name": "우리금융지주",
+      "price": "33600",
+      "direction": "down"
     },
     {
       "rank": 17,
-      "code": "468670",
-      "name": "브릴스",
-      "price": "31150",
+      "code": "018880",
+      "name": "한온시스템",
+      "price": "3645",
       "direction": "up"
     },
     {
       "rank": 18,
-      "code": "396300",
-      "name": "HT로보틱스",
-      "price": "6000",
+      "code": "468670",
+      "name": "브릴스",
+      "price": "31100",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "005030",
-      "name": "부산주공",
-      "price": "40",
-      "direction": "down"
+      "code": "396300",
+      "name": "HT로보틱스",
+      "price": "6080",
+      "direction": "up"
     },
     {
       "rank": 20,
-      "code": "266690",
-      "name": "덕산넵코어스",
-      "price": "16720",
+      "code": "005030",
+      "name": "부산주공",
+      "price": "40",
       "direction": "down"
     }
   ],
