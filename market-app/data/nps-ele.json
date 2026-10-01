@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-30T22:30:11.038Z",
-  "count": 47,
+  "updated_at": "2026-10-01T01:26:02.711Z",
+  "count": 43,
   "data": [
     {
       "corp_name": "LIG디펜스앤에어로스페이스",
@@ -473,50 +473,6 @@
       "ratio": 37.29,
       "change": 2.65,
       "stock_count": 192377,
-      "type": "buy"
-    },
-    {
-      "corp_name": "코리아써키트",
-      "stock_code": "007810",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260707",
-      "flr_nm": "국민연금공단",
-      "ratio": 40.96,
-      "change": 3.87,
-      "stock_count": 1208198,
-      "type": "buy"
-    },
-    {
-      "corp_name": "동아쏘시오홀딩스",
-      "stock_code": "000640",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260707",
-      "flr_nm": "국민연금공단",
-      "ratio": 29.25,
-      "change": -0.13,
-      "stock_count": 8700,
-      "type": "sell"
-    },
-    {
-      "corp_name": "대웅제약",
-      "stock_code": "069620",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260707",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.5,
-      "change": 0.47,
-      "stock_count": 54514,
-      "type": "buy"
-    },
-    {
-      "corp_name": "GS리테일",
-      "stock_code": "007070",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260707",
-      "flr_nm": "국민연금공단",
-      "ratio": 58.62,
-      "change": 0.72,
-      "stock_count": 11624536,
       "type": "buy"
     }
   ]
