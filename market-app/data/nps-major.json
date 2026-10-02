@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-10-01T23:52:09.887Z",
-  "count": 12,
+  "updated_at": "2026-10-02T03:23:55.698Z",
+  "count": 13,
   "data": [
+    {
+      "corp_name": "한화손해보험",
+      "stock_code": "000370",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20261002",
+      "flr_nm": "국민연금공단",
+      "ratio": 63.76,
+      "change": 0.26,
+      "stock_count": 400975,
+      "type": "buy"
+    },
     {
       "corp_name": "HD현대중공업",
       "stock_code": "329180",

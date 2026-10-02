@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T23:52:09.889Z",
+  "updated_at": "2026-10-02T03:23:55.699Z",
   "count": 43,
   "data": [
     {
@@ -41,9 +41,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260929",
       "flr_nm": "국민연금공단",
-      "ratio": 10.06,
-      "change": 10.06,
-      "stock_count": 1288273,
+      "ratio": 10.08,
+      "change": 0.02,
+      "stock_count": 2924,
       "type": "buy"
     },
     {
@@ -305,9 +305,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260803",
       "flr_nm": "국민연금공단",
-      "ratio": 10.06,
-      "change": 10.06,
-      "stock_count": 1288273,
+      "ratio": 10.08,
+      "change": 0.02,
+      "stock_count": 2924,
       "type": "buy"
     },
     {
