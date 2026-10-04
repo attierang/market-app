@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T00:20:55.213Z",
+  "updated_at": "2026-10-04T06:08:48.924Z",
   "count": 50,
   "data": [
     {
@@ -118,10 +118,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 9.81,
-      "change": -1,
-      "stock_count": 113564,
-      "type": "sell"
+      "ratio": 5.3,
+      "change": 0.31,
+      "stock_count": 33991,
+      "type": "buy"
     },
     {
       "corp_name": "빙그레",
