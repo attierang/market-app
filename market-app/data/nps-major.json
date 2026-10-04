@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04T06:08:48.924Z",
+  "updated_at": "2026-10-04T12:42:13.399Z",
   "count": 50,
   "data": [
     {
@@ -74,10 +74,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 52.62,
-      "change": -0.79,
-      "stock_count": 135737,
-      "type": "sell"
+      "ratio": 7.25,
+      "change": 0.02,
+      "stock_count": 2120,
+      "type": "buy"
     },
     {
       "corp_name": "파라다이스",
@@ -338,9 +338,9 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 23.85,
-      "change": 0,
-      "stock_count": 3000,
+      "ratio": 9.32,
+      "change": 2.03,
+      "stock_count": 898727,
       "type": "buy"
     },
     {
