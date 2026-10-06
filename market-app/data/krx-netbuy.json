@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T09:59:36.709Z",
+  "updated_at": "2026-10-06T13:50:14.658Z",
   "date": "20261006",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -57,21 +57,21 @@
       "rank": 8,
       "code": "069540",
       "name": "빛과전자",
-      "price": "5080",
+      "price": "5140",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25975",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "15850",
       "direction": "up"
     },
     {
       "rank": 10,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "15850",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25975",
       "direction": "up"
     },
     {
@@ -99,14 +99,14 @@
       "rank": 14,
       "code": "158430",
       "name": "아톤",
-      "price": "7140",
+      "price": "7150",
       "direction": "up"
     },
     {
       "rank": 15,
       "code": "203650",
       "name": "드림시큐리티",
-      "price": "3080",
+      "price": "3090",
       "direction": "up"
     },
     {
@@ -120,28 +120,28 @@
       "rank": 17,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1458",
+      "price": "1465",
       "direction": "up"
     },
     {
       "rank": 18,
-      "code": "054920",
-      "name": "한컴위드",
-      "price": "5610",
+      "code": "018880",
+      "name": "한온시스템",
+      "price": "3945",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "018880",
-      "name": "한온시스템",
-      "price": "3935",
+      "code": "054920",
+      "name": "한컴위드",
+      "price": "5590",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "412570",
-      "name": "TIGER 2차전지TOP10레버리지",
-      "price": "1350",
+      "code": "010170",
+      "name": "대한광통신",
+      "price": "18780",
       "direction": "up"
     }
   ],
@@ -199,21 +199,21 @@
       "rank": 8,
       "code": "069540",
       "name": "빛과전자",
-      "price": "5080",
+      "price": "5140",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25975",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "15850",
       "direction": "up"
     },
     {
       "rank": 10,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "15850",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25975",
       "direction": "up"
     },
     {
@@ -241,14 +241,14 @@
       "rank": 14,
       "code": "158430",
       "name": "아톤",
-      "price": "7140",
+      "price": "7150",
       "direction": "up"
     },
     {
       "rank": 15,
       "code": "203650",
       "name": "드림시큐리티",
-      "price": "3080",
+      "price": "3090",
       "direction": "up"
     },
     {
@@ -262,28 +262,28 @@
       "rank": 17,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1458",
+      "price": "1465",
       "direction": "up"
     },
     {
       "rank": 18,
-      "code": "054920",
-      "name": "한컴위드",
-      "price": "5610",
+      "code": "018880",
+      "name": "한온시스템",
+      "price": "3945",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "018880",
-      "name": "한온시스템",
-      "price": "3935",
+      "code": "054920",
+      "name": "한컴위드",
+      "price": "5590",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "412570",
-      "name": "TIGER 2차전지TOP10레버리지",
-      "price": "1350",
+      "code": "010170",
+      "name": "대한광통신",
+      "price": "18780",
       "direction": "up"
     }
   ],
@@ -404,7 +404,7 @@
       "rank": 17,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1458",
+      "price": "1465",
       "direction": "up"
     },
     {
@@ -546,7 +546,7 @@
       "rank": 17,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1458",
+      "price": "1465",
       "direction": "up"
     },
     {
@@ -625,21 +625,21 @@
       "rank": 8,
       "code": "069540",
       "name": "빛과전자",
-      "price": "5080",
+      "price": "5140",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25975",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "15850",
       "direction": "up"
     },
     {
       "rank": 10,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "15850",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25975",
       "direction": "up"
     },
     {
@@ -667,14 +667,14 @@
       "rank": 14,
       "code": "158430",
       "name": "아톤",
-      "price": "7140",
+      "price": "7150",
       "direction": "up"
     },
     {
       "rank": 15,
       "code": "203650",
       "name": "드림시큐리티",
-      "price": "3080",
+      "price": "3090",
       "direction": "up"
     },
     {
@@ -688,28 +688,28 @@
       "rank": 17,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1458",
+      "price": "1465",
       "direction": "up"
     },
     {
       "rank": 18,
-      "code": "054920",
-      "name": "한컴위드",
-      "price": "5610",
+      "code": "018880",
+      "name": "한온시스템",
+      "price": "3945",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "018880",
-      "name": "한온시스템",
-      "price": "3935",
+      "code": "054920",
+      "name": "한컴위드",
+      "price": "5590",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "412570",
-      "name": "TIGER 2차전지TOP10레버리지",
-      "price": "1350",
+      "code": "010170",
+      "name": "대한광통신",
+      "price": "18780",
       "direction": "up"
     }
   ],
@@ -830,7 +830,7 @@
       "rank": 17,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1458",
+      "price": "1465",
       "direction": "up"
     },
     {
@@ -909,21 +909,21 @@
       "rank": 8,
       "code": "069540",
       "name": "빛과전자",
-      "price": "5080",
+      "price": "5140",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25975",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "15850",
       "direction": "up"
     },
     {
       "rank": 10,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "15850",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25975",
       "direction": "up"
     },
     {
@@ -951,14 +951,14 @@
       "rank": 14,
       "code": "158430",
       "name": "아톤",
-      "price": "7140",
+      "price": "7150",
       "direction": "up"
     },
     {
       "rank": 15,
       "code": "203650",
       "name": "드림시큐리티",
-      "price": "3080",
+      "price": "3090",
       "direction": "up"
     },
     {
@@ -972,28 +972,28 @@
       "rank": 17,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1458",
+      "price": "1465",
       "direction": "up"
     },
     {
       "rank": 18,
-      "code": "054920",
-      "name": "한컴위드",
-      "price": "5610",
+      "code": "018880",
+      "name": "한온시스템",
+      "price": "3945",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "018880",
-      "name": "한온시스템",
-      "price": "3935",
+      "code": "054920",
+      "name": "한컴위드",
+      "price": "5590",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "412570",
-      "name": "TIGER 2차전지TOP10레버리지",
-      "price": "1350",
+      "code": "010170",
+      "name": "대한광통신",
+      "price": "18780",
       "direction": "up"
     }
   ],
