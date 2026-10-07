@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T02:40:26.430Z",
+  "updated_at": "2026-10-07T09:39:57.314Z",
   "count": 50,
   "data": [
     {
@@ -30,10 +30,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 5.99,
-      "change": -1.03,
-      "stock_count": 291530,
-      "type": "sell"
+      "ratio": 7.01,
+      "change": 1.02,
+      "stock_count": 288333,
+      "type": "buy"
     },
     {
       "corp_name": "신세계",
@@ -74,9 +74,9 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 7.25,
-      "change": 0.02,
-      "stock_count": 2120,
+      "ratio": 52.62,
+      "change": 0,
+      "stock_count": 0,
       "type": "buy"
     },
     {
@@ -206,10 +206,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 12.02,
-      "change": -1.01,
-      "stock_count": 295117,
-      "type": "sell"
+      "ratio": 13.04,
+      "change": 1.02,
+      "stock_count": 295560,
+      "type": "buy"
     },
     {
       "corp_name": "미래에셋증권",
@@ -272,10 +272,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 9.67,
-      "change": -1,
-      "stock_count": 220581,
-      "type": "sell"
+      "ratio": 42.47,
+      "change": 0,
+      "stock_count": 0,
+      "type": "buy"
     },
     {
       "corp_name": "키움증권",
@@ -338,9 +338,9 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 9.32,
-      "change": 2.03,
-      "stock_count": 898727,
+      "ratio": 23.85,
+      "change": 0,
+      "stock_count": 0,
       "type": "buy"
     },
     {
@@ -371,10 +371,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 34.08,
-      "change": 34.08,
-      "stock_count": 17205149,
-      "type": "buy"
+      "ratio": 33.96,
+      "change": -0.12,
+      "stock_count": 60418,
+      "type": "sell"
     },
     {
       "corp_name": "LG이노텍",
@@ -382,10 +382,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 9.45,
-      "change": -1.03,
-      "stock_count": 242934,
-      "type": "sell"
+      "ratio": 40.79,
+      "change": 0,
+      "stock_count": 300,
+      "type": "buy"
     },
     {
       "corp_name": "현대오토에버",
