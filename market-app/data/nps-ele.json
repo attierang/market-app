@@ -1,7 +1,62 @@
 {
-  "updated_at": "2026-10-06T23:33:08.203Z",
+  "updated_at": "2026-10-07T02:40:26.431Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "두산",
+      "stock_code": "000150",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261007",
+      "flr_nm": "국민연금공단",
+      "ratio": 6.05,
+      "change": 0.06,
+      "stock_count": 12296,
+      "type": "buy"
+    },
+    {
+      "corp_name": "대한항공",
+      "stock_code": "003490",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261007",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 114,
+      "type": "buy"
+    },
+    {
+      "corp_name": "이수페타시스",
+      "stock_code": "007660",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261007",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.34,
+      "change": -2.04,
+      "stock_count": 1288627,
+      "type": "sell"
+    },
+    {
+      "corp_name": "이수페타시스",
+      "stock_code": "007660",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261007",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.34,
+      "change": -2.04,
+      "stock_count": 1288627,
+      "type": "sell"
+    },
+    {
+      "corp_name": "이수페타시스",
+      "stock_code": "007660",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261007",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.34,
+      "change": -2.04,
+      "stock_count": 1288627,
+      "type": "sell"
+    },
     {
       "corp_name": "DL이앤씨",
       "stock_code": "375500",
@@ -496,61 +551,6 @@
       "change": 0,
       "stock_count": 70,
       "type": "buy"
-    },
-    {
-      "corp_name": "LIG디펜스앤에어로스페이스",
-      "stock_code": "079550",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260901",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 100,
-      "type": "buy"
-    },
-    {
-      "corp_name": "현대건설",
-      "stock_code": "000720",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260901",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 2000,
-      "type": "buy"
-    },
-    {
-      "corp_name": "DL",
-      "stock_code": "000210",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260901",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.15,
-      "change": -0.56,
-      "stock_count": 126939,
-      "type": "sell"
-    },
-    {
-      "corp_name": "효성티앤씨",
-      "stock_code": "298020",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260901",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 210,
-      "type": "buy"
-    },
-    {
-      "corp_name": "삼양식품",
-      "stock_code": "003230",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260901",
-      "flr_nm": "국민연금공단",
-      "ratio": 3.76,
-      "change": -0.57,
-      "stock_count": 42362,
-      "type": "sell"
     }
   ]
 }
