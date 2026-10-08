@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T10:17:43.653Z",
+  "updated_at": "2026-10-08T14:18:09.305Z",
   "date": "20261008",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -99,49 +99,49 @@
       "rank": 14,
       "code": "005160",
       "name": "동국산업",
-      "price": "4710",
+      "price": "4635",
       "direction": "up"
     },
     {
       "rank": 15,
-      "code": "002720",
-      "name": "국제약품",
-      "price": "4190",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "263000",
       "direction": "down"
     },
     {
       "rank": 16,
-      "code": "122350",
-      "name": "삼기",
-      "price": "1737",
-      "direction": "up"
-    },
-    {
-      "rank": 17,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "262500",
+      "code": "002720",
+      "name": "국제약품",
+      "price": "4235",
       "direction": "down"
     },
     {
+      "rank": 17,
+      "code": "122350",
+      "name": "삼기",
+      "price": "1733",
+      "direction": "up"
+    },
+    {
       "rank": 18,
+      "code": "307750",
+      "name": "국전",
+      "price": "2920",
+      "direction": "up"
+    },
+    {
+      "rank": 19,
       "code": "005030",
       "name": "부산주공",
       "price": "18",
       "direction": "down"
     },
     {
-      "rank": 19,
-      "code": "307750",
-      "name": "국전",
-      "price": "2880",
-      "direction": "up"
-    },
-    {
       "rank": 20,
       "code": "266690",
       "name": "덕산넵코어스",
-      "price": "13340",
+      "price": "13290",
       "direction": "down"
     }
   ],
@@ -241,49 +241,49 @@
       "rank": 14,
       "code": "005160",
       "name": "동국산업",
-      "price": "4710",
+      "price": "4635",
       "direction": "up"
     },
     {
       "rank": 15,
-      "code": "002720",
-      "name": "국제약품",
-      "price": "4190",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "263000",
       "direction": "down"
     },
     {
       "rank": 16,
-      "code": "122350",
-      "name": "삼기",
-      "price": "1737",
-      "direction": "up"
-    },
-    {
-      "rank": 17,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "262500",
+      "code": "002720",
+      "name": "국제약품",
+      "price": "4235",
       "direction": "down"
     },
     {
+      "rank": 17,
+      "code": "122350",
+      "name": "삼기",
+      "price": "1733",
+      "direction": "up"
+    },
+    {
       "rank": 18,
+      "code": "307750",
+      "name": "국전",
+      "price": "2920",
+      "direction": "up"
+    },
+    {
+      "rank": 19,
       "code": "005030",
       "name": "부산주공",
       "price": "18",
       "direction": "down"
     },
     {
-      "rank": 19,
-      "code": "307750",
-      "name": "국전",
-      "price": "2880",
-      "direction": "up"
-    },
-    {
       "rank": 20,
       "code": "266690",
       "name": "덕산넵코어스",
-      "price": "13340",
+      "price": "13290",
       "direction": "down"
     }
   ],
@@ -667,49 +667,49 @@
       "rank": 14,
       "code": "005160",
       "name": "동국산업",
-      "price": "4710",
+      "price": "4635",
       "direction": "up"
     },
     {
       "rank": 15,
-      "code": "002720",
-      "name": "국제약품",
-      "price": "4190",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "263000",
       "direction": "down"
     },
     {
       "rank": 16,
-      "code": "122350",
-      "name": "삼기",
-      "price": "1737",
-      "direction": "up"
-    },
-    {
-      "rank": 17,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "262500",
+      "code": "002720",
+      "name": "국제약품",
+      "price": "4235",
       "direction": "down"
     },
     {
+      "rank": 17,
+      "code": "122350",
+      "name": "삼기",
+      "price": "1733",
+      "direction": "up"
+    },
+    {
       "rank": 18,
+      "code": "307750",
+      "name": "국전",
+      "price": "2920",
+      "direction": "up"
+    },
+    {
+      "rank": 19,
       "code": "005030",
       "name": "부산주공",
       "price": "18",
       "direction": "down"
     },
     {
-      "rank": 19,
-      "code": "307750",
-      "name": "국전",
-      "price": "2880",
-      "direction": "up"
-    },
-    {
       "rank": 20,
       "code": "266690",
       "name": "덕산넵코어스",
-      "price": "13340",
+      "price": "13290",
       "direction": "down"
     }
   ],
@@ -951,49 +951,49 @@
       "rank": 14,
       "code": "005160",
       "name": "동국산업",
-      "price": "4710",
+      "price": "4635",
       "direction": "up"
     },
     {
       "rank": 15,
-      "code": "002720",
-      "name": "국제약품",
-      "price": "4190",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "263000",
       "direction": "down"
     },
     {
       "rank": 16,
-      "code": "122350",
-      "name": "삼기",
-      "price": "1737",
-      "direction": "up"
-    },
-    {
-      "rank": 17,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "262500",
+      "code": "002720",
+      "name": "국제약품",
+      "price": "4235",
       "direction": "down"
     },
     {
+      "rank": 17,
+      "code": "122350",
+      "name": "삼기",
+      "price": "1733",
+      "direction": "up"
+    },
+    {
       "rank": 18,
+      "code": "307750",
+      "name": "국전",
+      "price": "2920",
+      "direction": "up"
+    },
+    {
+      "rank": 19,
       "code": "005030",
       "name": "부산주공",
       "price": "18",
       "direction": "down"
     },
     {
-      "rank": 19,
-      "code": "307750",
-      "name": "국전",
-      "price": "2880",
-      "direction": "up"
-    },
-    {
       "rank": 20,
       "code": "266690",
       "name": "덕산넵코어스",
-      "price": "13340",
+      "price": "13290",
       "direction": "down"
     }
   ],
