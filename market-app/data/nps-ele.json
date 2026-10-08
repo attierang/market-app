@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T02:12:54.247Z",
+  "updated_at": "2026-10-08T09:17:10.097Z",
   "count": 50,
   "data": [
     {
@@ -30,9 +30,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261007",
       "flr_nm": "국민연금공단",
-      "ratio": 10.34,
-      "change": -2.04,
-      "stock_count": 1288627,
+      "ratio": 9.84,
+      "change": -0.5,
+      "stock_count": 317394,
       "type": "sell"
     },
     {
@@ -41,9 +41,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261007",
       "flr_nm": "국민연금공단",
-      "ratio": 10.34,
-      "change": -2.04,
-      "stock_count": 1288627,
+      "ratio": 9.84,
+      "change": -0.5,
+      "stock_count": 317394,
       "type": "sell"
     },
     {
@@ -52,9 +52,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261007",
       "flr_nm": "국민연금공단",
-      "ratio": 10.34,
-      "change": -2.04,
-      "stock_count": 1288627,
+      "ratio": 9.84,
+      "change": -0.5,
+      "stock_count": 317394,
       "type": "sell"
     },
     {
@@ -74,9 +74,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 12.14,
-      "change": 1.07,
-      "stock_count": 706303,
+      "ratio": 12.33,
+      "change": 0.19,
+      "stock_count": 126949,
       "type": "buy"
     },
     {
@@ -96,9 +96,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 11.94,
-      "change": 1.92,
-      "stock_count": 204033,
+      "ratio": 12.7,
+      "change": 0.76,
+      "stock_count": 81367,
       "type": "buy"
     },
     {
@@ -107,9 +107,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 35,
+      "ratio": 10.06,
+      "change": 10.06,
+      "stock_count": 4725797,
       "type": "buy"
     },
     {
@@ -118,10 +118,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 11.08,
-      "change": -1.21,
-      "stock_count": 138142,
-      "type": "sell"
+      "ratio": 13.39,
+      "change": 2.31,
+      "stock_count": 262135,
+      "type": "buy"
     },
     {
       "corp_name": "한국콜마",
@@ -129,9 +129,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 11.72,
-      "change": 0.41,
-      "stock_count": 96428,
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 275,
       "type": "buy"
     },
     {
@@ -140,10 +140,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 10.08,
-      "change": 0.02,
-      "stock_count": 2924,
-      "type": "buy"
+      "ratio": 9.98,
+      "change": -0.1,
+      "stock_count": 13007,
+      "type": "sell"
     },
     {
       "corp_name": "코오롱인더",
@@ -184,9 +184,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 21.08,
-      "change": 0.05,
-      "stock_count": 17000,
+      "ratio": 21.14,
+      "change": 0.06,
+      "stock_count": 20580,
       "type": "buy"
     },
     {
@@ -239,10 +239,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 11.45,
-      "change": -0.15,
-      "stock_count": 40947,
-      "type": "sell"
+      "ratio": 11.79,
+      "change": 0.34,
+      "stock_count": 97177,
+      "type": "buy"
     },
     {
       "corp_name": "롯데쇼핑",
@@ -261,10 +261,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 12.94,
-      "change": -0.09,
-      "stock_count": 76744,
-      "type": "sell"
+      "ratio": 13.06,
+      "change": 0.12,
+      "stock_count": 106275,
+      "type": "buy"
     },
     {
       "corp_name": "한솔케미칼",
@@ -305,9 +305,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 10.58,
-      "change": -0.98,
-      "stock_count": 507526,
+      "ratio": 9.98,
+      "change": -0.6,
+      "stock_count": 313225,
       "type": "sell"
     },
     {
@@ -338,10 +338,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 12.06,
-      "change": -0.52,
-      "stock_count": 168529,
-      "type": "sell"
+      "ratio": 12.86,
+      "change": 0.8,
+      "stock_count": 258743,
+      "type": "buy"
     },
     {
       "corp_name": "신세계",
@@ -349,9 +349,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 10.22,
-      "change": -0.33,
-      "stock_count": 31884,
+      "ratio": 10,
+      "change": -0.22,
+      "stock_count": 22340,
       "type": "sell"
     },
     {
@@ -360,10 +360,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 11.71,
-      "change": -0.04,
-      "stock_count": 12058,
-      "type": "sell"
+      "ratio": 11.96,
+      "change": 0.25,
+      "stock_count": 89013,
+      "type": "buy"
     },
     {
       "corp_name": "현대해상",
@@ -382,10 +382,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 10.24,
-      "change": -0.18,
-      "stock_count": 65455,
-      "type": "sell"
+      "ratio": 10.31,
+      "change": 0.07,
+      "stock_count": 24921,
+      "type": "buy"
     },
     {
       "corp_name": "현대건설",
@@ -404,10 +404,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 10.15,
-      "change": -0.56,
-      "stock_count": 126939,
-      "type": "sell"
+      "ratio": 44.61,
+      "change": 0.07,
+      "stock_count": 16000,
+      "type": "buy"
     },
     {
       "corp_name": "효성티앤씨",
@@ -448,9 +448,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260930",
       "flr_nm": "국민연금공단",
-      "ratio": 10.34,
-      "change": -2.04,
-      "stock_count": 1288627,
+      "ratio": 9.84,
+      "change": -0.5,
+      "stock_count": 317394,
       "type": "sell"
     },
     {
@@ -470,10 +470,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260929",
       "flr_nm": "국민연금공단",
-      "ratio": 10.08,
-      "change": 0.02,
-      "stock_count": 2924,
-      "type": "buy"
+      "ratio": 9.98,
+      "change": -0.1,
+      "stock_count": 13007,
+      "type": "sell"
     },
     {
       "corp_name": "아모레퍼시픽",
