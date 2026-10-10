@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T06:10:33.483Z",
+  "updated_at": "2026-10-10T12:49:49.537Z",
   "count": 50,
   "data": [
     {
@@ -30,10 +30,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261007",
       "flr_nm": "국민연금공단",
-      "ratio": 9.84,
-      "change": -0.5,
-      "stock_count": 317394,
-      "type": "sell"
+      "ratio": 10.27,
+      "change": 10.27,
+      "stock_count": 6494160,
+      "type": "buy"
     },
     {
       "corp_name": "이수페타시스",
@@ -41,10 +41,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261007",
       "flr_nm": "국민연금공단",
-      "ratio": 9.84,
-      "change": -0.5,
-      "stock_count": 317394,
-      "type": "sell"
+      "ratio": 10.27,
+      "change": 10.27,
+      "stock_count": 6494160,
+      "type": "buy"
     },
     {
       "corp_name": "이수페타시스",
@@ -52,10 +52,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261007",
       "flr_nm": "국민연금공단",
-      "ratio": 9.84,
-      "change": -0.5,
-      "stock_count": 317394,
-      "type": "sell"
+      "ratio": 10.27,
+      "change": 10.27,
+      "stock_count": 6494160,
+      "type": "buy"
     },
     {
       "corp_name": "DL이앤씨",
@@ -140,9 +140,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 9.98,
-      "change": -0.1,
-      "stock_count": 13007,
+      "ratio": 10,
+      "change": -0.01,
+      "stock_count": 1999,
       "type": "sell"
     },
     {
@@ -448,10 +448,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260930",
       "flr_nm": "국민연금공단",
-      "ratio": 9.84,
-      "change": -0.5,
-      "stock_count": 317394,
-      "type": "sell"
+      "ratio": 10.27,
+      "change": 10.27,
+      "stock_count": 6494160,
+      "type": "buy"
     },
     {
       "corp_name": "LIG디펜스앤에어로스페이스",
@@ -470,9 +470,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20260929",
       "flr_nm": "국민연금공단",
-      "ratio": 9.98,
-      "change": -0.1,
-      "stock_count": 13007,
+      "ratio": 10,
+      "change": -0.01,
+      "stock_count": 1999,
       "type": "sell"
     },
     {
