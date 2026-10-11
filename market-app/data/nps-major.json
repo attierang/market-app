@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T17:35:38.314Z",
+  "updated_at": "2026-10-11T06:09:07.970Z",
   "count": 50,
   "data": [
     {
@@ -349,10 +349,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 4.71,
-      "change": -1.03,
-      "stock_count": 2025706,
-      "type": "sell"
+      "ratio": 5.05,
+      "change": 5.05,
+      "stock_count": 9897998,
+      "type": "buy"
     },
     {
       "corp_name": "한화시스템",
