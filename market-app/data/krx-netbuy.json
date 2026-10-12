@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T10:32:00.340Z",
+  "updated_at": "2026-10-12T16:22:55.970Z",
   "date": "20261012",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -76,17 +76,17 @@
     },
     {
       "rank": 11,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "1605",
-      "direction": "up"
-    },
-    {
-      "rank": 12,
       "code": "069500",
       "name": "KODEX 200",
       "price": "101605",
       "direction": "down"
+    },
+    {
+      "rank": 12,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "1605",
+      "direction": "up"
     },
     {
       "rank": 13,
@@ -97,52 +97,52 @@
     },
     {
       "rank": 14,
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "251000",
+      "direction": "down"
+    },
+    {
+      "rank": 15,
       "code": "122630",
       "name": "KODEX 레버리지",
       "price": "93620",
       "direction": "down"
     },
     {
-      "rank": 15,
-      "code": "142280",
-      "name": "녹십자엠에스",
-      "price": "3520",
-      "direction": "down"
-    },
-    {
       "rank": 16,
       "code": "267320",
       "name": "나인테크",
-      "price": "3015",
+      "price": "3030",
       "direction": "up"
     },
     {
       "rank": 17,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "250000",
+      "code": "142280",
+      "name": "녹십자엠에스",
+      "price": "3580",
       "direction": "down"
     },
     {
       "rank": 18,
       "code": "038500",
       "name": "삼표시멘트",
-      "price": "7480",
+      "price": "7390",
       "direction": "up"
     },
     {
       "rank": 19,
       "code": "302550",
       "name": "리메드",
-      "price": "3025",
+      "price": "2965",
       "direction": "up"
     },
     {
       "rank": 20,
       "code": "419050",
       "name": "삼기에너지솔루션즈",
-      "price": "2265",
-      "direction": "down"
+      "price": "2305",
+      "direction": "up"
     }
   ],
   "kospi_foreigner_sell": [
@@ -218,17 +218,17 @@
     },
     {
       "rank": 11,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "1605",
-      "direction": "up"
-    },
-    {
-      "rank": 12,
       "code": "069500",
       "name": "KODEX 200",
       "price": "101605",
       "direction": "down"
+    },
+    {
+      "rank": 12,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "1605",
+      "direction": "up"
     },
     {
       "rank": 13,
@@ -239,52 +239,52 @@
     },
     {
       "rank": 14,
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "251000",
+      "direction": "down"
+    },
+    {
+      "rank": 15,
       "code": "122630",
       "name": "KODEX 레버리지",
       "price": "93620",
       "direction": "down"
     },
     {
-      "rank": 15,
-      "code": "142280",
-      "name": "녹십자엠에스",
-      "price": "3520",
-      "direction": "down"
-    },
-    {
       "rank": 16,
       "code": "267320",
       "name": "나인테크",
-      "price": "3015",
+      "price": "3030",
       "direction": "up"
     },
     {
       "rank": 17,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "249500",
+      "code": "142280",
+      "name": "녹십자엠에스",
+      "price": "3580",
       "direction": "down"
     },
     {
       "rank": 18,
       "code": "038500",
       "name": "삼표시멘트",
-      "price": "7480",
+      "price": "7390",
       "direction": "up"
     },
     {
       "rank": 19,
       "code": "302550",
       "name": "리메드",
-      "price": "3025",
+      "price": "2965",
       "direction": "up"
     },
     {
       "rank": 20,
       "code": "419050",
       "name": "삼기에너지솔루션즈",
-      "price": "2265",
-      "direction": "down"
+      "price": "2305",
+      "direction": "up"
     }
   ],
   "kospi_institute_buy": [
@@ -644,17 +644,17 @@
     },
     {
       "rank": 11,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "1605",
-      "direction": "up"
-    },
-    {
-      "rank": 12,
       "code": "069500",
       "name": "KODEX 200",
       "price": "101605",
       "direction": "down"
+    },
+    {
+      "rank": 12,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "1605",
+      "direction": "up"
     },
     {
       "rank": 13,
@@ -665,52 +665,52 @@
     },
     {
       "rank": 14,
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "251000",
+      "direction": "down"
+    },
+    {
+      "rank": 15,
       "code": "122630",
       "name": "KODEX 레버리지",
       "price": "93620",
       "direction": "down"
     },
     {
-      "rank": 15,
-      "code": "142280",
-      "name": "녹십자엠에스",
-      "price": "3520",
-      "direction": "down"
-    },
-    {
       "rank": 16,
       "code": "267320",
       "name": "나인테크",
-      "price": "3015",
+      "price": "3030",
       "direction": "up"
     },
     {
       "rank": 17,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "250000",
+      "code": "142280",
+      "name": "녹십자엠에스",
+      "price": "3580",
       "direction": "down"
     },
     {
       "rank": 18,
       "code": "038500",
       "name": "삼표시멘트",
-      "price": "7480",
+      "price": "7390",
       "direction": "up"
     },
     {
       "rank": 19,
       "code": "302550",
       "name": "리메드",
-      "price": "3025",
+      "price": "2965",
       "direction": "up"
     },
     {
       "rank": 20,
       "code": "419050",
       "name": "삼기에너지솔루션즈",
-      "price": "2265",
-      "direction": "down"
+      "price": "2305",
+      "direction": "up"
     }
   ],
   "kospi_institute": [
@@ -928,17 +928,17 @@
     },
     {
       "rank": 11,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "1605",
-      "direction": "up"
-    },
-    {
-      "rank": 12,
       "code": "069500",
       "name": "KODEX 200",
       "price": "101605",
       "direction": "down"
+    },
+    {
+      "rank": 12,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "1605",
+      "direction": "up"
     },
     {
       "rank": 13,
@@ -949,52 +949,52 @@
     },
     {
       "rank": 14,
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "251000",
+      "direction": "down"
+    },
+    {
+      "rank": 15,
       "code": "122630",
       "name": "KODEX 레버리지",
       "price": "93620",
       "direction": "down"
     },
     {
-      "rank": 15,
-      "code": "142280",
-      "name": "녹십자엠에스",
-      "price": "3520",
-      "direction": "down"
-    },
-    {
       "rank": 16,
       "code": "267320",
       "name": "나인테크",
-      "price": "3015",
+      "price": "3030",
       "direction": "up"
     },
     {
       "rank": 17,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "250000",
+      "code": "142280",
+      "name": "녹십자엠에스",
+      "price": "3580",
       "direction": "down"
     },
     {
       "rank": 18,
       "code": "038500",
       "name": "삼표시멘트",
-      "price": "7480",
+      "price": "7390",
       "direction": "up"
     },
     {
       "rank": 19,
       "code": "302550",
       "name": "리메드",
-      "price": "3025",
+      "price": "2965",
       "direction": "up"
     },
     {
       "rank": 20,
       "code": "419050",
       "name": "삼기에너지솔루션즈",
-      "price": "2265",
-      "direction": "down"
+      "price": "2305",
+      "direction": "up"
     }
   ],
   "kosdaq": []
