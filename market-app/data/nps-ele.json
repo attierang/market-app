@@ -1,7 +1,62 @@
 {
-  "updated_at": "2026-10-12T01:32:47.232Z",
+  "updated_at": "2026-10-12T07:49:01.893Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "이수페타시스",
+      "stock_code": "007660",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261012",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.27,
+      "change": 10.27,
+      "stock_count": 6494160,
+      "type": "buy"
+    },
+    {
+      "corp_name": "대한항공",
+      "stock_code": "003490",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261012",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 114,
+      "type": "buy"
+    },
+    {
+      "corp_name": "NC",
+      "stock_code": "036570",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261012",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 440,
+      "type": "buy"
+    },
+    {
+      "corp_name": "비에이치",
+      "stock_code": "090460",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261012",
+      "flr_nm": "국민연금공단",
+      "ratio": 21.14,
+      "change": 0.06,
+      "stock_count": 20580,
+      "type": "buy"
+    },
+    {
+      "corp_name": "이수페타시스",
+      "stock_code": "007660",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261012",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.27,
+      "change": 10.27,
+      "stock_count": 6494160,
+      "type": "buy"
+    },
     {
       "corp_name": "두산",
       "stock_code": "000150",
@@ -495,61 +550,6 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 440,
-      "type": "buy"
-    },
-    {
-      "corp_name": "대한유화",
-      "stock_code": "006650",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260917",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.01,
-      "change": 10.01,
-      "stock_count": 650920,
-      "type": "buy"
-    },
-    {
-      "corp_name": "대덕전자",
-      "stock_code": "353200",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260914",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 678,
-      "type": "buy"
-    },
-    {
-      "corp_name": "GS리테일",
-      "stock_code": "007070",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260914",
-      "flr_nm": "국민연금공단",
-      "ratio": 58.62,
-      "change": 0.72,
-      "stock_count": 11624536,
-      "type": "buy"
-    },
-    {
-      "corp_name": "S-Oil",
-      "stock_code": "010950",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260914",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 300,
-      "type": "buy"
-    },
-    {
-      "corp_name": "NHN",
-      "stock_code": "181710",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260901",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 70,
       "type": "buy"
     }
   ]
