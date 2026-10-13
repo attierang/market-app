@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T10:20:54.091Z",
+  "updated_at": "2026-10-13T14:43:34.052Z",
   "date": "20261013",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -55,24 +55,24 @@
     },
     {
       "rank": 8,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "14225",
+      "direction": "down"
+    },
+    {
+      "rank": 9,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "26030",
       "direction": "up"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "code": "Q530107",
       "name": "삼성 인버스 2X 코스닥150 선물 ETN",
       "price": "1642",
       "direction": "up"
-    },
-    {
-      "rank": 10,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "14225",
-      "direction": "down"
     },
     {
       "rank": 11,
@@ -99,15 +99,15 @@
       "rank": 14,
       "code": "002720",
       "name": "국제약품",
-      "price": "4395",
+      "price": "4350",
       "direction": "up"
     },
     {
       "rank": 15,
       "code": "001210",
       "name": "금호전기",
-      "price": "11100",
-      "direction": "up"
+      "price": "11010",
+      "direction": "down"
     },
     {
       "rank": 16,
@@ -120,14 +120,14 @@
       "rank": 17,
       "code": "142280",
       "name": "녹십자엠에스",
-      "price": "3835",
+      "price": "3845",
       "direction": "up"
     },
     {
       "rank": 18,
       "code": "005930",
       "name": "삼성전자",
-      "price": "235500",
+      "price": "234000",
       "direction": "down"
     },
     {
@@ -197,24 +197,24 @@
     },
     {
       "rank": 8,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "14225",
+      "direction": "down"
+    },
+    {
+      "rank": 9,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "26030",
       "direction": "up"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "code": "Q530107",
       "name": "삼성 인버스 2X 코스닥150 선물 ETN",
       "price": "1642",
       "direction": "up"
-    },
-    {
-      "rank": 10,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "14225",
-      "direction": "down"
     },
     {
       "rank": 11,
@@ -241,15 +241,15 @@
       "rank": 14,
       "code": "002720",
       "name": "국제약품",
-      "price": "4395",
+      "price": "4350",
       "direction": "up"
     },
     {
       "rank": 15,
       "code": "001210",
       "name": "금호전기",
-      "price": "11100",
-      "direction": "up"
+      "price": "11010",
+      "direction": "down"
     },
     {
       "rank": 16,
@@ -262,14 +262,14 @@
       "rank": 17,
       "code": "142280",
       "name": "녹십자엠에스",
-      "price": "3835",
+      "price": "3845",
       "direction": "up"
     },
     {
       "rank": 18,
       "code": "005930",
       "name": "삼성전자",
-      "price": "235500",
+      "price": "234000",
       "direction": "down"
     },
     {
@@ -623,24 +623,24 @@
     },
     {
       "rank": 8,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "14225",
+      "direction": "down"
+    },
+    {
+      "rank": 9,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "26030",
       "direction": "up"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "code": "Q530107",
       "name": "삼성 인버스 2X 코스닥150 선물 ETN",
       "price": "1642",
       "direction": "up"
-    },
-    {
-      "rank": 10,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "14225",
-      "direction": "down"
     },
     {
       "rank": 11,
@@ -667,15 +667,15 @@
       "rank": 14,
       "code": "002720",
       "name": "국제약품",
-      "price": "4395",
+      "price": "4350",
       "direction": "up"
     },
     {
       "rank": 15,
       "code": "001210",
       "name": "금호전기",
-      "price": "11100",
-      "direction": "up"
+      "price": "11010",
+      "direction": "down"
     },
     {
       "rank": 16,
@@ -688,14 +688,14 @@
       "rank": 17,
       "code": "142280",
       "name": "녹십자엠에스",
-      "price": "3835",
+      "price": "3845",
       "direction": "up"
     },
     {
       "rank": 18,
       "code": "005930",
       "name": "삼성전자",
-      "price": "235500",
+      "price": "234000",
       "direction": "down"
     },
     {
@@ -907,24 +907,24 @@
     },
     {
       "rank": 8,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "14225",
+      "direction": "down"
+    },
+    {
+      "rank": 9,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "26030",
       "direction": "up"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "code": "Q530107",
       "name": "삼성 인버스 2X 코스닥150 선물 ETN",
       "price": "1642",
       "direction": "up"
-    },
-    {
-      "rank": 10,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "14225",
-      "direction": "down"
     },
     {
       "rank": 11,
@@ -951,15 +951,15 @@
       "rank": 14,
       "code": "002720",
       "name": "국제약품",
-      "price": "4395",
+      "price": "4350",
       "direction": "up"
     },
     {
       "rank": 15,
       "code": "001210",
       "name": "금호전기",
-      "price": "11100",
-      "direction": "up"
+      "price": "11010",
+      "direction": "down"
     },
     {
       "rank": 16,
@@ -972,14 +972,14 @@
       "rank": 17,
       "code": "142280",
       "name": "녹십자엠에스",
-      "price": "3835",
+      "price": "3845",
       "direction": "up"
     },
     {
       "rank": 18,
       "code": "005930",
       "name": "삼성전자",
-      "price": "235500",
+      "price": "234000",
       "direction": "down"
     },
     {
