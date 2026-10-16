@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T08:01:22.980Z",
+  "updated_at": "2026-10-16T12:02:20.576Z",
   "date": "20261016",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -48,37 +48,37 @@
     },
     {
       "rank": 7,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "1813",
-      "direction": "down"
-    },
-    {
-      "rank": 8,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13370",
       "direction": "up"
     },
     {
-      "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25650",
+      "rank": 8,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "1813",
       "direction": "down"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "code": "069500",
       "name": "KODEX 200",
       "price": "88750",
       "direction": "up"
     },
     {
+      "rank": 10,
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25650",
+      "direction": "down"
+    },
+    {
       "rank": 11,
       "code": "396300",
       "name": "HT로보틱스",
-      "price": "9000",
+      "price": "8830",
       "direction": "up"
     },
     {
@@ -190,37 +190,37 @@
     },
     {
       "rank": 7,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "1813",
-      "direction": "down"
-    },
-    {
-      "rank": 8,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13370",
       "direction": "up"
     },
     {
-      "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25650",
+      "rank": 8,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "1813",
       "direction": "down"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "code": "069500",
       "name": "KODEX 200",
       "price": "88750",
       "direction": "up"
     },
     {
+      "rank": 10,
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25650",
+      "direction": "down"
+    },
+    {
       "rank": 11,
       "code": "396300",
       "name": "HT로보틱스",
-      "price": "9000",
+      "price": "8830",
       "direction": "up"
     },
     {
@@ -402,10 +402,10 @@
     },
     {
       "rank": 17,
-      "code": "005880",
-      "name": "대한해운",
-      "price": "2040",
-      "direction": "down"
+      "code": "289220",
+      "name": "자이언트스텝",
+      "price": "1021",
+      "direction": "up"
     },
     {
       "rank": 18,
@@ -544,10 +544,10 @@
     },
     {
       "rank": 17,
-      "code": "005880",
-      "name": "대한해운",
-      "price": "2040",
-      "direction": "down"
+      "code": "289220",
+      "name": "자이언트스텝",
+      "price": "1021",
+      "direction": "up"
     },
     {
       "rank": 18,
@@ -616,37 +616,37 @@
     },
     {
       "rank": 7,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "1813",
-      "direction": "down"
-    },
-    {
-      "rank": 8,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13370",
       "direction": "up"
     },
     {
-      "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25650",
+      "rank": 8,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "1813",
       "direction": "down"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "code": "069500",
       "name": "KODEX 200",
       "price": "88750",
       "direction": "up"
     },
     {
+      "rank": 10,
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25650",
+      "direction": "down"
+    },
+    {
       "rank": 11,
       "code": "396300",
       "name": "HT로보틱스",
-      "price": "9000",
+      "price": "8830",
       "direction": "up"
     },
     {
@@ -828,10 +828,10 @@
     },
     {
       "rank": 17,
-      "code": "005880",
-      "name": "대한해운",
-      "price": "2040",
-      "direction": "down"
+      "code": "289220",
+      "name": "자이언트스텝",
+      "price": "1021",
+      "direction": "up"
     },
     {
       "rank": 18,
@@ -900,37 +900,37 @@
     },
     {
       "rank": 7,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "1813",
-      "direction": "down"
-    },
-    {
-      "rank": 8,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13370",
       "direction": "up"
     },
     {
-      "rank": 9,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25650",
+      "rank": 8,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "1813",
       "direction": "down"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "code": "069500",
       "name": "KODEX 200",
       "price": "88750",
       "direction": "up"
     },
     {
+      "rank": 10,
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25650",
+      "direction": "down"
+    },
+    {
       "rank": 11,
       "code": "396300",
       "name": "HT로보틱스",
-      "price": "9000",
+      "price": "8830",
       "direction": "up"
     },
     {
