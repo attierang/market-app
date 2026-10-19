@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T08:40:45.750Z",
+  "updated_at": "2026-10-19T14:14:13.164Z",
   "date": "20261019",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -43,7 +43,7 @@
       "rank": 6,
       "code": "419050",
       "name": "삼기에너지솔루션즈",
-      "price": "2640",
+      "price": "2645",
       "direction": "up"
     },
     {
@@ -76,38 +76,38 @@
     },
     {
       "rank": 11,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13725",
+      "direction": "up"
+    },
+    {
+      "rank": 12,
       "code": "010580",
       "name": "에스엠벡셀",
       "price": "4040",
       "direction": "up"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "code": "122630",
       "name": "KODEX 레버리지",
       "price": "72255",
       "direction": "up"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "25505",
       "direction": "down"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "code": "379810",
       "name": "KODEX 미국나스닥100",
       "price": "26095",
       "direction": "down"
-    },
-    {
-      "rank": 15,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13725",
-      "direction": "up"
     },
     {
       "rank": 16,
@@ -125,23 +125,23 @@
     },
     {
       "rank": 18,
+      "code": "042660",
+      "name": "한화오션",
+      "price": "64600",
+      "direction": "down"
+    },
+    {
+      "rank": 19,
       "code": "412570",
       "name": "TIGER 2차전지TOP10레버리지",
       "price": "1373",
       "direction": "up"
     },
     {
-      "rank": 19,
+      "rank": 20,
       "code": "102110",
       "name": "TIGER 200",
       "price": "90235",
-      "direction": "up"
-    },
-    {
-      "rank": 20,
-      "code": "396300",
-      "name": "HT로보틱스",
-      "price": "9020",
       "direction": "up"
     }
   ],
@@ -185,7 +185,7 @@
       "rank": 6,
       "code": "419050",
       "name": "삼기에너지솔루션즈",
-      "price": "2640",
+      "price": "2645",
       "direction": "up"
     },
     {
@@ -218,38 +218,38 @@
     },
     {
       "rank": 11,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13725",
+      "direction": "up"
+    },
+    {
+      "rank": 12,
       "code": "010580",
       "name": "에스엠벡셀",
       "price": "4040",
       "direction": "up"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "code": "122630",
       "name": "KODEX 레버리지",
       "price": "72255",
       "direction": "up"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "25505",
       "direction": "down"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "code": "379810",
       "name": "KODEX 미국나스닥100",
       "price": "26095",
       "direction": "down"
-    },
-    {
-      "rank": 15,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13725",
-      "direction": "up"
     },
     {
       "rank": 16,
@@ -267,23 +267,23 @@
     },
     {
       "rank": 18,
+      "code": "042660",
+      "name": "한화오션",
+      "price": "64600",
+      "direction": "down"
+    },
+    {
+      "rank": 19,
       "code": "412570",
       "name": "TIGER 2차전지TOP10레버리지",
       "price": "1373",
       "direction": "up"
     },
     {
-      "rank": 19,
+      "rank": 20,
       "code": "102110",
       "name": "TIGER 200",
       "price": "90235",
-      "direction": "up"
-    },
-    {
-      "rank": 20,
-      "code": "396300",
-      "name": "HT로보틱스",
-      "price": "9020",
       "direction": "up"
     }
   ],
@@ -416,16 +416,16 @@
     },
     {
       "rank": 19,
-      "code": "419050",
-      "name": "삼기에너지솔루션즈",
-      "price": "2640",
+      "code": "253290",
+      "name": "RISE 헬스케어채권혼합",
+      "price": "11510",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "253290",
-      "name": "RISE 헬스케어채권혼합",
-      "price": "11510",
+      "code": "Q520100",
+      "name": "미래에셋 레버리지 삼성전자 단일종목 ETN",
+      "price": "7535",
       "direction": "up"
     }
   ],
@@ -558,16 +558,16 @@
     },
     {
       "rank": 19,
-      "code": "419050",
-      "name": "삼기에너지솔루션즈",
-      "price": "2640",
+      "code": "253290",
+      "name": "RISE 헬스케어채권혼합",
+      "price": "11510",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "253290",
-      "name": "RISE 헬스케어채권혼합",
-      "price": "11510",
+      "code": "Q520100",
+      "name": "미래에셋 레버리지 삼성전자 단일종목 ETN",
+      "price": "7535",
       "direction": "up"
     }
   ],
@@ -611,7 +611,7 @@
       "rank": 6,
       "code": "419050",
       "name": "삼기에너지솔루션즈",
-      "price": "2640",
+      "price": "2645",
       "direction": "up"
     },
     {
@@ -644,38 +644,38 @@
     },
     {
       "rank": 11,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13725",
+      "direction": "up"
+    },
+    {
+      "rank": 12,
       "code": "010580",
       "name": "에스엠벡셀",
       "price": "4040",
       "direction": "up"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "code": "122630",
       "name": "KODEX 레버리지",
       "price": "72255",
       "direction": "up"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "25505",
       "direction": "down"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "code": "379810",
       "name": "KODEX 미국나스닥100",
       "price": "26095",
       "direction": "down"
-    },
-    {
-      "rank": 15,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13725",
-      "direction": "up"
     },
     {
       "rank": 16,
@@ -693,23 +693,23 @@
     },
     {
       "rank": 18,
+      "code": "042660",
+      "name": "한화오션",
+      "price": "64600",
+      "direction": "down"
+    },
+    {
+      "rank": 19,
       "code": "412570",
       "name": "TIGER 2차전지TOP10레버리지",
       "price": "1373",
       "direction": "up"
     },
     {
-      "rank": 19,
+      "rank": 20,
       "code": "102110",
       "name": "TIGER 200",
       "price": "90235",
-      "direction": "up"
-    },
-    {
-      "rank": 20,
-      "code": "396300",
-      "name": "HT로보틱스",
-      "price": "9020",
       "direction": "up"
     }
   ],
@@ -842,16 +842,16 @@
     },
     {
       "rank": 19,
-      "code": "419050",
-      "name": "삼기에너지솔루션즈",
-      "price": "2640",
+      "code": "253290",
+      "name": "RISE 헬스케어채권혼합",
+      "price": "11510",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "253290",
-      "name": "RISE 헬스케어채권혼합",
-      "price": "11510",
+      "code": "Q520100",
+      "name": "미래에셋 레버리지 삼성전자 단일종목 ETN",
+      "price": "7535",
       "direction": "up"
     }
   ],
@@ -895,7 +895,7 @@
       "rank": 6,
       "code": "419050",
       "name": "삼기에너지솔루션즈",
-      "price": "2640",
+      "price": "2645",
       "direction": "up"
     },
     {
@@ -928,38 +928,38 @@
     },
     {
       "rank": 11,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "13725",
+      "direction": "up"
+    },
+    {
+      "rank": 12,
       "code": "010580",
       "name": "에스엠벡셀",
       "price": "4040",
       "direction": "up"
     },
     {
-      "rank": 12,
+      "rank": 13,
       "code": "122630",
       "name": "KODEX 레버리지",
       "price": "72255",
       "direction": "up"
     },
     {
-      "rank": 13,
+      "rank": 14,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "25505",
       "direction": "down"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "code": "379810",
       "name": "KODEX 미국나스닥100",
       "price": "26095",
       "direction": "down"
-    },
-    {
-      "rank": 15,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "13725",
-      "direction": "up"
     },
     {
       "rank": 16,
@@ -977,23 +977,23 @@
     },
     {
       "rank": 18,
+      "code": "042660",
+      "name": "한화오션",
+      "price": "64600",
+      "direction": "down"
+    },
+    {
+      "rank": 19,
       "code": "412570",
       "name": "TIGER 2차전지TOP10레버리지",
       "price": "1373",
       "direction": "up"
     },
     {
-      "rank": 19,
+      "rank": 20,
       "code": "102110",
       "name": "TIGER 200",
       "price": "90235",
-      "direction": "up"
-    },
-    {
-      "rank": 20,
-      "code": "396300",
-      "name": "HT로보틱스",
-      "price": "9020",
       "direction": "up"
     }
   ],
