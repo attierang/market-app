@@ -1,7 +1,51 @@
 {
-  "updated_at": "2026-10-19T21:40:08.780Z",
+  "updated_at": "2026-10-20T05:37:31.408Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "키움증권",
+      "stock_code": "039490",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261020",
+      "flr_nm": "국민연금공단",
+      "ratio": 11.79,
+      "change": 0.34,
+      "stock_count": 97177,
+      "type": "buy"
+    },
+    {
+      "corp_name": "대한항공",
+      "stock_code": "003490",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261020",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 114,
+      "type": "buy"
+    },
+    {
+      "corp_name": "진성티이씨",
+      "stock_code": "036890",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261020",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.12,
+      "change": 10.12,
+      "stock_count": 2229023,
+      "type": "buy"
+    },
+    {
+      "corp_name": "팬오션",
+      "stock_code": "028670",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261020",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 5050,
+      "type": "buy"
+    },
     {
       "corp_name": "SNT모티브",
       "stock_code": "064960",
@@ -507,50 +551,6 @@
       "change": -0.57,
       "stock_count": 42362,
       "type": "sell"
-    },
-    {
-      "corp_name": "LIG디펜스앤에어로스페이스",
-      "stock_code": "079550",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260930",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 100,
-      "type": "buy"
-    },
-    {
-      "corp_name": "이수페타시스",
-      "stock_code": "007660",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260930",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.27,
-      "change": 10.27,
-      "stock_count": 6494160,
-      "type": "buy"
-    },
-    {
-      "corp_name": "LIG디펜스앤에어로스페이스",
-      "stock_code": "079550",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260930",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 100,
-      "type": "buy"
-    },
-    {
-      "corp_name": "한미약품",
-      "stock_code": "128940",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20260929",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.04,
-      "change": 10.04,
-      "stock_count": 1286211,
-      "type": "buy"
     }
   ]
 }
