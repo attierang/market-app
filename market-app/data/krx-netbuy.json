@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T08:21:36.621Z",
+  "updated_at": "2026-10-20T12:27:59.378Z",
   "date": "20261020",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -50,7 +50,7 @@
       "rank": 7,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1573",
+      "price": "1597",
       "direction": "down"
     },
     {
@@ -69,30 +69,30 @@
     },
     {
       "rank": 10,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "25905",
-      "direction": "down"
-    },
-    {
-      "rank": 11,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13115",
       "direction": "down"
     },
     {
+      "rank": 11,
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "25905",
+      "direction": "down"
+    },
+    {
       "rank": 12,
       "code": "396300",
       "name": "HT로보틱스",
-      "price": "10030",
+      "price": "9970",
       "direction": "up"
     },
     {
       "rank": 13,
       "code": "317240",
       "name": "TS트릴리온",
-      "price": "1223",
+      "price": "1309",
       "direction": "up"
     },
     {
@@ -118,24 +118,24 @@
     },
     {
       "rank": 17,
-      "code": "122630",
-      "name": "KODEX 레버리지",
-      "price": "67170",
-      "direction": "down"
+      "code": "138360",
+      "name": "앤로보틱스",
+      "price": "1391",
+      "direction": "up"
     },
     {
       "rank": 18,
-      "code": "138360",
-      "name": "앤로보틱스",
-      "price": "1385",
+      "code": "065450",
+      "name": "빅텍",
+      "price": "3225",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "065450",
-      "name": "빅텍",
-      "price": "3220",
-      "direction": "up"
+      "code": "122630",
+      "name": "KODEX 레버리지",
+      "price": "67170",
+      "direction": "down"
     },
     {
       "rank": 20,
@@ -192,7 +192,7 @@
       "rank": 7,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1573",
+      "price": "1597",
       "direction": "down"
     },
     {
@@ -211,30 +211,30 @@
     },
     {
       "rank": 10,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "25905",
-      "direction": "down"
-    },
-    {
-      "rank": 11,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13115",
       "direction": "down"
     },
     {
+      "rank": 11,
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "25905",
+      "direction": "down"
+    },
+    {
       "rank": 12,
       "code": "396300",
       "name": "HT로보틱스",
-      "price": "10030",
+      "price": "9970",
       "direction": "up"
     },
     {
       "rank": 13,
       "code": "317240",
       "name": "TS트릴리온",
-      "price": "1223",
+      "price": "1309",
       "direction": "up"
     },
     {
@@ -260,24 +260,24 @@
     },
     {
       "rank": 17,
-      "code": "122630",
-      "name": "KODEX 레버리지",
-      "price": "67170",
-      "direction": "down"
-    },
-    {
-      "rank": 18,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "1388",
+      "price": "1391",
       "direction": "up"
     },
     {
-      "rank": 19,
+      "rank": 18,
       "code": "065450",
       "name": "빅텍",
       "price": "3225",
       "direction": "up"
+    },
+    {
+      "rank": 19,
+      "code": "122630",
+      "name": "KODEX 레버리지",
+      "price": "67170",
+      "direction": "down"
     },
     {
       "rank": 20,
@@ -618,7 +618,7 @@
       "rank": 7,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1573",
+      "price": "1597",
       "direction": "down"
     },
     {
@@ -637,30 +637,30 @@
     },
     {
       "rank": 10,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "25905",
-      "direction": "down"
-    },
-    {
-      "rank": 11,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13115",
       "direction": "down"
     },
     {
+      "rank": 11,
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "25905",
+      "direction": "down"
+    },
+    {
       "rank": 12,
       "code": "396300",
       "name": "HT로보틱스",
-      "price": "10030",
+      "price": "9970",
       "direction": "up"
     },
     {
       "rank": 13,
       "code": "317240",
       "name": "TS트릴리온",
-      "price": "1223",
+      "price": "1309",
       "direction": "up"
     },
     {
@@ -686,24 +686,24 @@
     },
     {
       "rank": 17,
-      "code": "122630",
-      "name": "KODEX 레버리지",
-      "price": "67170",
-      "direction": "down"
+      "code": "138360",
+      "name": "앤로보틱스",
+      "price": "1391",
+      "direction": "up"
     },
     {
       "rank": 18,
-      "code": "138360",
-      "name": "앤로보틱스",
-      "price": "1385",
+      "code": "065450",
+      "name": "빅텍",
+      "price": "3225",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "065450",
-      "name": "빅텍",
-      "price": "3220",
-      "direction": "up"
+      "code": "122630",
+      "name": "KODEX 레버리지",
+      "price": "67170",
+      "direction": "down"
     },
     {
       "rank": 20,
@@ -902,7 +902,7 @@
       "rank": 7,
       "code": "008970",
       "name": "KBI동양철관",
-      "price": "1573",
+      "price": "1597",
       "direction": "down"
     },
     {
@@ -921,30 +921,30 @@
     },
     {
       "rank": 10,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "25905",
-      "direction": "down"
-    },
-    {
-      "rank": 11,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "13115",
       "direction": "down"
     },
     {
+      "rank": 11,
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "25905",
+      "direction": "down"
+    },
+    {
       "rank": 12,
       "code": "396300",
       "name": "HT로보틱스",
-      "price": "10030",
+      "price": "9970",
       "direction": "up"
     },
     {
       "rank": 13,
       "code": "317240",
       "name": "TS트릴리온",
-      "price": "1223",
+      "price": "1309",
       "direction": "up"
     },
     {
@@ -970,24 +970,24 @@
     },
     {
       "rank": 17,
-      "code": "122630",
-      "name": "KODEX 레버리지",
-      "price": "67170",
-      "direction": "down"
+      "code": "138360",
+      "name": "앤로보틱스",
+      "price": "1391",
+      "direction": "up"
     },
     {
       "rank": 18,
-      "code": "138360",
-      "name": "앤로보틱스",
-      "price": "1385",
+      "code": "065450",
+      "name": "빅텍",
+      "price": "3225",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "065450",
-      "name": "빅텍",
-      "price": "3220",
-      "direction": "up"
+      "code": "122630",
+      "name": "KODEX 레버리지",
+      "price": "67170",
+      "direction": "down"
     },
     {
       "rank": 20,
