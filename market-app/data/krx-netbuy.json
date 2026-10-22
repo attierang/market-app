@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T08:27:47.623Z",
+  "updated_at": "2026-10-22T12:42:12.279Z",
   "date": "20261022",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -43,7 +43,7 @@
       "rank": 6,
       "code": "0013Y0",
       "name": "엠에스바이오",
-      "price": "12540",
+      "price": "13620",
       "direction": "up"
     },
     {
@@ -55,30 +55,30 @@
     },
     {
       "rank": 8,
+      "code": "065450",
+      "name": "빅텍",
+      "price": "3760",
+      "direction": "up"
+    },
+    {
+      "rank": 9,
       "code": "069500",
       "name": "KODEX 200",
       "price": "86525",
       "direction": "down"
     },
     {
-      "rank": 9,
-      "code": "065450",
-      "name": "빅텍",
-      "price": "3935",
-      "direction": "up"
-    },
-    {
       "rank": 10,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25285",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12725",
       "direction": "down"
     },
     {
       "rank": 11,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12725",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25285",
       "direction": "down"
     },
     {
@@ -120,7 +120,7 @@
       "rank": 17,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "1570",
+      "price": "1620",
       "direction": "down"
     },
     {
@@ -141,7 +141,7 @@
       "rank": 20,
       "code": "290720",
       "name": "푸드나무",
-      "price": "1544",
+      "price": "1553",
       "direction": "down"
     }
   ],
@@ -185,7 +185,7 @@
       "rank": 6,
       "code": "0013Y0",
       "name": "엠에스바이오",
-      "price": "12540",
+      "price": "13620",
       "direction": "up"
     },
     {
@@ -197,30 +197,30 @@
     },
     {
       "rank": 8,
+      "code": "065450",
+      "name": "빅텍",
+      "price": "3760",
+      "direction": "up"
+    },
+    {
+      "rank": 9,
       "code": "069500",
       "name": "KODEX 200",
       "price": "86525",
       "direction": "down"
     },
     {
-      "rank": 9,
-      "code": "065450",
-      "name": "빅텍",
-      "price": "3935",
-      "direction": "up"
-    },
-    {
       "rank": 10,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25285",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12725",
       "direction": "down"
     },
     {
       "rank": 11,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12725",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25285",
       "direction": "down"
     },
     {
@@ -262,7 +262,7 @@
       "rank": 17,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "1570",
+      "price": "1620",
       "direction": "down"
     },
     {
@@ -283,7 +283,7 @@
       "rank": 20,
       "code": "290720",
       "name": "푸드나무",
-      "price": "1544",
+      "price": "1553",
       "direction": "down"
     }
   ],
@@ -402,31 +402,31 @@
     },
     {
       "rank": 17,
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "214500",
+      "direction": "down"
+    },
+    {
+      "rank": 18,
+      "code": "0220W0",
+      "name": "한화머시너리앤서비스홀딩스",
+      "price": "7770",
+      "direction": "up"
+    },
+    {
+      "rank": 19,
       "code": "0041E0",
       "name": "KODEX 미국S&P500액티브",
       "price": "15310",
       "direction": "down"
     },
     {
-      "rank": 18,
+      "rank": 20,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "22985",
       "direction": "down"
-    },
-    {
-      "rank": 19,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "213000",
-      "direction": "down"
-    },
-    {
-      "rank": 20,
-      "code": "483290",
-      "name": "KODEX 미국배당다우존스타겟커버드콜",
-      "price": "9915",
-      "direction": "up"
     }
   ],
   "kospi_institute_sell": [
@@ -544,31 +544,31 @@
     },
     {
       "rank": 17,
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "214500",
+      "direction": "down"
+    },
+    {
+      "rank": 18,
+      "code": "0220W0",
+      "name": "한화머시너리앤서비스홀딩스",
+      "price": "7770",
+      "direction": "up"
+    },
+    {
+      "rank": 19,
       "code": "0041E0",
       "name": "KODEX 미국S&P500액티브",
       "price": "15310",
       "direction": "down"
     },
     {
-      "rank": 18,
+      "rank": 20,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "22985",
       "direction": "down"
-    },
-    {
-      "rank": 19,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "213000",
-      "direction": "down"
-    },
-    {
-      "rank": 20,
-      "code": "483290",
-      "name": "KODEX 미국배당다우존스타겟커버드콜",
-      "price": "9915",
-      "direction": "up"
     }
   ],
   "kospi_foreigner": [
@@ -611,7 +611,7 @@
       "rank": 6,
       "code": "0013Y0",
       "name": "엠에스바이오",
-      "price": "12540",
+      "price": "13620",
       "direction": "up"
     },
     {
@@ -623,30 +623,30 @@
     },
     {
       "rank": 8,
+      "code": "065450",
+      "name": "빅텍",
+      "price": "3760",
+      "direction": "up"
+    },
+    {
+      "rank": 9,
       "code": "069500",
       "name": "KODEX 200",
       "price": "86525",
       "direction": "down"
     },
     {
-      "rank": 9,
-      "code": "065450",
-      "name": "빅텍",
-      "price": "3935",
-      "direction": "up"
-    },
-    {
       "rank": 10,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25285",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12725",
       "direction": "down"
     },
     {
       "rank": 11,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12725",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25285",
       "direction": "down"
     },
     {
@@ -688,7 +688,7 @@
       "rank": 17,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "1570",
+      "price": "1620",
       "direction": "down"
     },
     {
@@ -709,7 +709,7 @@
       "rank": 20,
       "code": "290720",
       "name": "푸드나무",
-      "price": "1544",
+      "price": "1553",
       "direction": "down"
     }
   ],
@@ -828,31 +828,31 @@
     },
     {
       "rank": 17,
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "214500",
+      "direction": "down"
+    },
+    {
+      "rank": 18,
+      "code": "0220W0",
+      "name": "한화머시너리앤서비스홀딩스",
+      "price": "7770",
+      "direction": "up"
+    },
+    {
+      "rank": 19,
       "code": "0041E0",
       "name": "KODEX 미국S&P500액티브",
       "price": "15310",
       "direction": "down"
     },
     {
-      "rank": 18,
+      "rank": 20,
       "code": "379800",
       "name": "KODEX 미국S&P500",
       "price": "22985",
       "direction": "down"
-    },
-    {
-      "rank": 19,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "213000",
-      "direction": "down"
-    },
-    {
-      "rank": 20,
-      "code": "483290",
-      "name": "KODEX 미국배당다우존스타겟커버드콜",
-      "price": "9915",
-      "direction": "up"
     }
   ],
   "kospi": [
@@ -895,7 +895,7 @@
       "rank": 6,
       "code": "0013Y0",
       "name": "엠에스바이오",
-      "price": "12540",
+      "price": "13620",
       "direction": "up"
     },
     {
@@ -907,30 +907,30 @@
     },
     {
       "rank": 8,
+      "code": "065450",
+      "name": "빅텍",
+      "price": "3760",
+      "direction": "up"
+    },
+    {
+      "rank": 9,
       "code": "069500",
       "name": "KODEX 200",
       "price": "86525",
       "direction": "down"
     },
     {
-      "rank": 9,
-      "code": "065450",
-      "name": "빅텍",
-      "price": "3935",
-      "direction": "up"
-    },
-    {
       "rank": 10,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25285",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12725",
       "direction": "down"
     },
     {
       "rank": 11,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12725",
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25285",
       "direction": "down"
     },
     {
@@ -972,7 +972,7 @@
       "rank": 17,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "1570",
+      "price": "1620",
       "direction": "down"
     },
     {
@@ -993,7 +993,7 @@
       "rank": 20,
       "code": "290720",
       "name": "푸드나무",
-      "price": "1544",
+      "price": "1553",
       "direction": "down"
     }
   ],
