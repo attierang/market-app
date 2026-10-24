@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T05:19:06.298Z",
+  "updated_at": "2026-10-24T09:42:05.545Z",
   "count": 50,
   "data": [
     {
@@ -360,10 +360,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 59.53,
-      "change": -0.1,
-      "stock_count": 182228,
-      "type": "sell"
+      "ratio": 8.21,
+      "change": 1.04,
+      "stock_count": 1971423,
+      "type": "buy"
     },
     {
       "corp_name": "한화비전",
