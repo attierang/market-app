@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T05:05:09.020Z",
+  "updated_at": "2026-10-25T09:59:32.458Z",
   "count": 50,
   "data": [
     {
@@ -239,10 +239,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 23.26,
-      "change": 0,
-      "stock_count": 0,
-      "type": "buy"
+      "ratio": 23.25,
+      "change": -0.01,
+      "stock_count": 2934,
+      "type": "sell"
     },
     {
       "corp_name": "GS건설",
