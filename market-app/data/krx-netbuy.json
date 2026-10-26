@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T08:42:58.240Z",
+  "updated_at": "2026-10-26T13:46:44.389Z",
   "date": "20261026",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -41,23 +41,23 @@
     },
     {
       "rank": 6,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2745",
-      "direction": "up"
-    },
-    {
-      "rank": 7,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "12005",
       "direction": "down"
     },
     {
+      "rank": 7,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2745",
+      "direction": "up"
+    },
+    {
       "rank": 8,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "2010",
+      "price": "2040",
       "direction": "up"
     },
     {
@@ -76,16 +76,16 @@
     },
     {
       "rank": 11,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "22790",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "85995",
       "direction": "down"
     },
     {
       "rank": 12,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "85995",
+      "code": "379800",
+      "name": "KODEX 미국S&P500",
+      "price": "22790",
       "direction": "down"
     },
     {
@@ -99,7 +99,7 @@
       "rank": 14,
       "code": "357880",
       "name": "SKAI",
-      "price": "1975",
+      "price": "2005",
       "direction": "up"
     },
     {
@@ -113,14 +113,14 @@
       "rank": 16,
       "code": "365660",
       "name": "레몬헬스케어",
-      "price": "4050",
+      "price": "4015",
       "direction": "up"
     },
     {
       "rank": 17,
       "code": "0013Y0",
       "name": "엠에스바이오",
-      "price": "10360",
+      "price": "10310",
       "direction": "up"
     },
     {
@@ -134,7 +134,7 @@
       "rank": 19,
       "code": "009190",
       "name": "대양금속",
-      "price": "827",
+      "price": "830",
       "direction": "up"
     },
     {
@@ -183,23 +183,23 @@
     },
     {
       "rank": 6,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2745",
-      "direction": "up"
-    },
-    {
-      "rank": 7,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "12005",
       "direction": "down"
     },
     {
+      "rank": 7,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2745",
+      "direction": "up"
+    },
+    {
       "rank": 8,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "2010",
+      "price": "2040",
       "direction": "up"
     },
     {
@@ -218,16 +218,16 @@
     },
     {
       "rank": 11,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "22790",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "85995",
       "direction": "down"
     },
     {
       "rank": 12,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "85995",
+      "code": "379800",
+      "name": "KODEX 미국S&P500",
+      "price": "22790",
       "direction": "down"
     },
     {
@@ -241,7 +241,7 @@
       "rank": 14,
       "code": "357880",
       "name": "SKAI",
-      "price": "1975",
+      "price": "2005",
       "direction": "up"
     },
     {
@@ -255,14 +255,14 @@
       "rank": 16,
       "code": "365660",
       "name": "레몬헬스케어",
-      "price": "4050",
+      "price": "4015",
       "direction": "up"
     },
     {
       "rank": 17,
       "code": "0013Y0",
       "name": "엠에스바이오",
-      "price": "10360",
+      "price": "10310",
       "direction": "up"
     },
     {
@@ -276,7 +276,7 @@
       "rank": 19,
       "code": "009190",
       "name": "대양금속",
-      "price": "827",
+      "price": "830",
       "direction": "up"
     },
     {
@@ -339,23 +339,23 @@
     },
     {
       "rank": 8,
+      "code": "0220W0",
+      "name": "한화머시너리앤서비스홀딩스",
+      "price": "7600",
+      "direction": "up"
+    },
+    {
+      "rank": 9,
       "code": "423160",
       "name": "KODEX KOFR금리액티브(합성)",
       "price": "110915",
       "direction": "up"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "code": "488770",
       "name": "KODEX 머니마켓액티브",
       "price": "105945",
-      "direction": "up"
-    },
-    {
-      "rank": 10,
-      "code": "0220W0",
-      "name": "한화머시너리앤서비스홀딩스",
-      "price": "7610",
       "direction": "up"
     },
     {
@@ -423,10 +423,10 @@
     },
     {
       "rank": 20,
-      "code": "0035S0",
-      "name": "빅웨이브로보틱스",
-      "price": "28950",
-      "direction": "up"
+      "code": "329200",
+      "name": "TIGER 리츠부동산인프라",
+      "price": "3980",
+      "direction": "down"
     }
   ],
   "kospi_institute_sell": [
@@ -481,23 +481,23 @@
     },
     {
       "rank": 8,
+      "code": "0220W0",
+      "name": "한화머시너리앤서비스홀딩스",
+      "price": "7600",
+      "direction": "up"
+    },
+    {
+      "rank": 9,
       "code": "423160",
       "name": "KODEX KOFR금리액티브(합성)",
       "price": "110915",
       "direction": "up"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "code": "488770",
       "name": "KODEX 머니마켓액티브",
       "price": "105945",
-      "direction": "up"
-    },
-    {
-      "rank": 10,
-      "code": "0220W0",
-      "name": "한화머시너리앤서비스홀딩스",
-      "price": "7610",
       "direction": "up"
     },
     {
@@ -565,10 +565,10 @@
     },
     {
       "rank": 20,
-      "code": "0035S0",
-      "name": "빅웨이브로보틱스",
-      "price": "28950",
-      "direction": "up"
+      "code": "329200",
+      "name": "TIGER 리츠부동산인프라",
+      "price": "3980",
+      "direction": "down"
     }
   ],
   "kospi_foreigner": [
@@ -609,23 +609,23 @@
     },
     {
       "rank": 6,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2745",
-      "direction": "up"
-    },
-    {
-      "rank": 7,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "12005",
       "direction": "down"
     },
     {
+      "rank": 7,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2745",
+      "direction": "up"
+    },
+    {
       "rank": 8,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "2010",
+      "price": "2040",
       "direction": "up"
     },
     {
@@ -644,16 +644,16 @@
     },
     {
       "rank": 11,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "22790",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "85995",
       "direction": "down"
     },
     {
       "rank": 12,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "85995",
+      "code": "379800",
+      "name": "KODEX 미국S&P500",
+      "price": "22790",
       "direction": "down"
     },
     {
@@ -667,7 +667,7 @@
       "rank": 14,
       "code": "357880",
       "name": "SKAI",
-      "price": "1975",
+      "price": "2005",
       "direction": "up"
     },
     {
@@ -681,14 +681,14 @@
       "rank": 16,
       "code": "365660",
       "name": "레몬헬스케어",
-      "price": "4050",
+      "price": "4015",
       "direction": "up"
     },
     {
       "rank": 17,
       "code": "0013Y0",
       "name": "엠에스바이오",
-      "price": "10360",
+      "price": "10310",
       "direction": "up"
     },
     {
@@ -702,7 +702,7 @@
       "rank": 19,
       "code": "009190",
       "name": "대양금속",
-      "price": "827",
+      "price": "830",
       "direction": "up"
     },
     {
@@ -765,23 +765,23 @@
     },
     {
       "rank": 8,
+      "code": "0220W0",
+      "name": "한화머시너리앤서비스홀딩스",
+      "price": "7600",
+      "direction": "up"
+    },
+    {
+      "rank": 9,
       "code": "423160",
       "name": "KODEX KOFR금리액티브(합성)",
       "price": "110915",
       "direction": "up"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "code": "488770",
       "name": "KODEX 머니마켓액티브",
       "price": "105945",
-      "direction": "up"
-    },
-    {
-      "rank": 10,
-      "code": "0220W0",
-      "name": "한화머시너리앤서비스홀딩스",
-      "price": "7610",
       "direction": "up"
     },
     {
@@ -849,10 +849,10 @@
     },
     {
       "rank": 20,
-      "code": "0035S0",
-      "name": "빅웨이브로보틱스",
-      "price": "28950",
-      "direction": "up"
+      "code": "329200",
+      "name": "TIGER 리츠부동산인프라",
+      "price": "3980",
+      "direction": "down"
     }
   ],
   "kospi": [
@@ -893,23 +893,23 @@
     },
     {
       "rank": 6,
-      "code": "251340",
-      "name": "KODEX 코스닥150선물인버스",
-      "price": "2745",
-      "direction": "up"
-    },
-    {
-      "rank": 7,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "12005",
       "direction": "down"
     },
     {
+      "rank": 7,
+      "code": "251340",
+      "name": "KODEX 코스닥150선물인버스",
+      "price": "2745",
+      "direction": "up"
+    },
+    {
       "rank": 8,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "2010",
+      "price": "2040",
       "direction": "up"
     },
     {
@@ -928,16 +928,16 @@
     },
     {
       "rank": 11,
-      "code": "379800",
-      "name": "KODEX 미국S&P500",
-      "price": "22790",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "85995",
       "direction": "down"
     },
     {
       "rank": 12,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "85995",
+      "code": "379800",
+      "name": "KODEX 미국S&P500",
+      "price": "22790",
       "direction": "down"
     },
     {
@@ -951,7 +951,7 @@
       "rank": 14,
       "code": "357880",
       "name": "SKAI",
-      "price": "1975",
+      "price": "2005",
       "direction": "up"
     },
     {
@@ -965,14 +965,14 @@
       "rank": 16,
       "code": "365660",
       "name": "레몬헬스케어",
-      "price": "4050",
+      "price": "4015",
       "direction": "up"
     },
     {
       "rank": 17,
       "code": "0013Y0",
       "name": "엠에스바이오",
-      "price": "10360",
+      "price": "10310",
       "direction": "up"
     },
     {
@@ -986,7 +986,7 @@
       "rank": 19,
       "code": "009190",
       "name": "대양금속",
-      "price": "827",
+      "price": "830",
       "direction": "up"
     },
     {
