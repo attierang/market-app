@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T08:49:04.303Z",
+  "updated_at": "2026-10-27T12:54:08.301Z",
   "date": "20261027",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -22,7 +22,7 @@
       "rank": 3,
       "code": "0205H0",
       "name": "에스케이증권제14호기업인수목적",
-      "price": "1889",
+      "price": "1882",
       "direction": "down"
     },
     {
@@ -55,23 +55,23 @@
     },
     {
       "rank": 8,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "2110",
-      "direction": "down"
-    },
-    {
-      "rank": 9,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "12260",
       "direction": "up"
     },
     {
+      "rank": 9,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "2110",
+      "direction": "down"
+    },
+    {
       "rank": 10,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "2140",
+      "price": "2115",
       "direction": "up"
     },
     {
@@ -85,7 +85,7 @@
       "rank": 12,
       "code": "0013Y0",
       "name": "엠에스바이오",
-      "price": "11810",
+      "price": "11960",
       "direction": "up"
     },
     {
@@ -139,9 +139,9 @@
     },
     {
       "rank": 20,
-      "code": "0167A0",
-      "name": "SOL AI반도체TOP2플러스",
-      "price": "14775",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "225000",
       "direction": "up"
     }
   ],
@@ -164,7 +164,7 @@
       "rank": 3,
       "code": "0205H0",
       "name": "에스케이증권제14호기업인수목적",
-      "price": "1889",
+      "price": "1882",
       "direction": "down"
     },
     {
@@ -197,23 +197,23 @@
     },
     {
       "rank": 8,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "2110",
-      "direction": "down"
-    },
-    {
-      "rank": 9,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "12260",
       "direction": "up"
     },
     {
+      "rank": 9,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "2110",
+      "direction": "down"
+    },
+    {
       "rank": 10,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "2140",
+      "price": "2115",
       "direction": "up"
     },
     {
@@ -227,7 +227,7 @@
       "rank": 12,
       "code": "0013Y0",
       "name": "엠에스바이오",
-      "price": "11810",
+      "price": "11960",
       "direction": "up"
     },
     {
@@ -281,9 +281,9 @@
     },
     {
       "rank": 20,
-      "code": "0167A0",
-      "name": "SOL AI반도체TOP2플러스",
-      "price": "14775",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "225000",
       "direction": "up"
     }
   ],
@@ -388,44 +388,44 @@
     },
     {
       "rank": 15,
+      "code": "0205H0",
+      "name": "에스케이증권제14호기업인수목적",
+      "price": "1882",
+      "direction": "down"
+    },
+    {
+      "rank": 16,
       "code": "0011A0",
       "name": "액스비스",
       "price": "9650",
       "direction": "up"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "code": "0246X0",
       "name": "SOL 글로벌DRAM반도체플러스",
       "price": "7790",
       "direction": "up"
     },
     {
-      "rank": 17,
-      "code": "0220W0",
-      "name": "한화머시너리앤서비스홀딩스",
-      "price": "7710",
-      "direction": "up"
-    },
-    {
       "rank": 18,
-      "code": "140070",
-      "name": "서플러스글로벌",
-      "price": "2230",
-      "direction": "down"
-    },
-    {
-      "rank": 19,
       "code": "190510",
       "name": "나무가",
       "price": "17090",
       "direction": "up"
     },
     {
+      "rank": 19,
+      "code": "0195R0",
+      "name": "TIGER 삼성전자단일종목레버리지",
+      "price": "7550",
+      "direction": "up"
+    },
+    {
       "rank": 20,
-      "code": "128820",
-      "name": "대성산업",
-      "price": "4100",
+      "code": "0220W0",
+      "name": "한화머시너리앤서비스홀딩스",
+      "price": "7690",
       "direction": "up"
     }
   ],
@@ -530,44 +530,44 @@
     },
     {
       "rank": 15,
+      "code": "0205H0",
+      "name": "에스케이증권제14호기업인수목적",
+      "price": "1882",
+      "direction": "down"
+    },
+    {
+      "rank": 16,
       "code": "0011A0",
       "name": "액스비스",
       "price": "9650",
       "direction": "up"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "code": "0246X0",
       "name": "SOL 글로벌DRAM반도체플러스",
       "price": "7790",
       "direction": "up"
     },
     {
-      "rank": 17,
-      "code": "0220W0",
-      "name": "한화머시너리앤서비스홀딩스",
-      "price": "7710",
-      "direction": "up"
-    },
-    {
       "rank": 18,
-      "code": "140070",
-      "name": "서플러스글로벌",
-      "price": "2230",
-      "direction": "down"
-    },
-    {
-      "rank": 19,
       "code": "190510",
       "name": "나무가",
       "price": "17090",
       "direction": "up"
     },
     {
+      "rank": 19,
+      "code": "0195R0",
+      "name": "TIGER 삼성전자단일종목레버리지",
+      "price": "7550",
+      "direction": "up"
+    },
+    {
       "rank": 20,
-      "code": "128820",
-      "name": "대성산업",
-      "price": "4100",
+      "code": "0220W0",
+      "name": "한화머시너리앤서비스홀딩스",
+      "price": "7690",
       "direction": "up"
     }
   ],
@@ -590,7 +590,7 @@
       "rank": 3,
       "code": "0205H0",
       "name": "에스케이증권제14호기업인수목적",
-      "price": "1889",
+      "price": "1882",
       "direction": "down"
     },
     {
@@ -623,23 +623,23 @@
     },
     {
       "rank": 8,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "2110",
-      "direction": "down"
-    },
-    {
-      "rank": 9,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "12260",
       "direction": "up"
     },
     {
+      "rank": 9,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "2110",
+      "direction": "down"
+    },
+    {
       "rank": 10,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "2140",
+      "price": "2115",
       "direction": "up"
     },
     {
@@ -653,7 +653,7 @@
       "rank": 12,
       "code": "0013Y0",
       "name": "엠에스바이오",
-      "price": "11810",
+      "price": "11960",
       "direction": "up"
     },
     {
@@ -707,9 +707,9 @@
     },
     {
       "rank": 20,
-      "code": "0167A0",
-      "name": "SOL AI반도체TOP2플러스",
-      "price": "14775",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "225000",
       "direction": "up"
     }
   ],
@@ -814,44 +814,44 @@
     },
     {
       "rank": 15,
+      "code": "0205H0",
+      "name": "에스케이증권제14호기업인수목적",
+      "price": "1882",
+      "direction": "down"
+    },
+    {
+      "rank": 16,
       "code": "0011A0",
       "name": "액스비스",
       "price": "9650",
       "direction": "up"
     },
     {
-      "rank": 16,
+      "rank": 17,
       "code": "0246X0",
       "name": "SOL 글로벌DRAM반도체플러스",
       "price": "7790",
       "direction": "up"
     },
     {
-      "rank": 17,
-      "code": "0220W0",
-      "name": "한화머시너리앤서비스홀딩스",
-      "price": "7710",
-      "direction": "up"
-    },
-    {
       "rank": 18,
-      "code": "140070",
-      "name": "서플러스글로벌",
-      "price": "2230",
-      "direction": "down"
-    },
-    {
-      "rank": 19,
       "code": "190510",
       "name": "나무가",
       "price": "17090",
       "direction": "up"
     },
     {
+      "rank": 19,
+      "code": "0195R0",
+      "name": "TIGER 삼성전자단일종목레버리지",
+      "price": "7550",
+      "direction": "up"
+    },
+    {
       "rank": 20,
-      "code": "128820",
-      "name": "대성산업",
-      "price": "4100",
+      "code": "0220W0",
+      "name": "한화머시너리앤서비스홀딩스",
+      "price": "7690",
       "direction": "up"
     }
   ],
@@ -874,7 +874,7 @@
       "rank": 3,
       "code": "0205H0",
       "name": "에스케이증권제14호기업인수목적",
-      "price": "1889",
+      "price": "1882",
       "direction": "down"
     },
     {
@@ -907,23 +907,23 @@
     },
     {
       "rank": 8,
-      "code": "Q530107",
-      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
-      "price": "2110",
-      "direction": "down"
-    },
-    {
-      "rank": 9,
       "code": "229200",
       "name": "KODEX 코스닥150",
       "price": "12260",
       "direction": "up"
     },
     {
+      "rank": 9,
+      "code": "Q530107",
+      "name": "삼성 인버스 2X 코스닥150 선물 ETN",
+      "price": "2110",
+      "direction": "down"
+    },
+    {
       "rank": 10,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "2140",
+      "price": "2115",
       "direction": "up"
     },
     {
@@ -937,7 +937,7 @@
       "rank": 12,
       "code": "0013Y0",
       "name": "엠에스바이오",
-      "price": "11810",
+      "price": "11960",
       "direction": "up"
     },
     {
@@ -991,9 +991,9 @@
     },
     {
       "rank": 20,
-      "code": "0167A0",
-      "name": "SOL AI반도체TOP2플러스",
-      "price": "14775",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "225000",
       "direction": "up"
     }
   ],
