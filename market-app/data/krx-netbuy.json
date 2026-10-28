@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T09:29:11.442Z",
+  "updated_at": "2026-10-28T13:42:54.733Z",
   "date": "20261028",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -55,16 +55,16 @@
     },
     {
       "rank": 8,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "7100",
+      "code": "419050",
+      "name": "삼기에너지솔루션즈",
+      "price": "2535",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "419050",
-      "name": "삼기에너지솔루션즈",
-      "price": "2525",
+      "code": "0193T0",
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "7100",
       "direction": "up"
     },
     {
@@ -90,30 +90,30 @@
     },
     {
       "rank": 13,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12795",
+      "direction": "up"
+    },
+    {
+      "rank": 14,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "25655",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "2120",
+      "price": "2150",
       "direction": "down"
     },
     {
-      "rank": 15,
+      "rank": 16,
       "code": "179880",
       "name": "멜콘",
-      "price": "18820",
-      "direction": "up"
-    },
-    {
-      "rank": 16,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12795",
+      "price": "18800",
       "direction": "up"
     },
     {
@@ -197,16 +197,16 @@
     },
     {
       "rank": 8,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "7100",
+      "code": "419050",
+      "name": "삼기에너지솔루션즈",
+      "price": "2535",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "419050",
-      "name": "삼기에너지솔루션즈",
-      "price": "2525",
+      "code": "0193T0",
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "7100",
       "direction": "up"
     },
     {
@@ -232,30 +232,30 @@
     },
     {
       "rank": 13,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12795",
+      "direction": "up"
+    },
+    {
+      "rank": 14,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "25655",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "2120",
+      "price": "2150",
       "direction": "down"
     },
     {
-      "rank": 15,
+      "rank": 16,
       "code": "179880",
       "name": "멜콘",
-      "price": "18830",
-      "direction": "up"
-    },
-    {
-      "rank": 16,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12795",
+      "price": "18800",
       "direction": "up"
     },
     {
@@ -623,16 +623,16 @@
     },
     {
       "rank": 8,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "7100",
+      "code": "419050",
+      "name": "삼기에너지솔루션즈",
+      "price": "2535",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "419050",
-      "name": "삼기에너지솔루션즈",
-      "price": "2525",
+      "code": "0193T0",
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "7100",
       "direction": "up"
     },
     {
@@ -658,30 +658,30 @@
     },
     {
       "rank": 13,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12795",
+      "direction": "up"
+    },
+    {
+      "rank": 14,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "25655",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "2120",
+      "price": "2150",
       "direction": "down"
     },
     {
-      "rank": 15,
+      "rank": 16,
       "code": "179880",
       "name": "멜콘",
-      "price": "18820",
-      "direction": "up"
-    },
-    {
-      "rank": 16,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12795",
+      "price": "18800",
       "direction": "up"
     },
     {
@@ -907,16 +907,16 @@
     },
     {
       "rank": 8,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "7100",
+      "code": "419050",
+      "name": "삼기에너지솔루션즈",
+      "price": "2535",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "419050",
-      "name": "삼기에너지솔루션즈",
-      "price": "2525",
+      "code": "0193T0",
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "7100",
       "direction": "up"
     },
     {
@@ -942,30 +942,30 @@
     },
     {
       "rank": 13,
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12795",
+      "direction": "up"
+    },
+    {
+      "rank": 14,
       "code": "360750",
       "name": "TIGER 미국S&P500",
       "price": "25655",
       "direction": "up"
     },
     {
-      "rank": 14,
+      "rank": 15,
       "code": "138360",
       "name": "앤로보틱스",
-      "price": "2120",
+      "price": "2150",
       "direction": "down"
     },
     {
-      "rank": 15,
+      "rank": 16,
       "code": "179880",
       "name": "멜콘",
-      "price": "18820",
-      "direction": "up"
-    },
-    {
-      "rank": 16,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12795",
+      "price": "18800",
       "direction": "up"
     },
     {
