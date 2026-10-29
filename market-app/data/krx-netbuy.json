@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T09:42:34.830Z",
+  "updated_at": "2026-10-29T13:52:43.660Z",
   "date": "20261029",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -64,35 +64,35 @@
       "rank": 9,
       "code": "069540",
       "name": "빛과전자",
-      "price": "4020",
+      "price": "4060",
       "direction": "down"
     },
     {
       "rank": 10,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25575",
-      "direction": "down"
-    },
-    {
-      "rank": 11,
       "code": "069500",
       "name": "KODEX 200",
       "price": "94465",
       "direction": "down"
     },
     {
+      "rank": 11,
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25575",
+      "direction": "down"
+    },
+    {
       "rank": 12,
-      "code": "047040",
-      "name": "대우건설",
-      "price": "11410",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12425",
       "direction": "down"
     },
     {
       "rank": 13,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12425",
+      "code": "047040",
+      "name": "대우건설",
+      "price": "11480",
       "direction": "down"
     },
     {
@@ -134,7 +134,7 @@
       "rank": 19,
       "code": "005930",
       "name": "삼성전자",
-      "price": "230000",
+      "price": "230500",
       "direction": "down"
     },
     {
@@ -206,35 +206,35 @@
       "rank": 9,
       "code": "069540",
       "name": "빛과전자",
-      "price": "4020",
+      "price": "4060",
       "direction": "down"
     },
     {
       "rank": 10,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25575",
-      "direction": "down"
-    },
-    {
-      "rank": 11,
       "code": "069500",
       "name": "KODEX 200",
       "price": "94465",
       "direction": "down"
     },
     {
+      "rank": 11,
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25575",
+      "direction": "down"
+    },
+    {
       "rank": 12,
-      "code": "047040",
-      "name": "대우건설",
-      "price": "11410",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12425",
       "direction": "down"
     },
     {
       "rank": 13,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12425",
+      "code": "047040",
+      "name": "대우건설",
+      "price": "11480",
       "direction": "down"
     },
     {
@@ -383,7 +383,7 @@
       "rank": 14,
       "code": "069540",
       "name": "빛과전자",
-      "price": "4020",
+      "price": "4060",
       "direction": "down"
     },
     {
@@ -525,7 +525,7 @@
       "rank": 14,
       "code": "069540",
       "name": "빛과전자",
-      "price": "4020",
+      "price": "4060",
       "direction": "down"
     },
     {
@@ -632,35 +632,35 @@
       "rank": 9,
       "code": "069540",
       "name": "빛과전자",
-      "price": "4020",
+      "price": "4060",
       "direction": "down"
     },
     {
       "rank": 10,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25575",
-      "direction": "down"
-    },
-    {
-      "rank": 11,
       "code": "069500",
       "name": "KODEX 200",
       "price": "94465",
       "direction": "down"
     },
     {
+      "rank": 11,
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25575",
+      "direction": "down"
+    },
+    {
       "rank": 12,
-      "code": "047040",
-      "name": "대우건설",
-      "price": "11410",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12425",
       "direction": "down"
     },
     {
       "rank": 13,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12425",
+      "code": "047040",
+      "name": "대우건설",
+      "price": "11480",
       "direction": "down"
     },
     {
@@ -702,7 +702,7 @@
       "rank": 19,
       "code": "005930",
       "name": "삼성전자",
-      "price": "230000",
+      "price": "230500",
       "direction": "down"
     },
     {
@@ -809,7 +809,7 @@
       "rank": 14,
       "code": "069540",
       "name": "빛과전자",
-      "price": "4020",
+      "price": "4060",
       "direction": "down"
     },
     {
@@ -916,35 +916,35 @@
       "rank": 9,
       "code": "069540",
       "name": "빛과전자",
-      "price": "4020",
+      "price": "4060",
       "direction": "down"
     },
     {
       "rank": 10,
-      "code": "360750",
-      "name": "TIGER 미국S&P500",
-      "price": "25575",
-      "direction": "down"
-    },
-    {
-      "rank": 11,
       "code": "069500",
       "name": "KODEX 200",
       "price": "94465",
       "direction": "down"
     },
     {
+      "rank": 11,
+      "code": "360750",
+      "name": "TIGER 미국S&P500",
+      "price": "25575",
+      "direction": "down"
+    },
+    {
       "rank": 12,
-      "code": "047040",
-      "name": "대우건설",
-      "price": "11410",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12425",
       "direction": "down"
     },
     {
       "rank": 13,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12425",
+      "code": "047040",
+      "name": "대우건설",
+      "price": "11480",
       "direction": "down"
     },
     {
@@ -986,7 +986,7 @@
       "rank": 19,
       "code": "005930",
       "name": "삼성전자",
-      "price": "230000",
+      "price": "230500",
       "direction": "down"
     },
     {
