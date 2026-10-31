@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T02:36:49.691Z",
+  "updated_at": "2026-10-31T09:08:48.364Z",
   "count": 50,
   "data": [
     {
@@ -74,10 +74,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 52.62,
-      "change": 0,
-      "stock_count": 0,
-      "type": "buy"
+      "ratio": 52.3,
+      "change": -0.32,
+      "stock_count": 55940,
+      "type": "sell"
     },
     {
       "corp_name": "파라다이스",
