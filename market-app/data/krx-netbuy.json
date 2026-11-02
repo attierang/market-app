@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T10:49:32.276Z",
+  "updated_at": "2026-11-02T16:43:48.576Z",
   "date": "20261102",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -64,21 +64,21 @@
       "rank": 9,
       "code": "359410",
       "name": "영광",
-      "price": "20300",
+      "price": "20100",
       "direction": "up"
     },
     {
       "rank": 10,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "6910",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12160",
       "direction": "up"
     },
     {
       "rank": 11,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12160",
+      "code": "0193T0",
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "6910",
       "direction": "up"
     },
     {
@@ -127,7 +127,7 @@
       "rank": 18,
       "code": "005930",
       "name": "삼성전자",
-      "price": "228500",
+      "price": "230000",
       "direction": "up"
     },
     {
@@ -139,9 +139,9 @@
     },
     {
       "rank": 20,
-      "code": "0195S0",
-      "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "5850",
+      "code": "396500",
+      "name": "TIGER 반도체TOP10",
+      "price": "31700",
       "direction": "up"
     }
   ],
@@ -206,21 +206,21 @@
       "rank": 9,
       "code": "359410",
       "name": "영광",
-      "price": "20350",
+      "price": "20100",
       "direction": "up"
     },
     {
       "rank": 10,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "6910",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12160",
       "direction": "up"
     },
     {
       "rank": 11,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12160",
+      "code": "0193T0",
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "6910",
       "direction": "up"
     },
     {
@@ -269,7 +269,7 @@
       "rank": 18,
       "code": "005930",
       "name": "삼성전자",
-      "price": "228500",
+      "price": "230000",
       "direction": "up"
     },
     {
@@ -281,9 +281,9 @@
     },
     {
       "rank": 20,
-      "code": "0195S0",
-      "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "5850",
+      "code": "396500",
+      "name": "TIGER 반도체TOP10",
+      "price": "31700",
       "direction": "up"
     }
   ],
@@ -632,21 +632,21 @@
       "rank": 9,
       "code": "359410",
       "name": "영광",
-      "price": "20300",
+      "price": "20100",
       "direction": "up"
     },
     {
       "rank": 10,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "6910",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12160",
       "direction": "up"
     },
     {
       "rank": 11,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12160",
+      "code": "0193T0",
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "6910",
       "direction": "up"
     },
     {
@@ -695,7 +695,7 @@
       "rank": 18,
       "code": "005930",
       "name": "삼성전자",
-      "price": "228500",
+      "price": "230000",
       "direction": "up"
     },
     {
@@ -707,9 +707,9 @@
     },
     {
       "rank": 20,
-      "code": "0195S0",
-      "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "5850",
+      "code": "396500",
+      "name": "TIGER 반도체TOP10",
+      "price": "31700",
       "direction": "up"
     }
   ],
@@ -916,21 +916,21 @@
       "rank": 9,
       "code": "359410",
       "name": "영광",
-      "price": "20300",
+      "price": "20100",
       "direction": "up"
     },
     {
       "rank": 10,
-      "code": "0193T0",
-      "name": "KODEX SK하이닉스단일종목레버리지",
-      "price": "6910",
+      "code": "229200",
+      "name": "KODEX 코스닥150",
+      "price": "12160",
       "direction": "up"
     },
     {
       "rank": 11,
-      "code": "229200",
-      "name": "KODEX 코스닥150",
-      "price": "12160",
+      "code": "0193T0",
+      "name": "KODEX SK하이닉스단일종목레버리지",
+      "price": "6910",
       "direction": "up"
     },
     {
@@ -979,7 +979,7 @@
       "rank": 18,
       "code": "005930",
       "name": "삼성전자",
-      "price": "228500",
+      "price": "230000",
       "direction": "up"
     },
     {
@@ -991,9 +991,9 @@
     },
     {
       "rank": 20,
-      "code": "0195S0",
-      "name": "TIGER SK하이닉스단일종목레버리지",
-      "price": "5850",
+      "code": "396500",
+      "name": "TIGER 반도체TOP10",
+      "price": "31700",
       "direction": "up"
     }
   ],
