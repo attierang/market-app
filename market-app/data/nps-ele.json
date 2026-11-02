@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-11-02T02:42:50.479Z",
+  "updated_at": "2026-11-02T10:25:31.250Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "삼양식품",
+      "stock_code": "003230",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261102",
+      "flr_nm": "국민연금공단",
+      "ratio": 3.76,
+      "change": -0.57,
+      "stock_count": 42362,
+      "type": "sell"
+    },
     {
       "corp_name": "SNT모티브",
       "stock_code": "064960",
@@ -539,17 +550,6 @@
       "ratio": 10.01,
       "change": 10.01,
       "stock_count": 650920,
-      "type": "buy"
-    },
-    {
-      "corp_name": "GS건설",
-      "stock_code": "006360",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20261006",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.01,
-      "change": 10.01,
-      "stock_count": 8570949,
       "type": "buy"
     }
   ]

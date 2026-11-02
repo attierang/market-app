@@ -1,7 +1,51 @@
 {
-  "updated_at": "2026-11-02T02:42:50.478Z",
+  "updated_at": "2026-11-02T10:25:31.249Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "효성티앤씨",
+      "stock_code": "298020",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20261102",
+      "flr_nm": "국민연금공단",
+      "ratio": 6.85,
+      "change": -2.21,
+      "stock_count": 95813,
+      "type": "sell"
+    },
+    {
+      "corp_name": "현대로템",
+      "stock_code": "064350",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20261102",
+      "flr_nm": "국민연금공단",
+      "ratio": 4.33,
+      "change": -1.04,
+      "stock_count": 1130439,
+      "type": "sell"
+    },
+    {
+      "corp_name": "한화오션",
+      "stock_code": "042660",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20261102",
+      "flr_nm": "국민연금공단",
+      "ratio": 71.22,
+      "change": 0,
+      "stock_count": 0,
+      "type": "buy"
+    },
+    {
+      "corp_name": "유한양행",
+      "stock_code": "000100",
+      "report_nm": "주식등의대량보유상황보고서(약식)",
+      "rcept_dt": "20261102",
+      "flr_nm": "국민연금공단",
+      "ratio": 7.85,
+      "change": 0.09,
+      "stock_count": 56326,
+      "type": "buy"
+    },
     {
       "corp_name": "한국항공우주",
       "stock_code": "047810",
@@ -507,50 +551,6 @@
       "change": 1.02,
       "stock_count": 596757,
       "type": "buy"
-    },
-    {
-      "corp_name": "GS",
-      "stock_code": "078930",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20261002",
-      "flr_nm": "국민연금공단",
-      "ratio": 53.33,
-      "change": 0.1,
-      "stock_count": 100000,
-      "type": "buy"
-    },
-    {
-      "corp_name": "LX인터내셔널",
-      "stock_code": "001120",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20261002",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.84,
-      "change": 1.03,
-      "stock_count": 399294,
-      "type": "buy"
-    },
-    {
-      "corp_name": "씨에스윈드",
-      "stock_code": "112610",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20261002",
-      "flr_nm": "국민연금공단",
-      "ratio": 41.42,
-      "change": 0,
-      "stock_count": 0,
-      "type": "buy"
-    },
-    {
-      "corp_name": "SK가스",
-      "stock_code": "018670",
-      "report_nm": "주식등의대량보유상황보고서(약식)",
-      "rcept_dt": "20261002",
-      "flr_nm": "국민연금공단",
-      "ratio": 74.19,
-      "change": -0.17,
-      "stock_count": 4129,
-      "type": "sell"
     }
   ]
 }
