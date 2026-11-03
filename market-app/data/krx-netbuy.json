@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T10:40:06.469Z",
+  "updated_at": "2026-11-03T14:47:29.716Z",
   "date": "20261103",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -50,7 +50,7 @@
       "rank": 7,
       "code": "0147B0",
       "name": "래블업",
-      "price": "13500",
+      "price": "13320",
       "direction": "down"
     },
     {
@@ -113,7 +113,7 @@
       "rank": 16,
       "code": "420610",
       "name": "인텔리빅스",
-      "price": "21650",
+      "price": "21300",
       "direction": "down"
     },
     {
@@ -192,7 +192,7 @@
       "rank": 7,
       "code": "0147B0",
       "name": "래블업",
-      "price": "13500",
+      "price": "13320",
       "direction": "down"
     },
     {
@@ -255,7 +255,7 @@
       "rank": 16,
       "code": "420610",
       "name": "인텔리빅스",
-      "price": "21650",
+      "price": "21300",
       "direction": "down"
     },
     {
@@ -618,7 +618,7 @@
       "rank": 7,
       "code": "0147B0",
       "name": "래블업",
-      "price": "13500",
+      "price": "13320",
       "direction": "down"
     },
     {
@@ -681,7 +681,7 @@
       "rank": 16,
       "code": "420610",
       "name": "인텔리빅스",
-      "price": "21650",
+      "price": "21300",
       "direction": "down"
     },
     {
@@ -902,7 +902,7 @@
       "rank": 7,
       "code": "0147B0",
       "name": "래블업",
-      "price": "13500",
+      "price": "13320",
       "direction": "down"
     },
     {
@@ -965,7 +965,7 @@
       "rank": 16,
       "code": "420610",
       "name": "인텔리빅스",
-      "price": "21650",
+      "price": "21300",
       "direction": "down"
     },
     {
