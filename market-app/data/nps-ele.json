@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T22:55:05.395Z",
+  "updated_at": "2026-11-04T02:54:46.464Z",
   "count": 50,
   "data": [
     {
@@ -96,9 +96,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261028",
       "flr_nm": "국민연금공단",
-      "ratio": 0.01,
+      "ratio": 0.02,
       "change": 0,
-      "stock_count": 2000,
+      "stock_count": 1011,
       "type": "buy"
     },
     {
