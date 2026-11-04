@@ -1,7 +1,40 @@
 {
-  "updated_at": "2026-11-04T02:54:46.464Z",
+  "updated_at": "2026-11-04T18:11:06.678Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "팬오션",
+      "stock_code": "028670",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261104",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 3000,
+      "type": "buy"
+    },
+    {
+      "corp_name": "팬오션",
+      "stock_code": "028670",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261104",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 3000,
+      "type": "buy"
+    },
+    {
+      "corp_name": "대덕전자",
+      "stock_code": "353200",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261104",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 678,
+      "type": "buy"
+    },
     {
       "corp_name": "삼양식품",
       "stock_code": "003230",
@@ -153,7 +186,7 @@
       "flr_nm": "국민연금공단",
       "ratio": 0,
       "change": 0,
-      "stock_count": 5050,
+      "stock_count": 3000,
       "type": "buy"
     },
     {
@@ -517,39 +550,6 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 300,
-      "type": "buy"
-    },
-    {
-      "corp_name": "OCI홀딩스",
-      "stock_code": "010060",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20261006",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 66,
-      "type": "buy"
-    },
-    {
-      "corp_name": "한올바이오파마",
-      "stock_code": "009420",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20261006",
-      "flr_nm": "국민연금공단",
-      "ratio": 9.98,
-      "change": -0.6,
-      "stock_count": 313225,
-      "type": "sell"
-    },
-    {
-      "corp_name": "대한유화",
-      "stock_code": "006650",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20261006",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.01,
-      "change": 10.01,
-      "stock_count": 650920,
       "type": "buy"
     }
   ]
