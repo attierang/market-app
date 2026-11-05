@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T10:38:15.540Z",
+  "updated_at": "2026-11-05T15:05:27.338Z",
   "date": "20261105",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -69,17 +69,17 @@
     },
     {
       "rank": 10,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "24925",
-      "direction": "up"
-    },
-    {
-      "rank": 11,
       "code": "069500",
       "name": "KODEX 200",
       "price": "84610",
       "direction": "down"
+    },
+    {
+      "rank": 11,
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "24925",
+      "direction": "up"
     },
     {
       "rank": 12,
@@ -92,7 +92,7 @@
       "rank": 13,
       "code": "005930",
       "name": "삼성전자",
-      "price": "203000",
+      "price": "201500",
       "direction": "down"
     },
     {
@@ -120,14 +120,14 @@
       "rank": 17,
       "code": "109610",
       "name": "에스와이",
-      "price": "2200",
+      "price": "2260",
       "direction": "up"
     },
     {
       "rank": 18,
       "code": "008830",
       "name": "대동기어",
-      "price": "6530",
+      "price": "6500",
       "direction": "up"
     },
     {
@@ -211,17 +211,17 @@
     },
     {
       "rank": 10,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "24925",
-      "direction": "up"
-    },
-    {
-      "rank": 11,
       "code": "069500",
       "name": "KODEX 200",
       "price": "84610",
       "direction": "down"
+    },
+    {
+      "rank": 11,
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "24925",
+      "direction": "up"
     },
     {
       "rank": 12,
@@ -234,7 +234,7 @@
       "rank": 13,
       "code": "005930",
       "name": "삼성전자",
-      "price": "202500",
+      "price": "201500",
       "direction": "down"
     },
     {
@@ -262,14 +262,14 @@
       "rank": 17,
       "code": "109610",
       "name": "에스와이",
-      "price": "2200",
+      "price": "2260",
       "direction": "up"
     },
     {
       "rank": 18,
       "code": "008830",
       "name": "대동기어",
-      "price": "6540",
+      "price": "6500",
       "direction": "up"
     },
     {
@@ -637,17 +637,17 @@
     },
     {
       "rank": 10,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "24925",
-      "direction": "up"
-    },
-    {
-      "rank": 11,
       "code": "069500",
       "name": "KODEX 200",
       "price": "84610",
       "direction": "down"
+    },
+    {
+      "rank": 11,
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "24925",
+      "direction": "up"
     },
     {
       "rank": 12,
@@ -660,7 +660,7 @@
       "rank": 13,
       "code": "005930",
       "name": "삼성전자",
-      "price": "203000",
+      "price": "201500",
       "direction": "down"
     },
     {
@@ -688,14 +688,14 @@
       "rank": 17,
       "code": "109610",
       "name": "에스와이",
-      "price": "2200",
+      "price": "2260",
       "direction": "up"
     },
     {
       "rank": 18,
       "code": "008830",
       "name": "대동기어",
-      "price": "6530",
+      "price": "6500",
       "direction": "up"
     },
     {
@@ -921,17 +921,17 @@
     },
     {
       "rank": 10,
-      "code": "379810",
-      "name": "KODEX 미국나스닥100",
-      "price": "24925",
-      "direction": "up"
-    },
-    {
-      "rank": 11,
       "code": "069500",
       "name": "KODEX 200",
       "price": "84610",
       "direction": "down"
+    },
+    {
+      "rank": 11,
+      "code": "379810",
+      "name": "KODEX 미국나스닥100",
+      "price": "24925",
+      "direction": "up"
     },
     {
       "rank": 12,
@@ -944,7 +944,7 @@
       "rank": 13,
       "code": "005930",
       "name": "삼성전자",
-      "price": "203000",
+      "price": "201500",
       "direction": "down"
     },
     {
@@ -972,14 +972,14 @@
       "rank": 17,
       "code": "109610",
       "name": "에스와이",
-      "price": "2200",
+      "price": "2260",
       "direction": "up"
     },
     {
       "rank": 18,
       "code": "008830",
       "name": "대동기어",
-      "price": "6530",
+      "price": "6500",
       "direction": "up"
     },
     {
