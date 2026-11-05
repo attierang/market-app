@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-11-05T04:30:51.317Z",
+  "updated_at": "2026-11-05T12:42:55.866Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "현대엘리베이터",
+      "stock_code": "017800",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261105",
+      "flr_nm": "국민연금공단",
+      "ratio": 0.01,
+      "change": 0.01,
+      "stock_count": 4500,
+      "type": "buy"
+    },
     {
       "corp_name": "팬오션",
       "stock_code": "028670",
@@ -539,17 +550,6 @@
       "ratio": 10.01,
       "change": 10.01,
       "stock_count": 1135076,
-      "type": "buy"
-    },
-    {
-      "corp_name": "S-Oil",
-      "stock_code": "010950",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20261006",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 300,
       "type": "buy"
     }
   ]
