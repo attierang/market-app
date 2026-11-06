@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T01:04:44.057Z",
+  "updated_at": "2026-11-06T07:50:49.546Z",
   "count": 50,
   "data": [
     {
@@ -349,9 +349,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 12.33,
-      "change": 0.19,
-      "stock_count": 126949,
+      "ratio": 12.37,
+      "change": 0.04,
+      "stock_count": 27864,
       "type": "buy"
     },
     {
@@ -415,10 +415,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 10.08,
-      "change": 0.04,
-      "stock_count": 4711,
-      "type": "buy"
+      "ratio": 9.99,
+      "change": -0.09,
+      "stock_count": 11171,
+      "type": "sell"
     },
     {
       "corp_name": "코오롱인더",
@@ -437,10 +437,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 10.05,
-      "change": 10.05,
-      "stock_count": 4237260,
-      "type": "buy"
+      "ratio": 9.82,
+      "change": -0.23,
+      "stock_count": 96478,
+      "type": "sell"
     },
     {
       "corp_name": "영원무역",
@@ -536,9 +536,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 13.06,
-      "change": 0.12,
-      "stock_count": 106275,
+      "ratio": 13.11,
+      "change": 0.05,
+      "stock_count": 47469,
       "type": "buy"
     },
     {
