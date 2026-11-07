@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T00:45:56.174Z",
+  "updated_at": "2026-11-07T06:47:27.696Z",
   "count": 50,
   "data": [
     {
@@ -98,7 +98,7 @@
       "flr_nm": "국민연금공단",
       "ratio": 0,
       "change": 0,
-      "stock_count": 1000,
+      "stock_count": 196,
       "type": "buy"
     },
     {
@@ -415,10 +415,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 9.99,
-      "change": -0.09,
-      "stock_count": 11171,
-      "type": "sell"
+      "ratio": 10.52,
+      "change": 0.5,
+      "stock_count": 63936,
+      "type": "buy"
     },
     {
       "corp_name": "코오롱인더",
