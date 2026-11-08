@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T08:26:37.639Z",
+  "updated_at": "2026-11-08T15:29:04.154Z",
   "count": 50,
   "data": [
     {
@@ -8,10 +8,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261105",
       "flr_nm": "국민연금공단",
-      "ratio": 0.01,
-      "change": 0.01,
-      "stock_count": 4500,
-      "type": "buy"
+      "ratio": 14.38,
+      "change": -4.88,
+      "stock_count": 1904761,
+      "type": "sell"
     },
     {
       "corp_name": "팬오션",
