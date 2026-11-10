@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T10:55:21.002Z",
+  "updated_at": "2026-11-10T15:21:11.093Z",
   "date": "20261110",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -55,16 +55,16 @@
     },
     {
       "rank": 8,
-      "code": "067290",
-      "name": "JW신약",
-      "price": "2500",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "82000",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "82000",
+      "code": "067290",
+      "name": "JW신약",
+      "price": "2510",
       "direction": "up"
     },
     {
@@ -125,23 +125,23 @@
     },
     {
       "rank": 18,
-      "code": "0162D0",
-      "name": "동원파츠",
-      "price": "28150",
+      "code": "443670",
+      "name": "에스피소프트",
+      "price": "6110",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "197100",
+      "code": "0162D0",
+      "name": "동원파츠",
+      "price": "27850",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "443670",
-      "name": "에스피소프트",
-      "price": "6030",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "197300",
       "direction": "up"
     }
   ],
@@ -197,16 +197,16 @@
     },
     {
       "rank": 8,
-      "code": "067290",
-      "name": "JW신약",
-      "price": "2500",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "82000",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "82000",
+      "code": "067290",
+      "name": "JW신약",
+      "price": "2510",
       "direction": "up"
     },
     {
@@ -267,23 +267,23 @@
     },
     {
       "rank": 18,
-      "code": "0162D0",
-      "name": "동원파츠",
-      "price": "28150",
+      "code": "443670",
+      "name": "에스피소프트",
+      "price": "6110",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "197100",
+      "code": "0162D0",
+      "name": "동원파츠",
+      "price": "27850",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "443670",
-      "name": "에스피소프트",
-      "price": "6040",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "197300",
       "direction": "up"
     }
   ],
@@ -341,7 +341,7 @@
       "rank": 8,
       "code": "089860",
       "name": "롯데렌탈",
-      "price": "58400",
+      "price": "58500",
       "direction": "up"
     },
     {
@@ -404,8 +404,8 @@
       "rank": 17,
       "code": "0220W0",
       "name": "한화머시너리앤서비스홀딩스",
-      "price": "7710",
-      "direction": "up"
+      "price": "7690",
+      "direction": "down"
     },
     {
       "rank": 18,
@@ -483,7 +483,7 @@
       "rank": 8,
       "code": "089860",
       "name": "롯데렌탈",
-      "price": "58400",
+      "price": "58500",
       "direction": "up"
     },
     {
@@ -546,8 +546,8 @@
       "rank": 17,
       "code": "0220W0",
       "name": "한화머시너리앤서비스홀딩스",
-      "price": "7710",
-      "direction": "up"
+      "price": "7690",
+      "direction": "down"
     },
     {
       "rank": 18,
@@ -623,16 +623,16 @@
     },
     {
       "rank": 8,
-      "code": "067290",
-      "name": "JW신약",
-      "price": "2500",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "82000",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "82000",
+      "code": "067290",
+      "name": "JW신약",
+      "price": "2510",
       "direction": "up"
     },
     {
@@ -693,23 +693,23 @@
     },
     {
       "rank": 18,
-      "code": "0162D0",
-      "name": "동원파츠",
-      "price": "28150",
+      "code": "443670",
+      "name": "에스피소프트",
+      "price": "6110",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "197100",
+      "code": "0162D0",
+      "name": "동원파츠",
+      "price": "27850",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "443670",
-      "name": "에스피소프트",
-      "price": "6030",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "197300",
       "direction": "up"
     }
   ],
@@ -767,7 +767,7 @@
       "rank": 8,
       "code": "089860",
       "name": "롯데렌탈",
-      "price": "58400",
+      "price": "58500",
       "direction": "up"
     },
     {
@@ -830,8 +830,8 @@
       "rank": 17,
       "code": "0220W0",
       "name": "한화머시너리앤서비스홀딩스",
-      "price": "7710",
-      "direction": "up"
+      "price": "7690",
+      "direction": "down"
     },
     {
       "rank": 18,
@@ -907,16 +907,16 @@
     },
     {
       "rank": 8,
-      "code": "067290",
-      "name": "JW신약",
-      "price": "2500",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "82000",
       "direction": "up"
     },
     {
       "rank": 9,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "82000",
+      "code": "067290",
+      "name": "JW신약",
+      "price": "2510",
       "direction": "up"
     },
     {
@@ -977,23 +977,23 @@
     },
     {
       "rank": 18,
-      "code": "0162D0",
-      "name": "동원파츠",
-      "price": "28150",
+      "code": "443670",
+      "name": "에스피소프트",
+      "price": "6110",
       "direction": "up"
     },
     {
       "rank": 19,
-      "code": "005930",
-      "name": "삼성전자",
-      "price": "197100",
+      "code": "0162D0",
+      "name": "동원파츠",
+      "price": "27850",
       "direction": "up"
     },
     {
       "rank": 20,
-      "code": "443670",
-      "name": "에스피소프트",
-      "price": "6030",
+      "code": "005930",
+      "name": "삼성전자",
+      "price": "197300",
       "direction": "up"
     }
   ],
