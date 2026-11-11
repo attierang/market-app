@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T06:54:16.586Z",
+  "updated_at": "2026-11-11T14:52:55.753Z",
   "count": 50,
   "data": [
     {
@@ -426,10 +426,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 40.79,
-      "change": 0,
-      "stock_count": 300,
-      "type": "buy"
+      "ratio": 8.43,
+      "change": -1.02,
+      "stock_count": 242334,
+      "type": "sell"
     },
     {
       "corp_name": "현대오토에버",
