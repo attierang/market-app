@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T10:49:56.655Z",
+  "updated_at": "2026-11-12T15:42:43.521Z",
   "date": "20261112",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -113,7 +113,7 @@
       "rank": 16,
       "code": "005930",
       "name": "삼성전자",
-      "price": "207000",
+      "price": "206500",
       "direction": "up"
     },
     {
@@ -255,7 +255,7 @@
       "rank": 16,
       "code": "005930",
       "name": "삼성전자",
-      "price": "207500",
+      "price": "206500",
       "direction": "up"
     },
     {
@@ -355,7 +355,7 @@
       "rank": 10,
       "code": "069510",
       "name": "에스텍",
-      "price": "23800",
+      "price": "23750",
       "direction": "up"
     },
     {
@@ -425,7 +425,7 @@
       "rank": 20,
       "code": "005880",
       "name": "대한해운",
-      "price": "1897",
+      "price": "1898",
       "direction": "up"
     }
   ],
@@ -497,7 +497,7 @@
       "rank": 10,
       "code": "069510",
       "name": "에스텍",
-      "price": "23800",
+      "price": "23750",
       "direction": "up"
     },
     {
@@ -567,7 +567,7 @@
       "rank": 20,
       "code": "005880",
       "name": "대한해운",
-      "price": "1897",
+      "price": "1898",
       "direction": "up"
     }
   ],
@@ -681,7 +681,7 @@
       "rank": 16,
       "code": "005930",
       "name": "삼성전자",
-      "price": "207000",
+      "price": "206500",
       "direction": "up"
     },
     {
@@ -781,7 +781,7 @@
       "rank": 10,
       "code": "069510",
       "name": "에스텍",
-      "price": "23800",
+      "price": "23750",
       "direction": "up"
     },
     {
@@ -851,7 +851,7 @@
       "rank": 20,
       "code": "005880",
       "name": "대한해운",
-      "price": "1897",
+      "price": "1898",
       "direction": "up"
     }
   ],
@@ -965,7 +965,7 @@
       "rank": 16,
       "code": "005930",
       "name": "삼성전자",
-      "price": "207000",
+      "price": "206500",
       "direction": "up"
     },
     {
