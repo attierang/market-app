@@ -1,7 +1,7 @@
 {
-  "filed_at": "2026-08-13",
-  "quarter": "2026 Q2",
-  "updated_at": "2026-11-12T10:34:26.127Z",
+  "filed_at": "2026-11-12",
+  "quarter": "2026 Q3",
+  "updated_at": "2026-11-12T18:32:41.689Z",
   "count": 50,
   "data": [
     {
@@ -9,450 +9,450 @@
       "name_en": "NVIDIA CORPORATION",
       "name_ko": "엔비디아",
       "sector": "반도체",
-      "value_usd": 10171499316000,
-      "shares": 50834621,
-      "ratio": 6.56
+      "value_usd": 11654995331000,
+      "shares": 51033345,
+      "ratio": 7.34
     },
     {
       "rank": 2,
       "name_en": "APPLE INC",
       "name_ko": "애플",
       "sector": "IT",
-      "value_usd": 9120026489000,
-      "shares": 31517924,
-      "ratio": 5.88
+      "value_usd": 10546150291000,
+      "shares": 31668219,
+      "ratio": 6.64
     },
     {
       "rank": 3,
       "name_en": "ALPHABET INC",
       "name_ko": "구글",
       "sector": "IT",
-      "value_usd": 8408813697000,
-      "shares": 23648987,
-      "ratio": 5.42
+      "value_usd": 8145043791000,
+      "shares": 23774873,
+      "ratio": 5.13
     },
     {
       "rank": 4,
       "name_en": "MICROSOFT CORP",
       "name_ko": "마이크로소프트",
       "sector": "IT",
-      "value_usd": 5684729680000,
-      "shares": 15239745,
-      "ratio": 3.67
+      "value_usd": 7856216499000,
+      "shares": 15317248,
+      "ratio": 4.95
     },
     {
       "rank": 5,
       "name_en": "AMAZON COM INC",
       "name_ko": "아마존",
       "sector": "소비재/클라우드",
-      "value_usd": 4998167363000,
-      "shares": 20970745,
-      "ratio": 3.22
+      "value_usd": 5253275179000,
+      "shares": 21084789,
+      "ratio": 3.31
     },
     {
       "rank": 6,
-      "name_en": "BROADCOM INC",
-      "name_ko": "브로드컴",
-      "sector": "반도체",
-      "value_usd": 3631259754000,
-      "shares": 9612865,
-      "ratio": 2.34
-    },
-    {
-      "rank": 7,
       "name_en": "INVESCO EXCH TRADED FD TR II",
       "name_ko": "INVESCO EXCH TRADED FD TR II",
       "sector": "기타",
-      "value_usd": 3546096271000,
+      "value_usd": 3627120117000,
       "shares": 47382366,
-      "ratio": 2.29
+      "ratio": 2.28
+    },
+    {
+      "rank": 7,
+      "name_en": "META PLATFORMS INC",
+      "name_ko": "메타",
+      "sector": "IT",
+      "value_usd": 3533591113000,
+      "shares": 4872709,
+      "ratio": 2.23
     },
     {
       "rank": 8,
-      "name_en": "MICRON TECHNOLOGY INC",
-      "name_ko": "마이크론",
+      "name_en": "BROADCOM INC",
+      "name_ko": "브로드컴",
       "sector": "반도체",
-      "value_usd": 3331465626000,
-      "shares": 2886160,
-      "ratio": 2.15
+      "value_usd": 3393326316000,
+      "shares": 9662366,
+      "ratio": 2.14
     },
     {
       "rank": 9,
       "name_en": "ISHARES TR",
       "name_ko": "ISHARES TR",
       "sector": "기타",
-      "value_usd": 3084943766000,
+      "value_usd": 3154107736000,
       "shares": 4119355,
       "ratio": 1.99
     },
     {
       "rank": 10,
-      "name_en": "META PLATFORMS INC",
-      "name_ko": "메타",
-      "sector": "IT",
-      "value_usd": 2732448252000,
-      "shares": 4850873,
-      "ratio": 1.76
+      "name_en": "MICRON TECHNOLOGY INC",
+      "name_ko": "마이크론",
+      "sector": "반도체",
+      "value_usd": 3086006044000,
+      "shares": 2897359,
+      "ratio": 1.94
     },
     {
       "rank": 11,
-      "name_en": "TESLA INC",
-      "name_ko": "테슬라",
-      "sector": "자동차/에너지",
-      "value_usd": 2532853621000,
-      "shares": 6022001,
-      "ratio": 1.63
-    },
-    {
-      "rank": 12,
       "name_en": "ADVANCED MICRO DEVICES INC",
       "name_ko": "ADVANCED MICRO DEVICES INC",
       "sector": "기타",
-      "value_usd": 2091720396000,
-      "shares": 3600765,
-      "ratio": 1.35
+      "value_usd": 2217758470000,
+      "shares": 3625210,
+      "ratio": 1.4
+    },
+    {
+      "rank": 12,
+      "name_en": "TESLA INC",
+      "name_ko": "테슬라",
+      "sector": "자동차/에너지",
+      "value_usd": 2152127730000,
+      "shares": 6065578,
+      "ratio": 1.36
     },
     {
       "rank": 13,
       "name_en": "ELI LILLY &amp; CO",
       "name_ko": "일라이릴리",
       "sector": "헬스케어",
-      "value_usd": 2018379214000,
-      "shares": 1682782,
-      "ratio": 1.3
+      "value_usd": 1954046620000,
+      "shares": 1688774,
+      "ratio": 1.23
     },
     {
       "rank": 14,
       "name_en": "JPMORGAN CHASE &amp; CO",
       "name_ko": "JP모건",
       "sector": "금융",
-      "value_usd": 1816546640000,
-      "shares": 5549588,
-      "ratio": 1.17
+      "value_usd": 1840135017000,
+      "shares": 5562177,
+      "ratio": 1.16
     },
     {
       "rank": 15,
-      "name_en": "LAM RESEARCH CORP",
-      "name_ko": "램리서치",
-      "sector": "반도체장비",
-      "value_usd": 1457235924000,
-      "shares": 3362878,
-      "ratio": 0.94
+      "name_en": "EXXONMOBIL HOLDINGS CORP",
+      "name_ko": "엑슨모빌",
+      "sector": "에너지",
+      "value_usd": 1579304029000,
+      "shares": 9703865,
+      "ratio": 0.99
     },
     {
       "rank": 16,
-      "name_en": "APPLIED MATLS INC",
-      "name_ko": "APPLIED MATLS INC",
-      "sector": "기타",
-      "value_usd": 1418562873000,
-      "shares": 1962051,
-      "ratio": 0.91
-    },
-    {
-      "rank": 17,
       "name_en": "BERKSHIRE HATHAWAY INC DEL",
       "name_ko": "버크셔해서웨이",
       "sector": "금융",
-      "value_usd": 1403556421000,
-      "shares": 2804925,
-      "ratio": 0.91
+      "value_usd": 1412531777000,
+      "shares": 2836694,
+      "ratio": 0.89
     },
     {
-      "rank": 18,
-      "name_en": "INTEL CORP",
-      "name_ko": "인텔",
-      "sector": "반도체",
-      "value_usd": 1396229068000,
-      "shares": 9999492,
-      "ratio": 0.9
-    },
-    {
-      "rank": 19,
-      "name_en": "T ROWE PRICE EXCHANGE-TRADED",
-      "name_ko": "T ROWE PRICE EXCHANGE-TRADED",
-      "sector": "기타",
-      "value_usd": 1342288668000,
-      "shares": 28090469,
-      "ratio": 0.87
-    },
-    {
-      "rank": 20,
+      "rank": 17,
       "name_en": "JOHNSON &amp; JOHNSON",
       "name_ko": "존슨앤존슨",
       "sector": "헬스케어",
-      "value_usd": 1327493063000,
-      "shares": 5226968,
+      "value_usd": 1391364897000,
+      "shares": 5255590,
+      "ratio": 0.88
+    },
+    {
+      "rank": 18,
+      "name_en": "T ROWE PRICE EXCHANGE-TRADED",
+      "name_ko": "T ROWE PRICE EXCHANGE-TRADED",
+      "sector": "기타",
+      "value_usd": 1358739346000,
+      "shares": 28090469,
       "ratio": 0.86
     },
     {
-      "rank": 21,
-      "name_en": "EXXON MOBIL CORP",
-      "name_ko": "엑슨모빌",
-      "sector": "에너지",
-      "value_usd": 1321264951000,
-      "shares": 9664021,
-      "ratio": 0.85
-    },
-    {
-      "rank": 22,
+      "rank": 19,
       "name_en": "VISA INC",
       "name_ko": "비자",
       "sector": "금융",
-      "value_usd": 1185762956000,
-      "shares": 3456128,
+      "value_usd": 1245662361000,
+      "shares": 3466625,
+      "ratio": 0.78
+    },
+    {
+      "rank": 20,
+      "name_en": "INTEL CORP",
+      "name_ko": "인텔",
+      "sector": "반도체",
+      "value_usd": 1211110815000,
+      "shares": 10073283,
       "ratio": 0.76
     },
     {
-      "rank": 23,
+      "rank": 21,
+      "name_en": "LAM RESEARCH CORP",
+      "name_ko": "램리서치",
+      "sector": "반도체장비",
+      "value_usd": 1106190080000,
+      "shares": 3367295,
+      "ratio": 0.7
+    },
+    {
+      "rank": 22,
       "name_en": "WALMART INC",
       "name_ko": "월마트",
       "sector": "소비재",
-      "value_usd": 1168182441000,
-      "shares": 10314166,
-      "ratio": 0.75
+      "value_usd": 1073773165000,
+      "shares": 10331696,
+      "ratio": 0.68
+    },
+    {
+      "rank": 23,
+      "name_en": "ABBVIE INC",
+      "name_ko": "애브비",
+      "sector": "헬스케어",
+      "value_usd": 1057756168000,
+      "shares": 4043565,
+      "ratio": 0.67
     },
     {
       "rank": 24,
       "name_en": "CISCO SYS INC",
       "name_ko": "CISCO SYS INC",
       "sector": "기타",
-      "value_usd": 1140935494000,
-      "shares": 9713396,
-      "ratio": 0.74
+      "value_usd": 1049780721000,
+      "shares": 9753607,
+      "ratio": 0.66
     },
     {
       "rank": 25,
-      "name_en": "KLA CORP",
-      "name_ko": "KLA CORP",
+      "name_en": "APPLIED MATLS INC",
+      "name_ko": "APPLIED MATLS INC",
       "sector": "기타",
-      "value_usd": 1096673309000,
-      "shares": 3634859,
-      "ratio": 0.71
+      "value_usd": 1005748944000,
+      "shares": 1966735,
+      "ratio": 0.63
     },
     {
       "rank": 26,
-      "name_en": "CATERPILLAR INC",
-      "name_ko": "캐터필러",
-      "sector": "기타",
-      "value_usd": 1075678918000,
-      "shares": 1010122,
-      "ratio": 0.69
+      "name_en": "PALANTIR TECHNOLOGIES INC",
+      "name_ko": "팔란티어",
+      "sector": "IT",
+      "value_usd": 984655329000,
+      "shares": 5264129,
+      "ratio": 0.62
     },
     {
       "rank": 27,
-      "name_en": "ABBVIE INC",
-      "name_ko": "애브비",
-      "sector": "헬스케어",
-      "value_usd": 1008968950000,
-      "shares": 4009573,
-      "ratio": 0.65
+      "name_en": "MASTERCARD INCORPORATED",
+      "name_ko": "마스터카드",
+      "sector": "금융",
+      "value_usd": 953739792000,
+      "shares": 1729450,
+      "ratio": 0.6
     },
     {
       "rank": 28,
-      "name_en": "GE AEROSPACE",
-      "name_ko": "GE AEROSPACE",
-      "sector": "기타",
-      "value_usd": 910452623000,
-      "shares": 2436124,
-      "ratio": 0.59
+      "name_en": "CHEVRON CORPORATION",
+      "name_ko": "쉐브론",
+      "sector": "에너지",
+      "value_usd": 927040089000,
+      "shares": 4539641,
+      "ratio": 0.58
     },
     {
       "rank": 29,
       "name_en": "COSTCO WHOLESALE CORPORATION",
       "name_ko": "코스트코",
       "sector": "소비재",
-      "value_usd": 904344107000,
-      "shares": 966727,
-      "ratio": 0.58
+      "value_usd": 883640638000,
+      "shares": 970671,
+      "ratio": 0.56
     },
     {
       "rank": 30,
-      "name_en": "MASTERCARD INCORPORATED",
-      "name_ko": "마스터카드",
-      "sector": "금융",
-      "value_usd": 886994390000,
-      "shares": 1727014,
-      "ratio": 0.57
-    },
-    {
-      "rank": 31,
       "name_en": "BANK OF AMER CORP",
       "name_ko": "BANK OF AMER CORP",
       "sector": "기타",
-      "value_usd": 885265895000,
-      "shares": 15536432,
-      "ratio": 0.57
+      "value_usd": 846216515000,
+      "shares": 15546877,
+      "ratio": 0.53
+    },
+    {
+      "rank": 31,
+      "name_en": "MERCK &amp; CO INC",
+      "name_ko": "머크",
+      "sector": "헬스케어",
+      "value_usd": 845862443000,
+      "shares": 5821089,
+      "ratio": 0.53
     },
     {
       "rank": 32,
-      "name_en": "WESTERN DIGITAL CORP",
-      "name_ko": "WESTERN DIGITAL CORP",
-      "sector": "기타",
-      "value_usd": 882009725000,
-      "shares": 1380902,
-      "ratio": 0.57
-    },
-    {
-      "rank": 33,
-      "name_en": "MARVELL TECHNOLOGY INC",
-      "name_ko": "MARVELL TECHNOLOGY INC",
-      "sector": "기타",
-      "value_usd": 833056534000,
-      "shares": 2796524,
-      "ratio": 0.54
-    },
-    {
-      "rank": 34,
       "name_en": "PROCTER &amp; GAMBLE CO",
       "name_ko": "P&G",
       "sector": "기타",
-      "value_usd": 826948565000,
-      "shares": 5639311,
-      "ratio": 0.53
+      "value_usd": 823456774000,
+      "shares": 5668067,
+      "ratio": 0.52
+    },
+    {
+      "rank": 33,
+      "name_en": "CATERPILLAR INC",
+      "name_ko": "캐터필러",
+      "sector": "기타",
+      "value_usd": 820600559000,
+      "shares": 1012100,
+      "ratio": 0.52
+    },
+    {
+      "rank": 34,
+      "name_en": "COCA COLA CO",
+      "name_ko": "COCA COLA CO",
+      "sector": "기타",
+      "value_usd": 810768066000,
+      "shares": 9418774,
+      "ratio": 0.51
     },
     {
       "rank": 35,
-      "name_en": "UNITEDHEALTH GROUP INC",
-      "name_ko": "유나이티드헬스",
-      "sector": "헬스케어",
-      "value_usd": 818929089000,
-      "shares": 1970332,
-      "ratio": 0.53
+      "name_en": "PALO ALTO NETWORKS INC",
+      "name_ko": "PALO ALTO NETWORKS INC",
+      "sector": "기타",
+      "value_usd": 784512831000,
+      "shares": 1974561,
+      "ratio": 0.49
     },
     {
       "rank": 36,
       "name_en": "SEAGATE TECHNOLOGY HLDNGS PL",
       "name_ko": "SEAGATE TECHNOLOGY HLDNGS PL",
       "sector": "기타",
-      "value_usd": 805490325000,
-      "shares": 834705,
-      "ratio": 0.52
-    },
-    {
-      "rank": 37,
-      "name_en": "HOME DEPOT INC",
-      "name_ko": "홈디포",
-      "sector": "소비재",
-      "value_usd": 791159990000,
-      "shares": 2243280,
-      "ratio": 0.51
-    },
-    {
-      "rank": 38,
-      "name_en": "COCA COLA CO",
-      "name_ko": "COCA COLA CO",
-      "sector": "기타",
-      "value_usd": 759894655000,
-      "shares": 9350248,
+      "value_usd": 771152794000,
+      "shares": 836083,
       "ratio": 0.49
     },
     {
-      "rank": 39,
-      "name_en": "CHEVRON CORPORATION",
-      "name_ko": "쉐브론",
-      "sector": "에너지",
-      "value_usd": 750205228000,
-      "shares": 4525852,
+      "rank": 37,
+      "name_en": "GE AEROSPACE",
+      "name_ko": "GE AEROSPACE",
+      "sector": "기타",
+      "value_usd": 764497787000,
+      "shares": 2448038,
       "ratio": 0.48
+    },
+    {
+      "rank": 38,
+      "name_en": "MARVELL TECHNOLOGY INC",
+      "name_ko": "MARVELL TECHNOLOGY INC",
+      "sector": "기타",
+      "value_usd": 738368400000,
+      "shares": 2794627,
+      "ratio": 0.47
+    },
+    {
+      "rank": 39,
+      "name_en": "UNITEDHEALTH GROUP INC",
+      "name_ko": "유나이티드헬스",
+      "sector": "헬스케어",
+      "value_usd": 729596094000,
+      "shares": 1987567,
+      "ratio": 0.46
     },
     {
       "rank": 40,
-      "name_en": "MERCK &amp; CO INC",
-      "name_ko": "머크",
-      "sector": "헬스케어",
-      "value_usd": 744243987000,
-      "shares": 5791782,
-      "ratio": 0.48
+      "name_en": "PHILIP MORRIS INTL INC",
+      "name_ko": "PHILIP MORRIS INTL INC",
+      "sector": "기타",
+      "value_usd": 715372922000,
+      "shares": 3748941,
+      "ratio": 0.45
     },
     {
       "rank": 41,
-      "name_en": "NETFLIX INC.",
-      "name_ko": "넷플릭스",
-      "sector": "미디어",
-      "value_usd": 693865700000,
-      "shares": 9718007,
+      "name_en": "KLA CORP",
+      "name_ko": "KLA CORP",
+      "sector": "기타",
+      "value_usd": 707904474000,
+      "shares": 3631583,
       "ratio": 0.45
     },
     {
       "rank": 42,
-      "name_en": "GOLDMAN SACHS GROUP INC",
-      "name_ko": "골드만삭스",
-      "sector": "금융",
-      "value_usd": 678086164000,
-      "shares": 670463,
-      "ratio": 0.44
-    },
-    {
-      "rank": 43,
-      "name_en": "PHILIP MORRIS INTL INC",
-      "name_ko": "PHILIP MORRIS INTL INC",
-      "sector": "기타",
-      "value_usd": 675325633000,
-      "shares": 3732937,
-      "ratio": 0.44
-    },
-    {
-      "rank": 44,
       "name_en": "HARBOR ETF TRUST",
       "name_ko": "HARBOR ETF TRUST",
       "sector": "기타",
-      "value_usd": 668030237000,
+      "value_usd": 689286872000,
       "shares": 24565625,
       "ratio": 0.43
     },
     {
-      "rank": 45,
-      "name_en": "PALO ALTO NETWORKS INC",
-      "name_ko": "PALO ALTO NETWORKS INC",
-      "sector": "기타",
-      "value_usd": 667001700000,
-      "shares": 1955902,
+      "rank": 43,
+      "name_en": "NETFLIX INC.",
+      "name_ko": "넷플릭스",
+      "sector": "미디어",
+      "value_usd": 681231061000,
+      "shares": 9790616,
       "ratio": 0.43
     },
     {
-      "rank": 46,
-      "name_en": "GE VERNOVA INC",
-      "name_ko": "GE VERNOVA INC",
-      "sector": "기타",
-      "value_usd": 663308333000,
-      "shares": 564585,
-      "ratio": 0.43
-    },
-    {
-      "rank": 47,
-      "name_en": "INTERNATIONAL BUSINESS MACHS",
-      "name_ko": "INTERNATIONAL BUSINESS MACHS",
-      "sector": "기타",
-      "value_usd": 660836470000,
-      "shares": 2349975,
-      "ratio": 0.43
-    },
-    {
-      "rank": 48,
-      "name_en": "TEXAS INSTRS INC",
-      "name_ko": "TEXAS INSTRS INC",
-      "sector": "기타",
-      "value_usd": 632111088000,
-      "shares": 2120680,
-      "ratio": 0.41
-    },
-    {
-      "rank": 49,
+      "rank": 44,
       "name_en": "ADVISORS INNER CIRCLE FD",
       "name_ko": "ADVISORS INNER CIRCLE FD",
       "sector": "기타",
-      "value_usd": 627384496000,
+      "value_usd": 654558480000,
       "shares": 18162000,
+      "ratio": 0.41
+    },
+    {
+      "rank": 45,
+      "name_en": "HOME DEPOT INC",
+      "name_ko": "홈디포",
+      "sector": "소비재",
+      "value_usd": 641404042000,
+      "shares": 2254575,
       "ratio": 0.4
     },
     {
-      "rank": 50,
-      "name_en": "LINDE PLC",
-      "name_ko": "LINDE PLC",
+      "rank": 46,
+      "name_en": "ARISTA NETWORKS INC",
+      "name_ko": "ARISTA NETWORKS INC",
       "sector": "기타",
-      "value_usd": 623718138000,
-      "shares": 1201908,
+      "value_usd": 627069212000,
+      "shares": 3080059,
       "ratio": 0.4
+    },
+    {
+      "rank": 47,
+      "name_en": "WESTERN DIGITAL CORP",
+      "name_ko": "WESTERN DIGITAL CORP",
+      "sector": "기타",
+      "value_usd": 627021643000,
+      "shares": 1379707,
+      "ratio": 0.4
+    },
+    {
+      "rank": 48,
+      "name_en": "GOLDMAN SACHS GROUP INC",
+      "name_ko": "골드만삭스",
+      "sector": "금융",
+      "value_usd": 608711787000,
+      "shares": 676076,
+      "ratio": 0.38
+    },
+    {
+      "rank": 49,
+      "name_en": "TEXAS INSTRS INC",
+      "name_ko": "TEXAS INSTRS INC",
+      "sector": "기타",
+      "value_usd": 599431533000,
+      "shares": 2140139,
+      "ratio": 0.38
+    },
+    {
+      "rank": 50,
+      "name_en": "WELLS FARGO &amp; CO",
+      "name_ko": "웰스파고",
+      "sector": "금융",
+      "value_usd": 589780543000,
+      "shares": 7367652,
+      "ratio": 0.37
     }
   ]
 }
