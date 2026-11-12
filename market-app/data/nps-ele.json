@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T02:40:35.221Z",
+  "updated_at": "2026-11-12T10:34:25.326Z",
   "count": 50,
   "data": [
     {
@@ -294,10 +294,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261012",
       "flr_nm": "국민연금공단",
-      "ratio": 9.6,
-      "change": -0.67,
-      "stock_count": 420813,
-      "type": "sell"
+      "ratio": 10.05,
+      "change": 10.05,
+      "stock_count": 6358501,
+      "type": "buy"
     },
     {
       "corp_name": "대한항공",
@@ -338,10 +338,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261012",
       "flr_nm": "국민연금공단",
-      "ratio": 9.6,
-      "change": -0.67,
-      "stock_count": 420813,
-      "type": "sell"
+      "ratio": 10.05,
+      "change": 10.05,
+      "stock_count": 6358501,
+      "type": "buy"
     },
     {
       "corp_name": "두산",
@@ -371,10 +371,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261007",
       "flr_nm": "국민연금공단",
-      "ratio": 9.6,
-      "change": -0.67,
-      "stock_count": 420813,
-      "type": "sell"
+      "ratio": 10.05,
+      "change": 10.05,
+      "stock_count": 6358501,
+      "type": "buy"
     },
     {
       "corp_name": "이수페타시스",
@@ -382,10 +382,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261007",
       "flr_nm": "국민연금공단",
-      "ratio": 9.6,
-      "change": -0.67,
-      "stock_count": 420813,
-      "type": "sell"
+      "ratio": 10.05,
+      "change": 10.05,
+      "stock_count": 6358501,
+      "type": "buy"
     },
     {
       "corp_name": "이수페타시스",
@@ -393,10 +393,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261007",
       "flr_nm": "국민연금공단",
-      "ratio": 9.6,
-      "change": -0.67,
-      "stock_count": 420813,
-      "type": "sell"
+      "ratio": 10.05,
+      "change": 10.05,
+      "stock_count": 6358501,
+      "type": "buy"
     },
     {
       "corp_name": "DL이앤씨",
