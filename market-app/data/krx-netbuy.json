@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T10:45:19.657Z",
+  "updated_at": "2026-11-13T15:01:07.299Z",
   "date": "20261113",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -99,7 +99,7 @@
       "rank": 14,
       "code": "024840",
       "name": "KBI메탈",
-      "price": "4640",
+      "price": "4585",
       "direction": "up"
     },
     {
@@ -127,15 +127,15 @@
       "rank": 18,
       "code": "109610",
       "name": "에스와이",
-      "price": "2320",
+      "price": "2325",
       "direction": "up"
     },
     {
       "rank": 19,
       "code": "005930",
       "name": "삼성전자",
-      "price": "207500",
-      "direction": "down"
+      "price": "209000",
+      "direction": "up"
     },
     {
       "rank": 20,
@@ -241,7 +241,7 @@
       "rank": 14,
       "code": "024840",
       "name": "KBI메탈",
-      "price": "4640",
+      "price": "4585",
       "direction": "up"
     },
     {
@@ -269,15 +269,15 @@
       "rank": 18,
       "code": "109610",
       "name": "에스와이",
-      "price": "2320",
+      "price": "2325",
       "direction": "up"
     },
     {
       "rank": 19,
       "code": "005930",
       "name": "삼성전자",
-      "price": "207500",
-      "direction": "down"
+      "price": "209000",
+      "direction": "up"
     },
     {
       "rank": 20,
@@ -341,7 +341,7 @@
       "rank": 8,
       "code": "069510",
       "name": "에스텍",
-      "price": "23750",
+      "price": "23800",
       "direction": "up"
     },
     {
@@ -483,7 +483,7 @@
       "rank": 8,
       "code": "069510",
       "name": "에스텍",
-      "price": "23750",
+      "price": "23800",
       "direction": "up"
     },
     {
@@ -667,7 +667,7 @@
       "rank": 14,
       "code": "024840",
       "name": "KBI메탈",
-      "price": "4640",
+      "price": "4585",
       "direction": "up"
     },
     {
@@ -695,15 +695,15 @@
       "rank": 18,
       "code": "109610",
       "name": "에스와이",
-      "price": "2320",
+      "price": "2325",
       "direction": "up"
     },
     {
       "rank": 19,
       "code": "005930",
       "name": "삼성전자",
-      "price": "207500",
-      "direction": "down"
+      "price": "209000",
+      "direction": "up"
     },
     {
       "rank": 20,
@@ -767,7 +767,7 @@
       "rank": 8,
       "code": "069510",
       "name": "에스텍",
-      "price": "23750",
+      "price": "23800",
       "direction": "up"
     },
     {
@@ -951,7 +951,7 @@
       "rank": 14,
       "code": "024840",
       "name": "KBI메탈",
-      "price": "4640",
+      "price": "4585",
       "direction": "up"
     },
     {
@@ -979,15 +979,15 @@
       "rank": 18,
       "code": "109610",
       "name": "에스와이",
-      "price": "2320",
+      "price": "2325",
       "direction": "up"
     },
     {
       "rank": 19,
       "code": "005930",
       "name": "삼성전자",
-      "price": "207500",
-      "direction": "down"
+      "price": "209000",
+      "direction": "up"
     },
     {
       "rank": 20,
