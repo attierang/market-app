@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T02:58:40.104Z",
+  "updated_at": "2026-11-15T10:16:51.416Z",
   "count": 50,
   "data": [
     {
@@ -43,7 +43,7 @@
       "flr_nm": "국민연금공단",
       "ratio": 0.01,
       "change": 0.01,
-      "stock_count": 3000,
+      "stock_count": 6000,
       "type": "buy"
     },
     {
@@ -294,9 +294,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261012",
       "flr_nm": "국민연금공단",
-      "ratio": 10.05,
-      "change": 10.05,
-      "stock_count": 6358501,
+      "ratio": 10.11,
+      "change": 10.11,
+      "stock_count": 6394970,
       "type": "buy"
     },
     {
@@ -338,9 +338,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261012",
       "flr_nm": "국민연금공단",
-      "ratio": 10.05,
-      "change": 10.05,
-      "stock_count": 6358501,
+      "ratio": 10.11,
+      "change": 10.11,
+      "stock_count": 6394970,
       "type": "buy"
     },
     {
@@ -371,9 +371,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261007",
       "flr_nm": "국민연금공단",
-      "ratio": 10.05,
-      "change": 10.05,
-      "stock_count": 6358501,
+      "ratio": 10.11,
+      "change": 10.11,
+      "stock_count": 6394970,
       "type": "buy"
     },
     {
@@ -382,9 +382,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261007",
       "flr_nm": "국민연금공단",
-      "ratio": 10.05,
-      "change": 10.05,
-      "stock_count": 6358501,
+      "ratio": 10.11,
+      "change": 10.11,
+      "stock_count": 6394970,
       "type": "buy"
     },
     {
@@ -393,9 +393,9 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261007",
       "flr_nm": "국민연금공단",
-      "ratio": 10.05,
-      "change": 10.05,
-      "stock_count": 6358501,
+      "ratio": 10.11,
+      "change": 10.11,
+      "stock_count": 6394970,
       "type": "buy"
     },
     {
@@ -503,10 +503,10 @@
       "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
       "rcept_dt": "20261006",
       "flr_nm": "국민연금공단",
-      "ratio": 9.82,
-      "change": -0.23,
-      "stock_count": 96478,
-      "type": "sell"
+      "ratio": 0.01,
+      "change": 0.01,
+      "stock_count": 5782,
+      "type": "buy"
     },
     {
       "corp_name": "영원무역",
