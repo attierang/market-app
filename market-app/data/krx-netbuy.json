@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T10:52:39.520Z",
+  "updated_at": "2026-11-16T16:40:06.783Z",
   "date": "20261116",
   "source": "KIS API",
   "note": "외국인/기관 순매수·순매도 상위 (KOSPI)",
@@ -64,7 +64,7 @@
       "rank": 9,
       "code": "345290",
       "name": "영광와이케이엠씨",
-      "price": "8920",
+      "price": "8850",
       "direction": "down"
     },
     {
@@ -90,23 +90,23 @@
     },
     {
       "rank": 13,
-      "code": "122630",
-      "name": "KODEX 레버리지",
-      "price": "55035",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "79900",
       "direction": "down"
     },
     {
       "rank": 14,
       "code": "008700",
       "name": "아남전자",
-      "price": "1469",
+      "price": "1438",
       "direction": "up"
     },
     {
       "rank": 15,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "79900",
+      "code": "122630",
+      "name": "KODEX 레버리지",
+      "price": "55035",
       "direction": "down"
     },
     {
@@ -134,7 +134,7 @@
       "rank": 19,
       "code": "005930",
       "name": "삼성전자",
-      "price": "195100",
+      "price": "195000",
       "direction": "down"
     },
     {
@@ -206,7 +206,7 @@
       "rank": 9,
       "code": "345290",
       "name": "영광와이케이엠씨",
-      "price": "8920",
+      "price": "8850",
       "direction": "down"
     },
     {
@@ -232,23 +232,23 @@
     },
     {
       "rank": 13,
-      "code": "122630",
-      "name": "KODEX 레버리지",
-      "price": "55035",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "79900",
       "direction": "down"
     },
     {
       "rank": 14,
       "code": "008700",
       "name": "아남전자",
-      "price": "1469",
+      "price": "1438",
       "direction": "up"
     },
     {
       "rank": 15,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "79900",
+      "code": "122630",
+      "name": "KODEX 레버리지",
+      "price": "55035",
       "direction": "down"
     },
     {
@@ -276,7 +276,7 @@
       "rank": 19,
       "code": "005930",
       "name": "삼성전자",
-      "price": "195100",
+      "price": "195000",
       "direction": "down"
     },
     {
@@ -320,7 +320,7 @@
       "rank": 5,
       "code": "069510",
       "name": "에스텍",
-      "price": "23800",
+      "price": "23750",
       "direction": "up"
     },
     {
@@ -462,7 +462,7 @@
       "rank": 5,
       "code": "069510",
       "name": "에스텍",
-      "price": "23800",
+      "price": "23750",
       "direction": "up"
     },
     {
@@ -632,7 +632,7 @@
       "rank": 9,
       "code": "345290",
       "name": "영광와이케이엠씨",
-      "price": "8920",
+      "price": "8850",
       "direction": "down"
     },
     {
@@ -658,23 +658,23 @@
     },
     {
       "rank": 13,
-      "code": "122630",
-      "name": "KODEX 레버리지",
-      "price": "55035",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "79900",
       "direction": "down"
     },
     {
       "rank": 14,
       "code": "008700",
       "name": "아남전자",
-      "price": "1469",
+      "price": "1438",
       "direction": "up"
     },
     {
       "rank": 15,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "79900",
+      "code": "122630",
+      "name": "KODEX 레버리지",
+      "price": "55035",
       "direction": "down"
     },
     {
@@ -702,7 +702,7 @@
       "rank": 19,
       "code": "005930",
       "name": "삼성전자",
-      "price": "195100",
+      "price": "195000",
       "direction": "down"
     },
     {
@@ -746,7 +746,7 @@
       "rank": 5,
       "code": "069510",
       "name": "에스텍",
-      "price": "23800",
+      "price": "23750",
       "direction": "up"
     },
     {
@@ -916,7 +916,7 @@
       "rank": 9,
       "code": "345290",
       "name": "영광와이케이엠씨",
-      "price": "8920",
+      "price": "8850",
       "direction": "down"
     },
     {
@@ -942,23 +942,23 @@
     },
     {
       "rank": 13,
-      "code": "122630",
-      "name": "KODEX 레버리지",
-      "price": "55035",
+      "code": "069500",
+      "name": "KODEX 200",
+      "price": "79900",
       "direction": "down"
     },
     {
       "rank": 14,
       "code": "008700",
       "name": "아남전자",
-      "price": "1469",
+      "price": "1438",
       "direction": "up"
     },
     {
       "rank": 15,
-      "code": "069500",
-      "name": "KODEX 200",
-      "price": "79900",
+      "code": "122630",
+      "name": "KODEX 레버리지",
+      "price": "55035",
       "direction": "down"
     },
     {
@@ -986,7 +986,7 @@
       "rank": 19,
       "code": "005930",
       "name": "삼성전자",
-      "price": "195100",
+      "price": "195000",
       "direction": "down"
     },
     {
