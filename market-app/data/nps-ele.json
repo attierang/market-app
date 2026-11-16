@@ -1,7 +1,40 @@
 {
-  "updated_at": "2026-11-15T21:58:03.588Z",
+  "updated_at": "2026-11-16T08:52:09.955Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "빙그레",
+      "stock_code": "005180",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261116",
+      "flr_nm": "국민연금공단",
+      "ratio": 10.02,
+      "change": 10.02,
+      "stock_count": 885651,
+      "type": "buy"
+    },
+    {
+      "corp_name": "한전기술",
+      "stock_code": "052690",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261116",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 3361,
+      "type": "buy"
+    },
+    {
+      "corp_name": "대덕전자",
+      "stock_code": "353200",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261116",
+      "flr_nm": "국민연금공단",
+      "ratio": 0,
+      "change": 0,
+      "stock_count": 678,
+      "type": "buy"
+    },
     {
       "corp_name": "대덕전자",
       "stock_code": "353200",
@@ -517,39 +550,6 @@
       "ratio": 10.01,
       "change": 10.01,
       "stock_count": 4434400,
-      "type": "buy"
-    },
-    {
-      "corp_name": "비에이치",
-      "stock_code": "090460",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20261006",
-      "flr_nm": "국민연금공단",
-      "ratio": 21.23,
-      "change": 0.09,
-      "stock_count": 32000,
-      "type": "buy"
-    },
-    {
-      "corp_name": "아모레퍼시픽",
-      "stock_code": "090430",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20261006",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 122,
-      "type": "buy"
-    },
-    {
-      "corp_name": "한국금융지주",
-      "stock_code": "071050",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20261006",
-      "flr_nm": "국민연금공단",
-      "ratio": 0,
-      "change": 0,
-      "stock_count": 100,
       "type": "buy"
     }
   ]
