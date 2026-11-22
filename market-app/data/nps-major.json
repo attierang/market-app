@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T02:47:04.939Z",
+  "updated_at": "2026-11-22T10:34:38.436Z",
   "count": 50,
   "data": [
     {
@@ -492,10 +492,10 @@
       "report_nm": "주식등의대량보유상황보고서(약식)",
       "rcept_dt": "20261002",
       "flr_nm": "국민연금공단",
-      "ratio": 45.52,
-      "change": 0,
-      "stock_count": 0,
-      "type": "buy"
+      "ratio": 5.33,
+      "change": -1.01,
+      "stock_count": 8765969,
+      "type": "sell"
     },
     {
       "corp_name": "DN오토모티브",
