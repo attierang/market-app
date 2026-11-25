@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-11-24T23:11:29.397Z",
+  "updated_at": "2026-11-25T16:34:58.898Z",
   "count": 50,
   "data": [
+    {
+      "corp_name": "SNT모티브",
+      "stock_code": "064960",
+      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
+      "rcept_dt": "20261125",
+      "flr_nm": "국민연금공단",
+      "ratio": 45.12,
+      "change": 4.17,
+      "stock_count": 5987768,
+      "type": "buy"
+    },
     {
       "corp_name": "SNT모티브",
       "stock_code": "064960",
@@ -539,17 +550,6 @@
       "ratio": 0,
       "change": 0,
       "stock_count": 275,
-      "type": "buy"
-    },
-    {
-      "corp_name": "한미약품",
-      "stock_code": "128940",
-      "report_nm": "임원ㆍ주요주주특정증권등소유상황보고서",
-      "rcept_dt": "20261006",
-      "flr_nm": "국민연금공단",
-      "ratio": 10.52,
-      "change": 0.5,
-      "stock_count": 63936,
       "type": "buy"
     }
   ]
